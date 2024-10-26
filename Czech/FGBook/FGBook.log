@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.25)  26 OCT 2024 19:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.25)  26 OCT 2024 19:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -787,18 +787,15 @@ L3 programming layer <2024-10-09>
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.5pt have occurred.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 16623 strings out of 473577
- 329401 string characters out of 5732224
- 1687200 words of memory out of 5000000
- 39211 multiletter control sequences out of 15000+600000
+ 16526 strings out of 473577
+ 327042 string characters out of 5732224
+ 1680200 words of memory out of 5000000
+ 39114 multiletter control sequences out of 15000+600000
  572552 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,6n,101p,18239b,956s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,5n,101p,18239b,533s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx0600.pfb><c:/texl
 ive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx0700.pfb><c:/texlive/2024/t
 exmf-dist/fonts/type1/public/cm-super/sfbx0800.pfb><c:/texlive/2024/texmf-dist/
@@ -812,7 +809,7 @@ xmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb><c:/texlive/2024/texmf-dist/f
 onts/type1/public/cm-super/sfrm0700.pfb><c:/texlive/2024/texmf-dist/fonts/type1
 /public/cm-super/sfrm0800.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm
 -super/sfti0600.pfb>
-Output written on FGBook.pdf (17 pages, 660808 bytes).
+Output written on FGBook.pdf (17 pages, 435121 bytes).
 PDF statistics:
  137 PDF objects out of 1000 (max. 8388607)
  88 compressed objects within 1 object stream
