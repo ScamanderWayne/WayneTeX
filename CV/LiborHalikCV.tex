@@ -1,0 +1,177 @@
+% a mashup of hipstercv, friggeri and twenty cv
+% https://www.latextemplates.com/template/twenty-seconds-resumecv
+% https://www.latextemplates.com/template/friggeri-resume-cv
+
+\documentclass[verylight]{simplehipstercv}
+% available options are: darkhipster, lighthipster, pastel, allblack, grey, verylight, withoutsidebar
+% withoutsidebar
+\usepackage[czech]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[default]{raleway}
+\usepackage[margin=1cm, a4paper]{geometry}
+\usepackage{parskip}
+
+
+%------------------------------------------------------------------ Variablen
+
+\newlength{\rightcolwidth}
+\newlength{\leftcolwidth}
+\setlength{\leftcolwidth}{0.23\textwidth}
+\setlength{\rightcolwidth}{0.75\textwidth}
+
+%------------------------------------------------------------------
+\title{Životopis Libor Halík - Template New Simple CV}
+\author{\LaTeX{} Autor templatu: Ninja}
+\date{June 2019}
+
+\pagestyle{empty}
+\begin{document}
+
+
+\thispagestyle{empty}
+%-------------------------------------------------------------
+
+\section*{Start}
+
+\simpleheader{headercolour}{Libor}{Halík}{}{white}
+
+
+
+%------------------------------------------------
+
+% this has to be here so the paracols starts..
+\subsection*{}
+\vspace{4em}
+
+\setlength{\columnsep}{1.5cm}
+\columnratio{0.23}[0.75]
+\begin{paracol}{2}
+\hbadness5000
+%\backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1 %\backgroundcolor{g}[rgb]{0.8,1,1} % \backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
+
+\paracolbackgroundoptions
+
+% 0.9,0.9,0.9 -- 0.8,0.8,0.8
+
+
+\footnotesize
+{\setasidefontcolour
+\flushright
+\roundpic{waynik.png}
+
+\bg{cvgreen}{white}{O mně}\\[0.5em]
+
+{\footnotesize
+Osmnáctiletý žák Střední školy Olgy Havlové, co se snaží vyvážit ekonomické studium s koníčky jako čtení a zájmem o techniku. I proto jsou mé aktivity na GitHubu tak časté.} \\
+\bigskip
+
+\bg{cvgreen}{white}{Profesní rozsah} \\[0.5em]
+
+~•~ Žák ekonomické školy ~•~ Nadšenec do technologií ~•~ Programátor začátečník
+
+\bigskip
+
+
+
+\bigskip
+
+\bg{cvgreen}{white}{Koníčky}\\[0.5em]
+
+Jsem zvyklý poslouchat hudbu.
+Ve volném čase čtu literaturu.
+Aktuálně jsem objevil zálibu a fascinaci v prozkoumávání Arch Linuxu (Hyprland is the Way). \\
+\bigskip
+
+\bg{cvgreen}{white}{Zájmy}\\[0.5em]
+
+\texttt{Arch Linux}
+
+\texttt{Programování}
+
+\texttt{Religionistika}
+
+\texttt{Matfyz}
+
+\vspace{4em}
+
+\infobubble{halik@ssoh.cz}{cvgreen}{white}{\faEnvelope}
+\infobubble{+420 731 412 130}{cvgreen}{white}{\faMobile}
+\infobubble{Scamander Wayne}{cvgreen}{white}{\faGithub}
+\infobubble{Trutnov}{cvgreen}{white}{\faMapMarker} \\
+\vspace{14em}
+
+\phantom{turn the page}
+
+\phantom{turn the page}
+}
+%-----------------------------------------------------------
+\switchcolumn
+
+\small
+\section*{Zkušenosti}
+
+\begin{tabular}{r| p{0.5\textwidth} c}
+    \cvevent{2021--Současnout}{Žák SSOH}{v}{Janské Lázně}{Maturitní obor se zaměřením na ekonomii}{} \\
+\end{tabular}
+\vspace{3em}
+
+\begin{minipage}[t]{0.35\textwidth}
+\section*{Programování}
+\begin{tabular}{r @{\hspace{0.5em}}l}
+     \bg{skilllabelcolour}{iconcolour}{html, css} & elementární znalost pro základní \\
+     & práci\\
+     \bg{skilllabelcolour}{iconcolour}{\LaTeX} & dovednost práce s balíčky \\
+     & a všeobecná znalost kódu
+\end{tabular}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.3\textwidth}
+\section*{Jazyky}
+\begin{tabular}{l | ll}
+\textbf{Čeština} & & {\phantom{x}\footnotesize mateřský jazyk} \\
+\textbf{Angličtina} & & {\phantom{x}\footnotesize B1}
+\end{tabular}
+\end{minipage}
+\bigskip
+
+\hfill
+\begin{minipage}[t]{0.7\textwidth}
+\section*{Soft skills}
+\begin{tabular}{>{\footnotesize\bfseries}l >{\footnotesize}p{0.7\textwidth}}
+    Soběstačnost & S kvalitním zadáním práce dokážu práci vykonat bez dalšího dohledu. \\
+    Improvizace & Nedělá mi problém přizpůsobovat se situaci za pochodu. \\
+    Práce v týmu & V týmu jsem cenným přínosem a starám se o cíl skupiny. \\
+    Průbojnost & Nestydím se se ozvat, žádá-li si to situace.
+\end{tabular}
+\bigskip
+
+\section*{Dovednosti}
+\begin{tabular}{>{\footnotesize\bfseries}l >{\footnotesize}p{0.6\textwidth}}
+    MS Windows & Pokročily uživatel, základy administrátorství \\
+    GNU/Linux & Uživatelská úroveň znalostí \\
+    MS Office suite & Pokročilý uživatel \\
+    Internetová a mediální gramostnost \\
+    LaTeX & Pokročilé znalosti TeXu, převážně v rozhraní LaTeX.
+\end{tabular}
+\end{minipage}
+
+
+
+
+
+
+\vfill{} % Whitespace before final footer
+
+%----------------------------------------------------------------------------------------
+%	FINAL FOOTER
+%----------------------------------------------------------------------------------------
+\setlength{\parindent}{0pt}
+\begin{minipage}[t]{\rightcolwidth}
+\begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
+{Naposledy aktualizováno \today
+}
+\end{center}
+\end{minipage}
+
+\end{paracol}
+
+\end{document}
