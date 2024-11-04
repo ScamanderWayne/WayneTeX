@@ -1,8 +1,8 @@
 # Fdb version 4
-["pdflatex"] 1730636100.02641 "c:/Users/alibi/WayneTeX/Czech/FGBook/FGBook.tex" "FGBook.pdf" "FGBook" 1730636102.36813 0
-  "FGBook.aux" 1730636101 4337 a1832316c17f5c40b4ad19423c087e74 "pdflatex"
-  "FGBook.tex" 1730636098 74880 9a40dda26ad40e6c58647f3c4acf2cfd ""
-  "c:/Users/alibi/WayneTeX/Czech/FGBook/FGBook.tex" 1730636098 74880 9a40dda26ad40e6c58647f3c4acf2cfd ""
+["pdflatex"] 1730748455.91597 "c:/Users/alibi/WayneTeX/Czech/FGBook/FGBook.tex" "FGBook.pdf" "FGBook" 1730748458.31086 0
+  "FGBook.aux" 1730748457 4337 a1832316c17f5c40b4ad19423c087e74 "pdflatex"
+  "FGBook.tex" 1730748454 76434 4010c80d9e261f2ef9ce02ce1fee5fa9 ""
+  "c:/Users/alibi/WayneTeX/Czech/FGBook/FGBook.tex" 1730748454 76434 4010c80d9e261f2ef9ce02ce1fee5fa9 ""
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1729873691 2971 def0b6c1f0b107b3b936def894055589 ""
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1729873691 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1729874607 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -163,7 +163,6 @@
   "c:/texlive/2024/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty" 1729876464 274 5ae372b7df79135d240456a1c6f2cf9a ""
   "c:/texlive/2024/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty" 1729876464 325 f9f16d12354225b7dd52a3321f085955 ""
   "c:/texlive/2024/texmf-dist/tex/latex/titlesec/titlesec.sty" 1729877745 48766 0b93839be28e9744a24c45075c75b2e2 ""
-  "c:/texlive/2024/texmf-dist/tex/latex/tools/multicol.sty" 1729877801 32621 00e86c03dbf6e71d7ea7ebac2bd4fcaf ""
   "c:/texlive/2024/texmf-dist/tex/latex/wrapfig/wrapfig.sty" 1729878154 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "c:/texlive/2024/texmf-dist/tex/latex/xcolor/xcolor.sty" 1729878174 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "c:/texlive/2024/texmf-dist/tex/latex/xkeyval/xkeyval.sty" 1729878239 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
