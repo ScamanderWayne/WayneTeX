@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.25)  13 NOV 2024 19:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.25)  13 NOV 2024 20:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -630,11 +630,11 @@ LaTeX Font Info:    External font `cmex7' loaded for size
 
 {c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
 
-LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <3.5> not available
+LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <3.4> not available
 (Font)              size <5> substituted on input line 171.
 
 
-LaTeX Font Warning: Font shape `T1/cmr/m/sc' in size <3.5> not available
+LaTeX Font Warning: Font shape `T1/cmr/m/sc' in size <3.4> not available
 (Font)              size <5> substituted on input line 171.
 
 
@@ -642,75 +642,97 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\hfill' on input line 171.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 178--187
-
- []
-
-
 LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <4.16672> not available
-(Font)              size <5> substituted on input line 345.
+(Font)              size <5> substituted on input line 342.
 
 
 LaTeX Font Warning: Font shape `T1/cmr/bx/n' in size <4.16672> not available
-(Font)              size <5> substituted on input line 345.
+(Font)              size <5> substituted on input line 342.
 
 
 LaTeX Font Warning: Font shape `T1/cmr/m/it' in size <4.16672> not available
-(Font)              size <5> substituted on input line 345.
+(Font)              size <5> substituted on input line 342.
 
+LaTeX Font Info:    Calculating math sizes for size <6.8> on input line 343.
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <3.4> not available
+(Font)              size <5> substituted on input line 343.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <3.4> not available
+(Font)              size <5> substituted on input line 343.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <3.4> not available
+(Font)              size <5> substituted on input line 343.
+
+LaTeX Font Info:    External font `cmex7' loaded for size
+(Font)              <6.8> on input line 343.
+LaTeX Font Info:    External font `cmex7' loaded for size
+(Font)              <4.75998> on input line 343.
+LaTeX Font Info:    External font `cmex7' loaded for size
+(Font)              <3.4> on input line 343.
 
 
 [2]
 
 LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <11.52002> not available
-(Font)              size <12> substituted on input line 354.
+(Font)              size <12> substituted on input line 351.
 
 
 LaTeX Font Warning: Font shape `T1/cmr/bx/n' in size <11.52002> not available
-(Font)              size <12> substituted on input line 354.
+(Font)              size <12> substituted on input line 351.
 
 
 LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 354.
+(Font)              size <5> substituted on input line 351.
 
 
 LaTeX Font Warning: Font shape `T1/cmr/m/sc' in size <4> not available
-(Font)              size <5> substituted on input line 354.
+(Font)              size <5> substituted on input line 351.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 354.
+(hyperref)                removing `\hfill' on input line 351.
 
 
 LaTeX Font Warning: Font shape `T1/cmr/m/it' in size <4> not available
-(Font)              size <5> substituted on input line 361.
+(Font)              size <5> substituted on input line 358.
 
 
 LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <9.59998> not available
-(Font)              size <10> substituted on input line 395.
+(Font)              size <10> substituted on input line 392.
 
 
 LaTeX Font Warning: Font shape `T1/cmr/bx/n' in size <9.59998> not available
-(Font)              size <10> substituted on input line 395.
+(Font)              size <10> substituted on input line 392.
 
 LaTeX Font Info:    External font `cmex7' loaded for size
-(Font)              <6> on input line 480.
+(Font)              <6> on input line 477.
 
 
 [3]
 
+LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <3.5> not available
+(Font)              size <5> substituted on input line 489.
+
+
+LaTeX Font Warning: Font shape `T1/cmr/m/sc' in size <3.5> not available
+(Font)              size <5> substituted on input line 489.
+
+
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 492.
+(hyperref)                removing `\hfill' on input line 489.
 
 
 
 [4{c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 599.
+(hyperref)                removing `\hfill' on input line 596.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 642--665
+Underfull \hbox (badness 10000) in paragraph at lines 639--662
 
  []
 
@@ -719,10 +741,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 642--665
 [5]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 757.
+(hyperref)                removing `\hfill' on input line 754.
 
 
-Underfull \hbox (badness 1509) in paragraph at lines 770--773
+Underfull \hbox (badness 1509) in paragraph at lines 767--770
 []\T1/cmr/m/n/5 Polo�il se-kyru na zem ve-dle mrtv� a rychle, ale opa-trn�,
  []
 
@@ -731,10 +753,10 @@ Underfull \hbox (badness 1509) in paragraph at lines 770--773
 [6]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 872.
+(hyperref)                removing `\hfill' on input line 869.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 904--906
+Underfull \hbox (badness 10000) in paragraph at lines 901--903
 
  []
 
@@ -743,10 +765,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 904--906
 [7]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 967.
+(hyperref)                removing `\hfill' on input line 964.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 999--1001
+Underfull \hbox (badness 10000) in paragraph at lines 996--998
 
  []
 
@@ -755,17 +777,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 999--1001
 [8]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 1062.
+(hyperref)                removing `\hfill' on input line 1059.
 
 
 
 [9]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 1215.
+(hyperref)                removing `\hfill' on input line 1212.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1247--1249
+Underfull \hbox (badness 10000) in paragraph at lines 1244--1246
 
  []
 
@@ -774,10 +796,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 1247--1249
 [10]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 1314.
+(hyperref)                removing `\hfill' on input line 1311.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1346--1348
+Underfull \hbox (badness 10000) in paragraph at lines 1343--1345
 
  []
 
@@ -786,10 +808,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 1346--1348
 [11]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 1409.
+(hyperref)                removing `\hfill' on input line 1406.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1441--1443
+Underfull \hbox (badness 10000) in paragraph at lines 1438--1440
 
  []
 
@@ -798,10 +820,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 1441--1443
 [12]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 1504.
+(hyperref)                removing `\hfill' on input line 1501.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1536--1538
+Underfull \hbox (badness 10000) in paragraph at lines 1533--1535
 
  []
 
@@ -810,17 +832,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 1536--1538
 [13]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 1599.
+(hyperref)                removing `\hfill' on input line 1596.
 
 
 
 [14]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 1702.
+(hyperref)                removing `\hfill' on input line 1699.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1734--1740
+Underfull \hbox (badness 10000) in paragraph at lines 1731--1737
 
  []
 
@@ -829,10 +851,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 1734--1740
 [15]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 1801.
+(hyperref)                removing `\hfill' on input line 1798.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1833--1835
+Underfull \hbox (badness 10000) in paragraph at lines 1830--1832
 
  []
 
@@ -841,10 +863,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 1833--1835
 [16]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 1900.
+(hyperref)                removing `\hfill' on input line 1897.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1932--1934
+Underfull \hbox (badness 10000) in paragraph at lines 1929--1931
 
  []
 
@@ -853,10 +875,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 1932--1934
 [17]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 1995.
+(hyperref)                removing `\hfill' on input line 1992.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2027--2029
+Underfull \hbox (badness 10000) in paragraph at lines 2024--2026
 
  []
 
@@ -865,10 +887,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 2027--2029
 [18]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 2090.
+(hyperref)                removing `\hfill' on input line 2087.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2122--2124
+Underfull \hbox (badness 10000) in paragraph at lines 2119--2121
 
  []
 
@@ -877,10 +899,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 2122--2124
 [19]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 2185.
+(hyperref)                removing `\hfill' on input line 2182.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2217--2219
+Underfull \hbox (badness 10000) in paragraph at lines 2214--2216
 
  []
 
@@ -889,10 +911,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 2217--2219
 [20]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 2280.
+(hyperref)                removing `\hfill' on input line 2277.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2312--2314
+Underfull \hbox (badness 10000) in paragraph at lines 2309--2311
 
  []
 
@@ -906,21 +928,21 @@ L3 programming layer <2024-10-09>
 
 
 LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 1.5pt have occurred.
+(Font)              up to 1.6pt have occurred.
 
 Package rerunfilecheck Info: File `"Povinná literatura k maturitní zkoušce - Halík".out' has not changed.
 (rerunfilecheck)             Checksum: ABCE0BFA542C4C73C881F59A3D7B6471;5878.
  ) 
 Here is how much of TeX's memory you used:
- 22987 strings out of 473577
- 428086 string characters out of 5732224
- 1682214 words of memory out of 5000000
- 45442 multiletter control sequences out of 15000+600000
+ 23011 strings out of 473577
+ 428476 string characters out of 5732224
+ 1684214 words of memory out of 5000000
+ 45466 multiletter control sequences out of 15000+600000
  579162 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  117i,6n,121p,18322b,956s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx0500.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx0600.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx0700.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx0800.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfcc0500.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfcc0600.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfcc0700.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfcc0800.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti0500.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti0600.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti0700.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti0800.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfxc0500.pfb>
-Output written on "Povinná literatura k maturitní zkoušce - Halík.pdf" (21 pages, 678157 bytes).
+Output written on "Povinná literatura k maturitní zkoušce - Halík.pdf" (21 pages, 678546 bytes).
 PDF statistics:
  307 PDF objects out of 1000 (max. 8388607)
  238 compressed objects within 3 object streams
