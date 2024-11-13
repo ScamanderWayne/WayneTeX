@@ -44,11 +44,11 @@
   <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>sloh.aux</file>
-      <file>sloh-blx.bib</file>
+      <file>1984inspiration.aux</file>
+      <file>1984inspiration-blx.bib</file>
     </provides>
     <requires type="dynamic">
-      <file>sloh.bbl</file>
+      <file>1984inspiration.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
@@ -68,22 +68,23 @@
     <cmdline>
       <binary>bibtex</binary>
       <option>-min-crossrefs 2</option>
-      <infile>sloh</infile>
+      <infile>1984inspiration</infile>
     </cmdline>
     <input>
-      <file>sloh.aux</file>
+      <file>1984inspiration.aux</file>
     </input>
     <output>
-      <file>sloh.bbl</file>
+      <file>1984inspiration.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>sloh.bbl</file>
+      <file>1984inspiration.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>sloh.aux</file>
-      <file>sloh-blx.bib</file>
+      <file>1984inspiration.aux</file>
+      <file>1984inspiration-blx.bib</file>
     </requires>
     <requires type="editable">
+      <file>Hlavacek.bib</file>
     </requires>
     <requires type="static">
       <file>biblatex.bst</file>

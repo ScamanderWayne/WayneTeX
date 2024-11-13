@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex sloh"] 1731481657.9217 "sloh.aux" "sloh.bbl" "sloh" 1731481660.99032 0
-  "./sloh-blx.bib" 1731481660.67458 342 5ba7332ec7ecc2dc9c6b1bd96e3d9aad ""
+["bibtex bezruc"] 1731482850.05704 "bezruc.aux" "bezruc.bbl" "bezruc" 1731482853.13214 0
+  "./bezruc-blx.bib" 1731482852.76251 342 5ba7332ec7ecc2dc9c6b1bd96e3d9aad ""
   "/usr/share/texmf-dist/bibtex/bst/biblatex/biblatex.bst" 1727349926 65484 b7949c47a88ed6dca66ebc7a04577312 ""
-  "sloh.aux" 1731481660.66791 543 d07788aad55ac7959e000acc35609827 "pdflatex"
+  "bezruc.aux" 1731482852.75918 545 84eb859dc8670144449faf40d18cff31 "pdflatex"
   (generated)
-  "sloh.bbl"
-  "sloh.blg"
+  "bezruc.bbl"
+  "bezruc.blg"
   (rewritten before read)
-["pdflatex"] 1731481658.04195 "/home/scamander/Documents/GitHub/WayneTeX/Czech/Sloh/sloh.tex" "sloh.pdf" "sloh" 1731481660.99063 0
-  "/home/scamander/Documents/GitHub/WayneTeX/Czech/Sloh/sloh.tex" 1731481651.85438 971 f9c8797e27864a957f4f9c1aa0451abb ""
+["pdflatex"] 1731482850.16356 "/home/scamander/Documents/GitHub/WayneTeX/Czech/Sloh/bezruc.tex" "bezruc.pdf" "bezruc" 1731482853.1324 0
+  "/home/scamander/Documents/GitHub/WayneTeX/Czech/Sloh/bezruc.tex" 1731481651.85438 971 f9c8797e27864a957f4f9c1aa0451abb ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1727349926 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm" 1727349926 1300 63a6111ee6274895728663cf4b4e7e81 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm" 1727349926 1528 abec98dbc43e172678c11b3b9031252a ""
@@ -167,16 +167,16 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1727349926 41588 b43d3e860a4f94167ee1e725ff526a72 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1731480063.20705 5349983 aa0f10250303e7e4d5074c971e693d72 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1731480023 7166147 945ee3c78f3c8841a260d21288b1f51f ""
-  "sloh.aux" 1731481660.66791 543 d07788aad55ac7959e000acc35609827 "pdflatex"
-  "sloh.bbl" 1731481658.03452 512 242e9db92557ac81f6b30ce4f9334513 "bibtex sloh"
-  "sloh.out" 1731481659.41788 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "sloh.run.xml" 1731481660.67458 2531 f226ee568ab91091ebc08feebb1d248c "pdflatex"
-  "sloh.tex" 1731481651.85438 971 f9c8797e27864a957f4f9c1aa0451abb ""
+  "bezruc.aux" 1731482852.75918 545 84eb859dc8670144449faf40d18cff31 "pdflatex"
+  "bezruc.bbl" 1731482850.15575 512 242e9db92557ac81f6b30ce4f9334513 "bibtex bezruc"
+  "bezruc.out" 1731482851.52913 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "bezruc.run.xml" 1731482852.76585 2549 aa221d6fd41ed3ce2b97088accb5081f "pdflatex"
+  "bezruc.tex" 1731481651.85438 971 f9c8797e27864a957f4f9c1aa0451abb ""
   (generated)
-  "sloh-blx.bib"
-  "sloh.aux"
-  "sloh.log"
-  "sloh.out"
-  "sloh.pdf"
-  "sloh.run.xml"
+  "bezruc-blx.bib"
+  "bezruc.aux"
+  "bezruc.log"
+  "bezruc.out"
+  "bezruc.pdf"
+  "bezruc.run.xml"
   (rewritten before read)
