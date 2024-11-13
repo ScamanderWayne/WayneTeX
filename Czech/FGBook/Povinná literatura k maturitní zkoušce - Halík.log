@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.11.13)  13 NOV 2024 13:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.11.13)  13 NOV 2024 14:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -647,200 +647,200 @@ Underfull \hbox (badness 10000) in paragraph at lines 178--187
 [2]
 
 LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <11.52002> not available
-(Font)              size <12> substituted on input line 346.
+(Font)              size <12> substituted on input line 353.
 
 
 LaTeX Font Warning: Font shape `T1/cmr/bx/n' in size <11.52002> not available
-(Font)              size <12> substituted on input line 346.
+(Font)              size <12> substituted on input line 353.
 
 
 LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 346.
-
-
-LaTeX Font Warning: Font shape `T1/cmr/m/sc' in size <4> not available
-(Font)              size <5> substituted on input line 346.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 346.
-
-
-LaTeX Font Warning: Font shape `T1/cmr/m/it' in size <4> not available
 (Font)              size <5> substituted on input line 353.
 
 
+LaTeX Font Warning: Font shape `T1/cmr/m/sc' in size <4> not available
+(Font)              size <5> substituted on input line 353.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hfill' on input line 353.
+
+
+LaTeX Font Warning: Font shape `T1/cmr/m/it' in size <4> not available
+(Font)              size <5> substituted on input line 360.
+
+
 LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <9.59998> not available
-(Font)              size <10> substituted on input line 387.
+(Font)              size <10> substituted on input line 394.
 
 
 LaTeX Font Warning: Font shape `T1/cmr/bx/n' in size <9.59998> not available
-(Font)              size <10> substituted on input line 387.
+(Font)              size <10> substituted on input line 394.
 
 LaTeX Font Info:    External font `cmex7' loaded for size
-(Font)              <6> on input line 474.
+(Font)              <6> on input line 481.
 [3]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 486.
+(hyperref)                removing `\hfill' on input line 493.
 
 [4{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 593.
+(hyperref)                removing `\hfill' on input line 600.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 636--659
+Underfull \hbox (badness 10000) in paragraph at lines 643--666
 
  []
 
 [5]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 751.
+(hyperref)                removing `\hfill' on input line 758.
 
 
-Underfull \hbox (badness 1509) in paragraph at lines 764--767
+Underfull \hbox (badness 1509) in paragraph at lines 771--774
 []\T1/cmr/m/n/5 Polo�il se-kyru na zem ve-dle mrtv� a rychle, ale opa-trn�,
  []
 
 [6]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 866.
+(hyperref)                removing `\hfill' on input line 873.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 898--900
+Underfull \hbox (badness 10000) in paragraph at lines 905--907
 
  []
 
 [7]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 961.
+(hyperref)                removing `\hfill' on input line 968.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 993--995
+Underfull \hbox (badness 10000) in paragraph at lines 1000--1002
 
  []
 
 [8]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 1056.
+(hyperref)                removing `\hfill' on input line 1063.
 
 [9]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 1209.
+(hyperref)                removing `\hfill' on input line 1216.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1241--1243
+Underfull \hbox (badness 10000) in paragraph at lines 1248--1250
 
  []
 
 [10]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 1308.
+(hyperref)                removing `\hfill' on input line 1315.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1340--1342
+Underfull \hbox (badness 10000) in paragraph at lines 1347--1349
 
  []
 
 [11]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 1403.
+(hyperref)                removing `\hfill' on input line 1410.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1435--1437
+Underfull \hbox (badness 10000) in paragraph at lines 1442--1444
 
  []
 
 [12]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 1498.
+(hyperref)                removing `\hfill' on input line 1505.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1530--1532
+Underfull \hbox (badness 10000) in paragraph at lines 1537--1539
 
  []
 
 [13]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 1593.
+(hyperref)                removing `\hfill' on input line 1600.
 
 [14]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 1696.
+(hyperref)                removing `\hfill' on input line 1703.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1728--1734
+Underfull \hbox (badness 10000) in paragraph at lines 1735--1741
 
  []
 
 [15]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 1795.
+(hyperref)                removing `\hfill' on input line 1802.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1827--1829
+Underfull \hbox (badness 10000) in paragraph at lines 1834--1836
 
  []
 
 [16]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 1894.
+(hyperref)                removing `\hfill' on input line 1901.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1926--1928
+Underfull \hbox (badness 10000) in paragraph at lines 1933--1935
 
  []
 
 [17]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 1989.
+(hyperref)                removing `\hfill' on input line 1996.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2021--2023
+Underfull \hbox (badness 10000) in paragraph at lines 2028--2030
 
  []
 
 [18]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 2084.
+(hyperref)                removing `\hfill' on input line 2091.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2116--2118
+Underfull \hbox (badness 10000) in paragraph at lines 2123--2125
 
  []
 
 [19]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 2179.
+(hyperref)                removing `\hfill' on input line 2186.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2211--2213
+Underfull \hbox (badness 10000) in paragraph at lines 2218--2220
 
  []
 
 [20]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 2274.
+(hyperref)                removing `\hfill' on input line 2281.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2306--2308
+Underfull \hbox (badness 10000) in paragraph at lines 2313--2315
 
  []
 
@@ -866,7 +866,7 @@ Here is how much of TeX's memory you used:
  69 hyphenation exceptions out of 8191
  117i,6n,121p,18340b,956s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx0500.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx0600.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc0500.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc0600.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti0500.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti0600.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfxc0500.pfb>
-Output written on "Povinná literatura k maturitní zkoušce - Halík.pdf" (21 pages, 636685 bytes).
+Output written on "Povinná literatura k maturitní zkoušce - Halík.pdf" (21 pages, 638877 bytes).
 PDF statistics:
  302 PDF objects out of 1000 (max. 8388607)
  235 compressed objects within 3 object streams
