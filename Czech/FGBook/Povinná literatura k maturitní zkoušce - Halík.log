@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.25)  13 NOV 2024 18:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.25)  13 NOV 2024 19:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -694,23 +694,23 @@ LaTeX Font Warning: Font shape `T1/cmr/bx/n' in size <9.59998> not available
 (Font)              size <10> substituted on input line 395.
 
 LaTeX Font Info:    External font `cmex7' loaded for size
-(Font)              <6> on input line 482.
+(Font)              <6> on input line 480.
 
 
 [3]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 494.
+(hyperref)                removing `\hfill' on input line 492.
 
 
 
 [4{c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 601.
+(hyperref)                removing `\hfill' on input line 599.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 644--667
+Underfull \hbox (badness 10000) in paragraph at lines 642--665
 
  []
 
@@ -719,10 +719,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 644--667
 [5]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 759.
+(hyperref)                removing `\hfill' on input line 757.
 
 
-Underfull \hbox (badness 1509) in paragraph at lines 772--775
+Underfull \hbox (badness 1509) in paragraph at lines 770--773
 []\T1/cmr/m/n/5 Polo�il se-kyru na zem ve-dle mrtv� a rychle, ale opa-trn�,
  []
 
@@ -731,10 +731,10 @@ Underfull \hbox (badness 1509) in paragraph at lines 772--775
 [6]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 874.
+(hyperref)                removing `\hfill' on input line 872.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 906--908
+Underfull \hbox (badness 10000) in paragraph at lines 904--906
 
  []
 
@@ -743,10 +743,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 906--908
 [7]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 969.
+(hyperref)                removing `\hfill' on input line 967.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1001--1003
+Underfull \hbox (badness 10000) in paragraph at lines 999--1001
 
  []
 
@@ -755,17 +755,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 1001--1003
 [8]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 1064.
+(hyperref)                removing `\hfill' on input line 1062.
 
 
 
 [9]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 1217.
+(hyperref)                removing `\hfill' on input line 1215.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1249--1251
+Underfull \hbox (badness 10000) in paragraph at lines 1247--1249
 
  []
 
@@ -774,10 +774,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 1249--1251
 [10]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 1316.
+(hyperref)                removing `\hfill' on input line 1314.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1348--1350
+Underfull \hbox (badness 10000) in paragraph at lines 1346--1348
 
  []
 
@@ -786,10 +786,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 1348--1350
 [11]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 1411.
+(hyperref)                removing `\hfill' on input line 1409.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1443--1445
+Underfull \hbox (badness 10000) in paragraph at lines 1441--1443
 
  []
 
@@ -798,10 +798,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 1443--1445
 [12]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 1506.
+(hyperref)                removing `\hfill' on input line 1504.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1538--1540
+Underfull \hbox (badness 10000) in paragraph at lines 1536--1538
 
  []
 
@@ -810,17 +810,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 1538--1540
 [13]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 1601.
+(hyperref)                removing `\hfill' on input line 1599.
 
 
 
 [14]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 1704.
+(hyperref)                removing `\hfill' on input line 1702.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1736--1742
+Underfull \hbox (badness 10000) in paragraph at lines 1734--1740
 
  []
 
@@ -829,10 +829,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 1736--1742
 [15]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 1803.
+(hyperref)                removing `\hfill' on input line 1801.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1835--1837
+Underfull \hbox (badness 10000) in paragraph at lines 1833--1835
 
  []
 
@@ -841,10 +841,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 1835--1837
 [16]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 1902.
+(hyperref)                removing `\hfill' on input line 1900.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1934--1936
+Underfull \hbox (badness 10000) in paragraph at lines 1932--1934
 
  []
 
@@ -853,10 +853,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 1934--1936
 [17]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 1997.
+(hyperref)                removing `\hfill' on input line 1995.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2029--2031
+Underfull \hbox (badness 10000) in paragraph at lines 2027--2029
 
  []
 
@@ -865,10 +865,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 2029--2031
 [18]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 2092.
+(hyperref)                removing `\hfill' on input line 2090.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2124--2126
+Underfull \hbox (badness 10000) in paragraph at lines 2122--2124
 
  []
 
@@ -877,10 +877,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 2124--2126
 [19]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 2187.
+(hyperref)                removing `\hfill' on input line 2185.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2219--2221
+Underfull \hbox (badness 10000) in paragraph at lines 2217--2219
 
  []
 
@@ -889,10 +889,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 2219--2221
 [20]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 2282.
+(hyperref)                removing `\hfill' on input line 2280.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2314--2316
+Underfull \hbox (badness 10000) in paragraph at lines 2312--2314
 
  []
 
@@ -912,18 +912,18 @@ Package rerunfilecheck Info: File `"Povinná literatura k maturitní zkoušce - 
 (rerunfilecheck)             Checksum: ABCE0BFA542C4C73C881F59A3D7B6471;5878.
  ) 
 Here is how much of TeX's memory you used:
- 22985 strings out of 473577
- 428065 string characters out of 5732224
+ 22987 strings out of 473577
+ 428086 string characters out of 5732224
  1682214 words of memory out of 5000000
- 45441 multiletter control sequences out of 15000+600000
- 578476 words of font info for 69 fonts, out of 8000000 for 9000
+ 45442 multiletter control sequences out of 15000+600000
+ 579162 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  117i,6n,121p,18322b,956s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx0500.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx0600.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx0700.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx0800.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfcc0500.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfcc0600.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfcc0700.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfcc0800.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti0500.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti0600.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti0700.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfxc0500.pfb>
-Output written on "Povinná literatura k maturitní zkoušce - Halík.pdf" (21 pages, 651651 bytes).
+<c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx0500.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx0600.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx0700.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx0800.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfcc0500.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfcc0600.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfcc0700.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfcc0800.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti0500.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti0600.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti0700.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti0800.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfxc0500.pfb>
+Output written on "Povinná literatura k maturitní zkoušce - Halík.pdf" (21 pages, 678157 bytes).
 PDF statistics:
- 302 PDF objects out of 1000 (max. 8388607)
- 235 compressed objects within 3 object streams
+ 307 PDF objects out of 1000 (max. 8388607)
+ 238 compressed objects within 3 object streams
  43 named destinations out of 1000 (max. 500000)
  181 words of extra memory for PDF output out of 10000 (max. 10000000)
 
