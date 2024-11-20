@@ -10,8 +10,12 @@
 \usepackage[default]{raleway}
 \usepackage[margin=1cm, a4paper]{geometry}
 \usepackage{parskip}
-
-
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=false,% hyperlinks will be black
+    % linkbordercolor=blue,% hyperlink borders will be blue
+    pdfborderstyle={/S/U/W 0}% border style will be underline of width 1pt
+    }
 %------------------------------------------------------------------ Variablen
 
 \newlength{\rightcolwidth}
@@ -57,7 +61,7 @@
 \footnotesize
 {\setasidefontcolour
 \flushright
-\roundpic{waynik.png}
+\roundpic{waynik2.jpg} % Currently I have older waynik.png, current waynik2.jpg and resized waynik2smol.jpg
 
 \bg{cvgreen}{white}{O mně}\\[0.5em]
 
@@ -96,7 +100,7 @@ Aktuálně jsem objevil zálibu a fascinaci v prozkoumávání Arch Linuxu (Hypr
 
 \infobubble{halik@ssoh.cz}{cvgreen}{white}{\faEnvelope}
 \infobubble{+420 731 412 130}{cvgreen}{white}{\faMobile}
-\infobubble{Scamander Wayne}{cvgreen}{white}{\faGithub}
+\infobubble{\hyperlink{https://github.com/ScamanderWayne}{Scamander Wayne}}{cvgreen}{white}{\faGithub}
 \infobubble{Trutnov}{cvgreen}{white}{\faMapMarker} \\
 \vspace{14em}
 
