@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.11.19)  20 NOV 2024 08:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.11.19)  20 NOV 2024 08:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -628,36 +628,16 @@ LaTeX Font Info:    External font `cmex7' loaded for size
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
 
-LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 170.
-
-
-LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <2> not available
+LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <3.4> not available
 (Font)              size <5> substituted on input line 172.
 
 
-LaTeX Font Warning: Font shape `T1/cmr/m/sc' in size <2> not available
+LaTeX Font Warning: Font shape `T1/cmr/m/sc' in size <3.4> not available
 (Font)              size <5> substituted on input line 172.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\hfill' on input line 172.
-
-
-LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <3.65002> not available
-(Font)              size <5> substituted on input line 175.
-
-
-LaTeX Font Warning: Font shape `T1/cmr/bx/n' in size <3.65002> not available
-(Font)              size <5> substituted on input line 175.
-
-
-LaTeX Font Warning: Font shape `T1/cmr/m/sc' in size <4> not available
-(Font)              size <5> substituted on input line 198.
-
-
-LaTeX Font Warning: Font shape `T1/cmr/m/it' in size <4> not available
-(Font)              size <5> substituted on input line 206.
 
 
 LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <4.16672> not available
@@ -671,49 +651,25 @@ LaTeX Font Warning: Font shape `T1/cmr/bx/n' in size <4.16672> not available
 LaTeX Font Warning: Font shape `T1/cmr/m/it' in size <4.16672> not available
 (Font)              size <5> substituted on input line 343.
 
-LaTeX Font Info:    Calculating math sizes for size <4> on input line 344.
+LaTeX Font Info:    Calculating math sizes for size <6.8> on input line 344.
 
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4> not available
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <3.4> not available
 (Font)              size <5> substituted on input line 344.
 
 
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <2.79999> not available
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <3.4> not available
 (Font)              size <5> substituted on input line 344.
 
 
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <2> not available
-(Font)              size <5> substituted on input line 344.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <4> not available
-(Font)              size <5> substituted on input line 344.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <2.79999> not available
-(Font)              size <5> substituted on input line 344.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <2> not available
-(Font)              size <5> substituted on input line 344.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 344.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <2.79999> not available
-(Font)              size <5> substituted on input line 344.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <2> not available
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <3.4> not available
 (Font)              size <5> substituted on input line 344.
 
 LaTeX Font Info:    External font `cmex7' loaded for size
-(Font)              <4> on input line 344.
+(Font)              <6.8> on input line 344.
 LaTeX Font Info:    External font `cmex7' loaded for size
-(Font)              <2.79999> on input line 344.
+(Font)              <4.75998> on input line 344.
 LaTeX Font Info:    External font `cmex7' loaded for size
-(Font)              <2> on input line 344.
+(Font)              <3.4> on input line 344.
 [2]
 
 LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <11.52002> not available
@@ -724,8 +680,20 @@ LaTeX Font Warning: Font shape `T1/cmr/bx/n' in size <11.52002> not available
 (Font)              size <12> substituted on input line 352.
 
 
+LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <4> not available
+(Font)              size <5> substituted on input line 352.
+
+
+LaTeX Font Warning: Font shape `T1/cmr/m/sc' in size <4> not available
+(Font)              size <5> substituted on input line 352.
+
+
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\hfill' on input line 352.
+
+
+LaTeX Font Warning: Font shape `T1/cmr/m/it' in size <4> not available
+(Font)              size <5> substituted on input line 359.
 
 
 LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <9.59998> not available
@@ -918,24 +886,24 @@ L3 programming layer <2024-02-20>
 
 
 LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 3.0pt have occurred.
+(Font)              up to 1.6pt have occurred.
 
 Package rerunfilecheck Info: File `"Povinná literatura k maturitní zkoušce - Halík".out' has not changed.
 (rerunfilecheck)             Checksum: ABCE0BFA542C4C73C881F59A3D7B6471;5878.
  ) 
 Here is how much of TeX's memory you used:
- 22871 strings out of 475463
- 424454 string characters out of 5781258
+ 22876 strings out of 475463
+ 424537 string characters out of 5781258
  1955187 words of memory out of 5000000
- 44695 multiletter control sequences out of 15000+600000
- 578475 words of font info for 69 fonts, out of 8000000 for 9000
+ 44699 multiletter control sequences out of 15000+600000
+ 579162 words of font info for 70 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  117i,6n,121p,18340b,956s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx0500.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx0600.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc0500.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc0600.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti0500.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti0600.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfxc0500.pfb>
-Output written on "Povinná literatura k maturitní zkoušce - Halík.pdf" (21 pages, 669351 bytes).
+</usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx0500.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx0600.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc0500.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc0600.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti0500.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti0600.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfxc0500.pfb>
+Output written on "Povinná literatura k maturitní zkoušce - Halík.pdf" (21 pages, 679203 bytes).
 PDF statistics:
- 302 PDF objects out of 1000 (max. 8388607)
- 235 compressed objects within 3 object streams
+ 307 PDF objects out of 1000 (max. 8388607)
+ 238 compressed objects within 3 object streams
  43 named destinations out of 1000 (max. 500000)
  181 words of extra memory for PDF output out of 10000 (max. 10000000)
 
