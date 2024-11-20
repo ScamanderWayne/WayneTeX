@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1732092269.08588 "/home/scamander/Documents/GitHub/WayneTeX/CV/LiborHalikCV.tex" "LiborHalikCV.pdf" "LiborHalikCV" 1732092270.40993 0
-  "/home/scamander/Documents/GitHub/WayneTeX/CV/LiborHalikCV.tex" 1732092268.71623 5294 d556da96b7256ae3cbc365a5875c56a6 ""
+["pdflatex"] 1732108767.51369 "/home/scamander/Documents/GitHub/WayneTeX/CV/LiborHalikCV.tex" "LiborHalikCV.pdf" "LiborHalikCV" 1732108768.94099 0
+  "/home/scamander/Documents/GitHub/WayneTeX/CV/LiborHalikCV.tex" 1732108767.17058 5344 389ecc838ce94abb77a1e4a338a1fee0 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1727349926 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc" 1727349926 2920 d63721872b8c77041b88e51b8f7c291d ""
   "/usr/share/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc" 1727349926 3042 0e2b14b9be7d01075a4c4591d5d1781b ""
@@ -224,9 +224,9 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1727349926 41588 b43d3e860a4f94167ee1e725ff526a72 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1732022787.20486 5383113 e302caf989fa5b2d0464277e32fe7971 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1732022830 7264785 fef5537788c07177c6d38ac77f038645 ""
-  "LiborHalikCV.aux" 1732092270.26295 323 1a971d4b49b3ad0146d26a0f9c6751a8 "pdflatex"
-  "LiborHalikCV.out" 1732092270.05628 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "LiborHalikCV.tex" 1732092268.71623 5294 d556da96b7256ae3cbc365a5875c56a6 ""
+  "LiborHalikCV.aux" 1732108768.78396 323 1a971d4b49b3ad0146d26a0f9c6751a8 "pdflatex"
+  "LiborHalikCV.out" 1732108768.56396 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "LiborHalikCV.tex" 1732108767.17058 5344 389ecc838ce94abb77a1e4a338a1fee0 ""
   "Waynik2.jpg" 1732090976.11636 1554256 f005cd1a2158dd67445d7f806a024a97 ""
   "simplehipstercv.cls" 1731478847.45399 10757 c85c243d06d400a6ac177620d621773b ""
   "simplehipstercv.sty" 1731478847.45399 7536 2d12cae7cf729034578f7728986a35a6 ""
