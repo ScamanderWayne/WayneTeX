@@ -36,6 +36,6 @@ def write_pdf_list_to_file(root_dir, output_file, base_url_blob):
 # Example usage
 if __name__ == "__main__":
     root_directory = "."  # Change to the directory you want to scan
-    output_file = "pdf_list.md"  # Output file name
+    output_file = "pdf_list.txt"  # Output file name
     github_base_url_blob = "https://github.com/ScamanderWayne/WayneTeX/blob/main"  # Replace with your GitHub base URL
     write_pdf_list_to_file(root_directory, output_file, github_base_url_blob)
