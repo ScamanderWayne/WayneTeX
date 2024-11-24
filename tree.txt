@@ -1,0 +1,158 @@
+Folder PATH listing
+Volume serial number is 6AD8-96E3
+C:.
+ª   .gitattributes
+ª   directoryinventory.py
+ª   README.md
+ª   tree.txt
+ª   
++---CV
+ª       LiborHalikCV.aux
+ª       LiborHalikCV.fdb_latexmk
+ª       LiborHalikCV.fls
+ª       LiborHalikCV.log
+ª       LiborHalikCV.out
+ª       LiborHalikCV.pdf
+ª       LiborHalikCV.synctex.gz
+ª       LiborHalikCV.tex
+ª       simplehipstercv.cls
+ª       simplehipstercv.sty
+ª       Waynik.png
+ª       Waynik2.jpg
+ª       Waynik2smol.jpg
+ª       
++---Czech
+ª   +---FGBook
+ª   ª       Povinnß literatura k maturitnφ zkouÜce - Halφk.aux
+ª   ª       Povinnß literatura k maturitnφ zkouÜce - Halφk.fdb_latexmk
+ª   ª       Povinnß literatura k maturitnφ zkouÜce - Halφk.fls
+ª   ª       Povinnß literatura k maturitnφ zkouÜce - Halφk.log
+ª   ª       Povinnß literatura k maturitnφ zkouÜce - Halφk.out
+ª   ª       Povinnß literatura k maturitnφ zkouÜce - Halφk.pdf
+ª   ª       Povinnß literatura k maturitnφ zkouÜce - Halφk.synctex.gz
+ª   ª       Povinnß literatura k maturitnφ zkouÜce - Halφk.tex
+ª   ª       
+ª   +---Sloh
+ª       +---1984inspiration
+ª       ª       1984inspiration-blx.bib
+ª       ª       1984inspiration.aux
+ª       ª       1984inspiration.fdb_latexmk
+ª       ª       1984inspiration.fls
+ª       ª       1984inspiration.log
+ª       ª       1984inspiration.out
+ª       ª       1984inspiration.pdf
+ª       ª       1984inspiration.run.xml
+ª       ª       1984inspiration.synctex.gz
+ª       ª       1984inspiration.tex
+ª       ª       
+ª       +---20240604
+ª       ª       20240604.aux
+ª       ª       20240604.fdb_latexmk
+ª       ª       20240604.fls
+ª       ª       20240604.log
+ª       ª       20240604.pdf
+ª       ª       20240604.synctex.gz
+ª       ª       20240604.tex
+ª       ª       
+ª       +---bezruc
+ª       ª       bezruc-blx.bib
+ª       ª       bezruc.aux
+ª       ª       bezruc.bbl
+ª       ª       bezruc.blg
+ª       ª       bezruc.fdb_latexmk
+ª       ª       bezruc.fls
+ª       ª       bezruc.log
+ª       ª       bezruc.out
+ª       ª       bezruc.pdf
+ª       ª       bezruc.run.xml
+ª       ª       bezruc.synctex.gz
+ª       ª       bezruc.tex
+ª       ª       
+ª       +---hlavacek
+ª       ª       hlavacek-blx.bib
+ª       ª       hlavacek.aux
+ª       ª       hlavacek.fdb_latexmk
+ª       ª       hlavacek.fls
+ª       ª       hlavacek.log
+ª       ª       hlavacek.out
+ª       ª       hlavacek.pdf
+ª       ª       hlavacek.run.xml
+ª       ª       hlavacek.synctex.gz
+ª       ª       hlavacek.tex
+ª       ª       
+ª       +---OliwerTwist
+ª       ª       OliwerTwist.aux
+ª       ª       OliwerTwist.fdb_latexmk
+ª       ª       OliwerTwist.fls
+ª       ª       OliwerTwist.log
+ª       ª       OliwerTwist.pdf
+ª       ª       OliwerTwist.synctex.gz
+ª       ª       OliwerTwist.tex
+ª       ª       
+ª       +---Prokrastinace
+ª       ª       Prokrastinace.aux
+ª       ª       Prokrastinace.fdb_latexmk
+ª       ª       Prokrastinace.fls
+ª       ª       Prokrastinace.log
+ª       ª       Prokrastinace.pdf
+ª       ª       Prokrastinace.synctex.gz
+ª       ª       Prokrastinace.tex
+ª       ª       
+ª       +---silneslabestranky
+ª       ª       silneslabestranky.aux
+ª       ª       silneslabestranky.fdb_latexmk
+ª       ª       silneslabestranky.fls
+ª       ª       silneslabestranky.log
+ª       ª       silneslabestranky.pdf
+ª       ª       silneslabestranky.synctex.gz
+ª       ª       silneslabestranky.tex
+ª       ª       
+ª       +---topol
+ª       ª       topol-blx.bib
+ª       ª       topol.aux
+ª       ª       topol.fdb_latexmk
+ª       ª       topol.fls
+ª       ª       topol.log
+ª       ª       topol.out
+ª       ª       topol.pdf
+ª       ª       topol.run.xml
+ª       ª       topol.synctex.gz
+ª       ª       topol.tex
+ª       ª       
+ª       +---vanoce2023
+ª       ª       vanoce2023.aux
+ª       ª       vanoce2023.fdb_latexmk
+ª       ª       vanoce2023.fls
+ª       ª       vanoce2023.log
+ª       ª       vanoce2023.pdf
+ª       ª       vanoce2023.synctex.gz
+ª       ª       vanoce2023.tex
+ª       ª       
+ª       +---WaltWhitman
+ª       ª       WaltWhitman.aux
+ª       ª       WaltWhitman.fdb_latexmk
+ª       ª       WaltWhitman.fls
+ª       ª       WaltWhitman.log
+ª       ª       WaltWhitman.pdf
+ª       ª       WaltWhitman.synctex.gz
+ª       ª       WaltWhitman.tex
+ª       ª       
+ª       +---zdechlina
+ª               zdechlina.aux
+ª               zdechlina.fdb_latexmk
+ª               zdechlina.fls
+ª               zdechlina.log
+ª               zdechlina.pdf
+ª               zdechlina.synctex.gz
+ª               zdechlina.tex
+ª               
++---Math
+    +---Tryout
+            math-tryout.aux
+            math-tryout.fdb_latexmk
+            math-tryout.fls
+            math-tryout.log
+            math-tryout.pdf
+            math-tryout.synctex.gz
+            math-tryout.tex
+            

@@ -1,38 +1,55 @@
-<h1>Nearly complete list of all my papers, both for school and work purposes.</h1>
+# Project Directory Tree
 
-<h3>Navigation</h3>
+- <a href="https://github.com/ScamanderWayne/WayneTeX/tree/main/CV">CV/ directory</a>
+  - <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/CV/LiborHalikCV.pdf">LiborHalikCV PDF file</a>
+  - <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/CV/LiborHalikCV.tex">LiborHalikCV raw TeX file</a>
+  - Waynik.png
+  - Waynik2.jpg
+  - Waynik2smol.jpg
+  - simplehipstercv.cls
+  - simplehipstercv.sty
+- <a href="https://github.com/ScamanderWayne/WayneTeX/tree/main/Czech">Czech/ directory</a>
+  - <a href="https://github.com/ScamanderWayne/WayneTeX/tree/main/Czech/FGBook">FGBook/ subdirectory</a>
+    - <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/FGBook/FGBook.pdf">FGBook PDF file</a>
+    - <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/FGBook/FGBook.tex">FGBook raw TeX file</a>
+  - <a href="https://github.com/ScamanderWayne/WayneTeX/tree/main/Czech/Sloh">Sloh/ subdirectory</a>
+    - <a href="https://github.com/ScamanderWayne/WayneTeX/tree/main/Czech/Sloh/1984inspiration">1984inspiration/ subsubdirectory</a>
+      - <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/1984inspiration/1984inspiration.pdf">1984inspiration PDF file</a>
+      - <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/1984inspiration/1984inspiration.tex">1984inspiration raw TeX file</a>
+    - <a href="https://github.com/ScamanderWayne/WayneTeX/tree/main/Czech/Sloh/20240604">20240604/ subsubdirectory</a>
+      - <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/20240604/20240604.pdf">20240604 PDF file</a>
+      - <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/20240604/20240604.tex">20240604 raw TeX file</a>
+    - <a href="https://github.com/ScamanderWayne/WayneTeX/tree/main/Czech/Sloh/OliwerTwist">OliwerTwist/ subsubdirectory</a>
+      - <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/OliwerTwist/OliwerTwist.pdf">OliwerTwist PDF file</a>
+      - <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/OliwerTwist/OliwerTwist.tex">OliwerTwist raw TeX file</a>
+    - <a href="https://github.com/ScamanderWayne/WayneTeX/tree/main/Czech/Sloh/Prokrastinace">Prokrastinace/ subsubdirectory</a>
+      - <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/Prokrastinace/Prokrastinace.pdf">Prokrastinace PDF file</a>
+      - <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/Prokrastinace/Prokrastinace.tex">Prokrastinace raw TeX file</a>
+    - <a href="https://github.com/ScamanderWayne/WayneTeX/tree/main/Czech/Sloh/WaltWhitman">WaltWhitman/ subsubdirectory</a>
+      - <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/WaltWhitman/WaltWhitman.pdf">WaltWhitman PDF file</a>
+      - <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/WaltWhitman/WaltWhitman.tex">WaltWhitman raw TeX file</a>
+    - <a href="https://github.com/ScamanderWayne/WayneTeX/tree/main/Czech/Sloh/bezruc">bezruc/ subsubdirectory</a>
+      - <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/bezruc/bezruc.pdf">bezruc PDF file</a>
+      - <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/bezruc/bezruc.tex">bezruc raw TeX file</a>
+    - <a href="https://github.com/ScamanderWayne/WayneTeX/tree/main/Czech/Sloh/hlavacek">hlavacek/ subsubdirectory</a>
+      - <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/hlavacek/hlavacek.pdf">hlavacek PDF file</a>
+      - <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/hlavacek/hlavacek.tex">hlavacek raw TeX file</a>
+    - <a href="https://github.com/ScamanderWayne/WayneTeX/tree/main/Czech/Sloh/silneslabestranky">silneslabestranky/ subsubdirectory</a>
+      - <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/silneslabestranky/silneslabestranky.pdf">silneslabestranky PDF file</a>
+      - <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/silneslabestranky/silneslabestranky.tex">silneslabestranky raw TeX file</a>
+    - <a href="https://github.com/ScamanderWayne/WayneTeX/tree/main/Czech/Sloh/topol">topol/ subsubdirectory</a>
+      - <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/topol/topol.pdf">topol PDF file</a>
+      - <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/topol/topol.tex">topol raw TeX file</a>
+    - <a href="https://github.com/ScamanderWayne/WayneTeX/tree/main/Czech/Sloh/vanoce2023">vanoce2023/ subsubdirectory</a>
+      - <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/vanoce2023/vanoce2023.pdf">vanoce2023 PDF file</a>
+      - <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/vanoce2023/vanoce2023.tex">vanoce2023 raw TeX file</a>
+    - <a href="https://github.com/ScamanderWayne/WayneTeX/tree/main/Czech/Sloh/zdechlina">zdechlina/ subsubdirectory</a>
+      - <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/zdechlina/zdechlina.pdf">zdechlina PDF file</a>
+      - <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/zdechlina/zdechlina.tex">zdechlina raw TeX file</a>
+- <a href="https://github.com/ScamanderWayne/WayneTeX/tree/main/Math">Math/ directory</a>
+  - <a href="https://github.com/ScamanderWayne/WayneTeX/tree/main/Math/Tryout">Tryout/ subdirectory</a>
+    - <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Math/Tryout/math-tryout.pdf">math-tryout PDF file</a>
+    - <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Math/Tryout/math-tryout.tex">math-tryout raw TeX file</a>
 
-<a href="https://github.com/ScamanderWayne/WayneTeX/tree/main/CV">CV folder</a>
-<a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/CV/LiborHalikCV.pdf">Printable PDF</a>
-
-<a href="https://github.com/ScamanderWayne/WayneTeX/tree/main/Czech">Czech folder</a>
-<a href="https://github.com/ScamanderWayne/WayneTeX/tree/main/Czech/FGBook">FGBook subfolder</a>
-<a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/FGBook/Povinná%20literatura%20k%20maturitní%20zkoušce%20-%20Halík.pdf">Printable PDF</a>
-<a href="https://github.com/ScamanderWayne/WayneTeX/tree/main/Czech/Sloh">Sloh subolder</a>
-<a href="https://github.com/ScamanderWayne/WayneTeX/tree/main/Czech/Sloh/1984inspiration">1984inspiration subsubolder</a>
-<a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/1984inspiration/1984inspiration.pdf">Printable PDF</a>
-<a href="https://github.com/ScamanderWayne/WayneTeX/tree/main/Czech/Sloh/20240604">20240604 subsubolder</a>
-<a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/20240604/20240604.pdf">Printable PDF</a>
-<a href="https://github.com/ScamanderWayne/WayneTeX/tree/main/Czech/Sloh/OliwerTwist">OliwerTwist subsubolder</a>
-<a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/OliwerTwist/OliwerTwist.pdf">Printable PDF</a>
-<a href="https://github.com/ScamanderWayne/WayneTeX/tree/main/Czech/Sloh/Prokrastinace">Prokrastinace subsubolder</a>
-<a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/Prokrastinace/Prokrastinace.pdf">Printable PDF</a>
-<a href="https://github.com/ScamanderWayne/WayneTeX/tree/main/Czech/Sloh/WaltWhitman">WaltWhitman subsubolder</a>
-<a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/WaltWhitman/WaltWhitman.pdf">Printable PDF</a>
-<a href="https://github.com/ScamanderWayne/WayneTeX/tree/main/Czech/Sloh/OliwerTwist">OliwerTwist subsubolder</a>
-<a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/OliwerTwist/OliwerTwist.pdf">Printable PDF</a>
-<a href="https://github.com/ScamanderWayne/WayneTeX/tree/main/Czech/Sloh/OliwerTwist">OliwerTwist subsubolder</a>
-<a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/OliwerTwist/OliwerTwist.pdf">Printable PDF</a>
-<a href="https://github.com/ScamanderWayne/WayneTeX/tree/main/Czech/Sloh/OliwerTwist">OliwerTwist subsubolder</a>
-<a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/OliwerTwist/OliwerTwist.pdf">Printable PDF</a>
-<a href="https://github.com/ScamanderWayne/WayneTeX/tree/main/Czech/Sloh/OliwerTwist">OliwerTwist subsubolder</a>
-<a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/OliwerTwist/OliwerTwist.pdf">Printable PDF</a>
-<a href="https://github.com/ScamanderWayne/WayneTeX/tree/main/Czech/Sloh/OliwerTwist">OliwerTwist subsubolder</a>
-<a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/OliwerTwist/OliwerTwist.pdf">Printable PDF</a>
-<a href="https://github.com/ScamanderWayne/WayneTeX/tree/main/Czech/Sloh/OliwerTwist">OliwerTwist subsubolder</a>
-<a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/OliwerTwist/OliwerTwist.pdf">Printable PDF</a>
-
-<a href="https://github.com/ScamanderWayne/WayneTeX/tree/main/CV">CV folder</a>
-<a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/CV/LiborHalikCV.pdf">Printable PDF</a>
-
+## Additional Resources
 <a href="https://latex.net/texlive/">Compile LaTeX files online</a>
