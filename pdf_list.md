@@ -1,0 +1,16 @@
+## List of PDF Files
+
+[LiborHalikCV PDF file](https://github.com/ScamanderWayne/WayneTeX/blob/main/CV/LiborHalikCV.pdf)
+[FGBook PDF file](https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/FGBook/FGBook.pdf)
+[1984inspiration PDF file](https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/1984inspiration/1984inspiration.pdf)
+[20240604 PDF file](https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/20240604/20240604.pdf)
+[OliwerTwist PDF file](https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/OliwerTwist/OliwerTwist.pdf)
+[Prokrastinace PDF file](https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/Prokrastinace/Prokrastinace.pdf)
+[WaltWhitman PDF file](https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/WaltWhitman/WaltWhitman.pdf)
+[bezruc PDF file](https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/bezruc/bezruc.pdf)
+[hlavacek PDF file](https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/hlavacek/hlavacek.pdf)
+[silneslabestranky PDF file](https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/silneslabestranky/silneslabestranky.pdf)
+[topol PDF file](https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/topol/topol.pdf)
+[vanoce2023 PDF file](https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/vanoce2023/vanoce2023.pdf)
+[zdechlina PDF file](https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/zdechlina/zdechlina.pdf)
+[math-tryout PDF file](https://github.com/ScamanderWayne/WayneTeX/blob/main/Math/Tryout/math-tryout.pdf)

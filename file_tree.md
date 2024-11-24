@@ -1,0 +1,131 @@
+- .gitattributes
+- .gitignore
+- AllFilesList.py
+- CV/
+  - LiborHalikCV.aux
+  - LiborHalikCV.fdb_latexmk
+  - LiborHalikCV.fls
+  - LiborHalikCV.log
+  - LiborHalikCV.out
+  - LiborHalikCV.pdf
+  - LiborHalikCV.synctex.gz
+  - LiborHalikCV.tex
+  - Waynik.png
+  - Waynik2.jpg
+  - Waynik2smol.jpg
+  - simplehipstercv.cls
+  - simplehipstercv.sty
+- Czech/
+  - FGBook/
+    - FGBook.aux
+    - FGBook.fdb_latexmk
+    - FGBook.fls
+    - FGBook.log
+    - FGBook.out
+    - FGBook.pdf
+    - FGBook.synctex.gz
+    - FGBook.tex
+  - Sloh/
+    - 1984inspiration/
+      - 1984inspiration.aux
+      - 1984inspiration.fdb_latexmk
+      - 1984inspiration.fls
+      - 1984inspiration.log
+      - 1984inspiration.out
+      - 1984inspiration.pdf
+      - 1984inspiration.synctex.gz
+      - 1984inspiration.tex
+    - 20240604/
+      - 20240604.aux
+      - 20240604.fdb_latexmk
+      - 20240604.fls
+      - 20240604.log
+      - 20240604.pdf
+      - 20240604.synctex.gz
+      - 20240604.tex
+    - OliwerTwist/
+      - OliwerTwist.aux
+      - OliwerTwist.fdb_latexmk
+      - OliwerTwist.fls
+      - OliwerTwist.log
+      - OliwerTwist.pdf
+      - OliwerTwist.synctex.gz
+      - OliwerTwist.tex
+    - Prokrastinace/
+      - Prokrastinace.aux
+      - Prokrastinace.fdb_latexmk
+      - Prokrastinace.fls
+      - Prokrastinace.log
+      - Prokrastinace.pdf
+      - Prokrastinace.synctex.gz
+      - Prokrastinace.tex
+    - WaltWhitman/
+      - WaltWhitman.aux
+      - WaltWhitman.fdb_latexmk
+      - WaltWhitman.fls
+      - WaltWhitman.log
+      - WaltWhitman.pdf
+      - WaltWhitman.synctex.gz
+      - WaltWhitman.tex
+    - bezruc/
+      - bezruc.bbl
+      - bezruc.pdf
+      - bezruc.synctex.gz
+      - bezruc.tex
+    - hlavacek/
+      - hlavacek.aux
+      - hlavacek.fdb_latexmk
+      - hlavacek.fls
+      - hlavacek.log
+      - hlavacek.out
+      - hlavacek.pdf
+      - hlavacek.synctex.gz
+      - hlavacek.tex
+    - silneslabestranky/
+      - silneslabestranky.aux
+      - silneslabestranky.fdb_latexmk
+      - silneslabestranky.fls
+      - silneslabestranky.log
+      - silneslabestranky.pdf
+      - silneslabestranky.synctex.gz
+      - silneslabestranky.tex
+    - topol/
+      - topol.aux
+      - topol.fdb_latexmk
+      - topol.fls
+      - topol.log
+      - topol.out
+      - topol.pdf
+      - topol.synctex.gz
+      - topol.tex
+    - vanoce2023/
+      - vanoce2023.aux
+      - vanoce2023.fdb_latexmk
+      - vanoce2023.fls
+      - vanoce2023.log
+      - vanoce2023.pdf
+      - vanoce2023.synctex.gz
+      - vanoce2023.tex
+    - zdechlina/
+      - zdechlina.aux
+      - zdechlina.fdb_latexmk
+      - zdechlina.fls
+      - zdechlina.log
+      - zdechlina.pdf
+      - zdechlina.synctex.gz
+      - zdechlina.tex
+- Math/
+  - Tryout/
+    - math-tryout.aux
+    - math-tryout.fdb_latexmk
+    - math-tryout.fls
+    - math-tryout.log
+    - math-tryout.pdf
+    - math-tryout.synctex.gz
+    - math-tryout.tex
+- PDFlist.py
+- README.md
+- ScriptRunner.py
+- TreeFileListToREADME.py
+- file_tree.md
+- pdf_list.md

@@ -4,11 +4,9 @@
 *.log
 *.synctex.gz
 *.out
-*.bib
 *.run.xml
 *.bbl
 *.blg
-*.md
 *.txt
 .gitattributes
 .gitignore
