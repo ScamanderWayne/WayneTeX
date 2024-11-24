@@ -17,6 +17,16 @@ def generate_file_tree_markdown(directory, base_url_tree, base_url_blob, relativ
     except PermissionError:
         return f"{indent}- [Permission Denied]\n"
 
+    # Define colors for different file types
+    pdf_color = "lightpink"    # Light pinkish-red for .pdf files
+    tex_color = "lightblue"    # Light blue for .tex files
+    cls_sty_color = "limegreen"  # Lime green for .cls and .sty files
+    
+    # Define colors for directories based on depth (from dark violet to dark blue)
+    dir_colors = [
+        "indigo", "darkviolet", "blue", "darkblue", "navy", "midnightblue"
+    ]
+
     for item in items:
         item_path = os.path.join(directory, item)
         item_relative_path = os.path.join(relative_path, item)
@@ -31,13 +41,16 @@ def generate_file_tree_markdown(directory, base_url_tree, base_url_blob, relativ
         elif depth == 3:
             label = "subsubsubdirectory"
         else:
-            label = "subsubsubsubdirectory"
+            label = "deeply-subdirectory"  # For any directory deeper than 3 levels
+
+        # Set directory color based on depth (cycling through a set of dark colors)
+        dir_color = dir_colors[depth % len(dir_colors)]
 
         if os.path.isdir(item_path):
             if item in ignored_directories:
                 continue  # Skip ignored directories
             repo_url = f"{base_url_tree}/{item_relative_path}".replace("\\", "/")
-            tree += f"{indent}- <a href=\"{repo_url}\">{item}/ {label}</a>\n"
+            tree += f'{indent}- <a href="{repo_url}" style="color:{dir_color}">{item}/ {label}</a>\n'
             tree += generate_file_tree_markdown(
                 item_path, base_url_tree, base_url_blob, item_relative_path, depth + 1, ignored_directories, ignored_file_extensions, ignored_files
             )
@@ -45,15 +58,20 @@ def generate_file_tree_markdown(directory, base_url_tree, base_url_blob, relativ
             # Skip ignored file types or specific files
             if any(item.endswith(ext) for ext in ignored_file_extensions) or item in ignored_files:
                 continue
-            # Handle .pdf and .tex files with specific link format
+
+            # Handle .pdf, .tex, .cls, .sty files with specific link format
             if item.endswith(".pdf"):
                 file_url = f"{base_url_blob}/{item_relative_path}".replace("\\", "/")
                 file_name = os.path.splitext(item)[0]  # Get file name without extension
-                tree += f"{indent}- <a href=\"{file_url}\">{file_name} PDF file</a>\n"
+                tree += f'{indent}- <a href="{file_url}" style="color:{pdf_color}">{file_name} PDF file</a>\n'
             elif item.endswith(".tex"):
                 file_url = f"{base_url_blob}/{item_relative_path}".replace("\\", "/")
                 file_name = os.path.splitext(item)[0]  # Get file name without extension
-                tree += f"{indent}- <a href=\"{file_url}\">{file_name} raw TeX file</a>\n"
+                tree += f'{indent}- <a href="{file_url}" style="color:{tex_color}">{file_name} raw TeX file</a>\n'
+            elif item.endswith(".cls") or item.endswith(".sty"):
+                file_url = f"{base_url_blob}/{item_relative_path}".replace("\\", "/")
+                file_name = os.path.splitext(item)[0]  # Get file name without extension
+                tree += f'{indent}- <a href="{file_url}" style="color:{cls_sty_color}">{file_name} LaTeX Class file</a>\n'
             else:
                 tree += f"{indent}- {item}\n"
 
@@ -67,7 +85,7 @@ def write_file_tree_to_readme(root_dir, output_file, base_url_tree, base_url_blo
         )
         with open(output_file, 'w', encoding='utf-8') as f:
             f.write("# Description\n\n")
-            f.write("This repository contains my LaTeX notes and projects. Mostly for my own reference, but I am big fan of open source, so feel free to use it as you wish. (With credit of course.)\n\n")
+            f.write("This repository contains my LaTeX notes and projects. Mostly for my own reference, but I am a big fan of open source, so feel free to use it as you wish. (With credit of course.)\n\n")
             f.write("## Additional Resources\n\n")
             f.write('<a href="https://latex.net/texlive/">Compile LaTeX files online</a>\n\n')
             f.write("### Project Directory Tree\n\n")
@@ -90,5 +108,3 @@ if __name__ == "__main__":
     write_file_tree_to_readme(
         root_directory, output_file, github_base_url_tree, github_base_url_blob, ignored_directories, ignored_file_extensions, ignored_files
     )
-
-# this file was generated fully by ChatGPT on 2024-11-24 and I claim no ownership over it. Just mere changes after it was generated.
