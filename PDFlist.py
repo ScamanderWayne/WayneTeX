@@ -1,7 +1,7 @@
 import os
 
 def generate_pdf_list(directory, base_url_blob, relative_path=""):
-    """Generates a list of PDF files with links."""
+    """Generates a list of PDF files with links (plain text)."""
     pdf_files = []
     try:
         items = sorted(os.listdir(directory))  # Sort items for consistent output
@@ -17,19 +17,18 @@ def generate_pdf_list(directory, base_url_blob, relative_path=""):
             pdf_files.extend(generate_pdf_list(item_path, base_url_blob, item_relative_path))
         elif item.endswith(".pdf"):
             file_url = f"{base_url_blob}/{item_relative_path}".replace("\\", "/")
-            file_name = os.path.splitext(item)[0]  # Get file name without extension
-            pdf_files.append(f"[{file_name} PDF file]({file_url})")
+            pdf_files.append(file_url)
     
     return pdf_files
 
 def write_pdf_list_to_file(root_dir, output_file, base_url_blob):
-    """Writes the list of PDF files with links to an output file."""
+    """Writes the list of PDF files with plain text links to an output file."""
     try:
         pdf_files = generate_pdf_list(root_dir, base_url_blob)
         with open(output_file, 'w', encoding='utf-8') as f:
             f.write("## List of PDF Files\n\n")
             for pdf in pdf_files:
-                f.write(f"{pdf}\n")
+                f.write(f"{pdf}\n")  # Plain text link, each on a new line
         print(f"PDF list written to {output_file}")
     except Exception as e:
         print(f"Error: {e}")
