@@ -1,7 +1,10 @@
 import os
 
 def generate_file_tree_markdown(directory, base_url_blob, parent_path="", ignored_directories=None, ignored_file_extensions=None, ignored_files=None):
-    """Recursively generates a GitHub-flavored Markdown file tree with full paths for directories."""
+    """
+    Recursively generates a GitHub-flavored Markdown file tree with reset numbering for each directory.
+    Excludes directories containing no valid files.
+    """
     if ignored_directories is None:
         ignored_directories = []
     if ignored_file_extensions is None:
@@ -9,54 +12,56 @@ def generate_file_tree_markdown(directory, base_url_blob, parent_path="", ignore
     if ignored_files is None:
         ignored_files = []
 
-    tree = ""
-    
+    sub_tree = ""
+    found_files = []  # List to store actual files in the current directory
+    file_counter = 0  # Reset counter for each directory
+
     try:
         items = sorted(os.listdir(directory))  # Sort items for consistent output
     except PermissionError:
         return "- [Permission Denied]\n"
 
-    pdf_counter = 1
-    tex_counter = 2
-    other_files_counter = 3
-
     for item in items:
         item_path = os.path.join(directory, item)
         current_path = os.path.join(parent_path, item).replace("\\", "/")  # Create full relative path
 
-        # Handle directories
         if os.path.isdir(item_path):
+            # Skip ignored directories
             if item in ignored_directories:
-                continue  # Skip ignored directories
-            tree += f'- {current_path}/\n'  # Full path for directories
-            tree += generate_file_tree_markdown(
+                continue
+
+            # Recursively process subdirectories
+            child_tree = generate_file_tree_markdown(
                 item_path, base_url_blob, current_path, ignored_directories, ignored_file_extensions, ignored_files
             )
+
+            # Include only if the subdirectory has files
+            if child_tree.strip():
+                sub_tree += child_tree
         else:
-            # Skip ignored file types or specific files
+            # Check file conditions
             if any(item.endswith(ext) for ext in ignored_file_extensions) or item in ignored_files:
                 continue
 
-            # Handle file types with specific numbering, start indentation at second space
-            if item.endswith(".pdf"):
-                file_url = f"{base_url_blob}/{current_path}".replace("\\", "/")
-                file_name = os.path.splitext(item)[0]  # Get file name without extension
-                tree += f'  1. <a href="{file_url}">{file_name} PDF file</a>\n'
-                pdf_counter += 1
-            elif item.endswith(".tex"):
-                file_url = f"{base_url_blob}/{current_path}".replace("\\", "/")
-                file_name = os.path.splitext(item)[0]  # Get file name without extension
-                tree += f'  2. <a href="{file_url}">{file_name} raw TeX file</a>\n'
-                tex_counter += 1
-            elif item.endswith(".cls") or item.endswith(".sty"):
-                file_url = f"{base_url_blob}/{current_path}".replace("\\", "/")
-                file_name = os.path.splitext(item)[0]  # Get file name without extension
-                tree += f'  {other_files_counter}. <a href="{file_url}">{file_name} LaTeX Class file</a>\n'
-                other_files_counter += 1
-            else:
-                tree += f"  - {item}\n"  # For other file types
+            # Increment local counter for this directory and add the file
+            file_counter += 1
 
-    return tree
+            file_url = f"{base_url_blob}/{current_path}".replace("\\", "/")
+            file_name = os.path.splitext(item)[0]  # Get file name without extension
+
+            if item.endswith(".pdf"):
+                found_files.append(f'  {file_counter}. <a href="{file_url}">{file_name} PDF file</a>\n')
+            elif item.endswith(".tex"):
+                found_files.append(f'  {file_counter}. <a href="{file_url}">{file_name} raw TeX file</a>\n')
+            else:
+                found_files.append(f'  {file_counter}. <a href="{file_url}">{file_name} file</a>\n')
+
+    # Include the directory only if it has files or valid subdirectories
+    if found_files or sub_tree.strip():
+        directory_header = f'- {parent_path}/\n' if parent_path else ""
+        return directory_header + "".join(found_files) + sub_tree
+
+    return ""  # Return empty if the directory has no files or subdirectories with files
 
 def write_file_tree_to_readme(root_dir, output_file, base_url_blob, ignored_directories=None, ignored_file_extensions=None, ignored_files=None):
     """Writes the directory tree to a Markdown-formatted README file."""

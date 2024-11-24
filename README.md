@@ -11,8 +11,8 @@ This repository contains my LaTeX notes and projects. Mostly for my own referenc
 - CV/
   1. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/CV/LiborHalikCV.pdf">LiborHalikCV PDF file</a>
   2. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/CV/LiborHalikCV.tex">LiborHalikCV raw TeX file</a>
-  3. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/CV/simplehipstercv.cls">simplehipstercv LaTeX Class file</a>
-  4. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/CV/simplehipstercv.sty">simplehipstercv LaTeX Class file</a>
+  3. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/CV/simplehipstercv.cls">simplehipstercv file</a>
+  4. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/CV/simplehipstercv.sty">simplehipstercv file</a>
 - Czech/
 - Czech/FGBook/
   1. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/FGBook/FGBook.pdf">FGBook PDF file</a>
