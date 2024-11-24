@@ -1,7 +1,7 @@
 import os
 
-def generate_file_tree_markdown(directory, base_url_tree, base_url_blob, relative_path="", depth=0, ignored_directories=None, ignored_file_extensions=None, ignored_files=None):
-    """Recursively generates a GitHub-flavored Markdown file tree with labeled directories and custom file links."""
+def generate_file_tree_markdown(directory, base_url_blob, parent_path="", ignored_directories=None, ignored_file_extensions=None, ignored_files=None):
+    """Recursively generates a GitHub-flavored Markdown file tree with full paths for directories."""
     if ignored_directories is None:
         ignored_directories = []
     if ignored_file_extensions is None:
@@ -10,12 +10,11 @@ def generate_file_tree_markdown(directory, base_url_tree, base_url_blob, relativ
         ignored_files = []
 
     tree = ""
-    indent = "  " * depth  # Indentation for tree structure
-
+    
     try:
         items = sorted(os.listdir(directory))  # Sort items for consistent output
     except PermissionError:
-        return f"{indent}- [Permission Denied]\n"
+        return "- [Permission Denied]\n"
 
     pdf_counter = 1
     tex_counter = 2
@@ -23,59 +22,47 @@ def generate_file_tree_markdown(directory, base_url_tree, base_url_blob, relativ
 
     for item in items:
         item_path = os.path.join(directory, item)
-        item_relative_path = os.path.join(relative_path, item)
+        current_path = os.path.join(parent_path, item).replace("\\", "/")  # Create full relative path
 
-        # Define labels for depth-based directories
-        if depth == 0:
-            label = "directory"
-        elif depth == 1:
-            label = "subdirectory"
-        elif depth == 2:
-            label = "subsubdirectory"
-        elif depth == 3:
-            label = "subsubsubdirectory"
-        else:
-            label = "deeply-subdirectory"  # For any directory deeper than 3 levels
-
+        # Handle directories
         if os.path.isdir(item_path):
             if item in ignored_directories:
                 continue  # Skip ignored directories
-            repo_url = f"{base_url_tree}/{item_relative_path}".replace("\\", "/")
-            tree += f'{indent}- <a href="{repo_url}">{item}/ {label}</a>\n'
+            tree += f'- {current_path}/\n'  # Full path for directories
             tree += generate_file_tree_markdown(
-                item_path, base_url_tree, base_url_blob, item_relative_path, depth + 1, ignored_directories, ignored_file_extensions, ignored_files
+                item_path, base_url_blob, current_path, ignored_directories, ignored_file_extensions, ignored_files
             )
         else:
             # Skip ignored file types or specific files
             if any(item.endswith(ext) for ext in ignored_file_extensions) or item in ignored_files:
                 continue
 
-            # Handle file types with specific numbering
+            # Handle file types with specific numbering, start indentation at second space
             if item.endswith(".pdf"):
-                file_url = f"{base_url_blob}/{item_relative_path}".replace("\\", "/")
+                file_url = f"{base_url_blob}/{current_path}".replace("\\", "/")
                 file_name = os.path.splitext(item)[0]  # Get file name without extension
-                tree += f'{indent}1. <a href="{file_url}">{file_name} PDF file</a>\n'
+                tree += f'  1. <a href="{file_url}">{file_name} PDF file</a>\n'
                 pdf_counter += 1
             elif item.endswith(".tex"):
-                file_url = f"{base_url_blob}/{item_relative_path}".replace("\\", "/")
+                file_url = f"{base_url_blob}/{current_path}".replace("\\", "/")
                 file_name = os.path.splitext(item)[0]  # Get file name without extension
-                tree += f'{indent}2. <a href="{file_url}">{file_name} raw TeX file</a>\n'
+                tree += f'  2. <a href="{file_url}">{file_name} raw TeX file</a>\n'
                 tex_counter += 1
             elif item.endswith(".cls") or item.endswith(".sty"):
-                file_url = f"{base_url_blob}/{item_relative_path}".replace("\\", "/")
+                file_url = f"{base_url_blob}/{current_path}".replace("\\", "/")
                 file_name = os.path.splitext(item)[0]  # Get file name without extension
-                tree += f'{indent}{other_files_counter}. <a href="{file_url}">{file_name} LaTeX Class file</a>\n'
+                tree += f'  {other_files_counter}. <a href="{file_url}">{file_name} LaTeX Class file</a>\n'
                 other_files_counter += 1
             else:
-                tree += f"{indent}- {item}\n"
+                tree += f"  - {item}\n"  # For other file types
 
     return tree
 
-def write_file_tree_to_readme(root_dir, output_file, base_url_tree, base_url_blob, ignored_directories=None, ignored_file_extensions=None, ignored_files=None):
+def write_file_tree_to_readme(root_dir, output_file, base_url_blob, ignored_directories=None, ignored_file_extensions=None, ignored_files=None):
     """Writes the directory tree to a Markdown-formatted README file."""
     try:
         tree = generate_file_tree_markdown(
-            root_dir, base_url_tree, base_url_blob, ignored_directories=ignored_directories, ignored_file_extensions=ignored_file_extensions, ignored_files=ignored_files
+            root_dir, base_url_blob, ignored_directories=ignored_directories, ignored_file_extensions=ignored_file_extensions, ignored_files=ignored_files
         )
         with open(output_file, 'w', encoding='utf-8') as f:
             f.write("## Description\n\n")
@@ -92,7 +79,6 @@ def write_file_tree_to_readme(root_dir, output_file, base_url_tree, base_url_blo
 if __name__ == "__main__":
     root_directory = "."  # Change to the directory you want to scan
     output_file = "README.md"  # Output file name
-    github_base_url_tree = "https://github.com/ScamanderWayne/WayneTeX/tree/main"  # Base URL for directories
     github_base_url_blob = "https://github.com/ScamanderWayne/WayneTeX/blob/main"  # Base URL for files
     ignored_directories = [".git"]  # Directories to ignore
     ignored_file_extensions = [
@@ -100,5 +86,5 @@ if __name__ == "__main__":
     ]  # File types to ignore
     ignored_files = [".gitattributes", ".gitignore"]  # Specific files to ignore
     write_file_tree_to_readme(
-        root_directory, output_file, github_base_url_tree, github_base_url_blob, ignored_directories, ignored_file_extensions, ignored_files
+        root_directory, output_file, github_base_url_blob, ignored_directories, ignored_file_extensions, ignored_files
     )
