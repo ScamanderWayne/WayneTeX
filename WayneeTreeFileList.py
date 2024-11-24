@@ -17,14 +17,19 @@ def generate_file_tree_markdown(directory, base_url_tree, base_url_blob, relativ
     except PermissionError:
         return f"{indent}- [Permission Denied]\n"
 
-    # Define colors for different file types
-    pdf_color = "lightpink"    # Light pinkish-red for .pdf files
-    tex_color = "lightblue"    # Light blue for .tex files
-    cls_sty_color = "limegreen"  # Lime green for .cls and .sty files
+    # Define colors for different file types (in HEX)
+    pdf_color = "#FFB6C1"    # Light pinkish-red for .pdf files
+    tex_color = "#ADD8E6"    # Light blue for .tex files
+    cls_sty_color = "#32CD32"  # Lime green for .cls and .sty files
     
-    # Define colors for directories based on depth (from dark violet to dark blue)
+    # Define colors for directories based on depth (in HEX, cycling through dark colors)
     dir_colors = [
-        "indigo", "darkviolet", "blue", "darkblue", "navy", "midnightblue"
+        "#9400D3",  # Dark violet (indigo)
+        "#4B0082",  # Indigo
+        "#0000FF",  # Blue
+        "#00008B",  # Dark blue
+        "#000080",  # Navy
+        "#191970",  # Midnight blue
     ]
 
     for item in items:
@@ -85,7 +90,7 @@ def write_file_tree_to_readme(root_dir, output_file, base_url_tree, base_url_blo
         )
         with open(output_file, 'w', encoding='utf-8') as f:
             f.write("# Description\n\n")
-            f.write("This repository contains my LaTeX notes and projects. Mostly for my own reference, but I am a big fan of open source, so feel free to use it as you wish. (With credit of course.)\n\n")
+            f.write("This repository contains my LaTeX notes and projects. Mostly for my own reference, but I am a big fan of open source, so feel free to use it as you wish. (With credits of course.)\n\n")
             f.write("## Additional Resources\n\n")
             f.write('<a href="https://latex.net/texlive/">Compile LaTeX files online</a>\n\n')
             f.write("### Project Directory Tree\n\n")
