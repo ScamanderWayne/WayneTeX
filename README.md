@@ -1,4 +1,12 @@
-# Project Directory Tree
+# Description
+
+This repository contains my LaTeX notes and projects. Mostly for my own reference, but I am big fan of open source, so feel free to use it as you wish. (With credit of course.)
+
+## Additional Resources
+
+<a href="https://latex.net/texlive/">Compile LaTeX files online</a>
+
+### Project Directory Tree
 
 - <a href="https://github.com/ScamanderWayne/WayneTeX/tree/main/CV">CV/ directory</a>
   - <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/CV/LiborHalikCV.pdf">LiborHalikCV PDF file</a>
@@ -47,6 +55,3 @@
   - <a href="https://github.com/ScamanderWayne/WayneTeX/tree/main/Math/Tryout">Tryout/ subdirectory</a>
     - <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Math/Tryout/math-tryout.pdf">math-tryout PDF file</a>
     - <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Math/Tryout/math-tryout.tex">math-tryout raw TeX file</a>
-
-## Additional Resources
-<a href="https://latex.net/texlive/">Compile LaTeX files online</a>

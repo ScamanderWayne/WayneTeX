@@ -66,10 +66,12 @@ def write_file_tree_to_readme(root_dir, output_file, base_url_tree, base_url_blo
             root_dir, base_url_tree, base_url_blob, ignored_directories=ignored_directories, ignored_file_extensions=ignored_file_extensions, ignored_files=ignored_files
         )
         with open(output_file, 'w', encoding='utf-8') as f:
-            f.write("# Project Directory Tree\n\n")
+            f.write("# Description\n\n")
+            f.write("This repository contains my LaTeX notes and projects. Mostly for my own reference, but I am big fan of open source, so feel free to use it as you wish. (With credit of course.)\n\n")
+            f.write("## Additional Resources\n\n")
+            f.write('<a href="https://latex.net/texlive/">Compile LaTeX files online</a>\n\n')
+            f.write("### Project Directory Tree\n\n")
             f.write(tree)
-            f.write("\n## Additional Resources\n")
-            f.write('<a href="https://latex.net/texlive/">Compile LaTeX files online</a>\n')
         print(f"File tree written to {output_file}")
     except Exception as e:
         print(f"Error: {e}")
