@@ -10,7 +10,5 @@
 *.blg
 *.md
 *.txt
-*.jpg
-*.png
 .gitattributes
 .gitignore
