@@ -89,3 +89,5 @@ if __name__ == "__main__":
     write_file_tree_to_readme(
         root_directory, output_file, github_base_url_tree, github_base_url_blob, ignored_directories, ignored_file_extensions, ignored_files
     )
+
+# this file was generated fully by ChatGPT on 2024-11-24 and I claim no ownership over it. Just mere changes after it was generated.
