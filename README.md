@@ -3,9 +3,6 @@
 - <a href="https://github.com/ScamanderWayne/WayneTeX/tree/main/CV">CV/ directory</a>
   - <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/CV/LiborHalikCV.pdf">LiborHalikCV PDF file</a>
   - <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/CV/LiborHalikCV.tex">LiborHalikCV raw TeX file</a>
-  - Waynik.png
-  - Waynik2.jpg
-  - Waynik2smol.jpg
   - simplehipstercv.cls
   - simplehipstercv.sty
 - <a href="https://github.com/ScamanderWayne/WayneTeX/tree/main/Czech">Czech/ directory</a>
