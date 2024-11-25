@@ -59,8 +59,8 @@ This repository contains my LaTeX notes and projects. Mostly for my own referenc
 - MyPackages/
    3. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/MyPackages/waynetex.cls">waynetex TeX Class file</a>
    4. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/MyPackages/waytex.sty">waytex TeX Style file</a>
- 3. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/AllFilesList.py">AllFilesList py file</a>
- 4. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/PDFlist.py">PDFlist py file</a>
- 5. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/ScriptRunner.py">ScriptRunner py file</a>
- 6. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/TreeFileListToREADME.py">TreeFileListToREADME py file</a>
- 7. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/mypackages.py">mypackages py file</a>
+ 3. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/AllFilesList.py">AllFilesList Python script</a>
+ 4. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/PDFlist.py">PDFlist Python script</a>
+ 5. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/ScriptRunner.py">ScriptRunner Python script</a>
+ 6. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/TreeFileListToREADME.py">TreeFileListToREADME Python script</a>
+ 7. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/mypackages.py">mypackages Python script</a>
