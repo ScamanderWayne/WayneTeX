@@ -132,9 +132,6 @@
 ├── PDFlist.py
 ├── README.md
 ├── ScriptRunner.py
-├── TexLive/
-│   ├── README.md
-│   └── waytex.sty
 ├── TreeFileListToREADME.py
 ├── file_tree.txt
 ├── mypackages.py
@@ -153,13 +150,13 @@ File Extensions and Counts:
 .gz (14)
 .jpg (2)
 .log (13)
-.md (3)
+.md (2)
 .out (5)
 .pdf (14)
 .png (1)
 .py (6)
 .pyz (1)
-.sty (3)
+.sty (2)
 .tex (14)
 .toc (1)
 .txt (3)
