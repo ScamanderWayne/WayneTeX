@@ -9,3 +9,8 @@
 *.blg
 .gitattributes
 .gitignore
+
+# not sure
+pre-commit-4.0.1.pyz
+requirements-dev.txt
+.pre-commit-config.yaml
