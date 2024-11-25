@@ -16,7 +16,7 @@
 
 \usepackage{coffeestains} % no questions needed
 
-\author{Libor Halík}
+\author{\theauthor}
 \title{Povinná literatura k maturitní zkoušce}
 \date{2021 -- 2025}
 
@@ -34,6 +34,19 @@
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
 
+%\newcommand{\wart}[1]{\titlespacing{\part}{0pt}{0pt}{0pt}\noindent{\normalfont\Large\bfseries #1\par}}
+
+% Store the author name for later use
+\newcommand{\setauthor}[1]{\def\theauthor{#1}}
+
+\setauthor{Libor Halík}
+
+% Define the custom command \wart
+\newcommand{\wart}[2]{%
+  \titlespacing{\part}{0pt}{0pt}{0pt} % Match \part spacing
+  \noindent % Prevent indentation
+  {\normalfont\Large\bfseries #1 -- #2 \hfill \normalfont\tiny\textsc{\theauthor}\par} % Format the output
+}
 %\usepackage[pdftex,pdfauthor={Libor Halík},pdftitle={Povinná literatura k maturitní zkoušce},pdfsubject={Materiály z literatury k maturitní zkoušce, studijní projekt z období 2021 až 2025},pdfkeywords={}]{hyperref}
 \usepackage[pdftex,
             pdfusetitle,
@@ -91,72 +104,13 @@
 
 \begin{document}
 
-% \changefontsize{8pt}
+\changefontsize{7pt}
 
-\coffeestainA{0.4}{1}{90}{30em}{40em}
+\tableofcontents
 
-\part*{Seznam literatury {\hfill \normalfont\tiny\textsc{Libor Halík}}}
+\newpage
 
-\section*{Světová a česká literatura do konce 18. století {\tiny{(min. 2 literární díla)}}}
-
-\subsection*{Epos o Gilgamešovi {\tiny{poezie  -- \textsc{TO--READ}}}}
-
-\subsection*{Hamlet {\tiny{drama  -- \textsc{hotovo}}}}
-
-\subsection*{Romeo a Julie {\tiny{drama  -- \textsc{ke zpracování}}}}
-
-\section*{Světová a česká literatura 19. století {\tiny{(min. 3 literární díla)}}}
-
-\subsection*{Havran {\tiny{poezie  -- \textsc{hotovo}}}}
-
-\subsection*{Kytice {\tiny{poezie  -- \textsc{hotovo}}}}
-
-\subsection*{Zločin a trest {\tiny{próza  -- \textsc{hotovo}}}}
-
-\subsection*{Otec Goriot {\tiny{próza  -- \textsc{TO--READ}}}}
-
-\subsection*{Oliver Twist {\tiny{próza  -- \textsc{TO--READ}}}}
-
-\subsection*{Obraz Doriana Graye {\tiny{próza  -- \textsc{hotovo}}}}
-
-\subsection*{Revizor {\tiny{drama  -- \textsc{ke zpracování}}}}
-
-\section*{Světová literatura 20. -- 21. století {\tiny{(min. 4 literární díla)}}}
-
-\subsection*{Inferno {\tiny{próza  -- \textsc{TO--READ}}}}
-
-\subsection*{Šifra Mistra Leonarda {\tiny{próza  -- \textsc{ke zpracování}}}}
-
-\subsection*{Velký Gatsby {\tiny{próza  -- \textsc{ke zpracování}}}}
-
-\subsection*{Devatenáct set osmdesát čtyři {\tiny{próza  -- \textsc{hotovo}}}}
-
-\subsection*{Harry Potter {\tiny{próza  -- \textsc{ke zpracování}}}}
-
-\subsection*{Hobbit {\tiny{próza  -- \textsc{ke zpracování}}}}
-
-\section*{Česká literatura 20. -- 21. století {\tiny{(min. 5 literární díla)}}}
-
-\subsection*{Po nás ať přijde potopa {\tiny{poezie  -- \textsc{TO--READ}}}}
-
-\subsection*{Proměna {\tiny{próza -- \textsc{ke zpracování}}}}
-
-\subsection*{Krysař {\tiny{próza  -- \textsc{ke zpracování}}}}
-
-\subsection*{Bílá nemoc {\tiny{drama  -- \textsc{ke zpracování}}}}
-
-\subsection*{R. U. R. {\tiny{drama  -- \textsc{TO--READ}}}}
-
-\vfill
-
-\noindent\begin{minipage}{\textwidth}
-    \textcolor{darkgray}{\rule{\linewidth}{0.4pt}
-    \footnotesize
-    \textbf{Pravidla --} Dodržet minimální počet literatury z daného období; mít minimálně dvakrát poezii, dvakrát prózu a dvakrát drama; nemít více než dvě díla od jednoho autora.
-    }
-\end{minipage}
-
-\pagestyle{empty}
+%\changefontsize{8pt}\coffeestainA{0.4}{1}{90}{30em}{40em}\part*{Seznam literatury {\hfill \normalfont\tiny\textsc{Libor Halík}}}\section*{Světová a česká literatura do konce 18. století {\tiny{(min. 2 literární díla)}}}\subsection*{Epos o Gilgamešovi {\tiny{poezie  -- \textsc{TO--READ}}}}\subsection*{Hamlet {\tiny{drama  -- \textsc{hotovo}}}}\subsection*{Romeo a Julie {\tiny{drama  -- \textsc{ke zpracování}}}}\section*{Světová a česká literatura 19. století {\tiny{(min. 3 literární díla)}}}\subsection*{Havran {\tiny{poezie  -- \textsc{hotovo}}}}\subsection*{Kytice {\tiny{poezie  -- \textsc{hotovo}}}}\subsection*{Zločin a trest {\tiny{próza  -- \textsc{hotovo}}}}\subsection*{Otec Goriot {\tiny{próza  -- \textsc{TO--READ}}}}\subsection*{Oliver Twist {\tiny{próza  -- \textsc{TO--READ}}}}\subsection*{Obraz Doriana Graye {\tiny{próza  -- \textsc{hotovo}}}}\subsection*{Revizor {\tiny{drama  -- \textsc{ke zpracování}}}}\section*{Světová literatura 20. -- 21. století {\tiny{(min. 4 literární díla)}}}\subsection*{Inferno {\tiny{próza  -- \textsc{TO--READ}}}}\subsection*{Šifra Mistra Leonarda {\tiny{próza  -- \textsc{ke zpracování}}}}\subsection*{Velký Gatsby {\tiny{próza  -- \textsc{ke zpracování}}}}\subsection*{Devatenáct set osmdesát čtyři {\tiny{próza  -- \textsc{hotovo}}}}\subsection*{Harry Potter {\tiny{próza  -- \textsc{ke zpracování}}}}\subsection*{Hobbit {\tiny{próza  -- \textsc{ke zpracování}}}}\section*{Česká literatura 20. -- 21. století {\tiny{(min. 5 literární díla)}}}\subsection*{Po nás ať přijde potopa {\tiny{poezie  -- \textsc{TO--READ}}}}\subsection*{Proměna {\tiny{próza -- \textsc{ke zpracování}}}}\subsection*{Krysař {\tiny{próza  -- \textsc{ke zpracování}}}}\subsection*{Bílá nemoc {\tiny{drama  -- \textsc{ke zpracování}}}}\subsection*{R. U. R. {\tiny{drama  -- \textsc{TO--READ}}}}\vfill\noindent\begin{minipage}{\textwidth}\textcolor{darkgray}{\rule{\linewidth}{0.4pt}\footnotesize\textbf{Pravidla --} Dodržet minimální počet literatury z daného období; mít minimálně dvakrát poezii, dvakrát prózu a dvakrát drama; nemít více než dvě díla od jednoho autora.}\end{minipage}\pagestyle{empty}
 
 % --------------------------------------------------
 % Č Á S T   P R V N Í
@@ -169,7 +123,7 @@
 \changefontsize{6.8pt}
 % \changefontsize{4pt}
 
-\part*{WILLIAM SHAKESPEARE -- Hamlet {\hfill \normalfont\tiny\textsc{Libor Halík}}}
+\wart{WILLIAM SHAKESPEARE}{Hamlet} 
 
 \noindent\begin{wrapfigure}{r}{0.35\textwidth}
 \tiny\subsection*{Ukázka z díla:}\setlength{\parindent}{3pt}\noindent\textsc{Hamlet:} Být nebo nebýt -- to je otázka:
@@ -349,7 +303,7 @@ I samotný divák tak dostává zrcadlo, když je mu přednesen rozumný názor,
 
 \changefontsize{8pt}
 
-\part*{WILLIAM SHAKESPEARE -- Romeo a Julie {\hfill \normalfont\tiny\textsc{Libor Halík}}}
+\wart{WILLIAM SHAKESPEARE}{Romeo a Julie} 
 
 \noindent\begin{wrapfigure}{r}{0.25\textwidth}
 \tiny
@@ -488,7 +442,7 @@ xXx
 
 \changefontsize{7pt}
 
-\part*{EDGAR ALLAN POE -- Havran {\hfill \normalfont\tiny\textsc{Libor Halík}}}
+\wart{EDGAR ALLAN POE}{Havran} 
 
 \noindent\begin{wrapfigure}{r}{0.35\textwidth}
 \tiny
@@ -595,7 +549,7 @@ Havran je bravurně zpracovanou básní, která zvládá dokonale obrazutvornost
 
 \changefontsize{7pt}
 
-\part*{KAREL JAROMÍR ERBEN -- Kytice {\hfill \normalfont\tiny\textsc{Libor Halík}}}
+\wart{KAREL JAROMÍR ERBEN}{Kytice} 
 
 \noindent\begin{wrapfigure}{r}{0.35\textwidth}
 \tiny
@@ -753,7 +707,7 @@ Kytice, i když bravurně napsaná a jednotlivé balady jsou velice poutavé, je
 
 \changefontsize{8pt}
 
-\part*{FJODOR MICHALJEVIČ DOSTOJEVSKIJ -- Zločin a trest {\hfill \normalfont\tiny\textsc{Libor Halík}}}
+\wart{FJODOR MICHALJEVIČ DOSTOJEVSKIJ}{Zločin a trest} 
 
 \noindent\begin{wrapfigure}{r}{0.35\textwidth}
 \tiny
@@ -868,7 +822,7 @@ Kniha je napsaná poutavě, postavy, které ani ve svých myšlenkách neadresuj
 
 \changefontsize{8pt}
 
-\part*{HONORÉ DE BALZAC -- Otec Goriot {\hfill \normalfont\tiny\textsc{Libor Halík}}}
+\wart{HONORÉ DE BALZAC}{Otec Goriot} 
 
 \noindent\begin{wrapfigure}{r}{0.35\textwidth}
 \tiny
@@ -963,7 +917,7 @@ xXx
 
 \changefontsize{8pt}
 
-\part*{CHARLES DICKENS -- Oliver Twist {\hfill \normalfont\tiny\textsc{Libor Halík}}}
+\wart{CHARLES DICKENS}{Oliver Twist} 
 
 \noindent\begin{wrapfigure}{r}{0.35\textwidth}
 \tiny
@@ -1058,7 +1012,7 @@ xXx
 
 \changefontsize{8pt}
 
-\part*{OSCAR WILDE -- Obraz Doriana Graye {\hfill \normalfont\tiny\textsc{Libor Halík}}}
+\wart{OSCAR WILDE}{Obraz Doriana Graye} 
 
 \noindent\begin{wrapfigure}{r}{0.35\textwidth}
 \tiny
@@ -1211,7 +1165,7 @@ Naprosto rozumím, proč je Obraz Doriana Graye jednou z nejdůležitějších l
 
 \changefontsize{8pt}
 
-\part*{NIKOLAJ VASILJEVIČ GOGOL -- Revizor {\hfill \normalfont\tiny\textsc{Libor Halík}}}
+\wart{NIKOLAJ VASILJEVIČ GOGOL}{Revizor} 
 
 \noindent\begin{wrapfigure}{r}{0.35\textwidth}
 \tiny
@@ -1310,7 +1264,7 @@ xXx
 
 \changefontsize{8pt}
 
-\part*{DAN BROWN -- Inferno {\hfill \normalfont\tiny\textsc{Libor Halík}}}
+\wart{DAN BROWN}{Inferno} 
 
 \noindent\begin{wrapfigure}{r}{0.35\textwidth}
 \tiny
@@ -1405,7 +1359,7 @@ xXx
 
 \changefontsize{8pt}
 
-\part*{DAN BROWN -- Šifra Mistra Leonarda {\hfill \normalfont\tiny\textsc{Libor Halík}}}
+\wart{DAN BROWN}{Šifra Mistra Leonarda} 
 
 \noindent\begin{wrapfigure}{r}{0.35\textwidth}
 \tiny
@@ -1500,7 +1454,7 @@ xXx
 
 \changefontsize{8pt}
 
-\part*{FRANCIS SCOTT FITZGERALD -- Velký Gatsby {\hfill \normalfont\tiny\textsc{Libor Halík}}}
+\wart{FRANCIS SCOTT FITZGERALD}{Velký Gatsby} 
 
 \noindent\begin{wrapfigure}{r}{0.35\textwidth}
 \tiny
@@ -1595,7 +1549,7 @@ xXx
 
 \changefontsize{7pt}
 
-\part*{GEORGE ORWELL -- Devatenáct set osmdesát čtyři {\hfill \normalfont\tiny\textsc{Libor Halík}}}
+\wart{GEORGE ORWELL}{Devatenáct set osmdesát čtyři} 
 
 \noindent\begin{wrapfigure}{r}{0.35\textwidth}
 \tiny
@@ -1698,7 +1652,7 @@ Román mistra Orwella jsem měl problém ocenit. První dvě části byli natoli
 
 \changefontsize{8pt}
 
-\part*{JOANNE ROWLINGOVÁ -- Harry Potter {\hfill \normalfont\tiny\textsc{Libor Halík}}}
+\wart{JOANNE ROWLINGOVÁ}{Harry Potter} 
 
 \noindent\begin{wrapfigure}{r}{0.35\textwidth}
 \tiny
@@ -1797,7 +1751,7 @@ xXx
 
 \changefontsize{8pt}
 
-\part*{J. R. R. TOLKIEN -- Hobbit {\hfill \normalfont\tiny\textsc{Libor Halík}}}
+\wart{J. R. R. TOLKIEN}{Hobbit} 
 
 \noindent\begin{wrapfigure}{r}{0.35\textwidth}
 \tiny
@@ -1896,7 +1850,7 @@ xXx
 
 \changefontsize{8pt}
 
-\part*{FRANTIŠEK GELLNER -- Po nás ať přijde potopa {\hfill \normalfont\tiny\textsc{Libor Halík}}}
+\wart{FRANTIŠEK GELLNER}{Po nás ať přijde potopa} 
 
 \noindent\begin{wrapfigure}{r}{0.35\textwidth}
 \tiny
@@ -1991,7 +1945,7 @@ xXx
 
 \changefontsize{8pt}
 
-\part*{FRANZ KAFKA -- Proměna {\hfill \normalfont\tiny\textsc{Libor Halík}}}
+\wart{FRANZ KAFKA}{Proměna} 
 
 \noindent\begin{wrapfigure}{r}{0.35\textwidth}
 \tiny
@@ -2086,7 +2040,7 @@ xXx
 
 \changefontsize{8pt}
 
-\part*{VIKTOR DYK -- Krysař {\hfill \normalfont\tiny\textsc{Libor Halík}}}
+\wart{VIKTOR DYK}{Krysař} 
 
 \noindent\begin{wrapfigure}{r}{0.35\textwidth}
 \tiny
@@ -2181,7 +2135,7 @@ xXx
 
 \changefontsize{8pt}
 
-\part*{KAREL ČAPEK -- Bílá Nemoc {\hfill \normalfont\tiny\textsc{Libor Halík}}}
+\wart{KAREL ČAPEK}{Bílá Nemoc} 
 
 \noindent\begin{wrapfigure}{r}{0.35\textwidth}
 \tiny
@@ -2276,7 +2230,7 @@ xXx
 
 \changefontsize{8pt}
 
-\part*{KAREL ČAPEK -- R. U. R. {\hfill \normalfont\tiny\textsc{Libor Halík}}}
+\wart{KAREL ČAPEK}{R. U. R.} 
 
 \noindent\begin{wrapfigure}{r}{0.35\textwidth}
 \tiny

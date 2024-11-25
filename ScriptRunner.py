@@ -17,7 +17,8 @@ def main():
         "TreeFileListToREADME.py",
         "PDFlist.py", 
         "AllFilesList.py",
-        # "FourthScript.py", Replace with the path to your fourth script, and so on...
+        "mypackages.py",
+        # "FourthScript.py", Replace with the path to your next script
     ]
 
     for script in scripts_to_run:

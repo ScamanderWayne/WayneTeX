@@ -48,6 +48,8 @@ def generate_file_tree_markdown(directory, base_url_blob, relative_path="", dept
                 pdf_files.append(item)
             elif item.endswith(".tex"):
                 tex_files.append(item)
+            elif item.endswith(".py"):  # Add Python scripts to py_files
+                py_files.append(item)
             elif item.endswith(".bib"):
                 bib_cls_sty_files.append(item)
             elif item.endswith(".cls") or item.endswith(".sty"):
@@ -73,6 +75,13 @@ def generate_file_tree_markdown(directory, base_url_blob, relative_path="", dept
         file_name = os.path.splitext(item)[0]  # Get file name without extension
         tree += f'{indent} 2. <a href="{file_url}">{file_name} raw TeX file</a>\n'
         tex_counter += 1
+
+    for item in py_files:  # Process Python files
+        item_relative_path = os.path.join(relative_path, item)
+        file_url = f"{base_url_blob}/{item_relative_path}".replace("\\", "/")
+        file_name = os.path.splitext(item)[0]  # Get file name without extension
+        tree += f'{indent} {py_counter}. <a href="{file_url}">{file_name} Python script</a>\n'
+        py_counter += 1
 
     for item in bib_cls_sty_files:
         item_relative_path = os.path.join(relative_path, item)
@@ -127,7 +136,7 @@ if __name__ == "__main__":
     github_base_url_blob = "https://github.com/ScamanderWayne/WayneTeX/blob/main"  # Base URL for files
     ignored_directories = [".git"]  # Directories to ignore
     ignored_file_extensions = [
-        ".yaml", ".pyz", ".aux", ".fdb_latexmk", ".fls", ".log", ".synctex.gz", ".py", ".out", ".run.xml", ".bbl", ".blg", ".md", ".txt", ".png", ".jpg"
+        ".yaml", ".pyz", ".aux", ".fdb_latexmk", ".fls", ".log", ".synctex.gz", ".out", ".run.xml", ".bbl", ".blg", ".md", ".txt", ".png", ".jpg"
     ]  # File types to ignore
     ignored_files = [".gitattributes", ".gitignore"]  # Specific files to ignore
     write_file_tree_to_readme(

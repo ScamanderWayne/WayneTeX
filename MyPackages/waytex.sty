@@ -1,0 +1,18 @@
+% waytex.sty: A custom package for my personal LaTeX commands
+
+\ProvidesPackage{waytex}[2024/11/25 My custom package]
+
+% Required for title formatting
+\usepackage{titlesec} 
+
+% Store the author name for later use -- \setauthor{author's name} then \theauthor to get the author's name
+\newcommand{\setauthor}[1]{\def\theauthor{#1}}
+
+% Define the custom command \wart -- Wayne's Part command
+\newcommand{\wart}[2]{%
+  \titlespacing{\part}{0pt}{0pt}{0pt} % Match \part spacing
+  \noindent % Prevent indentation
+  {\normalfont\Large\bfseries #1 -- #2 \hfill \normalfont\tiny\textsc{\theauthor}\par} % Format the output
+}
+
+%about: My first package
