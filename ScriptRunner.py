@@ -1,5 +1,6 @@
 import subprocess
 import sys
+import os
 
 def run_script(script_name):
     """Function to run a Python script using subprocess."""
@@ -15,14 +16,17 @@ def run_script(script_name):
 def main():
     scripts_to_run = [
         "TreeFileListToREADME.py",
-        "PDFlist.py", 
+        "PDFlist.py",
         "AllFilesList.py",
         "mypackages.py",
-        # "FourthScript.py", Replace with the path to your next script
+        os.path.join("MyPackages", "sourcecontrol.py"),  # Add sourcecontrol.py
     ]
 
     for script in scripts_to_run:
-        run_script(script)
+        if os.path.exists(script):  # Check if the script exists
+            run_script(script)
+        else:
+            print(f"Script not found: {script}")
 
 if __name__ == "__main__":
     main()

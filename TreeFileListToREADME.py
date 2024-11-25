@@ -17,10 +17,6 @@ def generate_file_tree_markdown(directory, base_url_blob, relative_path="", dept
     except PermissionError:
         return f"{indent}- [Permission Denied]\n"
 
-    pdf_counter = 1
-    tex_counter = 2
-    other_files_counter = 3  # Reset for each directory
-
     pdf_files = []
     tex_files = []
     bib_cls_sty_files = []
@@ -53,63 +49,36 @@ def generate_file_tree_markdown(directory, base_url_blob, relative_path="", dept
                 bib_cls_sty_files.append(item)
             elif item.endswith(".cls") or item.endswith(".sty"):
                 bib_cls_sty_files.append(item)
-            elif item.endswith(".pgf"):
-                bib_cls_sty_files.append(item)
-            elif item.endswith(".tikz"):
-                bib_cls_sty_files.append(item)
             elif item.endswith(".py"):  # Handle Python files
                 py_files.append(item)
             else:
                 other_files.append(item)
 
-    # Process and add files in the correct order with custom names
-    for item in pdf_files:
-        item_relative_path = os.path.join(relative_path, item)
-        file_url = f"{base_url_blob}/{item_relative_path}".replace("\\", "/")
-        file_name = os.path.splitext(item)[0]  # Get file name without extension
-        tree += f'{indent} 1. <a href="{file_url}">{file_name} PDF file</a>\n'
-        pdf_counter += 1
+    # Combine all files (regardless of type) into a single list
+    all_files = pdf_files + tex_files + bib_cls_sty_files + py_files + other_files
 
-    for item in tex_files:
+    # Process and add files in the correct order, numbering starts from 1 for each directory
+    for idx, item in enumerate(all_files, start=1):
         item_relative_path = os.path.join(relative_path, item)
         file_url = f"{base_url_blob}/{item_relative_path}".replace("\\", "/")
         file_name = os.path.splitext(item)[0]  # Get file name without extension
-        tree += f'{indent} 2. <a href="{file_url}">{file_name} raw TeX file</a>\n'
-        tex_counter += 1
 
-    for item in bib_cls_sty_files:
-        item_relative_path = os.path.join(relative_path, item)
-        file_url = f"{base_url_blob}/{item_relative_path}".replace("\\", "/")
-        file_name = os.path.splitext(item)[0]  # Get file name without extension
-        
-        # Custom naming for LaTeX-specific files
-        if item.endswith(".bib"):
-            tree += f'{indent} {other_files_counter}. <a href="{file_url}">{file_name} TeX Bibliography file</a>\n'
+        # Custom naming for different file types
+        if item.endswith(".pdf"):
+            tree += f'{indent} {idx}. <a href="{file_url}">{file_name} PDF file</a>\n'
+        elif item.endswith(".tex"):
+            tree += f'{indent} {idx}. <a href="{file_url}">{file_name} raw TeX file</a>\n'
+        elif item.endswith(".bib"):
+            tree += f'{indent} {idx}. <a href="{file_url}">{file_name} TeX Bibliography file</a>\n'
         elif item.endswith(".cls"):
-            tree += f'{indent} {other_files_counter}. <a href="{file_url}">{file_name} TeX Class file</a>\n'
+            tree += f'{indent} {idx}. <a href="{file_url}">{file_name} TeX Class file</a>\n'
         elif item.endswith(".sty"):
-            tree += f'{indent} {other_files_counter}. <a href="{file_url}">{file_name} TeX Style file</a>\n'
-        elif item.endswith(".pgf"):
-            tree += f'{indent} {other_files_counter}. <a href="{file_url}">{file_name} TeX Graphics (PGF) file</a>\n'
-        elif item.endswith(".tikz"):
-            tree += f'{indent} {other_files_counter}. <a href="{file_url}">{file_name} TeX Diagrams (TikZ) file</a>\n'
-        
-        other_files_counter += 1
-
-    for item in py_files:  # Add custom handling for Python files
-        item_relative_path = os.path.join(relative_path, item)
-        file_url = f"{base_url_blob}/{item_relative_path}".replace("\\", "/")
-        file_name = os.path.splitext(item)[0]  # Get file name without extension
-        tree += f'{indent} {other_files_counter}. <a href="{file_url}">{file_name} Python script</a>\n'
-        other_files_counter += 1
-
-    for item in other_files:
-        item_relative_path = os.path.join(relative_path, item)
-        file_url = f"{base_url_blob}/{item_relative_path}".replace("\\", "/")
-        file_name = os.path.splitext(item)[0]  # Get file name without extension
-        file_extension = item.split('.')[-1]  # Get file extension without the dot
-        tree += f'{indent} {other_files_counter}. <a href="{file_url}">{file_name} {file_extension} file</a>\n'
-        other_files_counter += 1
+            tree += f'{indent} {idx}. <a href="{file_url}">{file_name} TeX Style file</a>\n'
+        elif item.endswith(".py"):
+            tree += f'{indent} {idx}. <a href="{file_url}">{file_name} Python script</a>\n'
+        else:
+            file_extension = item.split('.')[-1]  # Get file extension without the dot
+            tree += f'{indent} {idx}. <a href="{file_url}">{file_name} {file_extension} file</a>\n'
 
     return tree
 

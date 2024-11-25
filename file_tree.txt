@@ -127,11 +127,14 @@
 │       └── math-tryout.tex
 ├── MyPackages/
 │   ├── README.md
-│   ├── waynetex.cls
+│   ├── sourcecontrol.py
 │   └── waytex.sty
 ├── PDFlist.py
 ├── README.md
 ├── ScriptRunner.py
+├── TexLive/
+│   ├── README.md
+│   └── waytex.sty
 ├── TreeFileListToREADME.py
 ├── file_tree.txt
 ├── mypackages.py
@@ -144,19 +147,19 @@
 File Extensions and Counts:
 .aux (13)
 .bbl (1)
-.cls (2)
+.cls (1)
 .fdb_latexmk (13)
 .fls (13)
 .gz (14)
 .jpg (2)
 .log (13)
-.md (2)
+.md (3)
 .out (5)
 .pdf (14)
 .png (1)
-.py (5)
+.py (6)
 .pyz (1)
-.sty (2)
+.sty (3)
 .tex (14)
 .toc (1)
 .txt (3)

@@ -16,6 +16,8 @@
 
 \usepackage{coffeestains} % no questions needed
 
+\usepackage{waytex}
+
 \author{\theauthor}
 \title{Povinná literatura k maturitní zkoušce}
 \date{2021 -- 2025}
@@ -36,17 +38,9 @@
 
 %\newcommand{\wart}[1]{\titlespacing{\part}{0pt}{0pt}{0pt}\noindent{\normalfont\Large\bfseries #1\par}}
 
-% Store the author name for later use
-\newcommand{\setauthor}[1]{\def\theauthor{#1}}
-
 \setauthor{Libor Halík}
 
-% Define the custom command \wart
-\newcommand{\wart}[2]{%
-  \titlespacing{\part}{0pt}{0pt}{0pt} % Match \part spacing
-  \noindent % Prevent indentation
-  {\normalfont\Large\bfseries #1 -- #2 \hfill \normalfont\tiny\textsc{\theauthor}\par} % Format the output
-}
+
 %\usepackage[pdftex,pdfauthor={Libor Halík},pdftitle={Povinná literatura k maturitní zkoušce},pdfsubject={Materiály z literatury k maturitní zkoušce, studijní projekt z období 2021 až 2025},pdfkeywords={}]{hyperref}
 \usepackage[pdftex,
             pdfusetitle,

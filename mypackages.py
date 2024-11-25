@@ -7,9 +7,9 @@ directory = "MyPackages"
 
 # Determine the target directory based on the OS
 if platform.system() == "Windows":
-    target_directory = r"C:\Users\alibi\texmf\tex\latex"
+    target_directory = r"C:\Users\alibi\texmf\tex\latex\waynepackages"
 else:
-    target_directory = os.path.expanduser("~/texmf/tex/latex")
+    target_directory = os.path.expanduser("~/texmf/tex/latex/waynepackages")
 
 # Create the target directory if it doesn't exist
 os.makedirs(target_directory, exist_ok=True)
