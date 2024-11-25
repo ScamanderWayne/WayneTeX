@@ -1,0 +1,66 @@
+## Description
+
+This repository contains my LaTeX notes and projects. Mostly for my own reference, but I am a big fan of open source, so feel free to use it as you wish. (With credits of course.)
+
+## Additional Resources
+
+<a href="https://latex.net/texlive/">Compile LaTeX files online</a>
+
+## Project Directory Tree
+
+- CV/
+   1. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/CV/LiborHalikCV.pdf">LiborHalikCV PDF file</a>
+   2. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/CV/LiborHalikCV.tex">LiborHalikCV raw TeX file</a>
+   3. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/CV/simplehipstercv.cls">simplehipstercv TeX Class file</a>
+   4. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/CV/simplehipstercv.sty">simplehipstercv TeX Style file</a>
+- Czech/
+  - FGBook/
+     1. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/FGBook/FGBook.pdf">FGBook PDF file</a>
+     2. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/FGBook/FGBook.tex">FGBook raw TeX file</a>
+     3. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/FGBook/FGBook.toc">FGBook toc file</a>
+  - Sloh/
+    - 1984inspiration/
+       1. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/1984inspiration/1984inspiration.pdf">1984inspiration PDF file</a>
+       2. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/1984inspiration/1984inspiration.tex">1984inspiration raw TeX file</a>
+    - 20240604/
+       1. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/20240604/20240604.pdf">20240604 PDF file</a>
+       2. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/20240604/20240604.tex">20240604 raw TeX file</a>
+    - OliwerTwist/
+       1. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/OliwerTwist/OliwerTwist.pdf">OliwerTwist PDF file</a>
+       2. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/OliwerTwist/OliwerTwist.tex">OliwerTwist raw TeX file</a>
+    - Prokrastinace/
+       1. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/Prokrastinace/Prokrastinace.pdf">Prokrastinace PDF file</a>
+       2. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/Prokrastinace/Prokrastinace.tex">Prokrastinace raw TeX file</a>
+    - WaltWhitman/
+       1. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/WaltWhitman/WaltWhitman.pdf">WaltWhitman PDF file</a>
+       2. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/WaltWhitman/WaltWhitman.tex">WaltWhitman raw TeX file</a>
+    - bezruc/
+       1. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/bezruc/bezruc.pdf">bezruc PDF file</a>
+       2. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/bezruc/bezruc.tex">bezruc raw TeX file</a>
+    - hlavacek/
+       1. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/hlavacek/hlavacek.pdf">hlavacek PDF file</a>
+       2. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/hlavacek/hlavacek.tex">hlavacek raw TeX file</a>
+    - silneslabestranky/
+       1. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/silneslabestranky/silneslabestranky.pdf">silneslabestranky PDF file</a>
+       2. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/silneslabestranky/silneslabestranky.tex">silneslabestranky raw TeX file</a>
+    - topol/
+       1. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/topol/topol.pdf">topol PDF file</a>
+       2. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/topol/topol.tex">topol raw TeX file</a>
+    - vanoce2023/
+       1. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/vanoce2023/vanoce2023.pdf">vanoce2023 PDF file</a>
+       2. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/vanoce2023/vanoce2023.tex">vanoce2023 raw TeX file</a>
+    - zdechlina/
+       1. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/zdechlina/zdechlina.pdf">zdechlina PDF file</a>
+       2. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/zdechlina/zdechlina.tex">zdechlina raw TeX file</a>
+- Math/
+  - Tryout/
+     1. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Math/Tryout/math-tryout.pdf">math-tryout PDF file</a>
+     2. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Math/Tryout/math-tryout.tex">math-tryout raw TeX file</a>
+- MyPackages/
+   3. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/MyPackages/waynetex.cls">waynetex TeX Class file</a>
+   4. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/MyPackages/waytex.sty">waytex TeX Style file</a>
+ 3. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/AllFilesList.py">AllFilesList py file</a>
+ 4. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/PDFlist.py">PDFlist py file</a>
+ 5. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/ScriptRunner.py">ScriptRunner py file</a>
+ 6. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/TreeFileListToREADME.py">TreeFileListToREADME py file</a>
+ 7. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/mypackages.py">mypackages py file</a>

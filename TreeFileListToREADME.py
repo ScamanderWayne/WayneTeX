@@ -24,6 +24,7 @@ def generate_file_tree_markdown(directory, base_url_blob, relative_path="", dept
     pdf_files = []
     tex_files = []
     bib_cls_sty_files = []
+    py_files = []  # For Python scripts
     other_files = []
 
     # Separate files into categories
@@ -48,8 +49,6 @@ def generate_file_tree_markdown(directory, base_url_blob, relative_path="", dept
                 pdf_files.append(item)
             elif item.endswith(".tex"):
                 tex_files.append(item)
-            elif item.endswith(".py"):  # Add Python scripts to py_files
-                py_files.append(item)
             elif item.endswith(".bib"):
                 bib_cls_sty_files.append(item)
             elif item.endswith(".cls") or item.endswith(".sty"):
@@ -58,6 +57,8 @@ def generate_file_tree_markdown(directory, base_url_blob, relative_path="", dept
                 bib_cls_sty_files.append(item)
             elif item.endswith(".tikz"):
                 bib_cls_sty_files.append(item)
+            elif item.endswith(".py"):  # Handle Python files
+                py_files.append(item)
             else:
                 other_files.append(item)
 
@@ -76,13 +77,6 @@ def generate_file_tree_markdown(directory, base_url_blob, relative_path="", dept
         tree += f'{indent} 2. <a href="{file_url}">{file_name} raw TeX file</a>\n'
         tex_counter += 1
 
-    for item in py_files:  # Process Python files
-        item_relative_path = os.path.join(relative_path, item)
-        file_url = f"{base_url_blob}/{item_relative_path}".replace("\\", "/")
-        file_name = os.path.splitext(item)[0]  # Get file name without extension
-        tree += f'{indent} {py_counter}. <a href="{file_url}">{file_name} Python script</a>\n'
-        py_counter += 1
-
     for item in bib_cls_sty_files:
         item_relative_path = os.path.join(relative_path, item)
         file_url = f"{base_url_blob}/{item_relative_path}".replace("\\", "/")
@@ -100,6 +94,13 @@ def generate_file_tree_markdown(directory, base_url_blob, relative_path="", dept
         elif item.endswith(".tikz"):
             tree += f'{indent} {other_files_counter}. <a href="{file_url}">{file_name} TeX Diagrams (TikZ) file</a>\n'
         
+        other_files_counter += 1
+
+    for item in py_files:  # Add custom handling for Python files
+        item_relative_path = os.path.join(relative_path, item)
+        file_url = f"{base_url_blob}/{item_relative_path}".replace("\\", "/")
+        file_name = os.path.splitext(item)[0]  # Get file name without extension
+        tree += f'{indent} {other_files_counter}. <a href="{file_url}">{file_name} Python script</a>\n'
         other_files_counter += 1
 
     for item in other_files:
