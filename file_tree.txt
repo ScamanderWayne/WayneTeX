@@ -140,3 +140,25 @@
 ├── pdf_list.txt
 ├── pre-commit-4.0.1.pyz
 └── requirements-dev.txt
+
+
+
+File Extensions and Counts:
+.aux (14)
+.bbl (1)
+.cls (1)
+.fdb_latexmk (14)
+.fls (14)
+.gz (15)
+.jpg (2)
+.log (14)
+.md (1)
+.out (5)
+.pdf (15)
+.png (1)
+.py (4)
+.pyz (1)
+.sty (1)
+.tex (15)
+.txt (3)
+.yaml (1)
