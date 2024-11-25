@@ -9,6 +9,7 @@ https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/Prokrastinace/Pr
 https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/WaltWhitman/WaltWhitman.pdf
 https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/bezruc/bezruc.pdf
 https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/hlavacek/hlavacek.pdf
+https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/newone/newone.pdf
 https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/silneslabestranky/silneslabestranky.pdf
 https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/topol/topol.pdf
 https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/vanoce2023/vanoce2023.pdf

@@ -39,6 +39,9 @@ This repository contains my LaTeX notes and projects. Mostly for my own referenc
     - hlavacek/
        1. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/hlavacek/hlavacek.pdf">hlavacek PDF file</a>
        2. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/hlavacek/hlavacek.tex">hlavacek raw TeX file</a>
+    - newone/
+       1. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/newone/newone.pdf">newone PDF file</a>
+       2. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/newone/newone.tex">newone raw TeX file</a>
     - silneslabestranky/
        1. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/silneslabestranky/silneslabestranky.pdf">silneslabestranky PDF file</a>
        2. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/silneslabestranky/silneslabestranky.tex">silneslabestranky raw TeX file</a>

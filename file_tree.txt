@@ -1,5 +1,6 @@
 ├── .gitattributes
 ├── .gitignore
+├── .pre-commit-config.yaml
 ├── AllFilesList.py
 ├── CV/
 │   ├── LiborHalikCV.aux
@@ -81,6 +82,14 @@
 │       │   ├── hlavacek.pdf
 │       │   ├── hlavacek.synctex.gz
 │       │   └── hlavacek.tex
+│       ├── newone/
+│       │   ├── newone.aux
+│       │   ├── newone.fdb_latexmk
+│       │   ├── newone.fls
+│       │   ├── newone.log
+│       │   ├── newone.pdf
+│       │   ├── newone.synctex.gz
+│       │   └── newone.tex
 │       ├── silneslabestranky/
 │       │   ├── silneslabestranky.aux
 │       │   ├── silneslabestranky.fdb_latexmk
@@ -128,4 +137,6 @@
 ├── ScriptRunner.py
 ├── TreeFileListToREADME.py
 ├── file_tree.txt
-└── pdf_list.txt
+├── pdf_list.txt
+├── pre-commit-4.0.1.pyz
+└── requirements-dev.txt

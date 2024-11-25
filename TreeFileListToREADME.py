@@ -127,7 +127,7 @@ if __name__ == "__main__":
     github_base_url_blob = "https://github.com/ScamanderWayne/WayneTeX/blob/main"  # Base URL for files
     ignored_directories = [".git"]  # Directories to ignore
     ignored_file_extensions = [
-        ".aux", ".fdb_latexmk", ".fls", ".log", ".synctex.gz", ".py", ".out", ".run.xml", ".bbl", ".blg", ".md", ".txt", ".png", ".jpg"
+        ".yaml", ".pyz", ".aux", ".fdb_latexmk", ".fls", ".log", ".synctex.gz", ".py", ".out", ".run.xml", ".bbl", ".blg", ".md", ".txt", ".png", ".jpg"
     ]  # File types to ignore
     ignored_files = [".gitattributes", ".gitignore"]  # Specific files to ignore
     write_file_tree_to_readme(
