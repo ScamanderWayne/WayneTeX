@@ -71,8 +71,8 @@ if failed_files:
             fail_file.write(f"{failed}\n")
     print(f"Failed to copy some files. See {failtocopy_path} for details.")
 
-# Create a README.md file listing the found .cls and .sty files and their descriptions
-readme_path = os.path.join(directory, "README.md")
+# Create a PACKAGES.md file listing the found .cls and .sty files and their descriptions
+readme_path = os.path.join(directory, "PACKAGES.md")
 with open(readme_path, "w") as readme_file:
     readme_file.write("# List of .cls and .sty Files\n\n")
     
@@ -86,4 +86,4 @@ with open(readme_path, "w") as readme_file:
         description = sty_descriptions.get(sty_file, "No description available.")
         readme_file.write(f"- {os.path.relpath(sty_file, directory)}  -- {description}\n")
 
-print(f"README.md has been created in {directory}")
+print(f"PACKAGES.md has been created in {directory}")

@@ -16,7 +16,7 @@
 
 \usepackage{coffeestains} % no questions needed
 
-\usepackage{waytex}
+\usepackage{waytex} % my package -- see waytex.sty or PACKAGES.md for more info.
 
 \author{\theauthor}
 \title{Povinná literatura k maturitní zkoušce}
@@ -42,55 +42,56 @@
 
 
 %\usepackage[pdftex,pdfauthor={Libor Halík},pdftitle={Povinná literatura k maturitní zkoušce},pdfsubject={Materiály z literatury k maturitní zkoušce, studijní projekt z období 2021 až 2025},pdfkeywords={}]{hyperref}
-\usepackage[pdftex,
-            pdfusetitle,
-            pdfsubject={Materiály z literatury k maturitní zkoušce, studijní projekt z období 2021 až 2025},
-            pdfkeywords={
-                maturita,
-                čeština,
-                čtenářské deníky,
-                Shakespeare,
-                Hamlet,
-                Romeo a Julie,
-                Poe,
-                Havran,
-                Erben,
-                Kytice,
-                Dostojevskij,
-                Zločin a trest,
-                Balzac,
-                Otec Goriot,
-                Dickens,
-                Oliwer Twist,
-                Wilde,
-                Obraz Doriana Graye,
-                Gogol,
-                Recizor,
-                Brown,
-                Šifra mistra Leonarda,
-                Da Vinciho kód,
-                Inferno,
-                Fitzgerald,
-                Velký Gatsby,
-                Orwell,
-                Devatenáct set osmdesát čtyři,
-                1984,
-                Rowlingová,
-                Harry Potter,
-                Tolkien,
-                Hobbit,
-                Gellner,
-                Po nás ať přijde potopa,
-                Kafka,
-                Proměna,
-                Dyk,
-                Krysař,
-                Čapek,
-                Bílá nemoc,
-                R. U. R.,
-                R.U.R.
-            }]{hyperref}
+\pdfkeywords{
+            maturita,
+            čeština,
+            čtenářské deníky,
+            Shakespeare,
+            Hamlet,
+            Romeo a Julie,
+            Poe,
+            Havran,
+            Erben,
+            Kytice,
+            Dostojevskij,
+            Zločin a trest,
+            Balzac,
+            Otec Goriot,
+            Dickens,
+            Oliwer Twist,
+            Wilde,
+            Obraz Doriana Graye,
+            Gogol,
+            Recizor,
+            Brown,
+            Šifra mistra Leonarda,
+            Da Vinciho kód,
+            Inferno,
+            Fitzgerald,
+            Velký Gatsby,
+            Orwell,
+            Devatenáct set osmdesát čtyři,
+            1984,
+            Rowlingová,
+            Harry Potter,
+            Tolkien,
+            Hobbit,
+            Gellner,
+            Po nás ať přijde potopa,
+            Kafka,
+            Proměna,
+            Dyk,
+            Krysař,
+            Čapek,
+            Bílá nemoc,
+            R. U. R.,
+            R.U.R.
+            }
+
+\setpdfmetadata{Povinná literatura k maturitní zkoušce}{Materiály z literatury k maturitní zkoušce, studijní projekt z období 2021 až 2025}
 % used to add metadata to PDF file
+
+\whyperlinks{1}{black}{black}{black}
 
 % --------------------------------------------------
 % S E Z N A M   L I T E R A T U R Y 
@@ -104,13 +105,15 @@
 
 \newpage
 
-%\changefontsize{8pt}\coffeestainA{0.4}{1}{90}{30em}{40em}\part*{Seznam literatury {\hfill \normalfont\tiny\textsc{Libor Halík}}}\section*{Světová a česká literatura do konce 18. století {\tiny{(min. 2 literární díla)}}}\subsection*{Epos o Gilgamešovi {\tiny{poezie  -- \textsc{TO--READ}}}}\subsection*{Hamlet {\tiny{drama  -- \textsc{hotovo}}}}\subsection*{Romeo a Julie {\tiny{drama  -- \textsc{ke zpracování}}}}\section*{Světová a česká literatura 19. století {\tiny{(min. 3 literární díla)}}}\subsection*{Havran {\tiny{poezie  -- \textsc{hotovo}}}}\subsection*{Kytice {\tiny{poezie  -- \textsc{hotovo}}}}\subsection*{Zločin a trest {\tiny{próza  -- \textsc{hotovo}}}}\subsection*{Otec Goriot {\tiny{próza  -- \textsc{TO--READ}}}}\subsection*{Oliver Twist {\tiny{próza  -- \textsc{TO--READ}}}}\subsection*{Obraz Doriana Graye {\tiny{próza  -- \textsc{hotovo}}}}\subsection*{Revizor {\tiny{drama  -- \textsc{ke zpracování}}}}\section*{Světová literatura 20. -- 21. století {\tiny{(min. 4 literární díla)}}}\subsection*{Inferno {\tiny{próza  -- \textsc{TO--READ}}}}\subsection*{Šifra Mistra Leonarda {\tiny{próza  -- \textsc{ke zpracování}}}}\subsection*{Velký Gatsby {\tiny{próza  -- \textsc{ke zpracování}}}}\subsection*{Devatenáct set osmdesát čtyři {\tiny{próza  -- \textsc{hotovo}}}}\subsection*{Harry Potter {\tiny{próza  -- \textsc{ke zpracování}}}}\subsection*{Hobbit {\tiny{próza  -- \textsc{ke zpracování}}}}\section*{Česká literatura 20. -- 21. století {\tiny{(min. 5 literární díla)}}}\subsection*{Po nás ať přijde potopa {\tiny{poezie  -- \textsc{TO--READ}}}}\subsection*{Proměna {\tiny{próza -- \textsc{ke zpracování}}}}\subsection*{Krysař {\tiny{próza  -- \textsc{ke zpracování}}}}\subsection*{Bílá nemoc {\tiny{drama  -- \textsc{ke zpracování}}}}\subsection*{R. U. R. {\tiny{drama  -- \textsc{TO--READ}}}}\vfill\noindent\begin{minipage}{\textwidth}\textcolor{darkgray}{\rule{\linewidth}{0.4pt}\footnotesize\textbf{Pravidla --} Dodržet minimální počet literatury z daného období; mít minimálně dvakrát poezii, dvakrát prózu a dvakrát drama; nemít více než dvě díla od jednoho autora.}\end{minipage}\pagestyle{empty}
+% {Seznam literatury}{Světová a česká literatura do konce 18. století {\tiny{(min. 2 literární díla)}}}\subsection*{Epos o Gilgamešovi {\tiny{poezie  -- \textsc{TO--READ}}}}\subsection*{Hamlet {\tiny{drama  -- \textsc{hotovo}}}}\subsection*{Romeo a Julie {\tiny{drama  -- \textsc{ke zpracování}}}}\section*{Světová a česká literatura 19. století {\tiny{(min. 3 literární díla)}}}\subsection*{Havran {\tiny{poezie  -- \textsc{hotovo}}}}\subsection*{Kytice {\tiny{poezie  -- \textsc{hotovo}}}}\subsection*{Zločin a trest {\tiny{próza  -- \textsc{hotovo}}}}\subsection*{Otec Goriot {\tiny{próza  -- \textsc{TO--READ}}}}\subsection*{Oliver Twist {\tiny{próza  -- \textsc{TO--READ}}}}\subsection*{Obraz Doriana Graye {\tiny{próza  -- \textsc{hotovo}}}}\subsection*{Revizor {\tiny{drama  -- \textsc{ke zpracování}}}}\section*{Světová literatura 20. -- 21. století {\tiny{(min. 4 literární díla)}}}\subsection*{Inferno {\tiny{próza  -- \textsc{TO--READ}}}}\subsection*{Šifra Mistra Leonarda {\tiny{próza  -- \textsc{ke zpracování}}}}\subsection*{Velký Gatsby {\tiny{próza  -- \textsc{ke zpracování}}}}\subsection*{Devatenáct set osmdesát čtyři {\tiny{próza  -- \textsc{hotovo}}}}\subsection*{Harry Potter {\tiny{próza  -- \textsc{ke zpracování}}}}\subsection*{Hobbit {\tiny{próza  -- \textsc{ke zpracování}}}}\section*{Česká literatura 20. -- 21. století {\tiny{(min. 5 literární díla)}}}\subsection*{Po nás ať přijde potopa {\tiny{poezie  -- \textsc{TO--READ}}}}\subsection*{Proměna {\tiny{próza -- \textsc{ke zpracování}}}}\subsection*{Krysař {\tiny{próza  -- \textsc{ke zpracování}}}}\subsection*{Bílá nemoc {\tiny{drama  -- \textsc{ke zpracování}}}}\subsection*{R. U. R. {\tiny{drama  -- \textsc{TO--READ}}}}\vfill\noindent\begin{minipage}{\textwidth}\textcolor{darkgray}{\rule{\linewidth}{0.4pt}\footnotesize\textbf{Pravidla --} Dodržet minimální počet literatury z daného období; mít minimálně dvakrát poezii, dvakrát prózu a dvakrát drama; nemít více než dvě díla od jednoho autora.}\end{minipage}\pagestyle{empty}
 
 % --------------------------------------------------
 % Č Á S T   P R V N Í
 % --------------------------------------------------
 
 \newpage
+
+\bigsection{Světová a česká literatura do konce 18. století}[min. 2 literární díla]
 
 % \coffeestainA{0.4}{1}{90}{30em}{40em}
 
