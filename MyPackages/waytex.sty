@@ -3,16 +3,22 @@
 \ProvidesPackage{waytex}[2024/11/25 My custom package]
 
 % Required for title formatting
-\usepackage{titlesec} 
+\usepackage{titlesec}
+\usepackage{xparse} % Required for flexible command definitions
 
 % Store the author name for later use -- \setauthor{author's name} then \theauthor to get the author's name
 \newcommand{\setauthor}[1]{\def\theauthor{#1}}
 
-% Define the custom command \wart -- Wayne's Part command
-\newcommand{\wart}[2]{%
+% Define the custom command \wart with styled optional arguments in the TOC
+\NewDocumentCommand{\wart}{m m o o}{%
   \titlespacing{\part}{0pt}{0pt}{0pt} % Match \part spacing
   \noindent % Prevent indentation
   {\normalfont\Large\bfseries #1 -- #2 \hfill \normalfont\tiny\textsc{\theauthor}\par} % Format the output
+  % Create TOC entry
+  \addcontentsline{toc}{part}{#1 -- #2%
+    \IfValueT{#3}{\hspace{1em}{\normalfont\tiny\textsc{#3}}}% Add #3 if it exists, styled
+    \IfValueT{#4}{, {\normalfont\tiny\textsc{#4}}}% Add #4 if it exists, styled
+  }%
 }
 
 %about: My first package

@@ -1,1 +1,21 @@
 \babel@toc {czech}{}\relax 
+\contentsline {part}{WILLIAM SHAKESPEARE -- Hamlet\hspace {1em}{\normalfont \relax \fontsize {3.4pt}{4.04599pt}\selectfont \textsc {Drama}}, {\normalfont \relax \fontsize {3.4pt}{4.04599pt}\selectfont \textsc {Hotovo}}}{2}{Doc-Start}%
+\contentsline {part}{WILLIAM SHAKESPEARE -- Romeo a Julie}{3}{Doc-Start}%
+\contentsline {part}{EDGAR ALLAN POE -- Havran}{4}{Doc-Start}%
+\contentsline {part}{KAREL JAROMÍR ERBEN -- Kytice}{5}{Doc-Start}%
+\contentsline {part}{FJODOR MICHALJEVIČ DOSTOJEVSKIJ -- Zločin a trest}{6}{Doc-Start}%
+\contentsline {part}{HONORÉ DE BALZAC -- Otec Goriot}{7}{Doc-Start}%
+\contentsline {part}{CHARLES DICKENS -- Oliver Twist}{8}{Doc-Start}%
+\contentsline {part}{OSCAR WILDE -- Obraz Doriana Graye}{9}{Doc-Start}%
+\contentsline {part}{NIKOLAJ VASILJEVIČ GOGOL -- Revizor}{10}{Doc-Start}%
+\contentsline {part}{DAN BROWN -- Inferno}{11}{Doc-Start}%
+\contentsline {part}{DAN BROWN -- Šifra Mistra Leonarda}{12}{Doc-Start}%
+\contentsline {part}{FRANCIS SCOTT FITZGERALD -- Velký Gatsby}{13}{Doc-Start}%
+\contentsline {part}{GEORGE ORWELL -- Devatenáct set osmdesát čtyři}{14}{Doc-Start}%
+\contentsline {part}{JOANNE ROWLINGOVÁ -- Harry Potter}{15}{Doc-Start}%
+\contentsline {part}{J. R. R. TOLKIEN -- Hobbit}{16}{Doc-Start}%
+\contentsline {part}{FRANTIŠEK GELLNER -- Po nás ať přijde potopa}{17}{Doc-Start}%
+\contentsline {part}{FRANZ KAFKA -- Proměna}{18}{Doc-Start}%
+\contentsline {part}{VIKTOR DYK -- Krysař}{19}{Doc-Start}%
+\contentsline {part}{KAREL ČAPEK -- Bílá Nemoc}{20}{Doc-Start}%
+\contentsline {part}{KAREL ČAPEK -- R. U. R.}{21}{Doc-Start}%
