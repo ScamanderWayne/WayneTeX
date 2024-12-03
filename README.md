@@ -19,7 +19,8 @@ This repository contains my LaTeX notes and projects. Mostly for my own referenc
   - FGBook/
      1. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/FGBook/FGBook.pdf">FGBook PDF file</a>
      2. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/FGBook/FGBook.tex">FGBook raw TeX file</a>
-     3. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/FGBook/FGBook.toc">FGBook toc file</a>
+     3. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/FGBook/refs.bib">refs TeX Bibliography file</a>
+     4. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/FGBook/FGBook.toc">FGBook toc file</a>
   - Sloh/
     - 1984inspiration/
        1. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/1984inspiration/1984inspiration.pdf">1984inspiration PDF file</a>
