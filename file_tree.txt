@@ -22,11 +22,11 @@
 │   │   ├── FGBook.fdb_latexmk
 │   │   ├── FGBook.fls
 │   │   ├── FGBook.log
+│   │   ├── FGBook.out
 │   │   ├── FGBook.pdf
 │   │   ├── FGBook.synctex.gz
 │   │   ├── FGBook.tex
-│   │   ├── FGBook.toc
-│   │   └── refs.bib
+│   │   └── FGBook.toc
 │   └── Sloh/
 │       ├── 1984inspiration/
 │       │   ├── 1984inspiration.aux
@@ -144,7 +144,6 @@
 File Extensions and Counts:
 .aux (13)
 .bbl (1)
-.bib (1)
 .cls (1)
 .fdb_latexmk (13)
 .fls (13)
@@ -152,7 +151,7 @@ File Extensions and Counts:
 .jpg (2)
 .log (13)
 .md (2)
-.out (4)
+.out (5)
 .pdf (14)
 .png (1)
 .py (6)
