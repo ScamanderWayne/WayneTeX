@@ -1,0 +1,93 @@
+% wsloh.sty - A simple LaTeX package for pre-defined settings
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{wsloh}[2024/06/10 v1.5 My Custom Setup Package]
+
+% Document Font Size
+\RequirePackage{geometry}
+
+% Load Required Packages
+\RequirePackage[czech]{babel}
+\RequirePackage{graphicx} % For inserting images
+\RequirePackage{fancyhdr} % For custom headers/footers
+\RequirePackage{yfonts}   % Gothic fonts
+\RequirePackage{coffeestains} % Coffee stains package
+\RequirePackage{lipsum}   % Dummy text
+\RequirePackage{xcolor}   % For colors
+\RequirePackage{csquotes} % Context-sensitive quotes
+\RequirePackage{hyperref} % Hyperlinks support
+
+% Geometry adjustments
+\geometry{a4paper}
+
+% Page Layout Settings
+\setlength{\parskip}{0pt}     % No vertical space between paragraphs
+\setlength{\parindent}{1em}   % Paragraph indent
+\setlength{\headheight}{12pt} % Header height
+\setlength{\footskip}{5pt}    % Footer skip
+
+% Define Commands for Custom Header Content
+\newcommand{\wtitle}{}
+\newcommand{\wauthor}{}
+\newcommand{\wsubtext}{}
+
+% change font size so my teacher is not pissed off
+\renewcommand\normalsize{%
+  \@setfontsize\normalsize{11pt}{13pt}%
+}
+\setlength{\baselineskip}{13pt}
+\let\small\normalsize % Ensure smaller sizes align with the new base size
+
+
+% Define Command to Set All Values
+\newcommand{\setws}[2]{%
+    \renewcommand{\wtitle}{#1}%
+    \renewcommand{\wauthor}{#2}%
+}
+
+% Control Page Numbering in Footer
+\newcommand{\wnumbering}[1][0]{%
+    \ifnum#1=1
+        \fancyfoot[C]{\footnotesize \textit{\thepage{} . strana}} % Enable numbering
+        \renewcommand{\footrulewidth}{0.1pt} % Enable footer line
+    \else
+        \fancyfoot[C]{} % Clear footer
+        \renewcommand{\footrulewidth}{0pt} % Remove footer line
+    \fi
+}
+
+% Hyperref Settings
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=cyan,
+    pdfauthor={\wauthor},
+    pdftitle={\wtitle}
+}
+
+% Fancy Header/Footer Setup
+\pagestyle{fancy}
+\fancyhf{} % Clear all header/footer fields
+
+\fancyhead[L]{\wtitle}           % Left header
+\fancyhead[R]{\wauthor}          % Right header
+\fancyhead[C]{}         % Center header
+\renewcommand{\headrulewidth}{0.1pt} % Thin line for header
+
+% Title Preamble (Automatically Generates Title Page)
+\newcommand{\mytitlepage}{%
+    \begin{titlepage}
+        \centering
+        {\LARGE\textbf{\wtitle}\par}
+        \vspace{2em}
+        {\large \textit{Autor:} \wauthor\par}
+        \ifx\wsubtext\empty\else % Include subtext only if defined
+            \vspace{1em}
+            {\large \textit{\wsubtext}\par}
+        \fi
+        \vfill
+        {\large \today\par}
+    \end{titlepage}
+}
+
+% Default numbering is OFF
+\wnumbering[0]
