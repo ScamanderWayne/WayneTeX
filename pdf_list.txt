@@ -12,5 +12,6 @@ https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/hlavacek/hlavace
 https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/silneslabestranky/silneslabestranky.pdf
 https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/topol/topol.pdf
 https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/vanoce2023/vanoce2023.pdf
+https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/vanoce2024/vanoce2024.pdf
 https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/zdechlina/zdechlina.pdf
 https://github.com/ScamanderWayne/WayneTeX/blob/main/Math/Tryout/math-tryout.pdf

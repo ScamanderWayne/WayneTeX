@@ -51,6 +51,9 @@ This repository contains my LaTeX notes and projects. Mostly for my own referenc
     - vanoce2023/
        1. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/vanoce2023/vanoce2023.pdf">vanoce2023 PDF file</a>
        2. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/vanoce2023/vanoce2023.tex">vanoce2023 raw TeX file</a>
+    - vanoce2024/
+       1. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/vanoce2024/vanoce2024.pdf">vanoce2024 PDF file</a>
+       2. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/vanoce2024/vanoce2024.tex">vanoce2024 raw TeX file</a>
     - zdechlina/
        1. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/zdechlina/zdechlina.pdf">zdechlina PDF file</a>
        2. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/zdechlina/zdechlina.tex">zdechlina raw TeX file</a>
@@ -60,7 +63,8 @@ This repository contains my LaTeX notes and projects. Mostly for my own referenc
      2. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Math/Tryout/math-tryout.tex">math-tryout raw TeX file</a>
 - MyPackages/
    1. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/MyPackages/waytex.sty">waytex TeX Style file</a>
-   2. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/MyPackages/sourcecontrol.py">sourcecontrol Python script</a>
+   2. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/MyPackages/wsloh.sty">wsloh TeX Style file</a>
+   3. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/MyPackages/sourcecontrol.py">sourcecontrol Python script</a>
  1. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/AllFilesList.py">AllFilesList Python script</a>
  2. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/PDFlist.py">PDFlist Python script</a>
  3. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/ScriptRunner.py">ScriptRunner Python script</a>
