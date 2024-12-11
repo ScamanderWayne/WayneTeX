@@ -22,8 +22,9 @@
 % Page Layout Settings
 \setlength{\parskip}{0pt}     % No vertical space between paragraphs
 \setlength{\parindent}{1em}   % Paragraph indent
-\setlength{\headheight}{12pt} % Header height
+\setlength{\headheight}{18pt} % Header height
 \setlength{\footskip}{5pt}    % Footer skip
+\addtolength{\topmargin}{-6.0pt}
 
 % Define Commands for Custom Header Content
 \newcommand{\wtitle}{}
@@ -68,8 +69,8 @@
 \pagestyle{fancy}
 \fancyhf{} % Clear all header/footer fields
 
-\fancyhead[L]{\wtitle}           % Left header
-\fancyhead[R]{\wauthor}          % Right header
+\fancyhead[L]{\Large\textfrak{\wtitle}}           % Left header
+\fancyhead[R]{\footnotesize\textsc{\wauthor}}          % Right header
 \fancyhead[C]{}         % Center header
 \renewcommand{\headrulewidth}{0.1pt} % Thin line for header
 
