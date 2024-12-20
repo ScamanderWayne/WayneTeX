@@ -1,4 +1,4 @@
-name: Sync main to pages
+name: Update pages branch from main
 
 on:
   push:
@@ -6,33 +6,38 @@ on:
       - main
 
 jobs:
-  sync:
+  update-pages:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout the repository
+      - name: Checkout the main branch
         uses: actions/checkout@v3
+        with:
+          ref: main
+          path: main-branch
 
-      - name: Configure Git user
-        run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
+      - name: Checkout the pages branch
+        uses: actions/checkout@v3
+        with:
+          ref: pages
+          path: pages-branch
 
-      - name: Checkout or create the pages branch
+      - name: Copy files from main to pages
         run: |
-          git fetch origin
-          if git show-ref --verify --quiet refs/remotes/origin/pages; then
-            git checkout pages
-          else
-            git checkout --orphan pages
-          fi
+          cp -r main-branch/* pages-branch/
+          cp -r main-branch/.* pages-branch/ || true  # Include hidden files (e.g., .gitignore), ignore errors
 
-      - name: Merge changes from main
+      - name: Commit and push changes to pages
         run: |
-          git merge origin/main --no-ff -m "Sync changes from main to pages branch"
+          cd pages-branch
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
 
-      - name: Push changes to pages branch
-        run: |
+          # Stage and commit the changes
+          git add .
+          git commit -m "Update pages branch with files from main" || echo "No changes to commit"
+
+          # Push changes
           git push origin pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
