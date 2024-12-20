@@ -13,6 +13,11 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
+      # Debug: List files to check if the file exists
+      - name: List files in the repository
+        run: |
+          ls -R
+
       # Setup Git user
       - name: Configure Git User
         run: |
@@ -29,7 +34,7 @@ jobs:
       - name: Read and Copy Files
         run: |
           # Ensure the script reads the file from the root directory
-          file_path="./files-to-copy.txt" # Modify this if the file is in another folder
+          file_path=".github/workflows/files-to-copy.txt"
           if [ -f "$file_path" ]; then
             while IFS= read -r file; do
               if [ -n "$file" ]; then
