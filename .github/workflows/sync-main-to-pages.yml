@@ -12,10 +12,6 @@ jobs:
   update-pages:
     runs-on: ubuntu-latest
 
-jobs:
-  update-pages:
-    runs-on: ubuntu-latest
-
     steps:
       - name: Checkout the main branch
         uses: actions/checkout@v3
