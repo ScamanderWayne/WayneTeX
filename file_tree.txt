@@ -1,6 +1,7 @@
 ├── .gitattributes
 ├── .github/
 │   └── workflows/
+│       ├── files-to-copy.txt
 │       └── sync-main-to-pages.yml
 ├── .gitignore
 ├── .pre-commit-config.yaml
@@ -84,7 +85,6 @@
 ├── ScriptRunner.py
 ├── TreeFileListToREADME.py
 ├── file_tree.txt
-├── files-to-copy.txt
 ├── mypackages.py
 ├── pdf_list.txt
 ├── pre-commit-4.0.1.pyz
