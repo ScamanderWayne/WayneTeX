@@ -28,13 +28,19 @@ jobs:
       # Copy folders listed in files-to-copy.txt
       - name: Read and Copy Files
         run: |
-          # Read the list of files from files-to-copy.txt
-          while IFS= read -r file; do
-            if [ -n "$file" ]; then
-              echo "Copying $file..."
-              git checkout main -- "$file"
-            fi
-          done < files-to-copy.txt
+          # Ensure the script reads the file from the root directory
+          file_path="./files-to-copy.txt" # Modify this if the file is in another folder
+          if [ -f "$file_path" ]; then
+            while IFS= read -r file; do
+              if [ -n "$file" ]; then
+                echo "Copying $file..."
+                git checkout main -- "$file"
+              fi
+            done < "$file_path"
+          else
+            echo "Error: $file_path not found!"
+            exit 1
+          fi
 
       # Commit and Push Changes
       - name: Commit and Push Changes
