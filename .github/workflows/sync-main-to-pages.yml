@@ -5,6 +5,13 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write  # Allow GITHUB_TOKEN to push changes
+
+jobs:
+  update-pages:
+    runs-on: ubuntu-latest
+
 jobs:
   update-pages:
     runs-on: ubuntu-latest
