@@ -10,6 +10,9 @@ This repository contains my LaTeX notes and projects. Mostly for my own referenc
 
 ## Project Directory Tree
 
+- .github/
+  - workflows/
+     1. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/.github/workflows/deploy.yml">deploy yml file</a>
 - CV/
    1. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/CV/LiborHalikCV.pdf">LiborHalikCV PDF file</a>
    2. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/CV/LiborHalikCV.tex">LiborHalikCV raw TeX file</a>

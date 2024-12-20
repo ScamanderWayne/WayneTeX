@@ -1,4 +1,7 @@
 ├── .gitattributes
+├── .github/
+│   └── workflows/
+│       └── deploy.yml
 ├── .gitignore
 ├── .pre-commit-config.yaml
 ├── AllFilesList.py
@@ -12,13 +15,7 @@
 │   └── simplehipstercv.sty
 ├── Czech/
 │   ├── FGBook/
-│   │   ├── FGBook.aux
-│   │   ├── FGBook.fdb_latexmk
-│   │   ├── FGBook.fls
-│   │   ├── FGBook.log
-│   │   ├── FGBook.out
 │   │   ├── FGBook.pdf
-│   │   ├── FGBook.synctex.gz
 │   │   ├── FGBook.tex
 │   │   └── FGBook.toc
 │   └── Sloh/
@@ -30,30 +27,12 @@
 │       │   └── 20240604.tex
 │       ├── DanVanoce2024/
 │       │   ├── ChatGPT/
-│       │   │   ├── chatgpt.aux
-│       │   │   ├── chatgpt.fdb_latexmk
-│       │   │   ├── chatgpt.fls
-│       │   │   ├── chatgpt.log
-│       │   │   ├── chatgpt.out
 │       │   │   ├── chatgpt.pdf
-│       │   │   ├── chatgpt.synctex.gz
 │       │   │   └── chatgpt.tex
 │       │   ├── Deepl/
-│       │   │   ├── deepl.aux
-│       │   │   ├── deepl.fdb_latexmk
-│       │   │   ├── deepl.fls
-│       │   │   ├── deepl.log
-│       │   │   ├── deepl.out
 │       │   │   ├── deepl.pdf
-│       │   │   ├── deepl.synctex.gz
 │       │   │   └── deepl.tex
-│       │   ├── hiswork.aux
-│       │   ├── hiswork.fdb_latexmk
-│       │   ├── hiswork.fls
-│       │   ├── hiswork.log
-│       │   ├── hiswork.out
 │       │   ├── hiswork.pdf
-│       │   ├── hiswork.synctex.gz
 │       │   └── hiswork.tex
 │       ├── OliwerTwist/
 │       │   ├── OliwerTwist.pdf
@@ -80,25 +59,14 @@
 │       │   ├── vanoce2023.pdf
 │       │   └── vanoce2023.tex
 │       ├── vanoce2024/
-│       │   ├── vanoce2024.aux
-│       │   ├── vanoce2024.fdb_latexmk
-│       │   ├── vanoce2024.fls
-│       │   ├── vanoce2024.log
-│       │   ├── vanoce2024.out
 │       │   ├── vanoce2024.pdf
-│       │   ├── vanoce2024.synctex.gz
 │       │   └── vanoce2024.tex
 │       └── zdechlina/
 │           ├── zdechlina.pdf
 │           └── zdechlina.tex
 ├── Math/
 │   └── Tryout/
-│       ├── math-tryout.aux
-│       ├── math-tryout.fdb_latexmk
-│       ├── math-tryout.fls
-│       ├── math-tryout.log
 │       ├── math-tryout.pdf
-│       ├── math-tryout.synctex.gz
 │       └── math-tryout.tex
 ├── MyPackages/
 │   ├── README.md
@@ -118,15 +86,9 @@
 
 
 File Extensions and Counts:
-.aux (6)
 .cls (1)
-.fdb_latexmk (6)
-.fls (6)
-.gz (6)
 .jpg (2)
-.log (6)
 .md (2)
-.out (5)
 .pdf (18)
 .png (1)
 .py (6)
@@ -136,3 +98,4 @@ File Extensions and Counts:
 .toc (1)
 .txt (3)
 .yaml (1)
+.yml (1)
