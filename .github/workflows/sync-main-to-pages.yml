@@ -1,4 +1,4 @@
-name: Sync to Pages Branch
+name: Sync Folders to Pages Branch
 
 on:
   push:
@@ -13,11 +13,6 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      # Debug: List files to check if the file exists
-      - name: List files in the repository
-        run: |
-          ls -R
-
       # Setup Git user
       - name: Configure Git User
         run: |
@@ -30,26 +25,29 @@ jobs:
           git fetch origin pages
           git checkout pages
 
-      # Copy folders listed in files-to-copy.txt
-      - name: Read and Copy Files
+      # Define the list of folders to copy (directly in the workflow)
+      - name: Define Folders to Copy
+        id: define-folders
         run: |
-          # Ensure the script reads the file from .github/workflows
-          file_path=".github/workflows/files-to-copy.txt"
-          if [ -f "$file_path" ]; then
-            while IFS= read -r file; do
-              if [ -n "$file" ]; then
-                echo "Copying $file..."
-                git checkout main -- "$file"
-              fi
-            done < "$file_path"
-          else
-            echo "Error: $file_path not found!"
-            exit 1
-          fi
+          FOLDERS_TO_COPY=(
+            "CV/*"
+            "Czech/*"
+            "Math/*"
+            "MyPackages/*"
+          )
+          echo "FOLDERS_TO_COPY=${FOLDERS_TO_COPY[@]}" >> $GITHUB_ENV
 
-      # Commit and Push Changes
+      # Copy the folders from the main branch
+      - name: Copy Folders from Main Branch
+        run: |
+          for folder in "${FOLDERS_TO_COPY[@]}"; do
+            echo "Copying $folder from main to pages branch..."
+            git checkout main -- "$folder"
+          done
+
+      # Commit and Push Changes to Pages Branch
       - name: Commit and Push Changes
         run: |
           git add .
-          git commit -m "Sync files from main branch to pages branch" || echo "No changes to commit"
+          git commit -m "Sync selected folders from main to pages branch" || echo "No changes to commit"
           git push origin pages
