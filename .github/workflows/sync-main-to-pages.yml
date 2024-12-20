@@ -29,7 +29,7 @@ jobs:
       - name: Define Folders to Copy
         id: define-folders
         run: |
-          FOLDERS_TO_COPY=("CV/*" "Czech/*" "Math/*" "MyPackages/*")
+          FOLDERS_TO_COPY=("CV" "Czech" "Math" "MyPackages")
           echo "FOLDERS_TO_COPY=${FOLDERS_TO_COPY[@]}" >> $GITHUB_ENV
 
       # Copy the folders from the main branch
@@ -37,7 +37,7 @@ jobs:
         run: |
           for folder in "${FOLDERS_TO_COPY[@]}"; do
             echo "Copying $folder from main to pages branch..."
-            git checkout main -- "$folder"
+            git checkout main -- "$folder/"
           done
 
       # Commit and Push Changes to Pages Branch
