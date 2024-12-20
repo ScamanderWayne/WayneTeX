@@ -33,7 +33,7 @@ jobs:
       # Copy folders listed in files-to-copy.txt
       - name: Read and Copy Files
         run: |
-          # Ensure the script reads the file from the root directory
+          # Ensure the script reads the file from .github/workflows
           file_path=".github/workflows/files-to-copy.txt"
           if [ -f "$file_path" ]; then
             while IFS= read -r file; do
