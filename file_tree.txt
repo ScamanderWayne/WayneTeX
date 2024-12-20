@@ -28,6 +28,33 @@
 │       ├── 20240604/
 │       │   ├── 20240604.pdf
 │       │   └── 20240604.tex
+│       ├── DanVanoce2024/
+│       │   ├── ChatGPT/
+│       │   │   ├── chatgpt.aux
+│       │   │   ├── chatgpt.fdb_latexmk
+│       │   │   ├── chatgpt.fls
+│       │   │   ├── chatgpt.log
+│       │   │   ├── chatgpt.out
+│       │   │   ├── chatgpt.pdf
+│       │   │   ├── chatgpt.synctex.gz
+│       │   │   └── chatgpt.tex
+│       │   ├── Deepl/
+│       │   │   ├── deepl.aux
+│       │   │   ├── deepl.fdb_latexmk
+│       │   │   ├── deepl.fls
+│       │   │   ├── deepl.log
+│       │   │   ├── deepl.out
+│       │   │   ├── deepl.pdf
+│       │   │   ├── deepl.synctex.gz
+│       │   │   └── deepl.tex
+│       │   ├── hiswork.aux
+│       │   ├── hiswork.fdb_latexmk
+│       │   ├── hiswork.fls
+│       │   ├── hiswork.log
+│       │   ├── hiswork.out
+│       │   ├── hiswork.pdf
+│       │   ├── hiswork.synctex.gz
+│       │   └── hiswork.tex
 │       ├── OliwerTwist/
 │       │   ├── OliwerTwist.pdf
 │       │   └── OliwerTwist.tex
@@ -91,21 +118,21 @@
 
 
 File Extensions and Counts:
-.aux (3)
+.aux (6)
 .cls (1)
-.fdb_latexmk (3)
-.fls (3)
-.gz (3)
+.fdb_latexmk (6)
+.fls (6)
+.gz (6)
 .jpg (2)
-.log (3)
+.log (6)
 .md (2)
-.out (2)
-.pdf (15)
+.out (5)
+.pdf (18)
 .png (1)
 .py (6)
 .pyz (1)
 .sty (3)
-.tex (15)
+.tex (18)
 .toc (1)
 .txt (3)
 .yaml (1)

@@ -27,6 +27,15 @@ This repository contains my LaTeX notes and projects. Mostly for my own referenc
     - 20240604/
        1. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/20240604/20240604.pdf">20240604 PDF file</a>
        2. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/20240604/20240604.tex">20240604 raw TeX file</a>
+    - DanVanoce2024/
+      - ChatGPT/
+         1. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/DanVanoce2024/ChatGPT/chatgpt.pdf">chatgpt PDF file</a>
+         2. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/DanVanoce2024/ChatGPT/chatgpt.tex">chatgpt raw TeX file</a>
+      - Deepl/
+         1. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/DanVanoce2024/Deepl/deepl.pdf">deepl PDF file</a>
+         2. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/DanVanoce2024/Deepl/deepl.tex">deepl raw TeX file</a>
+       1. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/DanVanoce2024/hiswork.pdf">hiswork PDF file</a>
+       2. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/DanVanoce2024/hiswork.tex">hiswork raw TeX file</a>
     - OliwerTwist/
        1. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/OliwerTwist/OliwerTwist.pdf">OliwerTwist PDF file</a>
        2. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/OliwerTwist/OliwerTwist.tex">OliwerTwist raw TeX file</a>
