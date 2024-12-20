@@ -46,23 +46,29 @@
 
 % Define the custom command \wart
 \NewDocumentCommand{\wart}{m m o o}{%
-  \titlespacing{\section}{0pt}{0pt}{0pt} % Match \section spacing (can be adjusted as needed)
-  \noindent % Prevent indentation
-  {\normalfont\Large\bfseries #1 -- #2 \hfill \normalfont\tiny\textsc{\theauthor}\par} % Format the output
-  % Add TOC entry as a section
-  \addcontentsline{toc}{section}{#1 -- #2%
-    \IfValueT{#3}{\hspace{1em}{\normalfont\tiny\textsc{#3}}}%
-    \IfValueT{#4}{, {\normalfont\tiny\textsc{#4}}}%
+  \titlespacing{\section}{0pt}{0pt}{0pt} % Adjust section spacing
+  \phantomsection % Creates a linkable anchor for the TOC
+  \noindent % Prevent paragraph indentation
+  {\normalfont\Large\bfseries #2 -- #1 \hfill \normalfont\tiny\textsc{\theauthor}\par} % Main output: Author -- Book
+  \addcontentsline{toc}{section}{\normalfont\fontsize{7pt}{8pt}\selectfont #2 -- #1%
+    \IfValueT{#3}{\hspace{1em}{\normalfont\fontsize{5.5pt}{6.5pt}\textsc{#3}}}%
+    \IfValueT{#4}{, {\normalfont\fontsize{5.5pt}{6.5pt}\textsc{#4}}}%
   }%
+  \label{wart:#1:#2} % Adds a unique label for this wart
 }
 
 % Define the custom command \bigsection
 \NewDocumentCommand{\bigsection}{m o}{%
-  % Do not print anything in the document
-  % Add TOC entry as a part (larger font in TOC)
-  \addcontentsline{toc}{part}{\Huge #1%
-    \IfValueT{#2}{\hspace{1em}{\normalfont\tiny\textsc{#2}}}%
+  \phantomsection % Creates a linkable anchor for the TOC
+  \addcontentsline{toc}{part}{\normalfont\fontsize{8pt}{9pt}\selectfont #1%
+    \IfValueT{#2}{\hspace{1em}{\normalfont\fontsize{5.5pt}{6.5pt}\textsc{#2}}}%
   }%
 }
+
+% Define the custom command used to rename TOC
+\NewDocumentCommand{\wtoc}{m}{%
+  \renewcommand{\contentsname}{#1 \hfill \normalfont\tiny\textsc{\theauthor}}%
+}
+
 
 %about: Currently adds commands \setauthor{Author's name} that you can call later on with \theauthor; \wart{Writer's name}{Writer's work}[optional text visible in TOC][second optional text vesible in TOC](automatically calls \theauthor and places it in right corner of page)
