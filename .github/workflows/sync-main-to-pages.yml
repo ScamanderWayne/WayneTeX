@@ -29,12 +29,7 @@ jobs:
       - name: Define Folders to Copy
         id: define-folders
         run: |
-          FOLDERS_TO_COPY=(
-            "CV/*"
-            "Czech/*"
-            "Math/*"
-            "MyPackages/*"
-          )
+          FOLDERS_TO_COPY=("CV/*" "Czech/*" "Math/*" "MyPackages/*")
           echo "FOLDERS_TO_COPY=${FOLDERS_TO_COPY[@]}" >> $GITHUB_ENV
 
       # Copy the folders from the main branch
