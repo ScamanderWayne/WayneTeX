@@ -1,7 +1,6 @@
 ├── .gitattributes
 ├── .github/
 │   └── workflows/
-│       ├── files-to-copy.txt
 │       └── sync-main-to-pages.yml
 ├── .gitignore
 ├── .pre-commit-config.yaml
@@ -109,6 +108,6 @@ File Extensions and Counts:
 .sty (3)
 .tex (18)
 .toc (1)
-.txt (4)
+.txt (3)
 .yaml (1)
 .yml (1)
