@@ -1,46 +1,44 @@
-name: Update pages branch from main
+name: Sync to Pages Branch
 
 on:
   push:
     branches:
       - main
 
-permissions:
-  contents: write  # Allow GITHUB_TOKEN to push changes
-
 jobs:
-  update-pages:
+  sync-folders:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout the main branch
-        uses: actions/checkout@v3
-        with:
-          ref: main
-          path: main-branch
+      # Checkout the repository
+      - name: Checkout Repository
+        uses: actions/checkout@v4
 
-      - name: Checkout the pages branch
-        uses: actions/checkout@v3
-        with:
-          ref: pages
-          path: pages-branch
-
-      - name: Copy files from main to pages
+      # Setup Git user
+      - name: Configure Git User
         run: |
-          cp -r main-branch/* pages-branch/
-          cp -r main-branch/.* pages-branch/ || true  # Include hidden files (e.g., .gitignore), ignore errors
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
 
-      - name: Commit and push changes to pages
+      # Checkout the pages branch
+      - name: Checkout Pages Branch
         run: |
-          cd pages-branch
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
+          git fetch origin pages
+          git checkout pages
 
-          # Stage and commit the changes
+      # Copy folders listed in files-to-copy.txt
+      - name: Read and Copy Files
+        run: |
+          # Read the list of files from files-to-copy.txt
+          while IFS= read -r file; do
+            if [ -n "$file" ]; then
+              echo "Copying $file..."
+              git checkout main -- "$file"
+            fi
+          done < files-to-copy.txt
+
+      # Commit and Push Changes
+      - name: Commit and Push Changes
+        run: |
           git add .
-          git commit -m "Update pages branch with files from main" || echo "No changes to commit"
-
-          # Push changes
+          git commit -m "Sync files from main branch to pages branch" || echo "No changes to commit"
           git push origin pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

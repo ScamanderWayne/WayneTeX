@@ -1,0 +1,4 @@
+CV/*
+Czech/*
+Math/*
+MyPackages/*
