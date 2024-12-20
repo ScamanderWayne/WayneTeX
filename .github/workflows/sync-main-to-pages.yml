@@ -43,4 +43,6 @@ jobs:
         run: |
           git add .
           git commit -m "Sync selected folders from main to pages branch" || echo "No changes to commit"
-          git push origin pages
+          
+          # Push changes using the Personal Access Token for authentication
+          git push https://github-actions:${{ secrets.PAT_TOKEN }}@github.com/ScamanderWayne/WayneTeX.git pages
