@@ -27,15 +27,16 @@ jobs:
 
       # Define the list of folders to copy (directly in the workflow)
       - name: Define Folders to Copy
-        id: define-folders
         run: |
-          FOLDERS_TO_COPY=("CV" "Czech" "Math" "MyPackages")
-          echo "FOLDERS_TO_COPY=${FOLDERS_TO_COPY[@]}" >> $GITHUB_ENV
+          echo "CV" >> $GITHUB_ENV
+          echo "Czech" >> $GITHUB_ENV
+          echo "Math" >> $GITHUB_ENV
+          echo "MyPackages" >> $GITHUB_ENV
 
       # Copy the folders from the main branch
       - name: Copy Folders from Main Branch
         run: |
-          for folder in "${FOLDERS_TO_COPY[@]}"; do
+          for folder in $CV $Czech $Math $MyPackages; do
             echo "Copying $folder from main to pages branch..."
             git checkout main -- "$folder/"
           done
