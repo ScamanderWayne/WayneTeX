@@ -50,19 +50,19 @@
   \phantomsection % Creates a linkable anchor for the TOC
   \noindent % Prevent paragraph indentation
   {\normalfont\Large\bfseries #2 -- #1 \hfill \normalfont\tiny\textsc{\theauthor}\par} % Main output: Author -- Book
-  \addcontentsline{toc}{section}{\normalfont\fontsize{7pt}{8pt}\selectfont #2 -- #1%
+  \addtocontents{toc}{\protect\contentsline{section}{\normalfont\fontsize{7pt}{8pt}\selectfont #2 -- #1%
     \IfValueT{#3}{\hspace{1em}{\normalfont\fontsize{5.5pt}{6.5pt}\textsc{#3}}}%
     \IfValueT{#4}{, {\normalfont\fontsize{5.5pt}{6.5pt}\textsc{#4}}}%
-  }%
+  }{}{} } % Suppress the page number in the TOC entry
   \label{wart:#1:#2} % Adds a unique label for this wart
 }
 
 % Define the custom command \bigsection
 \NewDocumentCommand{\bigsection}{m o}{%
   \phantomsection % Creates a linkable anchor for the TOC
-  \addcontentsline{toc}{part}{\normalfont\fontsize{8pt}{9pt}\selectfont #1%
+  \addtocontents{toc}{\protect\contentsline{part}{\normalfont\fontsize{8pt}{9pt}\selectfont #1%
     \IfValueT{#2}{\hspace{1em}{\normalfont\fontsize{5.5pt}{6.5pt}\textsc{#2}}}%
-  }%
+  }{}{} } % Suppress the page number in the TOC entry
 }
 
 % Define the custom command used to rename TOC
