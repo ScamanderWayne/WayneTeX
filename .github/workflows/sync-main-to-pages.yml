@@ -25,18 +25,15 @@ jobs:
           git fetch origin pages
           git checkout pages
 
-      # Define the list of folders to copy (directly in the workflow)
+      # Define the list of folders to copy and set as environment variable
       - name: Define Folders to Copy
         run: |
-          echo "CV" >> $GITHUB_ENV
-          echo "Czech" >> $GITHUB_ENV
-          echo "Math" >> $GITHUB_ENV
-          echo "MyPackages" >> $GITHUB_ENV
+          echo "FOLDERS_TO_COPY=CV Czech Math MyPackages" >> $GITHUB_ENV
 
       # Copy the folders from the main branch
       - name: Copy Folders from Main Branch
         run: |
-          for folder in $CV $Czech $Math $MyPackages; do
+          for folder in $FOLDERS_TO_COPY; do
             echo "Copying $folder from main to pages branch..."
             git checkout main -- "$folder/"
           done
