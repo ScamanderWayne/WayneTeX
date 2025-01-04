@@ -1,7 +1,4 @@
 ├── .gitattributes
-├── .github/
-│   └── workflows/
-│       └── sync-main-to-pages.yml
 ├── .gitignore
 ├── .pre-commit-config.yaml
 ├── AllFilesList.py
@@ -110,4 +107,3 @@ File Extensions and Counts:
 .toc (1)
 .txt (3)
 .yaml (1)
-.yml (1)
