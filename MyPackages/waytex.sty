@@ -6,6 +6,12 @@
 \usepackage{titlesec}
 \usepackage{xparse} % Required for flexible command definitions
 \usepackage{etoolbox} % Required for \csdef and \csuse
+\usepackage{tocloft}
+\usepackage{xcolor} % For color gradients
+
+\usepackage{graphicx} % For text manipulation
+
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
 
 \usepackage{hyperref}
 
@@ -48,9 +54,8 @@
 \definecolor{drama}{HTML}{D91656}
 \definecolor{próza}{HTML}{344CB7}
 \definecolor{poezie}{HTML}{15B392}
-\definecolor{TOC}{HTML}{248232}
-\definecolor{leftover}{HTML}{6F590C}
-% Unused color codes FB0E7D 0471A6 8BB57C 73A7C8 A496D2 C2708E 337390 2B6E78
+\definecolor{TOC}{HTML}{F57D1F}
+% Unused color codes FB0E7D 0471A6 8BB57C 73A7C8 A496D2 C2708E 337390 2B6E78 248232 6F590C
 
 % White text
 \definecolor{WS}{HTML}{FFFFFF}
@@ -61,45 +66,42 @@
   \phantomsection % Creates a linkable anchor for the TOC
   \noindent % Prevent paragraph indentation
   {\normalfont\Large\bfseries
-    \IfValueTF{#3}{\colorbox{\wpagecolor}{\color{WS}#2 -- #1}}{#2 -- #1} % Apply colorbox if #5 is provided
+    \IfValueTF{#3}{\colorbox{#3}{\color{WS}#2 -- #1}}{#2 -- #1} % Apply colorbox if #5 is provided
     \hfill
-    \IfValueTF{#3}{\colorbox{\wpagecolor}{\color{WS}\normalfont\tiny\textsc{\theauthor}}}{\normalfont\tiny\textsc{\theauthor}} % Apply colorbox if #5 is provided
+    \IfValueTF{#3}{\colorbox{#3}{\color{WS}\normalfont\tiny\textsc{\theauthor}}}{\normalfont\tiny\textsc{\theauthor}} % Apply colorbox if #5 is provided
     \par
   } % Main output
   \IfValueT{#3}{\csdef{wartCurrentValue}{#3}} % Store #3 globally if provided
-  \addtocontents{toc}{\protect\contentsline{section}{\normalfont\fontsize{7pt}{8pt}\selectfont #2 -- #1%
-    \IfValueT{#3}{\hspace{1em}{\normalfont\fontsize{5.5pt}{6.5pt}\textsc{#3}}}%
-    \IfValueT{#4}{, {\normalfont\fontsize{5.5pt}{6.5pt}\textsc{#4}}}%
-  }{}{} } % Suppress the page number in the TOC entry
+  \addtocontents{toc}{\protect\contentsline{section}{\normalfont\fontsize{7pt}{8pt}\selectfont{\color{TOC}\textbf{#2}}{\color{black}-- \textit{#1}}}{\color{TOC}\thepage}{}}
   \label{wart:#1:#2} % Adds a unique label for this wart
 }
 
-\newcommand{\wpagecolor}[1]{%
-  \ifx#1 1
-    \csuse{bigsectionCurrentValue} % Use bigsectionCurrentValue if argument is 1
-  \else
-    \csuse{wartCurrentValue}       % Default: use wartCurrentValue
-  \fi
-}
+\newcommand{\wpagecolor}{\csuse{wartCurrentValue}}
 
 % Define the custom command \bigsection
 \NewDocumentCommand{\bigsection}{m o}{%
   \phantomsection % Creates a linkable anchor for the TOC
-  \addtocontents{toc}{\protect\contentsline{part}{\normalfont\fontsize{8pt}{9pt}\selectfont #1%
+  \addtocontents{toc}{\protect\contentsline{part}{\normalfont\fontsize{10pt}{11pt}\selectfont \colorbox{TOC}{\color{WS}#1}%
     \IfValueT{#2}{\hspace{1em}{\normalfont\fontsize{5.5pt}{6.5pt}\textsc{#2}}}%
   }{}{} } % Suppress the page number in the TOC entry
 }
 
 % Define the custom command used to rename TOC
-\NewDocumentCommand{\wtoc}{m}{%
-  \renewcommand{\contentsname}{#1 \hfill \normalfont\tiny\textsc{\theauthor}}%
+\usepackage[many]{tcolorbox} % Add this to your preamble
+
+\NewDocumentCommand{\wtoc}{m m}{%
+  \renewcommand{\contentsname}{%
+    {\color{TOC}#1}%
+    \colorbox{TOC}{\color{WS}\strut#2}%
+    \hfill \normalfont\tiny\textsc{\colorbox{TOC}{\color{WS}\theauthor}}%
+  }%
 }
 
 \NewDocumentCommand{\wection}{m}{%
   \titlespacing{\section}{0pt}{0pt}{0pt} % Adjust spacing
   \phantomsection % Creates an anchor for linking
   \noindent % Prevents indentation
-  {\normalfont\large\bfseries\colorbox{\wpagecolor}{\color{WS}#1}} % Matches \section* styling
+  {\normalfont\large\bfseries\colorbox{WS}{\color{\wpagecolor}#1}} % Matches \section* styling
   \par
 }
 
@@ -114,5 +116,6 @@
 \newcommand{\texthl}[1]{{\color{\wpagecolor}#1}} % Highlight text with \wpagecolor
 \newcommand{\textbfhl}[1]{{\color{\wpagecolor}\textbf{#1}}} % Bold and highlight text
 \newcommand{\textithl}[1]{{\color{\wpagecolor}\textit{#1}}} % Italic and highlight text
+\newcommand{\textschl}[1]{{\color{\wpagecolor}\textsc{#1}}} % textsc and highlight text
 
 %about: Currently adds commands \setauthor{Author's name} that you can call later on with \theauthor; \wart{Writer's name}{Writer's work}[optional text visible in TOC][second optional text vesible in TOC](automatically calls \theauthor and places it in right corner of page)
