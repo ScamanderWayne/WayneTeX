@@ -1,27 +1,28 @@
 \babel@toc {czech}{}\relax 
-\contentsline {part}{\normalfont \fontsize {8pt}{9pt}\selectfont Světová a česká literatura do konce 18. století\hspace {1em}{\normalfont \fontsize {5.5pt}{6.5pt}\textsc {min. 2 literární díla}}}{}{} 
-\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont WILLIAM SHAKESPEARE -- Hamlet\hspace {1em}{\normalfont \fontsize {5.5pt}{6.5pt}\textsc {drama}}, {\normalfont \fontsize {5.5pt}{6.5pt}\textsc {hotovo}}}{}{} 
-\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont WILLIAM SHAKESPEARE -- Romeo a Julie\hspace {1em}{\normalfont \fontsize {5.5pt}{6.5pt}\textsc {drama}}, {\normalfont \fontsize {5.5pt}{6.5pt}\textsc {TODO}}}{}{} 
-\contentsline {part}{\normalfont \fontsize {8pt}{9pt}\selectfont Světová a česká literatura 19. století\hspace {1em}{\normalfont \fontsize {5.5pt}{6.5pt}\textsc {min. 3 literární díla}}}{}{} 
-\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont EDGAR ALLAN POE -- Havran\hspace {1em}{\normalfont \fontsize {5.5pt}{6.5pt}\textsc {poezie}}, {\normalfont \fontsize {5.5pt}{6.5pt}\textsc {hotovo}}}{}{} 
-\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont KAREL JAROMÍR ERBEN -- Kytice\hspace {1em}{\normalfont \fontsize {5.5pt}{6.5pt}\textsc {poezie}}, {\normalfont \fontsize {5.5pt}{6.5pt}\textsc {hotovo}}}{}{} 
-\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont FJODOR MICHALJEVIČ DOSTOJEVSKIJ -- Zločin a trest\hspace {1em}{\normalfont \fontsize {5.5pt}{6.5pt}\textsc {próza}}, {\normalfont \fontsize {5.5pt}{6.5pt}\textsc {hotovo}}}{}{} 
-\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont HONORÉ DE BALZAC -- Otec Goriot\hspace {1em}{\normalfont \fontsize {5.5pt}{6.5pt}\textsc {próza}}, {\normalfont \fontsize {5.5pt}{6.5pt}\textsc {TO READ}}}{}{} 
-\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont CHARLES DICKENS -- Oliver Twist\hspace {1em}{\normalfont \fontsize {5.5pt}{6.5pt}\textsc {próza}}, {\normalfont \fontsize {5.5pt}{6.5pt}\textsc {TO READ}}}{}{} 
-\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont OSCAR WILDE -- Obraz Doriana Graye\hspace {1em}{\normalfont \fontsize {5.5pt}{6.5pt}\textsc {próza}}, {\normalfont \fontsize {5.5pt}{6.5pt}\textsc {hotovo}}}{}{} 
-\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont NIKOLAJ VASILJEVIČ GOGOL -- Revizor\hspace {1em}{\normalfont \fontsize {5.5pt}{6.5pt}\textsc {próza}}, {\normalfont \fontsize {5.5pt}{6.5pt}\textsc {TODO}}}{}{} 
-\contentsline {part}{\normalfont \fontsize {8pt}{9pt}\selectfont Světová literatura 20. -- 21. století\hspace {1em}{\normalfont \fontsize {5.5pt}{6.5pt}\textsc {min. 4 literární díla}}}{}{} 
-\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont DAN BROWN -- Inferno\hspace {1em}{\normalfont \fontsize {5.5pt}{6.5pt}\textsc {próza}}, {\normalfont \fontsize {5.5pt}{6.5pt}\textsc {TO READ}}}{}{} 
-\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont DAN BROWN -- Šifra Mistra Leonarda\hspace {1em}{\normalfont \fontsize {5.5pt}{6.5pt}\textsc {próza}}, {\normalfont \fontsize {5.5pt}{6.5pt}\textsc {TODO}}}{}{} 
-\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont FRANCIS SCOTT FITZGERALD -- Velký Gatsby\hspace {1em}{\normalfont \fontsize {5.5pt}{6.5pt}\textsc {próza}}, {\normalfont \fontsize {5.5pt}{6.5pt}\textsc {TODO}}}{}{} 
-\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont GEORGE ORWELL -- Devatenáct set osmdesát čtyři\hspace {1em}{\normalfont \fontsize {5.5pt}{6.5pt}\textsc {próza}}, {\normalfont \fontsize {5.5pt}{6.5pt}\textsc {hotovo}}}{}{} 
-\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont JOANNE ROWLINGOVÁ -- Harry Potter\hspace {1em}{\normalfont \fontsize {5.5pt}{6.5pt}\textsc {próza}}, {\normalfont \fontsize {5.5pt}{6.5pt}\textsc {TODO}}}{}{} 
-\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont J. R. R. TOLKIEN -- Hobbit\hspace {1em}{\normalfont \fontsize {5.5pt}{6.5pt}\textsc {próza}}, {\normalfont \fontsize {5.5pt}{6.5pt}\textsc {TODO}}}{}{} 
-\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont UMBERTO ECO -- Jméno růže\hspace {1em}{\normalfont \fontsize {5.5pt}{6.5pt}\textsc {próza}}, {\normalfont \fontsize {5.5pt}{6.5pt}\textsc {TO READ}}}{}{} 
-\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont FRANTIŠEK GELLNER -- Po nás ať přijde potopa\hspace {1em}{\normalfont \fontsize {5.5pt}{6.5pt}\textsc {próza}}, {\normalfont \fontsize {5.5pt}{6.5pt}\textsc {TO READ}}}{}{} 
-\contentsline {part}{\normalfont \fontsize {8pt}{9pt}\selectfont Česká literatura 20. -- 21. století\hspace {1em}{\normalfont \fontsize {5.5pt}{6.5pt}\textsc {min. 5 literární díla}}}{}{} 
-\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont FRANZ KAFKA -- Proměna\hspace {1em}{\normalfont \fontsize {5.5pt}{6.5pt}\textsc {próza}}, {\normalfont \fontsize {5.5pt}{6.5pt}\textsc {TODO}}}{}{} 
-\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont VIKTOR DYK -- Krysař\hspace {1em}{\normalfont \fontsize {5.5pt}{6.5pt}\textsc {próza}}, {\normalfont \fontsize {5.5pt}{6.5pt}\textsc {TODO}}}{}{} 
-\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont JIŘÍ VOSKOVEC, JAN WERICH -- Osel a stín\hspace {1em}{\normalfont \fontsize {5.5pt}{6.5pt}\textsc {drama}}, {\normalfont \fontsize {5.5pt}{6.5pt}\textsc {TO READ}}}{}{} 
-\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont KAREL ČAPEK -- Bílá Nemoc\hspace {1em}{\normalfont \fontsize {5.5pt}{6.5pt}\textsc {drama}}, {\normalfont \fontsize {5.5pt}{6.5pt}\textsc {TODO}}}{}{} 
-\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont KAREL ČAPEK -- R. U. R.\hspace {1em}{\normalfont \fontsize {5.5pt}{6.5pt}\textsc {próza}}, {\normalfont \fontsize {5.5pt}{6.5pt}\textsc {TO READ}}}{}{} 
+\setlength {\fboxsep }{0pt}
+\contentsline {part}{\normalfont \fontsize {10pt}{11pt}\selectfont \colorbox {TOC}{\color {WS}Světová a česká literatura do konce 18. století}\hspace {1em}{\normalfont \fontsize {5.5pt}{6.5pt}\textsc {min. 2 literární díla}}}{}{} 
+\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {WILLIAM SHAKESPEARE}}{\color {black}-- \textit {Hamlet}}}{\color {TOC}1}{}
+\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {WILLIAM SHAKESPEARE}}{\color {black}-- \textit {Romeo a Julie}}}{\color {TOC}2}{}
+\contentsline {part}{\normalfont \fontsize {10pt}{11pt}\selectfont \colorbox {TOC}{\color {WS}Světová a česká literatura 19. století}\hspace {1em}{\normalfont \fontsize {5.5pt}{6.5pt}\textsc {min. 3 literární díla}}}{}{} 
+\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {EDGAR ALLAN POE}}{\color {black}-- \textit {Havran}}}{\color {TOC}3}{}
+\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {KAREL JAROMÍR ERBEN}}{\color {black}-- \textit {Kytice}}}{\color {TOC}4}{}
+\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {FJODOR MICHALJEVIČ DOSTOJEVSKIJ}}{\color {black}-- \textit {Zločin a trest}}}{\color {TOC}5}{}
+\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {HONORÉ DE BALZAC}}{\color {black}-- \textit {Otec Goriot}}}{\color {TOC}6}{}
+\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {CHARLES DICKENS}}{\color {black}-- \textit {Oliver Twist}}}{\color {TOC}7}{}
+\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {OSCAR WILDE}}{\color {black}-- \textit {Obraz Doriana Graye}}}{\color {TOC}8}{}
+\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {NIKOLAJ VASILJEVIČ GOGOL}}{\color {black}-- \textit {Revizor}}}{\color {TOC}9}{}
+\contentsline {part}{\normalfont \fontsize {10pt}{11pt}\selectfont \colorbox {TOC}{\color {WS}Světová literatura 20. -- 21. století}\hspace {1em}{\normalfont \fontsize {5.5pt}{6.5pt}\textsc {min. 4 literární díla}}}{}{} 
+\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {DAN BROWN}}{\color {black}-- \textit {Inferno}}}{\color {TOC}10}{}
+\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {DAN BROWN}}{\color {black}-- \textit {Šifra Mistra Leonarda}}}{\color {TOC}11}{}
+\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {FRANCIS SCOTT FITZGERALD}}{\color {black}-- \textit {Velký Gatsby}}}{\color {TOC}12}{}
+\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {GEORGE ORWELL}}{\color {black}-- \textit {Devatenáct set osmdesát čtyři}}}{\color {TOC}13}{}
+\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {JOANNE ROWLINGOVÁ}}{\color {black}-- \textit {Harry Potter}}}{\color {TOC}14}{}
+\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {J. R. R. TOLKIEN}}{\color {black}-- \textit {Hobbit}}}{\color {TOC}15}{}
+\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {UMBERTO ECO}}{\color {black}-- \textit {Jméno růže}}}{\color {TOC}16}{}
+\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {FRANTIŠEK GELLNER}}{\color {black}-- \textit {Po nás ať přijde potopa}}}{\color {TOC}17}{}
+\contentsline {part}{\normalfont \fontsize {10pt}{11pt}\selectfont \colorbox {TOC}{\color {WS}Česká literatura 20. -- 21. století}\hspace {1em}{\normalfont \fontsize {5.5pt}{6.5pt}\textsc {min. 5 literární díla}}}{}{} 
+\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {FRANZ KAFKA}}{\color {black}-- \textit {Proměna}}}{\color {TOC}18}{}
+\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {VIKTOR DYK}}{\color {black}-- \textit {Krysař}}}{\color {TOC}19}{}
+\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {JIŘÍ VOSKOVEC, JAN WERICH}}{\color {black}-- \textit {Osel a stín}}}{\color {TOC}20}{}
+\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {KAREL ČAPEK}}{\color {black}-- \textit {Bílá Nemoc}}}{\color {TOC}21}{}
+\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {KAREL ČAPEK}}{\color {black}-- \textit {R. U. R.}}}{\color {TOC}22}{}

@@ -5,8 +5,8 @@
 \usepackage{csquotes} % Used for quoting
 % \usepackage{graphicx} % Required for inserting images
 \usepackage{moresize} % Even wider range of font sizes
-\usepackage{nopageno} % Override text numbering
-\usepackage[left=1cm,right=1cm,top=1.5cm,bottom=1.5cm]{geometry} % To tell truth I do not know how it works with A4paper in documentclass but it works
+\usepackage{fancyhdr} % Override text numbering
+\usepackage[left=1cm,right=1cm,top=1.5cm,bottom=1.5cm,showframe]{geometry} % To tell truth I do not know how it works with A4paper in documentclass but it works
 \usepackage{multicol} % multi columns environment
 \usepackage{titlesec} % please do not ask
 \usepackage{wrapfig} % wrapfigure environment
@@ -96,6 +96,12 @@
 
 \whyperlinks{1}{black}{black}{black}
 
+\pagestyle{fancy}
+\fancyhead{}
+\renewcommand{\footrulewidth}{0pt}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\changefontsize{7pt} \textbfhl{\thepage. stránka}}  % Page number with custom text
+
 % --------------------------------------------------
 % S E Z N A M   L I T E R A T U R Y 
 % --------------------------------------------------
@@ -104,16 +110,18 @@
 
 \changefontsize{7pt}
 
-\wtoc{Seznam literatury}
+\wtoc{SEZNAM LIT}{ERATURY}
 
 \tableofcontents
 
 \vfill\noindent\begin{minipage}{\textwidth}
-    \textcolor{darkgray}{\rule{\linewidth}{0.4pt}
-    \footnotesize\textbf{Pravidla --} Dodržet minimální počet literatury z daného období;
-    mít minimálně dvakrát poezii, dvakrát prózu a dvakrát drama;
-    nemít více než dvě díla od jednoho autora.}
+    {\textcolor{TOC}{\rule{\linewidth}{0.4pt}}\vspace{1em}
+    \footnotesize\textbf{\color{TOC}Pravidla --} Dodržet \textit{\color{TOC}minimální počet literatury} z daného období;
+    mít minimálně \textit{\color{TOC}dvakrát poezii, dvakrát prózu a dvakrát drama};
+    nemít více \textit{\color{TOC}než dvě díla od jednoho autora}.}
 \end{minipage}
+
+\thispagestyle{empty}
 
 \newpage
 
@@ -124,6 +132,8 @@
 % --------------------------------------------------
 
 \newpage
+
+\setcounter{page}{1}
 
 \bigsection{Světová a česká literatura do konce 18. století}[min. 2 literární díla]
 
