@@ -79,5 +79,6 @@ This repository contains my LaTeX notes and projects. Mostly for my own referenc
  3. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/PDFlist.py">PDFlist Python script</a>
  4. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/ScriptRunner.py">ScriptRunner Python script</a>
  5. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/TreeFileListToREADME.py">TreeFileListToREADME Python script</a>
- 6. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/deletefiles.py">deletefiles Python script</a>
- 7. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/mypackages.py">mypackages Python script</a>
+ 6. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/breakpdf.py">breakpdf Python script</a>
+ 7. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/deletefiles.py">deletefiles Python script</a>
+ 8. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/mypackages.py">mypackages Python script</a>
