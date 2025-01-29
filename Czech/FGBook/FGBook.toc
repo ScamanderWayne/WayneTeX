@@ -1,5 +1,4 @@
 \babel@toc {czech}{}\relax 
-\setlength {\fboxsep }{0pt}
 \contentsline {part}{\normalfont \fontsize {10pt}{11pt}\selectfont \colorbox {TOC}{\color {WS}Světová a česká literatura do konce 18. století}\hspace {1em}{\normalfont \fontsize {5.5pt}{6.5pt}\textsc {min. 2 literární díla}}}{}{} 
 \contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {WILLIAM SHAKESPEARE}}{\color {black}-- \textit {Hamlet}}}{\color {TOC}1}{}
 \contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {WILLIAM SHAKESPEARE}}{\color {black}-- \textit {Romeo a Julie}}}{\color {TOC}2}{}
