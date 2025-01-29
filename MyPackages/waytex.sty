@@ -5,6 +5,7 @@
 % Required for title formatting
 \usepackage{titlesec}
 \usepackage{xparse} % Required for flexible command definitions
+\usepackage{etoolbox} % Required for \csdef and \csuse
 
 \usepackage{hyperref}
 
@@ -44,23 +45,35 @@
 % Store the author name for later use -- \setauthor{author's name} then \theauthor to get the author's name
 \newcommand{\setauthor}[1]{\def\theauthor{#1}}
 
+\definecolor{drama}{HTML}{FB0E7D} % Rose
+\definecolor{próza}{HTML}{0471A6} % Honolulu Blue
+\definecolor{poezie}{HTML}{2B6E78} % Caribbean Current
+\definecolor{TOC}{HTML}{248232} % Forest green
+\definecolor{leftover}{HTML}{6F590C} % Field drab
+
+% White text
+\definecolor{WS}{HTML}{FFFFFF}
+
 % Define the custom command \wart
-\NewDocumentCommand{\wart}{m m o o o}{%
+\NewDocumentCommand{\wart}{m m o o}{%
   \titlespacing{\section}{0pt}{0pt}{0pt} % Adjust section spacing
   \phantomsection % Creates a linkable anchor for the TOC
   \noindent % Prevent paragraph indentation
   {\normalfont\Large\bfseries
-    \IfValueTF{#5}{\colorbox{#5}{#2 -- #1}}{#2 -- #1} % Apply colorbox if #5 is provided
+    \IfValueTF{#3}{\colorbox{#3}{\color{WS}#2 -- #1}}{#2 -- #1} % Apply colorbox if #5 is provided
     \hfill
-    \IfValueTF{#5}{\colorbox{#5}{\normalfont\tiny\textsc{\theauthor}}}{\normalfont\tiny\textsc{\theauthor}} % Apply colorbox if #5 is provided
+    \IfValueTF{#3}{\colorbox{#3}{\color{WS}\normalfont\tiny\textsc{\theauthor}}}{\normalfont\tiny\textsc{\theauthor}} % Apply colorbox if #5 is provided
     \par
   } % Main output
+  \IfValueT{#3}{\csdef{wartCurrentValue}{#3}} % Store #3 globally if provided
   \addtocontents{toc}{\protect\contentsline{section}{\normalfont\fontsize{7pt}{8pt}\selectfont #2 -- #1%
     \IfValueT{#3}{\hspace{1em}{\normalfont\fontsize{5.5pt}{6.5pt}\textsc{#3}}}%
     \IfValueT{#4}{, {\normalfont\fontsize{5.5pt}{6.5pt}\textsc{#4}}}%
   }{}{} } % Suppress the page number in the TOC entry
   \label{wart:#1:#2} % Adds a unique label for this wart
 }
+
+\newcommand{\wpagecolor}{\csuse{wartCurrentValue}}
 
 % Define the custom command \bigsection
 \NewDocumentCommand{\bigsection}{m o}{%
@@ -75,5 +88,24 @@
   \renewcommand{\contentsname}{#1 \hfill \normalfont\tiny\textsc{\theauthor}}%
 }
 
+\NewDocumentCommand{\wection}{m}{%
+  \titlespacing{\section}{0pt}{0pt}{0pt} % Adjust spacing
+  \phantomsection % Creates an anchor for linking
+  \noindent % Prevents indentation
+  {\normalfont\large\bfseries\colorbox{\wpagecolor}{\color{WS}#1}} % Matches \section* styling
+  \par
+}
+
+\NewDocumentCommand{\subwection}{m}{%
+  \titlespacing{\subsection}{0pt}{0pt}{0pt} % Adjust spacing
+  \phantomsection % Creates an anchor for linking
+  \noindent % Prevents indentation
+  {\normalfont\small\bfseries\colorbox{\wpagecolor}{\color{WS}#1}} % Matches \subsection* styling
+  \par
+}
+
+\newcommand{\texthl}[1]{{\color{\wpagecolor}#1}} % Highlight text with \wpagecolor
+\newcommand{\textbfhl}[1]{{\color{\wpagecolor}\textbf{#1}}} % Bold and highlight text
+\newcommand{\textithl}[1]{{\color{\wpagecolor}\textit{#1}}} % Italic and highlight text
 
 %about: Currently adds commands \setauthor{Author's name} that you can call later on with \theauthor; \wart{Writer's name}{Writer's work}[optional text visible in TOC][second optional text vesible in TOC](automatically calls \theauthor and places it in right corner of page)
