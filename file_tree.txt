@@ -62,7 +62,13 @@
 │       │   ├── vanoce2023.pdf
 │       │   └── vanoce2023.tex
 │       ├── vanoce2024/
+│       │   ├── vanoce2024.aux
+│       │   ├── vanoce2024.fdb_latexmk
+│       │   ├── vanoce2024.fls
+│       │   ├── vanoce2024.log
+│       │   ├── vanoce2024.out
 │       │   ├── vanoce2024.pdf
+│       │   ├── vanoce2024.synctex.gz
 │       │   └── vanoce2024.tex
 │       └── zdechlina/
 │           ├── zdechlina.pdf
@@ -93,15 +99,15 @@
 
 
 File Extensions and Counts:
-.aux (1)
+.aux (2)
 .cls (1)
-.fdb_latexmk (1)
-.fls (1)
-.gz (1)
+.fdb_latexmk (2)
+.fls (2)
+.gz (2)
 .jpg (2)
-.log (1)
+.log (2)
 .md (2)
-.out (1)
+.out (2)
 .pdf (18)
 .png (3)
 .py (8)
