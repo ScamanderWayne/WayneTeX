@@ -12,7 +12,13 @@
 │   └── simplehipstercv.sty
 ├── Czech/
 │   ├── FGBook/
+│   │   ├── FGBook.aux
+│   │   ├── FGBook.fdb_latexmk
+│   │   ├── FGBook.fls
+│   │   ├── FGBook.log
+│   │   ├── FGBook.out
 │   │   ├── FGBook.pdf
+│   │   ├── FGBook.synctex.gz
 │   │   ├── FGBook.tex
 │   │   └── FGBook.toc
 │   └── Sloh/
@@ -84,9 +90,15 @@
 
 
 File Extensions and Counts:
+.aux (1)
 .cls (1)
+.fdb_latexmk (1)
+.fls (1)
+.gz (1)
 .jpg (2)
+.log (1)
 .md (2)
+.out (1)
 .pdf (18)
 .png (1)
 .py (7)
