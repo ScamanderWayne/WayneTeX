@@ -67,6 +67,8 @@
 │       └── zdechlina/
 │           ├── zdechlina.pdf
 │           └── zdechlina.tex
+├── FGBook-straight.png
+├── FGBook.png
 ├── Math/
 │   └── Tryout/
 │       ├── math-tryout.pdf
@@ -76,6 +78,7 @@
 │   ├── sourcecontrol.py
 │   ├── waytex.sty
 │   └── wsloh.sty
+├── P2P.py
 ├── PDFlist.py
 ├── README.md
 ├── ScriptRunner.py
@@ -100,8 +103,8 @@ File Extensions and Counts:
 .md (2)
 .out (1)
 .pdf (18)
-.png (1)
-.py (7)
+.png (3)
+.py (8)
 .pyz (1)
 .sty (3)
 .tex (18)
