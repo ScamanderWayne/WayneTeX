@@ -5,7 +5,7 @@ import platform
 def get_texmf_path():
     """Determine the target texmf directory based on the OS."""
     if platform.system() == "Windows":
-        return r"C:\Users\alibi\texmf\tex\latex\waynepackages"
+        return r"C:\\Users\\alibi\\texmf\\tex\\latex\\waynepackages"
     else:
         return os.path.expanduser("~/texmf/tex/latex/waynepackages")
 

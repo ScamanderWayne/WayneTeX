@@ -45,11 +45,16 @@
 \newcommand{\setauthor}[1]{\def\theauthor{#1}}
 
 % Define the custom command \wart
-\NewDocumentCommand{\wart}{m m o o}{%
+\NewDocumentCommand{\wart}{m m o o o}{%
   \titlespacing{\section}{0pt}{0pt}{0pt} % Adjust section spacing
   \phantomsection % Creates a linkable anchor for the TOC
   \noindent % Prevent paragraph indentation
-  {\normalfont\Large\bfseries #2 -- #1 \hfill \normalfont\tiny\textsc{\theauthor}\par} % Main output: Author -- Book
+  {\normalfont\Large\bfseries
+    \IfValueTF{#5}{\colorbox{#5}{#2 -- #1}}{#2 -- #1} % Apply colorbox if #5 is provided
+    \hfill
+    \IfValueTF{#5}{\colorbox{#5}{\normalfont\tiny\textsc{\theauthor}}}{\normalfont\tiny\textsc{\theauthor}} % Apply colorbox if #5 is provided
+    \par
+  } % Main output
   \addtocontents{toc}{\protect\contentsline{section}{\normalfont\fontsize{7pt}{8pt}\selectfont #2 -- #1%
     \IfValueT{#3}{\hspace{1em}{\normalfont\fontsize{5.5pt}{6.5pt}\textsc{#3}}}%
     \IfValueT{#4}{, {\normalfont\fontsize{5.5pt}{6.5pt}\textsc{#4}}}%
