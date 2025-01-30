@@ -52,7 +52,7 @@
 \newcommand{\setauthor}[1]{\def\theauthor{#1}}
 
 \definecolor{drama}{HTML}{A10036}
-\definecolor{próza}{HTML}{102995}
+\definecolor{próza}{HTML}{1766B5}
 \definecolor{poezie}{HTML}{00807C}
 \definecolor{TOC}{HTML}{515145}
 
@@ -65,7 +65,7 @@
   \phantomsection % Creates a linkable anchor for the TOC
   \noindent % Prevent paragraph indentation
   {\normalfont\Large\bfseries
-    \IfValueTF{#3}{\colorbox{#3}{\color{WS}#2 -- #1}}{#2 -- #1} % Apply colorbox if #5 is provided
+    \IfValueTF{#3}{\colorbox{#3}{\color{WS}#2}\colorbox{WS}{\color{#3} -- #1}}{#2 -- #1} % Apply colorbox if #5 is provided
     \hfill
     \IfValueTF{#3}{\colorbox{#3}{\color{WS}\normalfont\tiny\textsc{\theauthor}}}{\normalfont\tiny\textsc{\theauthor}} % Apply colorbox if #5 is provided
     \par
@@ -80,7 +80,7 @@
 % Define the custom command \bigsection
 \NewDocumentCommand{\bigsection}{m o}{%
   \phantomsection % Creates a linkable anchor for the TOC
-  \addtocontents{toc}{\protect\contentsline{part}{\normalfont\fontsize{10pt}{11pt}\selectfont \colorbox{TOC}{\color{WS}#1}%
+  \addtocontents{toc}{\protect\contentsline{part}{\normalfont\fontsize{12pt}{13pt}\selectfont \colorbox{TOC}{\color{WS}#1}%
     \IfValueT{#2}{\hspace{1em}{\normalfont\fontsize{5.5pt}{6.5pt}\textsc{#2}}}%
   }{}{} } % Suppress the page number in the TOC entry
 }
