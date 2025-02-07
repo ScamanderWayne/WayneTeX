@@ -65,13 +65,13 @@
   \phantomsection % Creates a linkable anchor for the TOC
   \noindent % Prevent paragraph indentation
   {\normalfont\Large\bfseries
-    \IfValueTF{#3}{\colorbox{#3}{\color{WS}#2}\colorbox{WS}{\color{#3} -- #1}}{#2 -- #1} % Apply colorbox if #5 is provided
+    \IfValueTF{#3}{\colorbox{#3}{\color{WS}#2}\colorbox{WS}{\color{#3} -- #1}}{#2 -- #1} % Apply colorbox if #3 is provided
     \hfill
-    \IfValueTF{#3}{\colorbox{#3}{\color{WS}\normalfont\tiny\textsc{\theauthor}}}{\normalfont\tiny\textsc{\theauthor}} % Apply colorbox if #5 is provided
+    \IfValueTF{#3}{\colorbox{#3}{\color{WS}\normalfont\tiny\textsc{\theauthor}}}{\normalfont\tiny\textsc{\theauthor}} % Apply colorbox if #3 is provided
     \par
   } % Main output
   \IfValueT{#3}{\csdef{wartCurrentValue}{#3}} % Store #3 globally if provided
-  \addtocontents{toc}{\protect\contentsline{section}{\normalfont\fontsize{7pt}{8pt}\selectfont{\color{TOC}\textbf{#2}}{\color{black}-- \textit{#1}}}{\color{TOC}\thepage}{}}
+  \addtocontents{toc}{\protect\contentsline{section}{\normalfont\fontsize{7pt}{8pt}\selectfont{\color{TOC}\textbf{\IfValueTF{#4}{#2}{$\Rightarrow$ #2}}}{\color{black}-- \textit{#1} \IfValueTF{#4}{(#4)}{}}}{\color{TOC}\thepage}{}}
   \label{wart:#1:#2} % Adds a unique label for this wart
 }
 
