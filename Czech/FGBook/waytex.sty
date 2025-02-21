@@ -1,0 +1,153 @@
+% waytex.sty: A custom package for my personal LaTeX commands
+
+\ProvidesPackage{waytex}[2024/11/25 Wayne's package for just everything]
+
+% Required for title formatting
+\usepackage{titlesec}
+\usepackage{xparse} % Required for flexible command definitions
+\usepackage{etoolbox} % Required for \csdef and \csuse
+\usepackage{tocloft}
+\usepackage{xcolor} % For color gradients
+\RequirePackage{darkmode}
+
+\usepackage{graphicx} % For text manipulation
+
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+
+\usepackage{hyperref}
+
+% Define the custom command \whyperlinks
+\newcommand{\whyperlinks}[4]{%
+  \ifnum#1=1
+    \hypersetup{
+      hidelinks, % Removes the colored boxes and underlines
+      colorlinks=true,
+      linkcolor=#2, % Sets link color
+      citecolor=#3, % Sets citation color
+      urlcolor=#4   % Sets URL color
+    }
+  \else
+    \hypersetup{
+      colorlinks=true,
+      linkcolor=#2, % Sets link color
+      citecolor=#3, % Sets citation color
+      urlcolor=#4   % Sets URL color
+    }
+  \fi
+} % use command as \whyperlinks{1}{black}{black}{black}
+
+% Define a variable to store keywords
+\newcommand{\pdfkeywords}[1]{\def\storedkeywords{#1}}
+
+% Define the custom command to set PDF metadata
+\newcommand{\setpdfmetadata}[2]{%
+  \hypersetup{
+    pdfauthor={\theauthor},    % Set author (retrieved from \setauthor)
+    pdftitle={#1},     % Set title
+    pdfsubject={#2},   % Set subject
+    pdfkeywords={\storedkeywords}   % Set keywords (retrieved from \pdfkeywords)
+  }
+}
+
+% Store the author name for later use -- \setauthor{author's name} then \theauthor to get the author's name
+\newcommand{\setauthor}[1]{\def\theauthor{#1}}
+
+\definecolor{Ddrama}{HTML}{FF7F83}%
+\definecolor{drama}{HTML}{A10036}% ff7f83
+
+\definecolor{Dpróza}{HTML}{5EFFC9}%
+\definecolor{próza}{HTML}{1766B5}% 5effc9
+
+\definecolor{Dpoezie}{HTML}{E8994A}%
+\definecolor{poezie}{HTML}{00807C}% e8994a
+
+\definecolor{DTOC}{HTML}{AEAEBA}%
+\definecolor{TOC}{HTML}{515145}% aeaeba
+
+% White text
+\definecolor{DWS}{HTML}{293133}% 242d30 2C3436 2B3436
+\definecolor{WS}{HTML}{FFFFFF}%
+
+% Black text
+\definecolor{DBS}{HTML}{FFFFFF}%
+\definecolor{BS}{HTML}{293133}%
+
+\NewDocumentCommand{\WIDTF}{m m}{\IfDarkModeTF{#1}{#2}}
+
+% Define the custom command \wart
+\NewDocumentCommand{\wart}{m m o o}{%
+  \titlespacing{\section}{0pt}{0pt}{0pt} % Adjust section spacing
+  \phantomsection % Creates a linkable anchor for the TOC
+  \noindent % Prevent paragraph indentation
+  {\normalfont\Large\bfseries
+    \IfValueTF{#3}{\colorbox{#3}{\color{WS}#2}\colorbox{WS}{\color{#3} -- #1}}{#2 -- #1} % Apply colorbox if #3 is provided
+    \hfill
+    \IfValueTF{#3}{\colorbox{#3}{\color{WS}\normalfont\tiny\textsc{\theauthor}}}{\normalfont\tiny\textsc{\theauthor}} % Apply colorbox if #3 is provided
+    \par
+  } % Main output
+  \IfValueT{#3}{\csdef{wartCurrentValue}{#3}} % Store #3 globally if provided
+  \addtocontents{toc}{\protect\contentsline{section}{\normalfont\fontsize{7pt}{8pt}\selectfont{\color{TOC}\textbf{\IfValueTF{#4}{#2}{$\Rightarrow$ #2}}}{\color{BS}-- \textit{#1} \IfValueTF{#4}{(#4)}{}}}{\color{TOC}\thepage}{}}
+  \label{wart:#1:#2} % Adds a unique label for this wart
+}
+
+\newcommand{\wpagecolor}{\csuse{wartCurrentValue}}
+
+% Define the custom command \bigsection
+\NewDocumentCommand{\bigsection}{m o}{%
+  \phantomsection % Creates a linkable anchor for the TOC
+  \WIDTF{
+  \addtocontents{toc}{\protect\contentsline{part}{\normalfont\fontsize{12pt}{13pt}\selectfont \colorbox{DTOC}{\color{DWS}#1}%
+  		\IfValueT{#2}{\hspace{1em}{\normalfont\fontsize{5.5pt}{6.5pt}\textsc{#2}}}%
+  	}{}{} }%
+  }{%
+  \addtocontents{toc}{\protect\contentsline{part}{\normalfont\fontsize{12pt}{13pt}\selectfont \colorbox{TOC}{\color{WS}#1}%
+    \IfValueT{#2}{\hspace{1em}{\normalfont\fontsize{5.5pt}{6.5pt}\textsc{#2}}}%
+  }{}{} }
+	}% Suppress the page number in the TOC entry
+}
+
+% Define the custom command used to rename TOC
+\usepackage[many]{tcolorbox} % Add this to your preamble
+
+\NewDocumentCommand{\wtoc}{m m}{%
+  \renewcommand{\contentsname}{%
+	\WIDTF{%
+	{\color{DTOC}#1}%
+	\colorbox{DTOC}{\color{DWS}\strut#2}%
+	\hfill \normalfont\tiny\textsc{\colorbox{DTOC}{\color{DWS}\theauthor}}
+	}{%
+    {\color{TOC}#1}%
+    \colorbox{TOC}{\color{WS}\strut#2}%
+    \hfill \normalfont\tiny\textsc{\colorbox{TOC}{\color{WS}\theauthor}}%
+    }%
+  }%
+}
+
+\NewDocumentCommand{\wection}{m}{%
+  \titlespacing{\section}{0pt}{0pt}{0pt} % Adjust spacing
+  \phantomsection % Creates an anchor for linking
+  \noindent % Prevents indentation
+  \WIDTF{\normalfont\large\bfseries\colorbox{DWS}{\color{\wpagecolor}#1}%
+  }{%
+  \normalfont\large\bfseries\colorbox{WS}{\color{\wpagecolor}#1}}% Matches \section* styling
+  \par
+}
+
+\NewDocumentCommand{\subwection}{m}{%
+  \titlespacing{\subsection}{0pt}{0pt}{0pt} % Adjust spacing
+  \phantomsection % Creates an anchor for linking
+  \noindent % Prevents indentation
+  \WIDTF{%
+  \normalfont\small\bfseries\colorbox{\wpagecolor}{\color{DWS}#1}%
+  }{%
+  \normalfont\small\bfseries\colorbox{\wpagecolor}{\color{WS}#1}%
+  }% Matches \subsection* styling
+  \par
+}
+
+\newcommand{\texthl}[1]{{\color{\wpagecolor}#1}} % Highlight text with \wpagecolor
+\newcommand{\textbfhl}[1]{{\color{\wpagecolor}\textbf{#1}}} % Bold and highlight text
+\newcommand{\textithl}[1]{{\color{\wpagecolor}\textit{#1}}} % Italic and highlight text
+\newcommand{\textschl}[1]{{\color{\wpagecolor}\textsc{#1}}} % textsc and highlight text
+
+%about: Currently adds commands \setauthor{Author's name} that you can call later on with \theauthor; \wart{Writer's name}{Writer's work}[optional text visible in TOC][second optional text vesible in TOC](automatically calls \theauthor and places it in right corner of page)

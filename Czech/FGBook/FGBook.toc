@@ -1,27 +1,27 @@
 \babel@toc {czech}{}\relax 
-\contentsline {part}{\normalfont \fontsize {12pt}{13pt}\selectfont \colorbox {TOC}{\color {WS}Světová a česká literatura do konce 18. století}\hspace {1em}{\normalfont \fontsize {5.5pt}{6.5pt}\textsc {min. 2 literární díla}}}{}{} 
-\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {$\Rightarrow $ WILLIAM SHAKESPEARE}}{\color {black}-- \textit {Hamlet} }}{\color {TOC}1}{}
-\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {WILLIAM SHAKESPEARE}}{\color {black}-- \textit {Romeo a Julie} (TODO)}}{\color {TOC}2}{}
-\contentsline {part}{\normalfont \fontsize {12pt}{13pt}\selectfont \colorbox {TOC}{\color {WS}Světová a česká literatura 19. století}\hspace {1em}{\normalfont \fontsize {5.5pt}{6.5pt}\textsc {min. 3 literární díla}}}{}{} 
-\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {EDGAR ALLAN POE}}{\color {black}-- \textit {Havran} (REDO)}}{\color {TOC}3}{}
-\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {KAREL JAROMÍR ERBEN}}{\color {black}-- \textit {Kytice} (REDO)}}{\color {TOC}4}{}
-\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {$\Rightarrow $ FJODOR MICHALJEVIČ DOSTOJEVSKIJ}}{\color {black}-- \textit {Zločin a trest} }}{\color {TOC}5}{}
-\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {HONORÉ DE BALZAC}}{\color {black}-- \textit {Otec Goriot} (TO READ)}}{\color {TOC}6}{}
-\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {CHARLES DICKENS}}{\color {black}-- \textit {Oliver Twist} (TO READ)}}{\color {TOC}7}{}
-\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {OSCAR WILDE}}{\color {black}-- \textit {Obraz Doriana Graye} (check)}}{\color {TOC}8}{}
-\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {NIKOLAJ VASILJEVIČ GOGOL}}{\color {black}-- \textit {Revizor} (TODO)}}{\color {TOC}9}{}
-\contentsline {part}{\normalfont \fontsize {12pt}{13pt}\selectfont \colorbox {TOC}{\color {WS}Světová literatura 20. -- 21. století}\hspace {1em}{\normalfont \fontsize {5.5pt}{6.5pt}\textsc {min. 4 literární díla}}}{}{} 
-\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {DAN BROWN}}{\color {black}-- \textit {Inferno} (TO READ)}}{\color {TOC}10}{}
-\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {DAN BROWN}}{\color {black}-- \textit {Šifra Mistra Leonarda} (TODO)}}{\color {TOC}11}{}
-\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {FRANCIS SCOTT FITZGERALD}}{\color {black}-- \textit {Velký Gatsby} (TODO)}}{\color {TOC}12}{}
-\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {GEORGE ORWELL}}{\color {black}-- \textit {Devatenáct set osmdesát čtyři} (check)}}{\color {TOC}13}{}
-\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {JOANNE ROWLINGOVÁ}}{\color {black}-- \textit {Harry Potter} (TODO)}}{\color {TOC}14}{}
-\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {J. R. R. TOLKIEN}}{\color {black}-- \textit {Hobit} (TODO)}}{\color {TOC}15}{}
-\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {UMBERTO ECO}}{\color {black}-- \textit {Jméno růže} (TO READ)}}{\color {TOC}16}{}
-\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {FRANTIŠEK GELLNER}}{\color {black}-- \textit {Po nás ať přijde potopa} (TO READ)}}{\color {TOC}17}{}
-\contentsline {part}{\normalfont \fontsize {12pt}{13pt}\selectfont \colorbox {TOC}{\color {WS}Česká literatura 20. -- 21. století}\hspace {1em}{\normalfont \fontsize {5.5pt}{6.5pt}\textsc {min. 5 literární díla}}}{}{} 
-\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {FRANZ KAFKA}}{\color {black}-- \textit {Proměna} (TODO)}}{\color {TOC}18}{}
-\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {$\Rightarrow $ VIKTOR DYK}}{\color {black}-- \textit {Krysař} }}{\color {TOC}19}{}
-\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {JIŘÍ VOSKOVEC, JAN WERICH}}{\color {black}-- \textit {Osel a stín} (TO READ)}}{\color {TOC}20}{}
-\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {KAREL ČAPEK}}{\color {black}-- \textit {Bílá Nemoc} (TODO)}}{\color {TOC}21}{}
-\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {KAREL ČAPEK}}{\color {black}-- \textit {R. U. R.} (TO READ)}}{\color {TOC}22}{}
+\contentsline {part}{\normalfont \fontsize {12pt}{13pt}\selectfont \colorbox {DTOC}{\color {DWS}Světová a česká literatura do konce 18. století}\hspace {1em}{\normalfont \fontsize {5.5pt}{6.5pt}\textsc {min. 2 literární díla}}}{}{} 
+\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {$\Rightarrow $ WILLIAM SHAKESPEARE}}{\color {BS}-- \textit {Hamlet} }}{\color {TOC}1}{}
+\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {WILLIAM SHAKESPEARE}}{\color {BS}-- \textit {Romeo a Julie} (TODO)}}{\color {TOC}3}{}
+\contentsline {part}{\normalfont \fontsize {12pt}{13pt}\selectfont \colorbox {DTOC}{\color {DWS}Světová a česká literatura 19. století}\hspace {1em}{\normalfont \fontsize {5.5pt}{6.5pt}\textsc {min. 3 literární díla}}}{}{} 
+\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {EDGAR ALLAN POE}}{\color {BS}-- \textit {Havran} (REDO)}}{\color {TOC}4}{}
+\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {KAREL JAROMÍR ERBEN}}{\color {BS}-- \textit {Kytice} (REDO)}}{\color {TOC}5}{}
+\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {$\Rightarrow $ FJODOR MICHALJEVIČ DOSTOJEVSKIJ}}{\color {BS}-- \textit {Zločin a trest} }}{\color {TOC}6}{}
+\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {HONORÉ DE BALZAC}}{\color {BS}-- \textit {Otec Goriot} (TO READ)}}{\color {TOC}7}{}
+\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {CHARLES DICKENS}}{\color {BS}-- \textit {Oliver Twist} (TO READ)}}{\color {TOC}8}{}
+\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {OSCAR WILDE}}{\color {BS}-- \textit {Obraz Doriana Graye} (check)}}{\color {TOC}9}{}
+\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {NIKOLAJ VASILJEVIČ GOGOL}}{\color {BS}-- \textit {Revizor} (TODO)}}{\color {TOC}10}{}
+\contentsline {part}{\normalfont \fontsize {12pt}{13pt}\selectfont \colorbox {DTOC}{\color {DWS}Světová literatura 20. -- 21. století}\hspace {1em}{\normalfont \fontsize {5.5pt}{6.5pt}\textsc {min. 4 literární díla}}}{}{} 
+\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {DAN BROWN}}{\color {BS}-- \textit {Inferno} (TO READ)}}{\color {TOC}11}{}
+\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {DAN BROWN}}{\color {BS}-- \textit {Šifra Mistra Leonarda} (TODO)}}{\color {TOC}12}{}
+\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {FRANCIS SCOTT FITZGERALD}}{\color {BS}-- \textit {Velký Gatsby} (TODO)}}{\color {TOC}13}{}
+\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {GEORGE ORWELL}}{\color {BS}-- \textit {Devatenáct set osmdesát čtyři} (check)}}{\color {TOC}14}{}
+\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {JOANNE ROWLINGOVÁ}}{\color {BS}-- \textit {Harry Potter} (TODO)}}{\color {TOC}15}{}
+\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {J. R. R. TOLKIEN}}{\color {BS}-- \textit {Hobit} (TODO)}}{\color {TOC}16}{}
+\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {UMBERTO ECO}}{\color {BS}-- \textit {Jméno růže} (TO READ)}}{\color {TOC}17}{}
+\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {FRANTIŠEK GELLNER}}{\color {BS}-- \textit {Po nás ať přijde potopa} (TO READ)}}{\color {TOC}18}{}
+\contentsline {part}{\normalfont \fontsize {12pt}{13pt}\selectfont \colorbox {DTOC}{\color {DWS}Česká literatura 20. -- 21. století}\hspace {1em}{\normalfont \fontsize {5.5pt}{6.5pt}\textsc {min. 5 literární díla}}}{}{} 
+\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {FRANZ KAFKA}}{\color {BS}-- \textit {Proměna} (TODO)}}{\color {TOC}19}{}
+\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {$\Rightarrow $ VIKTOR DYK}}{\color {BS}-- \textit {Krysař} }}{\color {TOC}20}{}
+\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {JIŘÍ VOSKOVEC, JAN WERICH}}{\color {BS}-- \textit {Osel a stín} (TO READ)}}{\color {TOC}22}{}
+\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {KAREL ČAPEK}}{\color {BS}-- \textit {Bílá Nemoc} (TODO)}}{\color {TOC}23}{}
+\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {TOC}\textbf {KAREL ČAPEK}}{\color {BS}-- \textit {R. U. R.} (TO READ)}}{\color {TOC}24}{}
