@@ -19,7 +19,8 @@ This repository contains my LaTeX notes and projects. Mostly for my own referenc
   - FGBook/
      1. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/FGBook/FGBook.pdf">FGBook PDF file</a>
      2. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/FGBook/FGBook.tex">FGBook raw TeX file</a>
-     3. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/FGBook/FGBook.toc">FGBook toc file</a>
+     3. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/FGBook/waytex.sty">waytex TeX Style file</a>
+     4. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/FGBook/FGBook.toc">FGBook toc file</a>
   - Sloh/
     - 1984inspiration/
        1. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/1984inspiration/1984inspiration.pdf">1984inspiration PDF file</a>
@@ -36,6 +37,9 @@ This repository contains my LaTeX notes and projects. Mostly for my own referenc
          2. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/DanVanoce2024/Deepl/deepl.tex">deepl raw TeX file</a>
        1. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/DanVanoce2024/hiswork.pdf">hiswork PDF file</a>
        2. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/DanVanoce2024/hiswork.tex">hiswork raw TeX file</a>
+    - Franz Kafka/
+       1. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/Franz Kafka/franzkafka.pdf">franzkafka PDF file</a>
+       2. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/Franz Kafka/franzkafka.tex">franzkafka raw TeX file</a>
     - OliwerTwist/
        1. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/OliwerTwist/OliwerTwist.pdf">OliwerTwist PDF file</a>
        2. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/OliwerTwist/OliwerTwist.tex">OliwerTwist raw TeX file</a>
@@ -51,6 +55,9 @@ This repository contains my LaTeX notes and projects. Mostly for my own referenc
     - hlavacek/
        1. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/hlavacek/hlavacek.pdf">hlavacek PDF file</a>
        2. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/hlavacek/hlavacek.tex">hlavacek raw TeX file</a>
+    - namesti/
+       1. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/namesti/namesti.pdf">namesti PDF file</a>
+       2. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/namesti/namesti.tex">namesti raw TeX file</a>
     - silneslabestranky/
        1. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/silneslabestranky/silneslabestranky.pdf">silneslabestranky PDF file</a>
        2. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/silneslabestranky/silneslabestranky.tex">silneslabestranky raw TeX file</a>

@@ -20,7 +20,8 @@
 │   │   ├── FGBook.pdf
 │   │   ├── FGBook.synctex.gz
 │   │   ├── FGBook.tex
-│   │   └── FGBook.toc
+│   │   ├── FGBook.toc
+│   │   └── waytex.sty
 │   └── Sloh/
 │       ├── 1984inspiration/
 │       │   ├── 1984inspiration.pdf
@@ -37,6 +38,10 @@
 │       │   │   └── deepl.tex
 │       │   ├── hiswork.pdf
 │       │   └── hiswork.tex
+│       ├── Franz Kafka/
+│       │   ├── franzkafka.pdf
+│       │   ├── franzkafka.png
+│       │   └── franzkafka.tex
 │       ├── OliwerTwist/
 │       │   ├── OliwerTwist.pdf
 │       │   └── OliwerTwist.tex
@@ -52,6 +57,10 @@
 │       ├── hlavacek/
 │       │   ├── hlavacek.pdf
 │       │   └── hlavacek.tex
+│       ├── namesti/
+│       │   ├── namesti.pdf
+│       │   ├── namesti.png
+│       │   └── namesti.tex
 │       ├── silneslabestranky/
 │       │   ├── silneslabestranky.pdf
 │       │   └── silneslabestranky.tex
@@ -62,13 +71,7 @@
 │       │   ├── vanoce2023.pdf
 │       │   └── vanoce2023.tex
 │       ├── vanoce2024/
-│       │   ├── vanoce2024.aux
-│       │   ├── vanoce2024.fdb_latexmk
-│       │   ├── vanoce2024.fls
-│       │   ├── vanoce2024.log
-│       │   ├── vanoce2024.out
 │       │   ├── vanoce2024.pdf
-│       │   ├── vanoce2024.synctex.gz
 │       │   └── vanoce2024.tex
 │       └── zdechlina/
 │           ├── zdechlina.pdf
@@ -100,21 +103,21 @@
 
 
 File Extensions and Counts:
-.aux (2)
+.aux (1)
 .cls (1)
-.fdb_latexmk (2)
-.fls (2)
-.gz (2)
+.fdb_latexmk (1)
+.fls (1)
+.gz (1)
 .jpg (2)
-.log (2)
+.log (1)
 .md (2)
-.out (2)
-.pdf (18)
-.png (3)
+.out (1)
+.pdf (20)
+.png (5)
 .py (9)
 .pyz (1)
-.sty (3)
-.tex (18)
+.sty (4)
+.tex (20)
 .toc (1)
 .txt (3)
 .yaml (1)

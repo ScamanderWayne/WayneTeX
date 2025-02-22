@@ -76,15 +76,11 @@
 
 % Define the custom command \wart
 \NewDocumentCommand{\wart}{m m o o}{%
-  \titlespacing{\section}{0pt}{0pt}{0pt} % Adjust section spacing
-  \phantomsection % Creates a linkable anchor for the TOC
   \noindent % Prevent paragraph indentation
   {\normalfont\Large\bfseries
-    \IfValueTF{#3}{\colorbox{#3}{\color{WS}#2}\colorbox{WS}{\color{#3} -- #1}}{#2 -- #1} % Apply colorbox if #3 is provided
-    \hfill
-    \IfValueTF{#3}{\colorbox{#3}{\color{WS}\normalfont\tiny\textsc{\theauthor}}}{\normalfont\tiny\textsc{\theauthor}} % Apply colorbox if #3 is provided
-    \par
-  } % Main output
+      {\colorbox{#3}{\color{WS}#2}\colorbox{WS}{\color{#3} -- #1}}\hfill%
+      {\colorbox{#3}{\color{WS}\normalfont\tiny\textsc{\theauthor}}}\par%
+  }% Main output
   \IfValueT{#3}{\csdef{wartCurrentValue}{#3}} % Store #3 globally if provided
   \addtocontents{toc}{\protect\contentsline{section}{\normalfont\fontsize{7pt}{8pt}\selectfont{\color{TOC}\textbf{\IfValueTF{#4}{#2}{$\Rightarrow$ #2}}}{\color{BS}-- \textit{#1} \IfValueTF{#4}{(#4)}{}}}{\color{TOC}\thepage}{}}
   \label{wart:#1:#2} % Adds a unique label for this wart
@@ -127,9 +123,10 @@
   \titlespacing{\section}{0pt}{0pt}{0pt} % Adjust spacing
   \phantomsection % Creates an anchor for linking
   \noindent % Prevents indentation
-  \WIDTF{\normalfont\large\bfseries\colorbox{DWS}{\color{\wpagecolor}#1}%
+  \WIDTF{{\normalfont\large\bfseries\colorbox{DWS}{\color{\wpagecolor}#1}}%
   }{%
-  \normalfont\large\bfseries\colorbox{WS}{\color{\wpagecolor}#1}}% Matches \section* styling
+  {\normalfont\large\bfseries\colorbox{WS}{\color{\wpagecolor}#1}}%
+  }% Matches \section* styling
   \par
 }
 

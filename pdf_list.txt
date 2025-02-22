@@ -7,11 +7,13 @@ https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/20240604/2024060
 https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/DanVanoce2024/ChatGPT/chatgpt.pdf
 https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/DanVanoce2024/Deepl/deepl.pdf
 https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/DanVanoce2024/hiswork.pdf
+https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/Franz Kafka/franzkafka.pdf
 https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/OliwerTwist/OliwerTwist.pdf
 https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/Prokrastinace/Prokrastinace.pdf
 https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/WaltWhitman/WaltWhitman.pdf
 https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/bezruc/bezruc.pdf
 https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/hlavacek/hlavacek.pdf
+https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/namesti/namesti.pdf
 https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/silneslabestranky/silneslabestranky.pdf
 https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/topol/topol.pdf
 https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/vanoce2023/vanoce2023.pdf
