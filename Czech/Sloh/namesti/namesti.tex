@@ -6,13 +6,65 @@
 \usepackage{yfonts}
 \usepackage{hyperref}
 \usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{palatino}
+
+\NewDocumentCommand{\setws}{m m m}{%
+	\def\wauthor{#1}%
+	\def\wname{#2}%
+	\def\wsubject{#3}%
+}
+
+\setws{Libor Halík}{Náměstí}{Slohová práce na maturitní otázku na popis náměstí}
+
+\hypersetup{
+	pdftitle={\wname},
+	pdfauthor={\wauthor},
+	pdfsubject={\wsubject},
+	pdfkeywords={},
+	pdfcreator={LaTeX with hyperref},
+	pdfproducer={pdfLaTeX} % Or whatever engine you are using.
+}
+
+\definecolor{DP}{HTML}{293133}
 
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[R]{Libor Halík}
-\fancyhead[L]{Název}
-\fancyfoot[R]{\small Powered by \LaTeX.}
+\fancyhead[R]{%
+\textsc{\small{\IfDarkModeTF{%
+	\color{cyan}\wauthor%
+	}{%
+	\wauthor%
+	}%
+}}}%
+\fancyhead[L]{%
+\textbf{\IfDarkModeTF{%
+	\colorbox{cyan}{\color{DP}\wname}%
+	}{%
+	\wname%
+	}%
+}}%
+\fancyfoot[R]{%
+\IfDarkModeTF{%
+	{\color{cyan}\small Powered by \LaTeX.}%
+	}{%
+	{\small Powered by \LaTeX.}%
+	}%
+}%
+
+\renewcommand{\headrule}{}
 
 \begin{document}
-\noindent Náměstí 
+	Krakonošovo náměstí se otevírá jako náruč, do které vtéká život z tepající pěší zóny. Hlavní vstup, nejširší brána do tohoto světa, je lemován starobylými domy, jejichž zdi nesou stopy času.
+	Po levé ruce se majestátně tyčí radnice s věží, z jejíž tváře shlíží Trutnovský drak, symbol města, zavěšený jako strážce legend. \par
+	Uprostřed náměstí, tam, kde se kdysi možná zrcadlila hladina, nyní z kamenné nádrže vyrůstá Krakonoš, vytesaný do podoby skalního masivu.
+	Jeho tvář, plná moudrosti a síly, shlíží na shon a tichý proud života kolem. Krakonoš, strážce hor, stojí pevně, obklopen kamennou nádrží, jako by sám byl součástí krajiny. \par
+	Kousek dál, Sloup Nejsvětější Trojice a socha Josefa II. vyprávějí příběhy minulosti, připomínají návštěvy císaře a duchovní hodnoty, které formovaly toto místo.
+	V pravém horním rohu náměstí, ukrytý v podloubí, leží Kámen z Amazonky, tichý svědek dalekých cest a exotických příběhů. \par
+	Okolo náměstí se vine řada obchodů a kaváren, jejichž výlohy lákají kolemjdoucí a vůně kávy se mísí s~energií města.
+	Lidé se procházejí po dlážděných cestách, zastavují se u obchodů a posedávají v kavárnách, kde si vychutnávají chvíle odpočinku. \par
+	Když se slunce skloní k západu, náměstí se ponoří do teplého světla speciálních lamp, jejichž kulatá svítidla vrhají na dlažbu měkké stíny. Drak na věži radnice, osvětlený lampami, vypadá jako by každou chvíli vzlétl.
+	Atmosféra náměstí se mění, stává se intimnější a tajemnější. \par
+	Krakonošovo náměstí, bez ohledu na to, co tu kdysi stálo, je živým srdcem města, místem, kde se setkává minulost s přítomností, kde se mísí legendy s každodenním životem.
 \end{document}
