@@ -75,15 +75,39 @@
 \NewDocumentCommand{\WIDTF}{m m}{\IfDarkModeTF{#1}{#2}}
 
 % Define the custom command \wart
-\NewDocumentCommand{\wart}{m m o o}{%
+\NewDocumentCommand{\wart}{m m o o o o o}{%
   \noindent % Prevent paragraph indentation
   {\normalfont\Large\bfseries
-      {\colorbox{#3}{\color{WS}#2}\colorbox{WS}{\color{#3} -- #1}}\hfill%
-      {\colorbox{#3}{\color{WS}\normalfont\tiny\textsc{\theauthor}}}\par%
+      {\colorbox{#4}{\color{#5}#2}\colorbox{#5}{\color{#4} -- #1}}\hfill%
+      {\colorbox{#4}{\color{#5}\normalfont\tiny\textsc{\theauthor}}}\par%
   }% Main output
-  \IfValueT{#3}{\csdef{wartCurrentValue}{#3}} % Store #3 globally if provided
-  \addtocontents{toc}{\protect\contentsline{section}{\normalfont\fontsize{7pt}{8pt}\selectfont{\color{TOC}\textbf{\IfValueTF{#4}{#2}{$\Rightarrow$ #2}}}{\color{BS}-- \textit{#1} \IfValueTF{#4}{(#4)}{}}}{\color{TOC}\thepage}{}}
+  \IfValueT{#4}{\csdef{wartCurrentValue}{#4}} % Store #3 globally if provided
+  \addtocontents{toc}{\protect\contentsline{section}{\normalfont\fontsize{7pt}{8pt}\selectfont{\color{#6}\textbf{\IfValueTF{#3}{#2}{$\Rightarrow$ #2}}}{\color{#7}-- \textit{#1} \IfValueTF{#3}{(#3)}{}}}{\color{#6}\thepage}{}}
   \label{wart:#1:#2} % Adds a unique label for this wart
+}
+
+\NewDocumentCommand{\drama}{m m o}{
+  \WIDTF{
+    \wart{#1}{#2}[#3][Ddrama][DWS][DTOC][DBS]
+  }{
+    \wart{#1}{#2}[#3][drama][WS][TOC][BS]
+  }
+}
+
+\NewDocumentCommand{\poezie}{m m o}{
+  \WIDTF{
+    \wart{#1}{#2}[#3][Dpoezie][DWS][DTOC][DBS]
+  }{
+    \wart{#1}{#2}[#3][poezie][WS][TOC][BS]
+  }
+}
+
+\NewDocumentCommand{\proza}{m m o}{
+  \WIDTF{
+    \wart{#1}{#2}[#3][Dpróza][DWS][DTOC][DBS]
+  }{
+    \wart{#1}{#2}[#3][próza][WS][TOC][BS]
+  }
 }
 
 \newcommand{\wpagecolor}{\csuse{wartCurrentValue}}
@@ -146,5 +170,25 @@
 \newcommand{\textbfhl}[1]{{\color{\wpagecolor}\textbf{#1}}} % Bold and highlight text
 \newcommand{\textithl}[1]{{\color{\wpagecolor}\textit{#1}}} % Italic and highlight text
 \newcommand{\textschl}[1]{{\color{\wpagecolor}\textsc{#1}}} % textsc and highlight text
-
+\newcommand{\TOCBF}[1]{%
+  \WIDTF{%
+    \color{DTOC}\textbf{#1}%
+  }{%
+    \color{TOC}\textbf{#1}%
+  }%
+}%
+\newcommand{\TOCIT}[1]{%
+  \WIDTF{%
+    \color{DTOC}\textit{#1}%
+  }{%
+    \color{TOC}\textit{#1}%
+  }%
+}%
+\newcommand{\TOCRULE}[1]{
+  \WIDTF{
+    \textcolor{DTOC}{#1}
+  }{
+    \textcolor{TOC}{#1}
+  }
+}
 %about: Currently adds commands \setauthor{Author's name} that you can call later on with \theauthor; \wart{Writer's name}{Writer's work}[optional text visible in TOC][second optional text vesible in TOC](automatically calls \theauthor and places it in right corner of page)
