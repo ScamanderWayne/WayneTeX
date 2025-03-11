@@ -1,12 +1,13 @@
 \documentclass{extarticle} % If I am not mistaken it is used for wider range of font sizes
-\usepackage[T1]{fontenc} % I have no idea why it is here
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}
 \usepackage[utf8]{inputenc} % I have no idea why it is here
 \usepackage[czech]{babel} % Used for czech formatting of text
 \usepackage{csquotes} % Used for quoting
 % \usepackage{graphicx} % Required for inserting images
 \usepackage{moresize} % Even wider range of font sizes
 \usepackage{fancyhdr} % Override text numbering
-\usepackage[left=1cm,right=1cm,top=1.5cm,bottom=1.5cm]{geometry} % To tell truth I do not know how it works with A4paper in documentclass but it works
+\usepackage[a4paper, left=1cm,right=1cm,top=1.5cm,bottom=1.5cm]{geometry} % To tell truth I do not know how it works with A4paper in documentclass but it works
 \usepackage{multicol} % multi columns environment
 \usepackage{titlesec} % please do not ask
 \usepackage{wrapfig} % wrapfigure environment
@@ -101,7 +102,11 @@
 \fancyhead{}
 \renewcommand{\footrulewidth}{0pt}
 \renewcommand{\headrulewidth}{0pt}
-\fancyfoot[C]{\changefontsize{7pt} \textbfhl{\thepage. stránka}}  % Page number with custom text
+\fancyfoot[C]{{\changefontsize{7pt} \textbfhl{\thepage. stránka}}}  % Page number with custom text
+
+\fancypagestyle{fancyTOC}{
+	\fancyfoot[C]{{\changefontsize{7pt} \TOCBF{\thepage. stránka}}}
+}
 
 % --------------------------------------------------
 % S E Z N A M   L I T E R A T U R Y 
@@ -122,7 +127,7 @@
     nemít více \TOCIT{než dvě díla od jednoho autora}.}
 \end{minipage}
 
-\thispagestyle{empty}
+\thispagestyle{fancyTOC}
 
 \newpage
 
@@ -132,13 +137,11 @@
 
 \newpage
 
-\setcounter{page}{1}
-
 \bigsection{Světová a česká literatura do konce 18. století}[min. 2 literární díla]
 
 % \coffeestainA{0.4}{1}{90}{30em}{40em}
 
-\changefontsize{6.4pt}
+\changefontsize{6.8pt}
 % \changefontsize{4pt}
 
 \drama{Hamlet}{WILLIAM SHAKESPEARE}
@@ -343,7 +346,7 @@ I samotný divák tak dostává zrcadlo, když je mu přednesen rozumný názor,
 
 \changefontsize{8pt}
 
-\drama{Romeo a Julie}{WILLIAM SHAKESPEARE}[TODO]
+\drama{Romeo a Julie}{WILLIAM SHAKESPEARE}[TODO][\killpage]
 
 \noindent\begin{wrapfigure}{r}{0.25\textwidth}
 \tiny
@@ -925,7 +928,7 @@ Myšlenka je tu s námi věčně a Dostojevskij ji dokonale \textbf{jmenuje}.
 
 \changefontsize{8pt}
 
-\proza{Otec Goriot}{HONORÉ DE BALZAC}[TO READ]
+\proza{Otec Goriot}{HONORÉ DE BALZAC}[TO READ][\killpage]
 
 \noindent\begin{wrapfigure}{r}{0.35\textwidth}
 \tiny
@@ -1020,7 +1023,7 @@ xXx
 
 \changefontsize{8pt}
 
-\proza{Oliver Twist}{CHARLES DICKENS}[TO READ]
+\proza{Oliver Twist}{CHARLES DICKENS}[TO READ][\killpage]
 
 \noindent\begin{wrapfigure}{r}{0.35\textwidth}
 \tiny
@@ -1283,7 +1286,7 @@ Naprosto rozumím, proč je Obraz Doriana Graye jednou z nejdůležitějších l
 
 \changefontsize{8pt}
 
-\proza{Revizor}{NIKOLAJ VASILJEVIČ GOGOL}[TODO]
+\proza{Revizor}{NIKOLAJ VASILJEVIČ GOGOL}[TODO][\killpage]
 
 \noindent\begin{wrapfigure}{r}{0.35\textwidth}
 \tiny
@@ -1384,101 +1387,6 @@ xXx
 
 \changefontsize{8pt}
 
-\proza{Inferno}{DAN BROWN}[TO READ]
-
-\noindent\begin{wrapfigure}{r}{0.35\textwidth}
-\tiny
-
-\subwection{Ukázka z díla:}
-\setlength{\parindent}{3pt}
-xXx
-\end{wrapfigure}
-
-\wection{LITERÁRNÍ TEORIE}
-
-\subwection{Literární druh a žánr:}
-\noindent xXx
-
-% \subwection{Literární směr:}
-
-% \subwection{Jazyk a slovní zásoba:}
-
-\subwection{Figury:}
-\noindent 
-\enquote{xXx}
-
-\subwection{Tropy:}
-\noindent 
-xXx
-
-\subwection{Stylistická charakteristika textu:}
-\noindent 
-xXx
-
-\subwection{Postavy:}
-\noindent 
-\textsc{xXx --} xXx \\
-
-\subwection{Děj:}
-\noindent 
-xXx
-
-\subwection{Kompozice, prostor a čas:}
-\noindent 
-xXx
-
-\subwection{Význam sdělení:}
-\noindent 
-xXx
-
-\wection{LITERÁRNÍ HISTORIE}
-
-% \subwection{Politická situace:}
-
-% \subwection{Základní principy fungování společnosti:}
-
-% \subwection{Kontext dalších druhů umění:}
-
-% \subwection{Kontext literárního vývoje:}
-
-\subwection{Autor {\ssmall -- život autora:}}
-\noindent 
-xXx
-
-% \subwection{Vlivy na dané dílo:}
-
-\subwection{Další autorova tvorba:}
-\noindent 
-Mezi nejznámnější díla patří \textsc{xXx}
-
-% \subwection{Jak dílo inspirovalo další vývoj literatury:}
-
-% \wection{LITERÁRNÍ KRITIKA}
-
-% \subwection{Dobové vnímání díla a jeho proměny:}
-
-% \subwection{Aktuálnost tématu a zpracování tématu:}
-
-
-\wection{OSOBNÍ NÁZOR}
-\noindent 
-xXx
-
-\vfill
-
-\noindent\begin{minipage}{\textwidth}
-    {\textcolor{\wpagecolor}{\rule{\linewidth}{0.4pt}}
-    \footnotesize
-    \textbf{Placeholder --} xXx
-    }
-\end{minipage}
-
-\newpage
-
-% \coffeestainA{0.4}{1}{90}{30em}{40em}
-
-\changefontsize{8pt}
-
 \proza{Šifra Mistra Leonarda}{DAN BROWN}[TODO]
 
 \noindent\begin{wrapfigure}{r}{0.35\textwidth}
@@ -1574,7 +1482,102 @@ xXx
 
 \changefontsize{8pt}
 
-\proza{Velký Gatsby}{FRANCIS SCOTT FITZGERALD}[TODO]
+\proza{Inferno}{DAN BROWN}[TO READ][\killpage]
+
+\noindent\begin{wrapfigure}{r}{0.35\textwidth}
+	\tiny
+	
+	\subwection{Ukázka z díla:}
+	\setlength{\parindent}{3pt}
+	xXx
+\end{wrapfigure}
+
+\wection{LITERÁRNÍ TEORIE}
+
+\subwection{Literární druh a žánr:}
+\noindent xXx
+
+% \subwection{Literární směr:}
+
+% \subwection{Jazyk a slovní zásoba:}
+
+\subwection{Figury:}
+\noindent 
+\enquote{xXx}
+
+\subwection{Tropy:}
+\noindent 
+xXx
+
+\subwection{Stylistická charakteristika textu:}
+\noindent 
+xXx
+
+\subwection{Postavy:}
+\noindent 
+\textsc{xXx --} xXx \\
+
+\subwection{Děj:}
+\noindent 
+xXx
+
+\subwection{Kompozice, prostor a čas:}
+\noindent 
+xXx
+
+\subwection{Význam sdělení:}
+\noindent 
+xXx
+
+\wection{LITERÁRNÍ HISTORIE}
+
+% \subwection{Politická situace:}
+
+% \subwection{Základní principy fungování společnosti:}
+
+% \subwection{Kontext dalších druhů umění:}
+
+% \subwection{Kontext literárního vývoje:}
+
+\subwection{Autor {\ssmall -- život autora:}}
+\noindent 
+xXx
+
+% \subwection{Vlivy na dané dílo:}
+
+\subwection{Další autorova tvorba:}
+\noindent 
+Mezi nejznámnější díla patří \textsc{xXx}
+
+% \subwection{Jak dílo inspirovalo další vývoj literatury:}
+
+% \wection{LITERÁRNÍ KRITIKA}
+
+% \subwection{Dobové vnímání díla a jeho proměny:}
+
+% \subwection{Aktuálnost tématu a zpracování tématu:}
+
+
+\wection{OSOBNÍ NÁZOR}
+\noindent 
+xXx
+
+\vfill
+
+\noindent\begin{minipage}{\textwidth}
+	{\textcolor{\wpagecolor}{\rule{\linewidth}{0.4pt}}
+		\footnotesize
+		\textbf{Placeholder --} xXx
+	}
+\end{minipage}
+
+\newpage
+
+% \coffeestainA{0.4}{1}{90}{30em}{40em}
+
+\changefontsize{8pt}
+
+\proza{Velký Gatsby}{FRANCIS SCOTT FITZGERALD}[TODO][\killpage]
 
 \noindent\begin{wrapfigure}{r}{0.35\textwidth}
 \tiny
@@ -1789,7 +1792,7 @@ Román mistra Orwella jsem měl problém ocenit. První dvě části byli natoli
 
 \changefontsize{8pt}
 
-\proza{Harry Potter}{JOANNE ROWLINGOVÁ}[TODO]
+\proza{Harry Potter}{JOANNE ROWLINGOVÁ}[TODO][\killpage]
 
 \noindent\begin{wrapfigure}{r}{0.35\textwidth}
 \tiny
@@ -1888,7 +1891,7 @@ xXx
 
 \changefontsize{8pt}
 
-\proza{Hobit}{J. R. R. TOLKIEN}[TODO]
+\proza{Hobit}{J. R. R. TOLKIEN}[TODO][\killpage]
 
 \noindent\begin{wrapfigure}{r}{0.35\textwidth}
 \tiny
@@ -1987,7 +1990,7 @@ xXx
 
 \changefontsize{8pt}
 
-\proza{Jméno růže}{UMBERTO ECO}[TO READ]
+\proza{Jméno růže}{UMBERTO ECO}[TO READ][\killpage]
 
 \noindent\begin{wrapfigure}{r}{0.35\textwidth}
 \tiny
@@ -2086,7 +2089,7 @@ xXx
 
 \changefontsize{8pt}
 
-\proza{Po nás ať přijde potopa}{FRANTIŠEK GELLNER}[TO READ]
+\proza{Po nás ať přijde potopa}{FRANTIŠEK GELLNER}[TO READ][\killpage]
 
 \noindent\begin{wrapfigure}{r}{0.35\textwidth}
 \tiny
@@ -2183,7 +2186,7 @@ xXx
 
 \changefontsize{8pt}
 
-\proza{Proměna}{FRANZ KAFKA}[TODO]
+\proza{Proměna}{FRANZ KAFKA}[TODO][]
 
 \noindent\begin{wrapfigure}{r}{0.35\textwidth}
 \tiny
@@ -2461,7 +2464,7 @@ Ano, Dykovu novelu mohu jen doporučit.
 
 \changefontsize{8pt}
 
-\drama{Osel a stín}{JIŘÍ VOSKOVEC, JAN WERICH}[TO READ]
+\drama{Osel a stín}{JIŘÍ VOSKOVEC, JAN WERICH}[TO READ][\killpage]
 
 \noindent\begin{wrapfigure}{r}{0.35\textwidth}
 \tiny
@@ -2556,7 +2559,7 @@ xXx
 
 \changefontsize{8pt}
 
-\drama{Bílá Nemoc}{KAREL ČAPEK}[TODO]
+\drama{Bílá Nemoc}{KAREL ČAPEK}[TODO][\killpage]
 
 \noindent\begin{wrapfigure}{r}{0.35\textwidth}
 \tiny
@@ -2651,7 +2654,7 @@ xXx
 
 \changefontsize{8pt}
 
-\proza{R. U. R.}{KAREL ČAPEK}[TO READ]
+\drama{R. U. R.}{KAREL ČAPEK}[TO READ][\killpage]
 
 \noindent\begin{wrapfigure}{r}{0.35\textwidth}
 \tiny

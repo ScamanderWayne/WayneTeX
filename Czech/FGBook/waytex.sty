@@ -75,38 +75,39 @@
 \NewDocumentCommand{\WIDTF}{m m}{\IfDarkModeTF{#1}{#2}}
 
 % Define the custom command \wart
-\NewDocumentCommand{\wart}{m m o o o o o}{%
+\NewDocumentCommand{\wart}{m m o o o o o o o}{%
   \noindent % Prevent paragraph indentation
   {\normalfont\Large\bfseries
       {\colorbox{#4}{\color{#5}#2}\colorbox{#5}{\color{#4} -- #1}}\hfill%
       {\colorbox{#4}{\color{#5}\normalfont\tiny\textsc{\theauthor}}}\par%
   }% Main output
+  \IfValueT{#8}{#8}% Only print #8 if it exists
   \IfValueT{#4}{\csdef{wartCurrentValue}{#4}} % Store #3 globally if provided
-  \addtocontents{toc}{\protect\contentsline{section}{\normalfont\fontsize{7pt}{8pt}\selectfont{\color{#6}\textbf{\IfValueTF{#3}{#2}{$\Rightarrow$ #2}}}{\color{#7}-- \textit{#1} \IfValueTF{#3}{(#3)}{}}}{\color{#6}\thepage}{}}
+  \addtocontents{toc}{\protect\contentsline{section}{\normalfont\fontsize{7pt}{8pt}\selectfont{\color{#6}\textbf{\IfValueTF{#3}{#2}{$\Rightarrow$ #2}}}{\color{#7} -- \textit{#1} {\hspace{2em}\color{#4} \textit{#9}} \IfValueTF{#3}{(#3)}{}}}{\color{#6}\thepage}{}}
   \label{wart:#1:#2} % Adds a unique label for this wart
 }
 
-\NewDocumentCommand{\drama}{m m o}{
+\NewDocumentCommand{\drama}{m m o o}{
   \WIDTF{
-    \wart{#1}{#2}[#3][Ddrama][DWS][DTOC][DBS]
+    \wart{#1}{#2}[#3][Ddrama][DWS][DTOC][DBS][#4][drama]
   }{
-    \wart{#1}{#2}[#3][drama][WS][TOC][BS]
+    \wart{#1}{#2}[#3][drama][WS][TOC][BS][#4][drama]
   }
 }
 
-\NewDocumentCommand{\poezie}{m m o}{
+\NewDocumentCommand{\poezie}{m m o o}{
   \WIDTF{
-    \wart{#1}{#2}[#3][Dpoezie][DWS][DTOC][DBS]
+    \wart{#1}{#2}[#3][Dpoezie][DWS][DTOC][DBS][#4][poezie]
   }{
-    \wart{#1}{#2}[#3][poezie][WS][TOC][BS]
+    \wart{#1}{#2}[#3][poezie][WS][TOC][BS][#4][poezie]
   }
 }
 
-\NewDocumentCommand{\proza}{m m o}{
+\NewDocumentCommand{\proza}{m m o o}{
   \WIDTF{
-    \wart{#1}{#2}[#3][Dpróza][DWS][DTOC][DBS]
+    \wart{#1}{#2}[#3][Dpróza][DWS][DTOC][DBS][#4][próza]
   }{
-    \wart{#1}{#2}[#3][próza][WS][TOC][BS]
+    \wart{#1}{#2}[#3][próza][WS][TOC][BS][#4][próza]
   }
 }
 
@@ -192,4 +193,14 @@
     \textcolor{TOC}{#1}
   }
 }
+
+\usepackage{atbegshi}
+
+\newcommand{\killpage}{%
+	\AtBeginShipoutNext{%
+		\AtBeginShipoutDiscard%
+		\addtocounter{page}{-1}% Decrement the page counter
+	}%
+}
+
 %about: Currently adds commands \setauthor{Author's name} that you can call later on with \theauthor; \wart{Writer's name}{Writer's work}[optional text visible in TOC][second optional text vesible in TOC](automatically calls \theauthor and places it in right corner of page)
