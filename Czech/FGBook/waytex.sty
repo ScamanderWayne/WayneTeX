@@ -18,22 +18,22 @@
 
 % Define the custom command \whyperlinks
 \newcommand{\whyperlinks}[4]{%
-  \ifnum#1=1
-    \hypersetup{
-      hidelinks, % Removes the colored boxes and underlines
-      colorlinks=true,
-      linkcolor=#2, % Sets link color
-      citecolor=#3, % Sets citation color
-      urlcolor=#4   % Sets URL color
-    }
-  \else
-    \hypersetup{
-      colorlinks=true,
-      linkcolor=#2, % Sets link color
-      citecolor=#3, % Sets citation color
-      urlcolor=#4   % Sets URL color
-    }
-  \fi
+	\ifnum#1=1
+	\hypersetup{
+		hidelinks, % Removes the colored boxes and underlines
+		colorlinks=true,
+		linkcolor=#2, % Sets link color
+		citecolor=#3, % Sets citation color
+		urlcolor=#4   % Sets URL color
+	}
+	\else
+	\hypersetup{
+		colorlinks=true,
+		linkcolor=#2, % Sets link color
+		citecolor=#3, % Sets citation color
+		urlcolor=#4   % Sets URL color
+	}
+	\fi
 } % use command as \whyperlinks{1}{black}{black}{black}
 
 % Define a variable to store keywords
@@ -52,16 +52,16 @@
 % Store the author name for later use -- \setauthor{author's name} then \theauthor to get the author's name
 \newcommand{\setauthor}[1]{\def\theauthor{#1}}
 
-\definecolor{Ddrama}{HTML}{FF7F83}%
+\definecolor{Ddrama}{HTML}{EC2B2B}% FF7F83
 \definecolor{drama}{HTML}{A10036}% ff7f83
 
-\definecolor{Dpróza}{HTML}{5EFFC9}%
+\definecolor{Dpróza}{HTML}{0066CC}% 219D21 5EFFC9
 \definecolor{próza}{HTML}{1766B5}% 5effc9
 
-\definecolor{Dpoezie}{HTML}{E8994A}%
+\definecolor{Dpoezie}{HTML}{C9A12A}% E8994A
 \definecolor{poezie}{HTML}{00807C}% e8994a
 
-\definecolor{DTOC}{HTML}{AEAEBA}%
+\definecolor{DTOC}{HTML}{6CD56C}% AEAEBA
 \definecolor{TOC}{HTML}{515145}% aeaeba
 
 % White text
@@ -76,15 +76,19 @@
 
 % Define the custom command \wart
 \NewDocumentCommand{\wart}{m m o o o o o o o}{%
-  \noindent % Prevent paragraph indentation
-  {\normalfont\Large\bfseries
-      {\colorbox{#4}{\color{#5}#2}\colorbox{#5}{\color{#4} -- #1}}\hfill%
+  \noindent% Prevent paragraph indentation
+  {\normalfont\Large\bfseries%
+      {\colorbox{#4}{\color{#5}#2}\colorbox{#5}{\color{#4} -- \phantomsection\label{#1}{#1}}}\hfill%
       {\colorbox{#4}{\color{#5}\normalfont\tiny\textsc{\theauthor}}}\par%
   }% Main output
   \IfValueT{#8}{#8}% Only print #8 if it exists
   \IfValueT{#4}{\csdef{wartCurrentValue}{#4}} % Store #3 globally if provided
-  \addtocontents{toc}{\protect\contentsline{section}{\normalfont\fontsize{7pt}{8pt}\selectfont{\color{#6}\textbf{\IfValueTF{#3}{#2}{$\Rightarrow$ #2}}}{\color{#7} -- \textit{#1} {\hspace{2em}\color{#4} \textit{#9}} \IfValueTF{#3}{(#3)}{}}}{\color{#6}\thepage}{}}
-  \label{wart:#1:#2} % Adds a unique label for this wart
+  \addtocontents{toc}{\protect\contentsline{section}{%
+  \normalfont\fontsize{7pt}{8pt}\selectfont{%
+  \color{#6}\textbf{\IfValueTF{#3}{#2{ }}{$\Rightarrow$ #2{ }}}}{%
+  \color{#7} -- \textit{#1}%
+  \IfValueTF{#3}{\textbf{\color{#6} { }(#3)}}{}}}{%
+  \color{#6}#9 - \thepage.}{}}%
 }
 
 \NewDocumentCommand{\drama}{m m o o}{
@@ -174,23 +178,23 @@
 \newcommand{\textschl}[1]{{\color{\wpagecolor}\textsc{#1}}} % textsc and highlight text
 \newcommand{\TOCBF}[1]{%
   \WIDTF{%
-    \color{DTOC}\textbf{#1}%
+    {\color{DTOC}\textbf{#1}}%
   }{%
-    \color{TOC}\textbf{#1}%
+    {\color{TOC}\textbf{#1}}%
   }%
 }%
 \newcommand{\TOCIT}[1]{%
   \WIDTF{%
-    \color{DTOC}\textit{#1}%
+    {\color{DTOC}\textit{#1}}%
   }{%
-    \color{TOC}\textit{#1}%
+    {\color{TOC}\textit{#1}}%
   }%
 }%
 \newcommand{\TOCRULE}[1]{
   \WIDTF{
-    \textcolor{DTOC}{#1}
+    {\textcolor{DTOC}{#1}}
   }{
-    \textcolor{TOC}{#1}
+    {\textcolor{TOC}{#1}}
   }
 }
 
@@ -202,5 +206,7 @@
 		\addtocounter{page}{-1}% Decrement the page counter
 	}%
 }
+
+\newcommand{\wsl}{\textbfhl{/}}
 
 %about: Currently adds commands \setauthor{Author's name} that you can call later on with \theauthor; \wart{Writer's name}{Writer's work}[optional text visible in TOC][second optional text vesible in TOC](automatically calls \theauthor and places it in right corner of page)

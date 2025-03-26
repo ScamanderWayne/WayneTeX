@@ -1,0 +1,67 @@
+\documentclass{article}
+\usepackage[czech]{babel}
+\usepackage[enable]{darkmode}
+\usepackage[a4paper, left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage{nopageno}
+\usepackage{yfonts}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{palatino}
+\usepackage{lipsum}
+
+\NewDocumentCommand{\setws}{m m m}{%
+	\def\wauthor{#1}%
+	\def\wname{#2}%
+	\def\wsubject{#3}%
+}
+
+\setws{Libor Halík}{James Joyce}{James Joyce a Odysseus (Ulysses)}
+
+\hypersetup{
+	pdftitle={\wname},
+	pdfauthor={\wauthor},
+	pdfsubject={\wsubject},
+	pdfkeywords={},
+	pdfcreator={LaTeX with hyperref},
+	pdfproducer={pdfLaTeX} % Or whatever engine you are using.
+}
+
+\definecolor{DP}{HTML}{293133}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{%
+	\textsc{\small{\IfDarkModeTF{%
+				\color{cyan}\wauthor%
+			}{%
+				\wauthor%
+			}%
+}}}%
+\fancyhead[L]{%
+	\textbf{\IfDarkModeTF{%
+			\colorbox{cyan}{\color{DP}\wname}%
+		}{%
+			\wname%
+		}%
+}}%
+\fancyfoot[R]{%
+	\IfDarkModeTF{%
+		{\color{cyan}\small Powered by \LaTeX.}%
+	}{%
+		{\small Powered by \LaTeX.}%
+	}%
+}%
+
+\renewcommand{\headrule}{}
+
+\begin{document}
+	\lipsum[1-3]\\
+	\vspace{1em}\\
+	\noindent\IfDarkModeTF{
+	\colorbox{cyan}{\color{DP}Odysseus}}{
+	Odysseus}\\
+	\vspace{1em}\\
+	\lipsum[4-6]
+\end{document}

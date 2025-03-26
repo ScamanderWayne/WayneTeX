@@ -1,0 +1,46 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\usepackage{physics}
+\usepackage{geometry}
+\usepackage{siunitx}
+\usepackage{bm} % Bold math symbols
+\usepackage{commath} % Differential operators, etc.
+\usepackage{mathrsfs} % Script math fonts
+
+\geometry{a4paper, margin=1in}
+\usepackage{parskip} % For zero paragraph indentation
+
+\begin{document}
+	$\vec{m}=(-1;2;-3)$\\
+	$\vec{n}=(2;0;-1)$\\
+	$\vec{p}=(-1;3;0)$
+	
+	$2(\vec{m}-\vec{x})+\vec{n}=\vec{p}-3\vec{m}+(\vec{n}-\vec{x})$\\
+	$(-2;4;-6)-(2x_1;2x_2;2x_3)+(2;0;-1)=
+	(-1;3;0)+(3;-6;9)+(2;0;-1)-(x_1;x_2;x_3)$\\
+	$(0;4;-7)-(2x_1;2x_2;2x_3)=(4;-3;8)-(x_1;x_2;x_3)$\\
+	$(2x_1;2x_2;2x_3)-(x_1;x_2;x_3)=(0;4;-7)-(4;-3;8)$\\
+	$(x_1;x_2;x_3)=(-4;7;-15)$\\
+	$\vec{x}=(-4;7;-15)$
+	
+	\begin{align*}
+		2(\vec{m}-\vec{x})+\vec{n} &= \vec{p}-3\vec{m}+(\vec{n}-\vec{x}) \\
+		(-2;4;-6)-(2x_1;2x_2;2x_3)+(2;0;-1) &= (-1;3;0)+(3;-6;9)+(2;0;-1)-(x_1;x_2;x_3) \\
+		(0;4;-7)-(2x_1;2x_2;2x_3) &= (4;-3;8)-(x_1;x_2;x_3) \\
+		(2x_1;2x_2;2x_3)-(x_1;x_2;x_3) &= (0;4;-7)-(4;-3;8) \\
+		(x_1;x_2;x_3) &= (-4;7;-15) \\
+		\vec{x} &= (-4;7;-15)
+	\end{align*}
+	
+	\begin{align*}
+		2(\vec{m}-\vec{x})+\vec{n}&=\vec{p}-3\vec{m}+(\vec{n}-\vec{x})\\
+		2\vec{m}-2\vec{x}+\vec{n}&=\vec{p}-3\vec{m}+\vec{n}-\vec{x}\\
+		-2\vec{x}&=\vec{p}-5\vec{m}-\vec{x}\\
+		\vec{x}&=5\vec{m}-\vec{p}\\
+		\vec{x}&=(-5;10;-15)-(-1;3;0)\\
+		\vec{x}&=(-4;7;-15)
+	\end{align*}
+\end{document}

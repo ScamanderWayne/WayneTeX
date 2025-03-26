@@ -1,0 +1,107 @@
+\documentclass{article}
+\usepackage[czech]{babel}
+\usepackage{darkmode}
+\usepackage[a4paper, margin=2.5cm]{geometry}
+\usepackage{nopageno}
+\usepackage{yfonts}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{palatino}
+\usepackage{csquotes}
+
+\NewDocumentCommand{\setws}{m m m}{%
+	\def\wauthor{#1}%
+	\def\wname{#2}%
+	\def\wsubject{#3}%
+}
+
+\setws{Libor Halík}{Beze jména}{hororový příběh z prostředí maturitního plesu}
+
+\hypersetup{
+	pdftitle={\wname},
+	pdfauthor={\wauthor},
+	pdfsubject={\wsubject},
+	pdfkeywords={},
+	pdfcreator={LaTeX with hyperref},
+	pdfproducer={pdfLaTeX} % Or whatever engine you are using.
+}
+
+\definecolor{DP}{HTML}{293133}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{%
+	\textsc{\small{\IfDarkModeTF{%
+				\color{cyan}\wauthor%
+			}{%
+				\wauthor%
+			}%
+}}}%
+\fancyhead[L]{%
+	\textbf{\IfDarkModeTF{%
+			\colorbox{cyan}{\color{DP}\wname}%
+		}{%
+			\wname%
+		}%
+}}%
+\fancyfoot[R]{%
+	\IfDarkModeTF{%
+		{\color{cyan}\small Powered by \LaTeX.}%
+	}{%
+		{}%\small Powered by \LaTeX.
+	}%
+}%
+
+\IfDarkModeTF{\renewcommand{\headrule}{}}{}
+
+\begin{document}
+	\enquote{Ta odpadla teda rychle.}
+	To Sylvu probudilo.
+	Mělo to ten posměvačný podtón, kdy si jeden může být jist rizikem,
+	které hrozí, když zůstane spát v obklopení znuděných teenagerů.
+	Navíc měla pocit, že~sama takové vtípky už pár lidem provedla.\par
+	Otevřela oči, nad ní se skláněl obličej další dívky.
+	Mžourala, dívku před sebou nepoznávala.
+	Chtěla se~zvednout do sedu, ale ruka jí podklouzla po něčem lepkavém.\par
+	Dívčin výraz se z pobaveného změnil ve starostlivý
+	a s určitou naléhavostí v hlase se zeptala:
+	\enquote{Cítíš se v pořádku? Vypadáš bíle jak stěna.}\par
+	Nebyla v pořádku.
+	Nedokázala se zaměřit na nic jiného, než dívku před sebou.
+	Panikařila.
+	Kde je?
+	K~tomu ten tlak v hlavě.
+	Dá ještě jeden pokus tomu sedu.
+	Druhou rukou nahmatala něco, co mohla být opěrka.
+	Bolestivým pohybem se vytáhla do sedu.
+	Cítila každý sval od lopatky až ke konečkům prstů.
+	Udělala si něco?\par
+	\enquote{Jsi v pořádku?} dívčin hlas už vyskočil o oktávu výše.
+	\enquote{Zaječela jsi!}
+	To byla vlastně pravda.
+	Proč to Sylva neslyšela? %163 slov
+	Když k ní dívka znovu promluvila, slyšela jí nějak zastřeně.
+	\enquote{Na moment jsi snad přehlušila i kapelu.}
+	Hudba.
+	V místnosti hrála hudba.
+	Poprvé se zaměřila na vzdálenost delší,
+	než pár centimetrů od svého obličeje.
+	Nejasné pozadí se změnilo v rozmazané fleky barev.
+	Zkusila zaostřit ještě jednou.
+	Na moment zachytila lidskou postavu.
+	I když nehotovou, neopracovanou.
+	Její mysl s ní stále hrála hry.\par
+	Podívala se vedle sebe, dívčina s ní ale už nebyla.
+	Seděla sama, na čalouněné pohovce pod oknem.
+	Chtěla zjistit, po čem jí to uklouzla ta ruka.
+	Pohovka byla na místě, kde se původně opřela, rozmazaná.
+	Zabolela jí hlava.
+	Zamrkala a přemýšlela, co že to chtěla udělat.
+	Chtěla zjistit, po čem jí to uklouzla ta~ruka.
+	Pohovka měla na sobě louži bublinek.
+	Sama měla kousek od ruky skleničku.
+	Musela jí rozlít, když~usnula.\par
+	\textit{TO BE CONTINUED}
+\end{document}
