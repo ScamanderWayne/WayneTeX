@@ -1,15 +1,23 @@
-\documentclass{article}
+\documentclass[10pt]{article}
 \usepackage[czech]{babel}
 \usepackage{darkmode}
-\usepackage[a4paper, margin=2.5cm]{geometry}
+\usepackage[a4paper, margin=2cm]{geometry}
 \usepackage{nopageno}
 \usepackage{yfonts}
 \usepackage{hyperref}
 \usepackage{fancyhdr}
 \usepackage{xcolor}
 \usepackage{tikz}
-\usepackage{palatino}
+%\usepackage{palatino}
+\usepackage[nf]{coelacanth}
+%\usepackage{fourier}
+%\usepackage{plex-serif, plex-sans, plex-mono}
+%\usepackage[sfdefault]{plex-sans}  % for beamer
 \usepackage{csquotes}
+
+\usepackage{microtype}
+%\usepackage[skip=1pt plus1pt, indent=15pt]{parskip}
+\usepackage{setspace}
 
 \NewDocumentCommand{\setws}{m m m}{%
 	\def\wauthor{#1}%
@@ -17,7 +25,7 @@
 	\def\wsubject{#3}%
 }
 
-\setws{Libor Halík}{Beze jména}{hororový příběh z prostředí maturitního plesu}
+\setws{Libor Halík}{\textsc{Tancuj s námi}}{hororový příběh z prostředí maturitního plesu}
 
 \hypersetup{
 	pdftitle={\wname},
@@ -56,9 +64,9 @@
 
 \IfDarkModeTF{\renewcommand{\headrule}{}}{}
 
-\begin{document}
-	\enquote{Ta odpadla teda rychle.}
-	To Sylvu probudilo.
+\begin{document}\begin{spacing}{1}
+	\enquote{Ta odpadla teda rychle.}\par
+	To Sylvu probudilo.\par
 	Mělo to ten posměvačný podtón, kdy si jeden může být jist rizikem,
 	které hrozí, když zůstane spát v obklopení znuděných teenagerů.
 	Navíc měla pocit, že~sama takové vtípky už pár lidem provedla.\par
@@ -108,7 +116,88 @@
 	Už stabilně seděla.
 	Hlava jí co chvíli explodovala bolestí.
 	A před ní tančili tanečníci.
-	Nebyla schopná zachytit jedinou tvář.
-	
-	
-\end{document}
+	Nebyla schopná zachytit jedinou tvář.	
+	Tanečníci ani netancovali tak rychle, hudba nebyla tak hlasitá.
+	To si teď už uvědomovala.
+	Mysl se jí projasňovala.
+	A všímala si čím dál tím víc věcí.
+	Obličeje tanečníků byli zastřené.
+	Ale proč?
+	Doznívající vliv toho drinku, který ležel rozlit na pohovce vedle ní?
+	A~kam~zmizela ta slečna, která jí probudila?
+	Neviděla jí odběhnout, snad se ani neomluvila.
+	Proč~by~se~jí~měla omlouvat?
+	Nebyla to její chyba, že Sylva takto odpadla.
+	Vlastně jí tam mohla nechat být.
+	Ale ty tanečníci - hlavou jí projela bolest, jak po tupém noži.\par
+	Neslyšela hlasy, neslyšela snad ani kroky.
+	Nesli se snad po parketu tak lehce?
+	Hudba nebyla tak hlasitá - zase bolest.
+	Čím víc se snažila přemýšlet, tím více jí hlava vzdorovala.\par
+	\enquote{Promiň, že jsem tě probudila tak brzo, sál ještě nebyl připravený.}
+	To zase promluvila ta dívka, byla~zase u ní.\par
+	Sylva ze sebe konečně vydala hlásku, \enquote{Co tím myslíš?}\par
+	Proč by se omlouvala za sál?
+	Co tím myslela?
+	Ale dívka se jen usmála, tleskla a Sylva uslyšela nové zvuky.
+	Kroky bot dopadajících na parket.
+	Letmý smích dam, jimž jejich partneři právě něco šuškali.\par
+	Sylva se nechápavě podívala po slečně, ale ta už u ní zase nebyla.
+	Začínala cítit nejistotu.
+	Se světem kolem ní nebylo něco v pořádku.
+	Postavila se na nohy, odhodlaná zjistit, co se děje.\par
+	Toto už nebyla schopná vysvětlit jenom silnějším obsahem drinku,
+	toto nebylo přirozené.\par
+	Míhala se mezi tanečníky, jejichž tváře neviděla ani z této blízkosti.
+	Byli to vůbec lidé?
+	Pletli se jí pod nohy.
+	Čím více se blížila k něčemu, co vypadalo jako východ,
+	tím více se tanečníci pletli do její cesty.\par
+	Nervozitu nahradil strach.
+	Co se to dělo?
+	Kde to je?
+	Když už viděla velké zdobené dveře jasně před sebou, ucítila ruku na jejím rameni.
+	Neviděná ruka s ní trhla dozadu.
+	Pozadu padala k zemi.
+	Chytla~jí~další ruka.
+	Veškeré myšlenky nahradil strach.
+	Další ruka.
+	A další.
+	Byla v zajetí.\par
+	\textsc{Tancuj s námi.}\par
+	Nebyl to hlas.
+	Byl to příkaz.
+	Příkaz, který přišel odnikud.
+	Ruce jí pomohli postavit se na nohy.
+	Kolem ní byl kruh tanečníků bez tváře.\par
+	\textsc{Tancuj s námi.}\par
+	Toto nebylo přirozené.
+	Toto nebylo správně.\par
+	\textsc{Tancuj s námi.}\par
+	Dívka se objevila po jejím levém boku.
+	\enquote{Přeci nás teď neopustíš?
+	Toto celé jsme přichystali pro tebe.}\par
+	Sylva se teď soustředila na ní.
+	Ruce jí stále podpírali.
+	Nechtěli jí pustit, snad aby se jí nepodlomila kolena,
+	snad aby nevzala nohy na ramena.\par
+	\enquote{Co tím myslíš?} Sylva už panikařila,
+	nechtěla tu být, nemohla tu být.\par
+	Dívka se na ní usmála od ucha k uchu.
+	Nebyl to vřelý úsměv.
+	Byl to úsměv hladový.
+	Dveře se rozevřely dokořán.
+	Za nimi se rozprostíral větší pokoj.
+	Pokoj pro obra.
+	Byl to Sylvy pokoj.
+	Její pokojíček.
+	Toto byla její hrací skřínka.
+	Vyděšeně se zase podívala na dívku vedle ní.\par
+	Ta už se neusmívala. Zklamaně pronesla, \enquote{Nechceš si s námi hrát?}\par
+	Sylvě se začaly zavírat oči.
+	Padala k zemi.
+	Cítila pevný stisk rukou.\par
+	\vfill
+	\enquote{Ta odpadla teda rychle.}\par
+	To Sylvu probudilo.
+\end{spacing}\end{document}
