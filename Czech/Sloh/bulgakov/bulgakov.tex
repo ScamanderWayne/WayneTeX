@@ -1,0 +1,81 @@
+\documentclass{article}
+\usepackage[czech]{babel}
+\usepackage[enable]{darkmode}
+\usepackage[a4paper, left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage{nopageno}
+\usepackage{yfonts}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{palatino}
+
+\NewDocumentCommand{\setws}{m m m}{%
+	\def\wauthor{#1}%
+	\def\wname{#2}%
+	\def\wsubject{#3}%
+}
+
+\setws{Libor Halík}{Michail Bulgakov}{Michail Bulgakov a Mistr a Markétka}
+
+\hypersetup{
+	pdftitle={\wname},
+	pdfauthor={\wauthor},
+	pdfsubject={\wsubject},
+	pdfkeywords={},
+	pdfcreator={LaTeX with hyperref},
+	pdfproducer={pdfLaTeX}
+}
+
+\definecolor{DP}{HTML}{293133}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{%
+	\textsc{\small{\IfDarkModeTF{%
+				\color{cyan}\wauthor%
+			}{%
+				\wauthor%
+			}%
+}}}%
+\fancyhead[L]{%
+	\textbf{\IfDarkModeTF{%
+			\colorbox{cyan}{\color{DP}\wname}%
+		}{%
+			\wname%
+		}%
+}}%
+\fancyfoot[R]{%
+	\IfDarkModeTF{%
+		{\color{cyan}\small Powered by \LaTeX.}%
+	}{%
+		{\small Powered by \LaTeX.}%
+	}%
+}%
+
+\renewcommand{\headrule}{}
+
+\begin{document}
+Michail Bulgakov, ruský spisovatel, dramatik a lékař, se narodil roku 1891 v Kyjevě. Jeho život byl poznamenán složitými politickými poměry carského Ruska a později sovětského režimu. Po studiích medicíny na Kyjevské univerzitě působil jako lékař během první světové války a ruské občanské války, což hluboce ovlivnilo jeho pohled na lidskou přirozenost a společnost.
+	
+Bulgakovova literární tvorba vycházela z jeho schopnosti kombinovat satirický pohled na svět s filozofickými úvahami. Jeho díla často čelila cenzuře sovětského režimu, což ho nutilo psát tajně nebo přepracovávat své texty. Navzdory těmto překážkám si dokázal udržet osobitý styl, pro který byly typické ironie, humor a hluboká reflexe morálních otázek.
+	
+Po přesunu do Moskvy v roce 1921 se Bulgakov začal věnovat převážně literatuře a divadlu. Pracoval jako dramatik a scenárista pro Moskevské umělecké divadlo, kde se setkal s výrazným odporem ze strany kulturních úřadů. Tento boj s byrokracií a omezení svobody projevu se stal jedním z hlavních motivů jeho tvorby.
+	
+Bulgakovův život byl poznamenán nejen uměleckými, ale i osobními těžkostmi. Jeho zdraví se zhoršovalo, a přestože byl talentovaným lékařem, nemohl zastavit postup své nemoci. Zemřel v roce 1940, aniž by zažil plné uznání svého díla, které získalo světový věhlas až po jeho smrti.
+	
+\vspace{1em}
+\noindent\IfDarkModeTF{
+	\colorbox{cyan}{\color{DP}Mistr a Markétka}
+	}{
+	Mistr a Markétka}
+\vspace{1em}
+	
+\textit{Mistr a Markétka} vznikalo v letech 1928–1940, ale vydáno bylo až po autorově smrti, v roce 1966. Román je složitou mozaikou příběhů, která propojuje realistické vyobrazení Moskvy 30. let s fantastickými a biblickými motivy. Bulgakov v něm zkoumá témata lásky, umění, víry a morální odpovědnosti, čímž vytváří nadčasové dílo, jež oslovuje čtenáře po celém světě.
+	
+Román \textit{Mistr a Markétka} se skládá ze tří hlavních dějových linií: příběhu tajemného Wolanda, ďábelské postavy navštěvující Moskvu, osudů Mistra, spisovatele pronásledovaného za své dílo, a Markétky, která je ochotna obětovat vše pro lásku. Tyto linie se prolínají a vytvářejí komplexní obraz lidské existence. Bulgakov využívá satiru k odhalení absurdit sovětské společnosti, zatímco fantastické prvky dodávají příběhu magický rozměr.
+	
+Důležitou součástí románu je vedlejší příběh o Pontiu Pilátovi a Ježíši Kristu, který Mistr píše ve svém románu. Tato linie zkoumá otázky viny, odpuštění a pravdy, a zároveň kontrastuje s morálním úpadkem Moskvy. Bulgakov tak propojuje historické a moderní motivy, aby ukázal univerzálnost lidských dilemat.
+	
+Dílo \textit{Mistr a Markétka} zůstává aktuální díky své hloubce a mnohovrstevnatosti. Bulgakovův styl, kombinující humor, tragédii a filozofii, čtenáře vtahuje do světa, kde se střetává dobro se zlem a láska s obětí. Román inspiroval mnoho adaptací, včetně divadelních her a filmů, a nadále je považován za vrchol světové literatury.
+\end{document}

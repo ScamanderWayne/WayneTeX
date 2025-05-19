@@ -1,0 +1,34 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\usepackage{physics}
+\usepackage{geometry}
+\usepackage{siunitx}
+\usepackage{bm} % Bold math symbols
+\usepackage{commath} % Differential operators, etc.
+\usepackage{mathrsfs} % Script math fonts
+
+\geometry{a4paper, margin=1in}
+
+\begin{document}
+	{\Large \textbf{Odchylka vektorů -- směrový a normálový vektor}}
+	\begin{align*}
+		\vec{u}&=(-2;3) \rightarrow \lvert\vec{u}\rvert=\sqrt{(-2)^2+3^2}=\sqrt{4+9}=\sqrt{13}\\
+		\vec{v}&=(1;-1) \rightarrow \lvert\vec{v}\rvert=\sqrt{2}\\
+		\vec{u}\cdot\vec{v}&=(-2)\cdot 1+3\cdot (-1)=-5\\
+		\cos(\alpha)&=\dfrac{\lvert-5\rvert}{\sqrt{13}\cdot\sqrt{2}}=\dfrac{5}{\sqrt{26}}\\
+		\cos[-1]({\dfrac{5}{\sqrt{26}}})&=\alpha \rightarrow \alpha\approx 11,3^o
+	\end{align*}\\
+	\vspace{1em}\\
+	Pozn.: Pokud skalární součin 2 vektorů je roven 0,
+	pak tyto vektory jsou na sebe kolmé (svírají $90^o$).\\
+	vektory -- směrový $\rightarrow \vec{BA}=B-A=(b_1-a_1;b_2-a_2)$\\
+	vektory -- normálový $\rightarrow$ kolmý na směrový vektor.\\
+	\vspace{1em}\\
+	\begin{align*}
+		\vec{u}&=(4;-3)\\
+		\vec{n}_{\vec{u}}&=(3;4)/(-3;-4)
+	\end{align*}
+\end{document}
