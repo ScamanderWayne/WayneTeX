@@ -1,0 +1,88 @@
+\documentclass{article}
+\usepackage[czech]{babel}
+\usepackage{darkmode}
+\usepackage[a4paper, left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage{nopageno}
+\usepackage{yfonts}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{lmodern}
+
+\NewDocumentCommand{\setws}{m m m}{%
+	\def\wauthor{#1}%
+	\def\wname{#2}%
+	\def\wsubject{#3}%
+}
+
+\setws{Libor Halík}{Pokrok}{V hlavní roli přístoje, úvahový text o tom, co lidstvo užíváním technologií získává a ztrácí}
+
+\hypersetup{
+	pdftitle={\wname},
+	pdfauthor={\wauthor},
+	pdfsubject={\wsubject},
+	pdfkeywords={},
+	pdfcreator={LaTeX with hyperref},
+	pdfproducer={pdfLaTeX} % Or whatever engine you are using.
+}
+
+\definecolor{DP}{HTML}{293133}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{%
+	\textsc{\small{\IfDarkModeTF{%
+				\color{cyan}\wauthor%
+			}{%
+				\wauthor%
+			}%
+}}}%
+\fancyhead[L]{%
+	\textbf{\IfDarkModeTF{%
+			\colorbox{cyan}{\color{DP}\wname}%
+		}{%
+			\wname%
+		}%
+}}%
+\fancyfoot[R]{%
+	\IfDarkModeTF{%
+		{\color{cyan}\small Powered by \LaTeX.}%
+	}{%
+		{}%
+	}%
+}%
+
+\begin{document}
+	\fontsize{10pt}{10pt}\selectfont
+	Každý den vyrazí do práce.
+	Práce, která jej nebere jako individuum, nýbrž jako článek v řetězci.
+	Vrací~se, bez většího uznání.
+	Každý další den, se to opakuje, až do konce jeho života.
+	Mnozí tuto noční můru dávají za vinu právě funkčnímu politickému režimu.
+	A přitom toto byl popis života mravence.\par
+	Většina živočišných druhů zná určitou formu pokroku.
+	Ptáci, co objevili gravitační zrychlení a~s~tím~spojenou sílu úderu.
+	Dřevěné nástroje pro lov hmyzu.
+	Včely, které zase znají vliv proudění vzduchu a~staví podle něj své úly.
+	I lidé, když se ještě nedali odlišit od opic, už znali spolupráci a dělbu práce.
+	Také se~naučili používat nástroje.
+	Zjistili, jak stvořit oheň.
+	Své nástroje vylepšovali.
+	A nyní už umí jejich nástroje pracovat téměř samostatně.\par
+	Zavedli si pracovní dobu, nástroje, které zvládnou většinu práce, dohled nad pracovními odděleními, podíly v takovýchto institutech.
+	A také zbraně.
+	Kdykoli někdo přišel na silnější oheň, rychlejší těžbu kamení, lepší komunikaci, tak první využití bylo pro válku.
+	Práce se zlepšovala až sekundárně.
+	Ale také zábavu.
+	Stínohra, divadlo, film, hudba, hry.
+	Kde medvěd obdivuje krásu přírody, člověk se naučil, jak si tuto krásu k sobě přiblížit.\par
+	Někdo může stále snít svůj sen o individualismu, kdy je každý sám za sebe.
+	Ale člověk nikdy nebyl sám za sebe.
+	Už od prvotních věků jsme spolupracovali a zlepšovali se vzájemně.
+	Člověk nyní ztrácí svobodu, kterou nikdy neměl.
+	Má pocit mrhání časem, který nikdy neměl.
+	Vadí mu nesamostatnost, kdy nikdy nebyl samostatný.\par
+	Technologie jej omezuje, ale dává mu toho mnohem více.
+	Technologie se stává novým božstvem lidstva a to je součástí pokroku.
+\end{document}

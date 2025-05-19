@@ -16,7 +16,14 @@
     % linkbordercolor=blue,% hyperlink borders will be blue
     pdfborderstyle={/S/U/W 0}% border style will be underline of width 1pt
     }
+%------------------------------------------------------------------ My own additions
 \usepackage{pdfpages}
+\usepackage{enumitem}
+\newcommand{\ghostsubsection}[2]{%
+	\addcontentsline{toc}{subsection}{#1}%
+	\phantomsection%
+	\label{#2}% Optional
+}
 %------------------------------------------------------------------ Variablen
 
 \newlength{\rightcolwidth}
@@ -159,10 +166,10 @@ Aktuálně jsem objevil zálibu a fascinaci v prozkoumávání Arch Linuxu (Hypr
 \end{tabular}
 \end{minipage}
 
-
-
-
-
+\section*{Doporučení}
+\begin{itemize}[label={}, leftmargin=0pt]
+	\item \hyperlink{sec1}{Praxe u firmy Emedis \dotfill \pageref{sec1}}
+\end{itemize}
 
 \vfill{} % Whitespace before final footer
 
@@ -178,6 +185,5 @@ Aktuálně jsem objevil zálibu a fascinaci v prozkoumávání Arch Linuxu (Hypr
 \end{minipage}
 
 \end{paracol}
-\newpage
-\includepdf[pages=-]{praxeemedis.pdf}
+\newpage\ghostsubsection{sec1}{sec1}\includepdf[pages=-]{praxeemedis.pdf}
 \end{document}
