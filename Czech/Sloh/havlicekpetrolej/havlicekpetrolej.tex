@@ -1,0 +1,123 @@
+\documentclass{article}
+\usepackage[czech]{babel}
+\usepackage{geometry}
+\geometry{a4paper, margin=2cm}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{nopageno}
+\usepackage{xcolor}
+\usepackage[enable]{darkmode}
+\usepackage{mdframed}
+\usepackage{lmodern}
+\usepackage[fixed]{fontawesome5}
+
+\setlist[itemize]{label=\textcolor{cyan}{$\hookrightarrow$}} %\textbullet \faGreaterThan
+
+\definecolor{DP}{HTML}{293133}
+
+\NewDocumentCommand{\wextbf}{m}{%
+	{\vspace{-6pt}\hspace{-7pt}\noindent\colorbox{cyan}{\color{DP}\textbf{#1}}}
+}
+
+\NewDocumentCommand{\textbw}{m}{%
+	{\color{cyan}{#1}}
+}
+
+\NewDocumentCommand{\wemph}{m}{%
+	{\color{cyan}\emph{#1}}
+}
+
+\newcommand{\mysection}[2]{
+	\setlength\fboxsep{4pt} % spacing around box contents
+	\section*{\colorbox{DP}{\makebox[\dimexpr\textwidth-2\fboxsep\relax]{\color{cyan}#1\hfill#2}}}\vspace{-4pt}
+}
+
+\begin{document}
+\fontsize{10pt}{10pt}\selectfont
+\setlength\parindent{0em}
+\mysection{Jaroslav Havlíček}{Život a literární odkaz}
+	
+% Biografie a literární kontext
+\begin{mdframed}[backgroundcolor=DP,
+	linecolor=cyan,
+	linewidth=2pt,
+	innertopmargin=5pt,
+	innerbottommargin=5pt,
+	innerleftmargin=5pt,
+	innerrightmargin=5pt]\color{white}
+\wextbf{Biografie a literární kontext}\par
+Jaroslav Havlíček (1896–1943) byl významným českým spisovatelem, jehož tvorba patří k vrcholům meziválečné české literatury.
+Narodil se v Jilemnici, městě v Krkonoších, které inspirovalo prostředí jeho děl, včetně románu \wemph{Petrolejové lampy}.
+Jeho život byl poznamenán předčasnou smrtí na zánět mozkových blan a omezenými možnostmi publikování během druhé světové války.
+Havlíček studoval obchodní vědy na Českém vysokém učení technickém v Praze, avšak studia nedokončil a věnoval se především literatuře, kde se prosadil jako mistr psychologického románu.
+Jeho tvorba, ovlivněná autory jako \wemph{Fjodor Dostojevskij}, \wemph{Franz Kafka} či \wemph{Marcel Proust}, kombinuje introspekci, realistické zobrazení venkovského prostředí a sociální kritiku.
+Mezi jeho klíčová díla patří \wemph{Neviditelný} (1937), \wemph{Ta třetí} (1939), \wemph{Helimadoe} (1940) a zejména \wemph{Petrolejové lampy} (1944), které tvoří vrchol jeho tvorby.
+\textit{Funfact}: Havlíčkova díla, včetně \wemph{Petrolejových lamp}, byla přeložena do němčiny.
+Havlíčkův syn Zbyněk byl surrealistický básník. 
+\end{mdframed}\vspace{-2pt}
+
+% Klíčové rysy Havlíčkovy tvorby
+\begin{mdframed}[backgroundcolor=DP,
+	linecolor=cyan,
+	linewidth=2pt,
+	innertopmargin=5pt,
+	innerbottommargin=5pt,
+	innerleftmargin=5pt,
+	innerrightmargin=5pt]\color{white}
+\wextbf{Klíčové rysy Havlíčkovy tvorby}\par
+Havlíčkova díla se vyznačují následujícími rysy, které odrážejí jeho zájem o lidskou psychiku a společenské poměry:
+\begin{itemize}[leftmargin=*]\setlength\itemsep{-4pt}
+	\item \textbw{Psychologický realismus} -- Hluboká analýza vnitřních konfliktů, motivací a emocí postav, odhalující složitost lidské psychiky.
+	\item \textbw{Sociální kritika} -- Zobrazení společenských tlaků a patriarchálních struktur, zejména v kontextu venkovského života.
+	\item \textbw{Fatalismus} -- Tragické motivy a osudovost, kdy postavy čelí nevyhnutelným životním konfliktům.
+	\item \textbw{Lyrický styl} -- Poetické vyjadřování propojující realistické popisy se symbolickými rovinami.
+	\item \textbw{Rodinné vztahy} -- Zkoumání napětí a obětí v rodinách, často spojených s osobními dilematy.
+	\item \textbw{Morální otázky} -- Konflikt mezi povinností a individuální svobodou či hledání smyslu života.
+\end{itemize}
+\end{mdframed}\vspace{-2pt}
+\mysection{Petrolejové lampy}{Literární analýza}
+
+% Vznik a kontext díla
+\begin{mdframed}[backgroundcolor=DP,
+	linecolor=cyan,
+	linewidth=2pt,
+	innertopmargin=5pt,
+	innerbottommargin=5pt,
+	innerleftmargin=5pt,
+	innerrightmargin=5pt]\color{white}
+	\wextbf{Vznik a kontext díla}\par
+Román \wemph{Petrolejové lampy}, původně vydaný jako \wemph{Vyprahlé touhy} v roce 1935 a posmrtně přepracovaný v roce 1944, je Havlíčkovým nejvýznamnějším dílem. Měl tvořit první část plánované trilogie o Štěpce Kiliánové a prostředí Jilemnice, ale Havlíček dokončil pouze tento román a fragment \wemph{Vlčí kůže}. Příběh sleduje Štěpku Kiliánovou, dceru zednického mistra, která se z finančních důvodů provdá za svého bratrance, důstojníka Pavla Malinu, trpícího syfilidou a progresivní paralýzou. Tento sňatek ji uvězní v tíživém prostředí, kde bojuje s nemocí manžela, osamělostí a společenskými očekáváními. Román je hlubokou studií ženské psychiky a kritikou venkovských struktur na přelomu 19. a 20. století. \textit{Funfact}: Filmová adaptace od Juraje Herze (1971) s Ivou Janžurovou byla vybrána na Filmový festival v Cannes 1972.
+\end{mdframed}\vspace{-2pt}
+	
+% Hlavní motivy a témata
+\begin{mdframed}[backgroundcolor=DP,
+	linecolor=cyan,
+	linewidth=2pt,
+	innertopmargin=5pt,
+	innerbottommargin=5pt,
+	innerleftmargin=5pt,
+	innerrightmargin=5pt]\color{white}
+\wextbf{Hlavní motivy a témata}\par
+Román \wemph{Petrolejové lampy} je bohatý na motivy, které odrážejí Havlíčkův zájem o lidskou psychiku:
+\begin{itemize}[leftmargin=*]\setlength\itemsep{-4pt}
+	\item \textbw{Oběť a povinnost} -- Štěpka se obětuje pro rodinu, což ji vede k vnitřnímu rozporu mezi povinností a touhou po štěstí.
+	\item \textbw{Společenský tlak} -- Kritika patriarchálních norem venkovské společnosti omezujících svobodu žen.
+	\item \textbw{Psychologická hloubka} -- Detailní zobrazení Štěpčiných vnitřních konfliktů a smiřování s osudem.
+	\item \textbw{Symbolika petrolejových lamp} -- Lampy symbolizují kontrast mezi světlem naděje a temnotou nemoci a společenských omezení.
+	\item \textbw{Tragédie a fatalismus} -- Osudový průběh příběhu podtrhuje nemožnost uniknout osobním a společenským překážkám.
+	\item \textbw{Láska a osamělost} -- Zkoumání nenaplněné touhy po lásce, potlačované rodinnými povinnostmi.
+\end{itemize}
+\end{mdframed}\vspace{-2pt}
+	
+% Literární význam
+\begin{mdframed}[backgroundcolor=DP,
+	linecolor=cyan,
+	linewidth=2pt,
+	innertopmargin=5pt,
+	innerbottommargin=5pt,
+	innerleftmargin=5pt,
+	innerrightmargin=5pt]\color{white}
+\wextbf{Literární význam}\par
+\wemph{Petrolejové lampy} přesahují rámec regionálního románu díky univerzální tematice a hluboké analýze psychiky. Havlíček propojuje realistické zobrazení Jilemnice s lyrickými a symbolickými prvky, čímž vytváří dílo o oběti, svobodě a hledání štěstí. Román zůstává klíčovým příspěvkem k české literatuře, podpořený i filmovou adaptací a zájmem čtenářů. \textit{Funfact}: Havlíčkův styl byl přirovnáván ke Kafkovi díky jeho schopnosti zachytit absurditu a tragiku lidského osudu.
+\end{mdframed}\vspace{-2pt}
+\end{document}

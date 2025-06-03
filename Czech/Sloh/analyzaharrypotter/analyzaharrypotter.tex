@@ -1,0 +1,140 @@
+\documentclass{article}
+\usepackage[czech]{babel}
+\usepackage[enable]{darkmode}
+\usepackage[a4paper, left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage{nopageno}
+\usepackage{yfonts}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{lmodern}
+\usepackage{csquotes}
+
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{0pt}{0pt}
+\titlespacing*{\subsection}{0pt}{0pt}{0pt}
+\titlespacing*{\paragraph}{0pt}{0pt}{0pt}
+
+\usepackage{mdframed}
+
+\NewDocumentCommand{\setws}{m m m}{%
+	\def\wauthor{#1}%
+	\def\wname{#2}%
+	\def\wsubject{#3}%
+}
+
+\setws{Libor Halík}{Analýza uměleckého textu (Harry Potter)}{document subject}
+
+\hypersetup{
+	pdftitle={\wname},
+	pdfauthor={\wauthor},
+	pdfsubject={\wsubject},
+	pdfkeywords={},
+	pdfcreator={LaTeX with hyperref},
+	pdfproducer={pdfLaTeX} % Or whatever engine you are using.
+}
+
+\definecolor{DP}{HTML}{293133}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{%
+	\textsc{\IfDarkModeTF{%
+				\color{cyan}\wauthor%
+			}{%
+				\wauthor%
+			}%
+}}%
+\fancyhead[L]{%
+	\textbf{\LARGE\IfDarkModeTF{%
+			\colorbox{cyan}{\color{DP}\wname}%
+		}{%
+			\wname%
+		}%
+}}%
+\fancyfoot[R]{%
+	\IfDarkModeTF{%
+		{\color{cyan}\small Powered by \LaTeX.}%
+	}{%
+		{\small Powered by \LaTeX.}%
+	}%
+}%
+
+\renewcommand{\headrule}{}
+
+\usepackage{calc}   % Required for \widthof or \dimexpr if not already loaded
+
+\newcommand{\myoldsection}[1]{
+	\setlength\fboxsep{4pt} %% spacing around box contents
+	\section*{\colorbox{cyan}{\makebox[\textwidth]{\color{DP}#1\hfill}}}
+}
+\newcommand{\mysection}[1]{
+	\setlength\fboxsep{4pt} % spacing around box contents
+	\section*{\colorbox{cyan}{\makebox[\dimexpr\textwidth-2\fboxsep\relax]{\color{DP}#1\hfill}}}
+}
+\newcommand{\mysubsection}[1]{
+	\setlength\fboxsep{4pt} %% spacing around box contents
+	\subsection*{\colorbox{DP}{\makebox[\textwidth][l]{\color{cyan}#1\hfill}}}
+}
+\newcommand{\mysubsubsection}[1]{
+	\setlength\fboxsep{3pt} %% spacing around box contents
+	\paragraph{\colorbox{cyan}{\color{DP}#1}}\hspace{0.3em}
+}
+
+\begin{document}\fontsize{10pt}{10pt}\selectfont
+	\begin{mdframed}[backgroundcolor=DP,linecolor=cyan,linewidth=2pt]
+		\color{white}Velká síň byla ohromující.
+		Tisíce svíček se vznášely ve vzduchu nad čtyřmi dlouhými stoly,
+		u nichž seděli ostatní studenti.
+		Stoly byly prostřeny zlatými talíři a poháry.
+		Na druhém konci síně stál další dlouhý stůl,
+		za nímž seděli učitelé.
+		Strop Velké síně byl temně modrý a posetý hvězdami,
+		takže vypadal jako noční obloha.
+		„Je začarovaný, aby vypadal jako obloha venku,“ zašeptala Hermiona.
+		„Četla jsem o tom v Dějinách Bradavic.“
+		Bylo těžké uvěřit, že nad nimi je strop, a ne otevřené nebe.
+		Harry se rychle rozhlédl po stolech.
+		U jednoho z nich zahlédl ducha s hlavou nakřivo.
+		„To je skoro bezhlavý Nick!“ zašeptal Ron.
+		„Říkali o něm na koleji!“ skoro bezhlavý Nick, duch Nebelvíru,
+		měl na sobě staromódní límec a dlouhý plášť.
+		Jeho hlava se nebezpečně nakláněla na stranu,
+		jako by měla každou chvíli spadnout.
+	\end{mdframed}
+	\vspace{3em}
+	\mysection{1. část}	
+	\mysubsection{Zasazení výňatku do kontextu díla:}
+	Ukázka pochází z knihy Harry Potter a Kámen mudrců, prvního dílu sedmidílné série. V tomto bodě příběhu Harry Potter, jedenáctiletý chlapec, který se právě dozvěděl, že je čaroděj, přijíždí do Bradavic, školy čar a kouzel. Tato scéna se odehrává během uvítací hostiny po třídění nových studentů do kolejí. Jde o klíčový moment, kdy je čtenář poprvé uveden do magického prostředí Bradavic a seznamuje se s jejich atmosférou a pravidly.
+	\mysubsection{Téma a motiv:}
+	Hlavním tématem je objevování kouzelného světa a přechod z obyčejného života do světa magie. Mezi motivy patří kouzla (začarovaný strop, svíčky), přátelství (interakce mezi Harrym, Ronem a Hermionou), tajemství (duch skoro bezhlavého Nicka) a začlenění do nového prostředí. Motiv obdivu a úžasu nad kouzly je zde klíčový, protože odráží Harryho pohled nováčka.
+	\mysubsection{Časoprostor:}
+	Časově je scéna zasazena do současnosti z pohledu Harryho (konec 20. století, i když přesný rok není uveden). Prostorově se odehrává ve Velké síni Bradavic, která je popsána jako majestátní místo s magickými prvky (začarovaný strop, svíčky ve vzduchu). Prostor je uzavřený, ale díky iluzi noční oblohy působí otevřeně a kouzelně.
+	\mysubsection{Kompoziční výstavba:}
+	Výňatek je součástí většího vyprávění, které sleduje chronologický děj. Tato scéna slouží jako expozice prostředí Bradavic a představuje klíčové prvky světa (např. duchy, kouzla). Kompozice je lineární, s důrazem na popis prostředí a krátké dialogy, které prohlubují charakterizaci postav.
+	\mysubsection{Literární druh a žánr:}
+	Literární druh je epika, konkrétně próza. Žánrově jde o fantasy literaturu pro mládež s prvky dobrodružného románu. Přítomny jsou také prvky iniciačního příběhu, protože Harry prochází přechodem do nového světa.
+	\mysection{2. část}	
+	\mysubsection{Vypravěč:}
+	Vypravěč je vševědoucí, v er-formě, s fokalizací na Harryho perspektivu. Popisuje prostředí a události zvenčí, ale reflektuje Harryho pocity a úžas nad magickým světem, což umožňuje čtenáři vžít se do jeho role.
+	\mysubsection{Postava:}
+	Hlavními postavami ve výňatku jsou Harry Potter (protagonista, nováček v kouzelnickém světě), Ron Weasley (jeho přítel, poskytuje informace o světě) a Hermiona Grangerová (vzdělaná a zvědavá, představuje racionální pohled). Vedlejší postavou je Nick Bezhlavý, duch, který přidává mystický prvek.
+	\mysubsection{Vyprávěcí způsoby:}
+	Převažuje popis (Velká síň, její vzhled, atmosféra), doplněný krátkým dialogem (Hermionin a Ronův šepot). Popis je detailní a evokuje magickou atmosféru. Vyprávění je v er-formě, bez přímého vnitřního monologu postav.
+	\mysubsection{Typy promluv:}
+	V textu je použita přímá řeč (Hermionino „Je začarovaný...“ a Ronovo „To je skoro bezhlavý Nick!“), která prohlubuje charakterizaci postav a poskytuje informace o světě. Promluvy jsou stručné a slouží k vysvětlení prostředí.
+	\mysubsection{Veršová výstavba:}
+	Text je psán v próze, takže veršová výstavba není přítomna.
+	\mysection{3. část}	
+	\mysubsection{Jazykové prostředky a jejich funkce:}
+	\mysubsubsection{Popisné výrazy:} Slova jako „ohromující“, „tisíce svíček“, „temné modrý“ a „posetý hvězdami“ vytvářejí živý obraz Velké síně a zdůrazňují její kouzelnou atmosféru.
+	\mysubsubsection{Přídavná jména:} Např. „staromódní“ (u Nickova límce) evokují historický ráz světa Bradavic.
+	\mysubsubsection{Dynamické sloveso:} „Vznášely se“ (o svíčkách) podtrhuje magii prostředí.
+	\mysubsubsection{Vyjadřovací prostředky:} Fráze „bylo těžké uvěřit“ odráží Harryho úžas a pomáhá čtenáři sdílet jeho perspektivu nováčka.
+	\mysubsection{Tropy a figury a jejich funkce:}
+	\mysubsubsection{Přirovnání:} „Vypadal jako noční obloha“ – strop Velké síně je přirovnán k nebi, což zdůrazňuje jeho kouzelnou iluzi a vytváří pocit nekonečna.
+	\mysubsubsection{Personifikace:} „Jeho hlava se nebezpečně nakláněla“ – dodává skoro bezhlavý Nickovi humorný a zároveň strašidelný rys, což posiluje jeho výraznou charakteristiku.
+	\mysubsubsection{Hyperbola:} „Tisíce svíček“ – nadsázka zdůrazňuje velkolepost Velké síně.
+	\mysubsubsection{Metonymie:} „Dějiny Bradavic“ (místo názvu knihy) – stručně odkazuje na zdroj
+\end{document}

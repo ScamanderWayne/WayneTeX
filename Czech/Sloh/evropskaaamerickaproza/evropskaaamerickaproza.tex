@@ -1,0 +1,147 @@
+\documentclass{article}
+\usepackage[czech]{babel}
+\usepackage{geometry}
+\geometry{a4paper, margin=2cm}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{nopageno}
+\usepackage{xcolor}
+\usepackage[enable]{darkmode}
+\usepackage{mdframed}
+\usepackage{lmodern}
+\usepackage[fixed]{fontawesome5}
+
+\definecolor{WPP}{HTML}{00FFFF} %cyan
+\definecolor{WPP}{HTML}{0066CC} %blue
+\definecolor{WPP}{HTML}{C9A12A} %gold
+\definecolor{WPP}{HTML}{EC2B2B} %red
+
+\setlist[itemize]{label=\textcolor{WPP}{$\hookrightarrow$}} %\textbullet \faGreaterThan
+
+\definecolor{DP}{HTML}{293133}
+
+\NewDocumentCommand{\wextbf}{m}{%
+	{\vspace{-6pt}\hspace{-7pt}\noindent\colorbox{WPP}{\color{DP}\textbf{#1}}}
+}
+
+\NewDocumentCommand{\textbw}{m}{%
+	{\color{WPP}{#1}}
+}
+
+\NewDocumentCommand{\wemph}{m}{%
+	{\color{WPP}\emph{#1}}
+}
+
+\newcommand{\mysection}[2]{
+	\setlength\fboxsep{4pt} % spacing around box contents
+	\section*{\colorbox{DP}{\makebox[\dimexpr\textwidth-2\fboxsep\relax]{\color{WPP}#1\hfill#2}}}\vspace{-4pt}
+}
+
+\begin{document}
+\fontsize{10pt}{10pt}\selectfont
+\setlength\parindent{0em}
+\mysection{Evropská a americká próza 1. poloviny 20. století}{Libor Halík}
+
+\begin{mdframed}[backgroundcolor=DP,
+	linecolor=WPP,
+	linewidth=2pt,
+	innertopmargin=5pt,
+	innerbottommargin=5pt,
+	innerleftmargin=5pt,
+	innerrightmargin=5pt]\color{white}	
+\wextbf{Definujte následující pojmy:}
+	\begin{itemize}[leftmargin=*]\setlength\itemsep{-4pt}
+	\item \textbw{Expresionismus} -- Umělecký směr, který klade důraz na vyjádření vnitřních emocí a subjektivních pocitů autora, často prostřednictvím deformace reality, symboliky a intenzivních obrazů.
+	\item \textbw{Vnitřní monolog} -- Literární technika, která zachycuje proud myšlenek a vnitřních prožitků postavy, často bez přímé návaznosti na vnější děj, čímž odhaluje její psychiku.
+	\item \textbw{Ztracená generace} -- Označení pro skupinu amerických spisovatelů 20. let 20. století, kteří vyjadřovali deziluzi a ztrátu ideálů po první světové válce (např. E. Hemingway, F. S. Fitzgerald).
+	\item \textbw{Novela} -- Kratší prozaická forma s jedním hlavním dějovým motivem, zaměřená na dramatický konflikt a hutnou výstavbu příběhu.
+	\item \textbw{Dystopie} -- Literární žánr zobrazující negativní, často totalitní nebo represivní společnost budoucnosti, která kritizuje společenské nedostatky.
+	\end{itemize}
+\end{mdframed}\vspace{-2pt}
+
+\begin{mdframed}[backgroundcolor=DP,
+	linecolor=WPP,
+	linewidth=2pt,
+	innertopmargin=5pt,
+	innerbottommargin=5pt,
+	innerleftmargin=5pt,
+	innerrightmargin=5pt]\color{white}	
+\wextbf{Charakterizujte jedno z děl G. Orwella.}\par
+Román \wemph{1984} od George Orwella je dystopické dílo, které líčí totalitní společnost pod dohledem všemocného Velkého bratra. Hlavní hrdina,.Winston Smith, se vzpírá proti manipulaci, sledování a potlačování individuality. Dílo kritizuje totalitu, propagandistickou kontrolu pravdy a ztrátu osobní svobody, přičemž zkoumá moc jazyka a pravdy ve společnosti.
+\end{mdframed}\vspace{-2pt}
+
+\begin{mdframed}[backgroundcolor=DP,
+	linecolor=WPP,
+	linewidth=2pt,
+	innertopmargin=5pt,
+	innerbottommargin=5pt,
+	innerleftmargin=5pt,
+	innerrightmargin=5pt]\color{white}	
+\wextbf{Uveďte podstatné motivy v povídce Proměna Franze Kafky.}\par
+Hlavní motivy povídky \wemph{Proměna} zahrnují:
+\begin{itemize}[leftmargin=*]\setlength\itemsep{-12pt}
+	\item \textbw{Alienace} -- Proměna Gregora Samsy v brouka symbolizuje jeho odcizení od rodiny, práce i společnosti. \\
+	\item \textbw{Rodinné vztahy} -- Napětí mezi Gregorem a jeho rodinou odhaluje sobeckost a závislost na jeho finanční podpoře. \\
+	\item \textbw{Existenciální úzkost} -- Gregorova proměna zkoumá otázky smyslu života a lidské identity. \\
+	\item \textbw{Odpovědnost a oběť} -- Gregorova role živitele rodiny a jeho postupná ztráta lidskosti. \\
+	\item \textbw{Společenský tlak} -- Kritika očekávání společnosti a dehumanizace jedince.
+\end{itemize}
+\end{mdframed}\vspace{-2pt}
+
+\begin{mdframed}[backgroundcolor=DP,
+	linecolor=WPP,
+	linewidth=2pt,
+	innertopmargin=5pt,
+	innerbottommargin=5pt,
+	innerleftmargin=5pt,
+	innerrightmargin=5pt]\color{white}	
+\wextbf{Charakterizujte dílo A. de Saint Exupéryho.}\par
+Dílo \wemph{Malý princ} od Antoina de Saint Exupéryho je filozofická pohádka, která kombinuje poetický styl s hlubokými myšlenkami o lidských vztazích, lásce a smyslu života. Příběh vypráví o setkání letce s Malým princem, který cestuje po planetách a zkoumá lidskou přirozenost. Dílo zdůrazňuje hodnotu přátelství, jednoduchosti a schopnosti dívat se na svět „srdcem“.
+\end{mdframed}\vspace{-2pt}
+
+\begin{mdframed}[backgroundcolor=DP,
+	linecolor=WPP,
+	linewidth=2pt,
+	innertopmargin=5pt,
+	innerbottommargin=5pt,
+	innerleftmargin=5pt,
+	innerrightmargin=5pt]\color{white}
+\wextbf{Uveďte hlavní rysy románu Na západní frontě klid.}\par
+Román \wemph{Na západní frontě klid} od Ericha Maria Remarqua je protiválečný román, jehož hlavní rysy zahrnují:
+\begin{itemize}[leftmargin=*]\setlength\itemsep{-12pt}
+	\item \textbw{Realismus} -- Detailní popis hrůz první světové války z pohledu mladého vojáka Paula Bäumera. \\
+	\item \textbw{Antiválečná kritika} -- Zobrazení zbytečnosti a brutality války, dehumanizace vojáků. \\
+	\item \textbw{Kamarádství} -- Síla přátelství mezi vojáky jako prostředek přežití. \\
+	\item \textbw{Ztráta nevinnosti} -- Psychické a fyzické dopady války na mladou generaci. \\
+	\item \textbw{Existenciální otázky} -- Hledání smyslu v chaotickém válečném prostředí.
+\end{itemize}
+\end{mdframed}\vspace{-2pt}
+
+\begin{mdframed}[backgroundcolor=DP,
+	linecolor=WPP,
+	linewidth=2pt,
+	innertopmargin=5pt,
+	innerbottommargin=5pt,
+	innerleftmargin=5pt,
+	innerrightmargin=5pt]\color{white}	
+\wextbf{Petr a Lucie.}\par
+Román \wemph{Petr a Lucie} od Romaina Rollanda je lyrická novela o lásce dvou mladých lidí, Petra a Lucie, na pozadí první světové války. Jejich láska je konfrontována s tragédií války, což zdůrazňuje křehkost lidského štěstí a krásu v čase zkázy. Dílo je protiválečnou výpovědí a oslavou humanismu.
+\end{mdframed}\vspace{-2pt}
+
+\begin{mdframed}[backgroundcolor=DP,
+	linecolor=WPP,
+	linewidth=2pt,
+	innertopmargin=5pt,
+	innerbottommargin=5pt,
+	innerleftmargin=5pt,
+	innerrightmargin=5pt]\color{white}
+\wextbf{Určete autory těchto děl:}
+	\begin{itemize}[leftmargin=*]\setlength\itemsep{-4pt}
+	\item \textbw{Zámek} -- Franz Kafka
+	\item \textbw{O myších a lidech} -- John Steinbeck
+	\item \textbw{Odysseus (Ulysses)} -- James Joyce
+	\item \textbw{Noční let} -- Antoine de Saint Exupéry
+	\item \textbw{Nebe nezná vyvolených} -- Erich Maria Remarque
+	\end{itemize}
+\end{mdframed}\vspace{-2pt}
+\end{document}
