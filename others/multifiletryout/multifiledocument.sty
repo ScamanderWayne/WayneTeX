@@ -1,0 +1,107 @@
+% multifiledocument.sty: A custom package for my personal LaTeX commands
+
+\ProvidesPackage{multifiledocument}[2024/11/25 something]
+
+\usepackage[czech]{babel}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{parskip}
+%\usepackage{nopageno}
+\usepackage{xcolor}
+\usepackage[enable]{darkmode}
+\usepackage{mdframed}
+\usepackage{lmodern}
+\usepackage[fixed]{fontawesome5}
+\usepackage{lipsum}
+\usepackage{hyperref}
+\usepackage{tocloft}
+
+\usepackage{graphicx}
+\usepackage{eso-pic}
+
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{0pt}{0pt}
+\titlespacing*{\subsection}{0pt}{0pt}{0pt}
+
+\definecolor{WPP}{HTML}{00FFFF} %cyan
+\definecolor{WPP}{HTML}{0066CC} %blue
+\definecolor{WPP}{HTML}{C9A12A} %gold
+\definecolor{WPP}{HTML}{EC2B2B} %red
+
+\setlist[itemize]{label=\textcolor{WPP}{$\hookrightarrow$}} %\textbullet \faGreaterThan
+
+\definecolor{DP}{HTML}{293133}
+
+\NewDocumentCommand{\wextbf}{m}{%
+    {\subsection*{\vspace{-5pt}\hspace{-7pt}\noindent\colorbox{WPP}{\color{DP}{#1}}}}
+    \addcontentsline{toc}{subsection}{\color{WPP}#1}% Add to TOC as subsection
+}
+
+\NewDocumentCommand{\textbw}{m}{%
+    {\color{WPP}{#1}}
+}
+
+\NewDocumentCommand{\textww}{m}{%
+    {\color{WPP}\textbw{#1}}
+}
+
+\NewDocumentCommand{\wemph}{m}{%
+    {\color{WPP}\emph{#1}}
+}
+
+\NewDocumentCommand{\mysection}{m m}{%
+    \setlength\fboxsep{4pt} % spacing around box contents
+    {\section*{\colorbox{DP}{\makebox[\dimexpr\textwidth-2\fboxsep\relax]{\color{WPP}#1\hfill#2}}}\vspace{4pt}}
+    \addcontentsline{toc}{section}{\colorbox{WPP}{\color{DP}#1}}% Add to TOC as subsection
+}
+
+\NewDocumentCommand{\waybox}{m m}{%
+    \vspace*{-2pt}\begin{mdframed}[backgroundcolor=DP,%
+        linecolor=WPP,%
+        linewidth=2pt,%
+        innertopmargin=5pt,%
+        innerbottommargin=5pt,%
+        innerleftmargin=5pt,%
+        innerrightmargin=5pt]\color{white}%
+        \wextbf{#1}\par%
+        #2%
+    \end{mdframed}%
+}
+
+\NewDocumentCommand{\wayitem}{m m}{%
+    \begin{itemize}[leftmargin=*]\setlength\itemsep{#2}%
+        #1%
+    \end{itemize}%
+}
+
+\NewDocumentCommand{\wtem}{m}{%
+    \item \textbw{#1} --%
+}
+
+\newcommand\blankpage{% comando pagina vuota
+    \clearpage
+    \begingroup
+      \null
+      \thispagestyle{empty}%
+      \addtocounter{page}{-1}%
+      \hypersetup{pageanchor=false}%
+      \clearpage
+    \endgroup
+}
+
+\newcommand{\setWSauthor}[1]{\def\WSauthor{#1 }}
+\newcommand{\setWSname}[1]{\def\WSname{#1 }}
+\newcommand{\setWSsubtitle}[1]{\def\WSsubtitle{#1 }}
+\newcommand{\setWSsubject}[1]{\def\WSsubject{#1 }}
+\newcommand{\setWSuniversity}[1]{\def\WSuniversity{#1 }}
+
+\addto\captionsczech{% Replace "english" with the language you use
+  \renewcommand{\contentsname}%
+    {\section*{\colorbox{DP}{\makebox[\dimexpr\textwidth-2\fboxsep\relax]{\color{WPP}Obsah\hfill}}}\vspace{4pt}}%
+}
+
+%\renewcommand{\cftsecnumformat}{\color{WPP}\bfseries\cftsecnumfont}
+%\renewcommand{\cftsubsecnumformat}{\color{WPP}\cftsubsecnumfont}
+
+\usepackage{lastpage}
+\usepackage{fancyhdr}
