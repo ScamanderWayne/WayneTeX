@@ -1,6 +1,7 @@
 ## List of PDF Files
 
 https://github.com/ScamanderWayne/WayneTeX/blob/main/CV/LiborHalikCV.pdf
+https://github.com/ScamanderWayne/WayneTeX/blob/main/CV/praxeemedis.pdf
 https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/FGBook/FGBook.pdf
 https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/1984inspiration/1984inspiration.pdf
 https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/20240604/20240604.pdf
@@ -8,15 +9,32 @@ https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/DanVanoce2024/Ch
 https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/DanVanoce2024/Deepl/deepl.pdf
 https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/DanVanoce2024/hiswork.pdf
 https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/Franz Kafka/franzkafka.pdf
+https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/James Joyce/jamesjoyce.pdf
 https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/OliwerTwist/OliwerTwist.pdf
 https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/Prokrastinace/Prokrastinace.pdf
 https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/WaltWhitman/WaltWhitman.pdf
+https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/analyzaharrypotter/analyzaharrypotter.pdf
 https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/bezruc/bezruc.pdf
+https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/bulgakov/bulgakov.pdf
+https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/evropskaaamerickaproza/evropskaaamerickaproza.pdf
+https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/havlicekpetrolej/havlicekpetrolej.pdf
 https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/hlavacek/hlavacek.pdf
 https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/namesti/namesti.pdf
+https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/pleshoror/pleshoror.pdf
+https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/pokrok/pokrok.pdf
 https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/silneslabestranky/silneslabestranky.pdf
 https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/topol/topol.pdf
 https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/vanoce2023/vanoce2023.pdf
 https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/vanoce2024/vanoce2024.pdf
 https://github.com/ScamanderWayne/WayneTeX/blob/main/Czech/Sloh/zdechlina/zdechlina.pdf
+https://github.com/ScamanderWayne/WayneTeX/blob/main/Math/Tryout/76hodina.pdf
 https://github.com/ScamanderWayne/WayneTeX/blob/main/Math/Tryout/math-tryout.pdf
+https://github.com/ScamanderWayne/WayneTeX/blob/main/Math/Tryout/math-vectors.pdf
+https://github.com/ScamanderWayne/WayneTeX/blob/main/Math/Tryout/vectors-exam.pdf
+https://github.com/ScamanderWayne/WayneTeX/blob/main/biggestprojectsofar/CS/title.pdf
+https://github.com/ScamanderWayne/WayneTeX/blob/main/biggestprojectsofar/main.pdf
+https://github.com/ScamanderWayne/WayneTeX/blob/main/biggestprojectsofar/one.pdf
+https://github.com/ScamanderWayne/WayneTeX/blob/main/biggestprojectsofar/title.pdf
+https://github.com/ScamanderWayne/WayneTeX/blob/main/biggestprojectsofar/two.pdf
+https://github.com/ScamanderWayne/WayneTeX/blob/main/others/multifiletryout/main.pdf
+https://github.com/ScamanderWayne/WayneTeX/blob/main/templates/darkmode-s-bloky.pdf

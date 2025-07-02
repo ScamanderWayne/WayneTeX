@@ -3,18 +3,36 @@
 ├── .pre-commit-config.yaml
 ├── AllFilesList.py
 ├── CV/
+│   ├── LiborHalikCV.maf
+│   ├── LiborHalikCV.mtc
+│   ├── LiborHalikCV.mtc0
 │   ├── LiborHalikCV.pdf
 │   ├── LiborHalikCV.tex
+│   ├── LiborHalikCV.toc
 │   ├── Waynik.png
 │   ├── Waynik2.jpg
 │   ├── Waynik2smol.jpg
+│   ├── praxeemedis.pdf
 │   ├── simplehipstercv.cls
 │   └── simplehipstercv.sty
 ├── Czech/
 │   ├── FGBook/
+│   │   ├── FGBook-0.png
+│   │   ├── FGBook-1.png
+│   │   ├── FGBook-13.png
+│   │   ├── FGBook-19.png
+│   │   ├── FGBook-2.png
+│   │   ├── FGBook-3.png
+│   │   ├── FGBook-4.png
+│   │   ├── FGBook-5.png
+│   │   ├── FGBook-6.png
+│   │   ├── FGBook-7.png
+│   │   ├── FGBook-8.png
+│   │   ├── FGBook-9.png
 │   │   ├── FGBook.aux
 │   │   ├── FGBook.fdb_latexmk
 │   │   ├── FGBook.fls
+│   │   ├── FGBook.html
 │   │   ├── FGBook.log
 │   │   ├── FGBook.out
 │   │   ├── FGBook.pdf
@@ -42,6 +60,9 @@
 │       │   ├── franzkafka.pdf
 │       │   ├── franzkafka.png
 │       │   └── franzkafka.tex
+│       ├── James Joyce/
+│       │   ├── jamesjoyce.pdf
+│       │   └── jamesjoyce.tex
 │       ├── OliwerTwist/
 │       │   ├── OliwerTwist.pdf
 │       │   └── OliwerTwist.tex
@@ -51,9 +72,21 @@
 │       ├── WaltWhitman/
 │       │   ├── WaltWhitman.pdf
 │       │   └── WaltWhitman.tex
+│       ├── analyzaharrypotter/
+│       │   ├── analyzaharrypotter.pdf
+│       │   └── analyzaharrypotter.tex
 │       ├── bezruc/
 │       │   ├── bezruc.pdf
 │       │   └── bezruc.tex
+│       ├── bulgakov/
+│       │   ├── bulgakov.pdf
+│       │   └── bulgakov.tex
+│       ├── evropskaaamerickaproza/
+│       │   ├── evropskaaamerickaproza.pdf
+│       │   └── evropskaaamerickaproza.tex
+│       ├── havlicekpetrolej/
+│       │   ├── havlicekpetrolej.pdf
+│       │   └── havlicekpetrolej.tex
 │       ├── hlavacek/
 │       │   ├── hlavacek.pdf
 │       │   └── hlavacek.tex
@@ -61,6 +94,12 @@
 │       │   ├── namesti.pdf
 │       │   ├── namesti.png
 │       │   └── namesti.tex
+│       ├── pleshoror/
+│       │   ├── pleshoror.pdf
+│       │   └── pleshoror.tex
+│       ├── pokrok/
+│       │   ├── pokrok.pdf
+│       │   └── pokrok.tex
 │       ├── silneslabestranky/
 │       │   ├── silneslabestranky.pdf
 │       │   └── silneslabestranky.tex
@@ -80,8 +119,15 @@
 ├── FGBook.png
 ├── Math/
 │   └── Tryout/
+│       ├── 76hodina.pdf
+│       ├── 76hodina.tex
 │       ├── math-tryout.pdf
-│       └── math-tryout.tex
+│       ├── math-tryout.png
+│       ├── math-tryout.tex
+│       ├── math-vectors.pdf
+│       ├── math-vectors.tex
+│       ├── vectors-exam.pdf
+│       └── vectors-exam.tex
 ├── MyPackages/
 │   ├── README.md
 │   ├── sourcecontrol.py
@@ -92,32 +138,116 @@
 ├── README.md
 ├── ScriptRunner.py
 ├── TreeFileListToREADME.py
+├── biggestprojectsofar/
+│   ├── CS/
+│   │   ├── Hamlet.tex
+│   │   ├── Havran.tex
+│   │   ├── Kytice.tex
+│   │   ├── ObrazDorianaGraye.tex
+│   │   ├── OliverTwist.tex
+│   │   ├── OtecGoriot.tex
+│   │   ├── Revizor.tex
+│   │   ├── RomeoaJulie.tex
+│   │   ├── TOC.tex
+│   │   ├── Zlocinatrest.tex
+│   │   ├── czech.aux
+│   │   ├── czech.log
+│   │   ├── czech.out
+│   │   ├── czech.tex
+│   │   ├── title.aux
+│   │   ├── title.log
+│   │   ├── title.out
+│   │   ├── title.pdf
+│   │   ├── title.synctex.gz
+│   │   └── title.tex
+│   ├── EKO/
+│   │   ├── ekonomie.tex
+│   │   └── title.tex
+│   ├── ENG/
+│   │   ├── english.tex
+│   │   └── title.tex
+│   ├── MAT/
+│   │   ├── matematika.tex
+│   │   └── title.tex
+│   ├── Other/
+│   │   ├── other.tex
+│   │   └── title.tex
+│   ├── SWbig.sty
+│   ├── TOC.tex
+│   ├── UCE/
+│   │   ├── title.tex
+│   │   └── ucetnictvi.tex
+│   ├── end.tex
+│   ├── main.aux
+│   ├── main.log
+│   ├── main.out
+│   ├── main.pdf
+│   ├── main.synctex.gz
+│   ├── main.tex
+│   ├── main.toc
+│   ├── one.aux
+│   ├── one.log
+│   ├── one.out
+│   ├── one.pdf
+│   ├── one.synctex.gz
+│   ├── one.tex
+│   ├── title.aux
+│   ├── title.log
+│   ├── title.out
+│   ├── title.pdf
+│   ├── title.synctex.gz
+│   ├── title.tex
+│   ├── titleimage.png
+│   ├── two.aux
+│   ├── two.log
+│   ├── two.out
+│   ├── two.pdf
+│   ├── two.synctex.gz
+│   └── two.tex
 ├── breakpdf.py
 ├── deletefiles.py
 ├── file_tree.txt
 ├── mypackages.py
+├── others/
+│   └── multifiletryout/
+│       ├── TOC.tex
+│       ├── end.tex
+│       ├── main.pdf
+│       ├── main.tex
+│       ├── main.toc
+│       ├── multifiledocument.sty
+│       ├── one.tex
+│       ├── title.tex
+│       └── titleimage.png
 ├── pdf_list.txt
 ├── pre-commit-4.0.1.pyz
-└── requirements-dev.txt
+├── requirements-dev.txt
+└── templates/
+    ├── darkmode-s-bloky.pdf
+    └── darkmode-s-bloky.tex
 
 
 
 File Extensions and Counts:
-.aux (1)
+.aux (7)
 .cls (1)
 .fdb_latexmk (1)
 .fls (1)
-.gz (1)
+.gz (6)
+.html (1)
 .jpg (2)
-.log (1)
+.log (7)
+.maf (1)
 .md (2)
-.out (1)
-.pdf (20)
-.png (5)
+.mtc (1)
+.mtc0 (1)
+.out (7)
+.pdf (38)
+.png (20)
 .py (9)
 .pyz (1)
-.sty (4)
-.tex (20)
-.toc (1)
+.sty (6)
+.tex (64)
+.toc (4)
 .txt (3)
 .yaml (1)
