@@ -1,0 +1,11 @@
+\babel@toc {czech}{}\relax 
+\contentsline {section}{\colorbox {WPP}{\color {DP}Section1}}{2}{Doc-Start}%
+\contentsline {subsection}{\color {WPP}Subsection1}{2}{section*.1}%
+\contentsline {subsection}{\color {WPP}Subsection2}{2}{section*.1}%
+\contentsline {section}{\colorbox {WPP}{\color {DP}Section2}}{2}{section*.1}%
+\contentsline {subsection}{\color {WPP}Another subsection}{2}{section*.2}%
+\contentsline {section}{\colorbox {WPP}{\color {DP}Section1}}{2}{section*.2}%
+\contentsline {subsection}{\color {WPP}Subsection1}{2}{section*.3}%
+\contentsline {subsection}{\color {WPP}Subsection2}{2}{section*.3}%
+\contentsline {section}{\colorbox {WPP}{\color {DP}Section2}}{2}{section*.3}%
+\contentsline {subsection}{\color {WPP}Another subsection}{2}{section*.4}%

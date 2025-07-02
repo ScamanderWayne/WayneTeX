@@ -1,0 +1,22 @@
+\documentclass[main.tex]{subfiles}
+\begin{document}\fontsize{10pt}{10pt}\selectfont\setlength\parindent{0em}
+ \mysection{Section1}{template darkmode with block function}
+    \waybox{Subsection1}{
+        \lipsum[1]}
+    \waybox{Subsection2}{
+        Some basically random text, but with emphasis \wemph{here} amd \wemph{there}.
+        \wayitem{
+            \wtem{Item1} something something
+            \wtem{Item2} something else
+        }{-4pt}}
+    \mysection{Section2}{}
+    \waybox{Another subsection}{
+        \lipsum[2]
+        \wayitem{
+            \wtem{Something} something
+            \wtem{Else} else
+        }{-4pt}}
+    \lipsum[1-10]
+	\ispageodd
+	\newpage
+\end{document}
