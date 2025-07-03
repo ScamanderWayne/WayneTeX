@@ -1,4 +1,4 @@
-\documentclass[twoside, article]{memoir}
+\documentclass[twoside]{article}
 \usepackage{SWbig}
 \usepackage{subfiles}
 \geometry{a4paper, margin=2em}
@@ -20,9 +20,9 @@
 	\fancyfoot[LE, RO]{\textbf{\color{MPC} \thepage . stránka}}
 }
 
-\let\Part\part
-\renewcommand\part[2][]{{\let\newpage\relax
-	\ifx\relax#1\relax\Part{#2}\else\Part[#1]{#2}\fi}}
+%\let\Part\part
+%\renewcommand\part[2][]{{\let\newpage\relax
+%	\ifx\relax#1\relax\Part{#2}\else\Part[#1]{#2}\fi}}
 
 \addto\captionsczech{\renewcommand{\partname}{}
 						\renewcommand{\chaptername}{}}

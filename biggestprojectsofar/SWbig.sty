@@ -13,8 +13,11 @@
 \usepackage{lmodern}
 \usepackage[fixed]{fontawesome5}
 \usepackage{lipsum}
+
+%\usepackage{tocloft}
+\usepackage{etoc}
+
 \usepackage{hyperref}
-\usepackage{tocloft}
 
 \usepackage{graphicx}
 \usepackage{eso-pic}
@@ -115,9 +118,24 @@
 
 \NewDocumentCommand{\literaturesection}{m o}{%
   \phantomsection % Creates a linkable anchor for the TOC
-  \addtocontents{toc}{\protect\contentsline{chapter}{%
+  \addtocontents{toc}{\protect\contentsline{section}{%
   \protect\normalfont\protect\fontsize{12pt}{13pt}\protect\selectfont%
   \protect\colorbox{MPC}{\protect\color{white}#1}%
   \IfValueT{#2}{\hspace{1em}{\normalfont\fontsize{5.5pt}{6.5pt}\textsc{#2}}}%
 }{}{}}%
 }
+
+% Defining a minimal \literaturesection command for a phantom chapter
+%\makeatletter
+%\NewDocumentCommand{\literaturesection}{m}{%
+%  \phantomsection % Anchor for hyperref
+%  \addcontentsline{toc}{chapter}{#1}% Add plain-text chapter entry to TOC
+%}
+%\makeatother
+
+% Setting the level for \literaturesection to be recognized as a chapter by etoc
+%\etocsetlevel{literaturesection}{1}
+
+% Suppress the default title for local TOC
+\etocsettocstyle{}{}
+\etocsettocdepth{1}

@@ -1,11 +1,123 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
 \babel@toc {czech}{}\relax 
-\contentsline {section}{\colorbox {WPP}{\color {DP}Section1}}{2}{Doc-Start}%
-\contentsline {subsection}{\color {WPP}Subsection1}{2}{section*.1}%
-\contentsline {subsection}{\color {WPP}Subsection2}{2}{section*.1}%
-\contentsline {section}{\colorbox {WPP}{\color {DP}Section2}}{2}{section*.1}%
-\contentsline {subsection}{\color {WPP}Another subsection}{2}{section*.2}%
-\contentsline {section}{\colorbox {WPP}{\color {DP}Section1}}{2}{section*.2}%
-\contentsline {subsection}{\color {WPP}Subsection1}{2}{section*.3}%
-\contentsline {subsection}{\color {WPP}Subsection2}{2}{section*.3}%
-\contentsline {section}{\colorbox {WPP}{\color {DP}Section2}}{2}{section*.3}%
-\contentsline {subsection}{\color {WPP}Another subsection}{2}{section*.4}%
+\contentsline {part}{\hspace {1em}Literatura}{1}{part.1}%
+\etoc@startlocaltoc {1}
+\contentsline {section}{\normalfont \fontsize {12pt}{13pt}\selectfont \colorbox {MPC}{\color {white}Světová a česká literatura do konce 18. století}\hspace {1em}{\normalfont \fontsize {5.5pt}{6.5pt}\textsc {min. 2 literární díla}}}{}{}
+\contentsline {section}{\colorbox {MPC}{\color {DP}Section1}}{2}{section*.1}%
+\contentsline {subsection}{\color {MPC}Subsection1}{2}{section*.1}%
+\contentsline {subsection}{\color {MPC}Subsection2}{2}{section*.1}%
+\contentsline {section}{\colorbox {MPC}{\color {DP}Section2}}{2}{section*.1}%
+\contentsline {subsection}{\color {MPC}Another subsection}{2}{section*.1}%
+\contentsline {section}{\colorbox {MPC}{\color {DP}Section1}}{3}{section*.1}%
+\contentsline {subsection}{\color {MPC}Subsection1}{3}{section*.1}%
+\contentsline {subsection}{\color {MPC}Subsection2}{3}{section*.1}%
+\contentsline {section}{\colorbox {MPC}{\color {DP}Section2}}{3}{section*.1}%
+\contentsline {subsection}{\color {MPC}Another subsection}{3}{section*.1}%
+\contentsline {section}{\normalfont \fontsize {12pt}{13pt}\selectfont \colorbox {MPC}{\color {white}Světová a česká literatura 19. století}\hspace {1em}{\normalfont \fontsize {5.5pt}{6.5pt}\textsc {min. 3 literární díla}}}{}{}
+\contentsline {section}{\colorbox {MPC}{\color {DP}Section1}}{4}{section*.2}%
+\contentsline {subsection}{\color {MPC}Subsection1}{4}{section*.2}%
+\contentsline {subsection}{\color {MPC}Subsection2}{4}{section*.2}%
+\contentsline {section}{\colorbox {MPC}{\color {DP}Section2}}{4}{section*.2}%
+\contentsline {subsection}{\color {MPC}Another subsection}{4}{section*.2}%
+\contentsline {section}{\colorbox {MPC}{\color {DP}Section1}}{5}{section*.2}%
+\contentsline {subsection}{\color {MPC}Subsection1}{5}{section*.2}%
+\contentsline {subsection}{\color {MPC}Subsection2}{5}{section*.2}%
+\contentsline {section}{\colorbox {MPC}{\color {DP}Section2}}{5}{section*.2}%
+\contentsline {subsection}{\color {MPC}Another subsection}{5}{section*.2}%
+\contentsline {section}{\colorbox {MPC}{\color {DP}Section1}}{6}{section*.2}%
+\contentsline {subsection}{\color {MPC}Subsection1}{6}{section*.2}%
+\contentsline {subsection}{\color {MPC}Subsection2}{6}{section*.2}%
+\contentsline {section}{\colorbox {MPC}{\color {DP}Section2}}{6}{section*.2}%
+\contentsline {subsection}{\color {MPC}Another subsection}{6}{section*.2}%
+\contentsline {section}{\colorbox {MPC}{\color {DP}Section1}}{7}{section*.2}%
+\contentsline {subsection}{\color {MPC}Subsection1}{7}{section*.2}%
+\contentsline {subsection}{\color {MPC}Subsection2}{7}{section*.2}%
+\contentsline {section}{\colorbox {MPC}{\color {DP}Section2}}{7}{section*.2}%
+\contentsline {subsection}{\color {MPC}Another subsection}{7}{section*.2}%
+\contentsline {section}{\colorbox {MPC}{\color {DP}Section1}}{8}{section*.2}%
+\contentsline {subsection}{\color {MPC}Subsection1}{8}{section*.2}%
+\contentsline {subsection}{\color {MPC}Subsection2}{8}{section*.2}%
+\contentsline {section}{\colorbox {MPC}{\color {DP}Section2}}{8}{section*.2}%
+\contentsline {subsection}{\color {MPC}Another subsection}{8}{section*.2}%
+\contentsline {section}{\colorbox {MPC}{\color {DP}Section1}}{9}{section*.2}%
+\contentsline {subsection}{\color {MPC}Subsection1}{9}{section*.2}%
+\contentsline {subsection}{\color {MPC}Subsection2}{9}{section*.2}%
+\contentsline {section}{\colorbox {MPC}{\color {DP}Section2}}{9}{section*.2}%
+\contentsline {subsection}{\color {MPC}Another subsection}{9}{section*.2}%
+\contentsline {section}{\colorbox {MPC}{\color {DP}Section1}}{10}{section*.2}%
+\contentsline {subsection}{\color {MPC}Subsection1}{10}{section*.2}%
+\contentsline {subsection}{\color {MPC}Subsection2}{10}{section*.2}%
+\contentsline {section}{\colorbox {MPC}{\color {DP}Section2}}{10}{section*.2}%
+\contentsline {subsection}{\color {MPC}Another subsection}{10}{section*.2}%
+\contentsline {section}{\normalfont \fontsize {12pt}{13pt}\selectfont \colorbox {MPC}{\color {white}Světová literatura 20. -- 21. století}\hspace {1em}{\normalfont \fontsize {5.5pt}{6.5pt}\textsc {min. 4 literární díla}}}{}{}
+\contentsline {section}{\colorbox {MPC}{\color {DP}Section1}}{11}{section*.3}%
+\contentsline {subsection}{\color {MPC}Subsection1}{11}{section*.3}%
+\contentsline {subsection}{\color {MPC}Subsection2}{11}{section*.3}%
+\contentsline {section}{\colorbox {MPC}{\color {DP}Section2}}{11}{section*.3}%
+\contentsline {subsection}{\color {MPC}Another subsection}{11}{section*.3}%
+\contentsline {section}{\colorbox {MPC}{\color {DP}Section1}}{12}{section*.3}%
+\contentsline {subsection}{\color {MPC}Subsection1}{12}{section*.3}%
+\contentsline {subsection}{\color {MPC}Subsection2}{12}{section*.3}%
+\contentsline {section}{\colorbox {MPC}{\color {DP}Section2}}{12}{section*.3}%
+\contentsline {subsection}{\color {MPC}Another subsection}{12}{section*.3}%
+\contentsline {section}{\colorbox {MPC}{\color {DP}Section1}}{13}{section*.3}%
+\contentsline {subsection}{\color {MPC}Subsection1}{13}{section*.3}%
+\contentsline {subsection}{\color {MPC}Subsection2}{13}{section*.3}%
+\contentsline {section}{\colorbox {MPC}{\color {DP}Section2}}{13}{section*.3}%
+\contentsline {subsection}{\color {MPC}Another subsection}{13}{section*.3}%
+\contentsline {section}{\colorbox {MPC}{\color {DP}Section1}}{14}{section*.3}%
+\contentsline {subsection}{\color {MPC}Subsection1}{14}{section*.3}%
+\contentsline {subsection}{\color {MPC}Subsection2}{14}{section*.3}%
+\contentsline {section}{\colorbox {MPC}{\color {DP}Section2}}{14}{section*.3}%
+\contentsline {subsection}{\color {MPC}Another subsection}{14}{section*.3}%
+\contentsline {section}{\colorbox {MPC}{\color {DP}Section1}}{15}{section*.3}%
+\contentsline {subsection}{\color {MPC}Subsection1}{15}{section*.3}%
+\contentsline {subsection}{\color {MPC}Subsection2}{15}{section*.3}%
+\contentsline {section}{\colorbox {MPC}{\color {DP}Section2}}{15}{section*.3}%
+\contentsline {subsection}{\color {MPC}Another subsection}{15}{section*.3}%
+\contentsline {section}{\colorbox {MPC}{\color {DP}Section1}}{16}{section*.3}%
+\contentsline {subsection}{\color {MPC}Subsection1}{16}{section*.3}%
+\contentsline {subsection}{\color {MPC}Subsection2}{16}{section*.3}%
+\contentsline {section}{\colorbox {MPC}{\color {DP}Section2}}{16}{section*.3}%
+\contentsline {subsection}{\color {MPC}Another subsection}{16}{section*.3}%
+\contentsline {section}{\colorbox {MPC}{\color {DP}Section1}}{17}{section*.3}%
+\contentsline {subsection}{\color {MPC}Subsection1}{17}{section*.3}%
+\contentsline {subsection}{\color {MPC}Subsection2}{17}{section*.3}%
+\contentsline {section}{\colorbox {MPC}{\color {DP}Section2}}{17}{section*.3}%
+\contentsline {subsection}{\color {MPC}Another subsection}{17}{section*.3}%
+\contentsline {section}{\colorbox {MPC}{\color {DP}Section1}}{18}{section*.3}%
+\contentsline {subsection}{\color {MPC}Subsection1}{18}{section*.3}%
+\contentsline {subsection}{\color {MPC}Subsection2}{18}{section*.3}%
+\contentsline {section}{\colorbox {MPC}{\color {DP}Section2}}{18}{section*.3}%
+\contentsline {subsection}{\color {MPC}Another subsection}{18}{section*.3}%
+\contentsline {section}{\normalfont \fontsize {12pt}{13pt}\selectfont \colorbox {MPC}{\color {white}Česká literatura 20. -- 21. století}\hspace {1em}{\normalfont \fontsize {5.5pt}{6.5pt}\textsc {min. 5 literární díla}}}{}{}
+\contentsline {section}{\colorbox {MPC}{\color {DP}Section1}}{19}{section*.4}%
+\contentsline {subsection}{\color {MPC}Subsection1}{19}{section*.4}%
+\contentsline {subsection}{\color {MPC}Subsection2}{19}{section*.4}%
+\contentsline {section}{\colorbox {MPC}{\color {DP}Section2}}{19}{section*.4}%
+\contentsline {subsection}{\color {MPC}Another subsection}{19}{section*.4}%
+\contentsline {section}{\colorbox {MPC}{\color {DP}Section1}}{20}{section*.4}%
+\contentsline {subsection}{\color {MPC}Subsection1}{20}{section*.4}%
+\contentsline {subsection}{\color {MPC}Subsection2}{20}{section*.4}%
+\contentsline {section}{\colorbox {MPC}{\color {DP}Section2}}{20}{section*.4}%
+\contentsline {subsection}{\color {MPC}Another subsection}{20}{section*.4}%
+\contentsline {section}{\colorbox {MPC}{\color {DP}Section1}}{21}{section*.4}%
+\contentsline {subsection}{\color {MPC}Subsection1}{21}{section*.4}%
+\contentsline {subsection}{\color {MPC}Subsection2}{21}{section*.4}%
+\contentsline {section}{\colorbox {MPC}{\color {DP}Section2}}{21}{section*.4}%
+\contentsline {subsection}{\color {MPC}Another subsection}{21}{section*.4}%
+\contentsline {section}{\colorbox {MPC}{\color {DP}Section1}}{22}{section*.4}%
+\contentsline {subsection}{\color {MPC}Subsection1}{22}{section*.4}%
+\contentsline {subsection}{\color {MPC}Subsection2}{22}{section*.4}%
+\contentsline {section}{\colorbox {MPC}{\color {DP}Section2}}{22}{section*.4}%
+\contentsline {subsection}{\color {MPC}Another subsection}{22}{section*.4}%
+\contentsline {section}{\colorbox {MPC}{\color {DP}Section1}}{23}{section*.4}%
+\contentsline {subsection}{\color {MPC}Subsection1}{23}{section*.4}%
+\contentsline {subsection}{\color {MPC}Subsection2}{23}{section*.4}%
+\contentsline {section}{\colorbox {MPC}{\color {DP}Section2}}{23}{section*.4}%
+\contentsline {subsection}{\color {MPC}Another subsection}{23}{section*.4}%
+\contentsline {part}{\hspace {1em}Ekonomie}{24}{part.2}%
+\contentsline {part}{\hspace {1em}Účetnictví}{25}{part.3}%
+\contentsline {part}{\hspace {1em}Matematika}{26}{part.4}%
+\contentsline {part}{\hspace {1em}Angličtina}{27}{part.5}%
+\contentsline {part}{\hspace {1em}Poznámky}{28}{part.6}%
