@@ -140,12 +140,25 @@
 ├── TreeFileListToREADME.py
 ├── biggestprojectsofar/
 │   ├── CS/
+│   │   ├── 1984.tex
+│   │   ├── BigGatsby.tex
+│   │   ├── Bilanemoc.tex
+│   │   ├── DaVincisCode.tex
 │   │   ├── Hamlet.tex
+│   │   ├── HarryPotter.tex
 │   │   ├── Havran.tex
+│   │   ├── Hobbit.tex
+│   │   ├── Inferno.tex
+│   │   ├── Jmenoruze.tex
+│   │   ├── Krysar.tex
 │   │   ├── Kytice.tex
 │   │   ├── ObrazDorianaGraye.tex
 │   │   ├── OliverTwist.tex
+│   │   ├── Oselastin.tex
 │   │   ├── OtecGoriot.tex
+│   │   ├── Potopa.tex
+│   │   ├── Promena.tex
+│   │   ├── RUR.tex
 │   │   ├── Revizor.tex
 │   │   ├── RomeoaJulie.tex
 │   │   ├── TOC.tex
@@ -154,6 +167,7 @@
 │   │   ├── czech.log
 │   │   ├── czech.out
 │   │   ├── czech.tex
+│   │   ├── czech.toc
 │   │   ├── title.aux
 │   │   ├── title.log
 │   │   ├── title.out
@@ -247,7 +261,7 @@ File Extensions and Counts:
 .py (9)
 .pyz (1)
 .sty (6)
-.tex (64)
-.toc (4)
+.tex (77)
+.toc (5)
 .txt (3)
 .yaml (1)
