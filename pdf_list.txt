@@ -31,6 +31,7 @@ https://github.com/ScamanderWayne/WayneTeX/blob/main/Math/Tryout/76hodina.pdf
 https://github.com/ScamanderWayne/WayneTeX/blob/main/Math/Tryout/math-tryout.pdf
 https://github.com/ScamanderWayne/WayneTeX/blob/main/Math/Tryout/math-vectors.pdf
 https://github.com/ScamanderWayne/WayneTeX/blob/main/Math/Tryout/vectors-exam.pdf
+https://github.com/ScamanderWayne/WayneTeX/blob/main/biggestprojectsofar/CS/Hamlet.pdf
 https://github.com/ScamanderWayne/WayneTeX/blob/main/biggestprojectsofar/CS/title.pdf
 https://github.com/ScamanderWayne/WayneTeX/blob/main/biggestprojectsofar/main.pdf
 https://github.com/ScamanderWayne/WayneTeX/blob/main/biggestprojectsofar/one.pdf

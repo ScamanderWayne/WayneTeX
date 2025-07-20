@@ -144,6 +144,11 @@
 │   │   ├── BigGatsby.tex
 │   │   ├── Bilanemoc.tex
 │   │   ├── DaVincisCode.tex
+│   │   ├── Hamlet.aux
+│   │   ├── Hamlet.log
+│   │   ├── Hamlet.out
+│   │   ├── Hamlet.pdf
+│   │   ├── Hamlet.synctex.gz
 │   │   ├── Hamlet.tex
 │   │   ├── HarryPotter.tex
 │   │   ├── Havran.tex
@@ -243,20 +248,20 @@
 
 
 File Extensions and Counts:
-.aux (7)
+.aux (8)
 .cls (1)
 .fdb_latexmk (1)
 .fls (1)
-.gz (6)
+.gz (7)
 .html (1)
 .jpg (2)
-.log (7)
+.log (8)
 .maf (1)
 .md (2)
 .mtc (1)
 .mtc0 (1)
-.out (7)
-.pdf (38)
+.out (8)
+.pdf (39)
 .png (20)
 .py (9)
 .pyz (1)
