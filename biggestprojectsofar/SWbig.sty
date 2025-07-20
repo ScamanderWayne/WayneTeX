@@ -13,6 +13,10 @@
 \usepackage{lmodern}
 \usepackage[fixed]{fontawesome5}
 \usepackage{lipsum}
+\usepackage{csquotes}
+\usepackage{moresize} % Even wider range of font sizes
+
+\usepackage{wrapfig} % wrapfigure environment
 
 %\usepackage{tocloft}
 \usepackage{etoc}
@@ -139,3 +143,20 @@
 % Suppress the default title for local TOC
 \etocsettocstyle{}{}
 \etocsettocdepth{1}
+
+\NewDocumentCommand{\literature}{m m}{%
+\section*{#1} -- #2
+}
+
+\NewDocumentCommand{\wection}{m}{%
+\subsection*{#1}
+}
+
+\NewDocumentCommand{\subwection}{m}{%
+\subsubsection*{#1}
+}
+
+\newcommand{\texthl}[1]{{\color{MPC}#1}} % Highlight text with \wpagecolor
+\newcommand{\textbfhl}[1]{{\color{MPC}\textbf{#1}}} % Bold and highlight text
+\newcommand{\textithl}[1]{{\color{MPC}\textit{#1}}} % Italic and highlight text
+\newcommand{\textschl}[1]{{\color{MPC}\textsc{#1}}} % textsc and highlight text
