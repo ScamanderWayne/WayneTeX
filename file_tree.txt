@@ -140,12 +140,30 @@
 ├── TreeFileListToREADME.py
 ├── biggestprojectsofar/
 │   ├── CS/
+│   │   ├── 1984.tex
+│   │   ├── BigGatsby.tex
+│   │   ├── Bilanemoc.tex
+│   │   ├── DaVincisCode.tex
+│   │   ├── Hamlet.aux
+│   │   ├── Hamlet.log
+│   │   ├── Hamlet.out
+│   │   ├── Hamlet.pdf
+│   │   ├── Hamlet.synctex.gz
 │   │   ├── Hamlet.tex
+│   │   ├── HarryPotter.tex
 │   │   ├── Havran.tex
+│   │   ├── Hobbit.tex
+│   │   ├── Inferno.tex
+│   │   ├── Jmenoruze.tex
+│   │   ├── Krysar.tex
 │   │   ├── Kytice.tex
 │   │   ├── ObrazDorianaGraye.tex
 │   │   ├── OliverTwist.tex
+│   │   ├── Oselastin.tex
 │   │   ├── OtecGoriot.tex
+│   │   ├── Potopa.tex
+│   │   ├── Promena.tex
+│   │   ├── RUR.tex
 │   │   ├── Revizor.tex
 │   │   ├── RomeoaJulie.tex
 │   │   ├── TOC.tex
@@ -154,6 +172,7 @@
 │   │   ├── czech.log
 │   │   ├── czech.out
 │   │   ├── czech.tex
+│   │   ├── czech.toc
 │   │   ├── title.aux
 │   │   ├── title.log
 │   │   ├── title.out
@@ -229,25 +248,25 @@
 
 
 File Extensions and Counts:
-.aux (7)
+.aux (8)
 .cls (1)
 .fdb_latexmk (1)
 .fls (1)
-.gz (6)
+.gz (7)
 .html (1)
 .jpg (2)
-.log (7)
+.log (8)
 .maf (1)
 .md (2)
 .mtc (1)
 .mtc0 (1)
-.out (7)
-.pdf (38)
+.out (8)
+.pdf (39)
 .png (20)
 .py (9)
 .pyz (1)
 .sty (6)
-.tex (64)
-.toc (4)
+.tex (77)
+.toc (5)
 .txt (3)
 .yaml (1)

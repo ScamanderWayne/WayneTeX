@@ -116,19 +116,34 @@ This repository contains my LaTeX notes and projects. Mostly for my own referenc
    3. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/MyPackages/sourcecontrol.py">sourcecontrol Python script</a>
 - biggestprojectsofar/
   - CS/
-     1. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/biggestprojectsofar/CS/title.pdf">title PDF file</a>
-     2. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/biggestprojectsofar/CS/Hamlet.tex">Hamlet raw TeX file</a>
-     3. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/biggestprojectsofar/CS/Havran.tex">Havran raw TeX file</a>
-     4. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/biggestprojectsofar/CS/Kytice.tex">Kytice raw TeX file</a>
-     5. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/biggestprojectsofar/CS/ObrazDorianaGraye.tex">ObrazDorianaGraye raw TeX file</a>
-     6. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/biggestprojectsofar/CS/OliverTwist.tex">OliverTwist raw TeX file</a>
-     7. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/biggestprojectsofar/CS/OtecGoriot.tex">OtecGoriot raw TeX file</a>
-     8. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/biggestprojectsofar/CS/Revizor.tex">Revizor raw TeX file</a>
-     9. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/biggestprojectsofar/CS/RomeoaJulie.tex">RomeoaJulie raw TeX file</a>
-     10. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/biggestprojectsofar/CS/TOC.tex">TOC raw TeX file</a>
-     11. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/biggestprojectsofar/CS/Zlocinatrest.tex">Zlocinatrest raw TeX file</a>
-     12. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/biggestprojectsofar/CS/czech.tex">czech raw TeX file</a>
-     13. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/biggestprojectsofar/CS/title.tex">title raw TeX file</a>
+     1. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/biggestprojectsofar/CS/Hamlet.pdf">Hamlet PDF file</a>
+     2. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/biggestprojectsofar/CS/title.pdf">title PDF file</a>
+     3. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/biggestprojectsofar/CS/1984.tex">1984 raw TeX file</a>
+     4. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/biggestprojectsofar/CS/BigGatsby.tex">BigGatsby raw TeX file</a>
+     5. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/biggestprojectsofar/CS/Bilanemoc.tex">Bilanemoc raw TeX file</a>
+     6. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/biggestprojectsofar/CS/DaVincisCode.tex">DaVincisCode raw TeX file</a>
+     7. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/biggestprojectsofar/CS/Hamlet.tex">Hamlet raw TeX file</a>
+     8. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/biggestprojectsofar/CS/HarryPotter.tex">HarryPotter raw TeX file</a>
+     9. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/biggestprojectsofar/CS/Havran.tex">Havran raw TeX file</a>
+     10. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/biggestprojectsofar/CS/Hobbit.tex">Hobbit raw TeX file</a>
+     11. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/biggestprojectsofar/CS/Inferno.tex">Inferno raw TeX file</a>
+     12. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/biggestprojectsofar/CS/Jmenoruze.tex">Jmenoruze raw TeX file</a>
+     13. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/biggestprojectsofar/CS/Krysar.tex">Krysar raw TeX file</a>
+     14. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/biggestprojectsofar/CS/Kytice.tex">Kytice raw TeX file</a>
+     15. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/biggestprojectsofar/CS/ObrazDorianaGraye.tex">ObrazDorianaGraye raw TeX file</a>
+     16. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/biggestprojectsofar/CS/OliverTwist.tex">OliverTwist raw TeX file</a>
+     17. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/biggestprojectsofar/CS/Oselastin.tex">Oselastin raw TeX file</a>
+     18. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/biggestprojectsofar/CS/OtecGoriot.tex">OtecGoriot raw TeX file</a>
+     19. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/biggestprojectsofar/CS/Potopa.tex">Potopa raw TeX file</a>
+     20. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/biggestprojectsofar/CS/Promena.tex">Promena raw TeX file</a>
+     21. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/biggestprojectsofar/CS/RUR.tex">RUR raw TeX file</a>
+     22. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/biggestprojectsofar/CS/Revizor.tex">Revizor raw TeX file</a>
+     23. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/biggestprojectsofar/CS/RomeoaJulie.tex">RomeoaJulie raw TeX file</a>
+     24. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/biggestprojectsofar/CS/TOC.tex">TOC raw TeX file</a>
+     25. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/biggestprojectsofar/CS/Zlocinatrest.tex">Zlocinatrest raw TeX file</a>
+     26. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/biggestprojectsofar/CS/czech.tex">czech raw TeX file</a>
+     27. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/biggestprojectsofar/CS/title.tex">title raw TeX file</a>
+     28. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/biggestprojectsofar/CS/czech.toc">czech toc file</a>
   - EKO/
      1. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/biggestprojectsofar/EKO/ekonomie.tex">ekonomie raw TeX file</a>
      2. <a href="https://github.com/ScamanderWayne/WayneTeX/blob/main/biggestprojectsofar/EKO/title.tex">title raw TeX file</a>
