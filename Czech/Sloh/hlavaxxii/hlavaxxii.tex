@@ -1,0 +1,105 @@
+\documentclass{article}
+\usepackage[czech]{babel}
+\usepackage{geometry}
+\geometry{a4paper, margin=2cm}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{nopageno}
+\usepackage{xcolor}
+\usepackage{darkmode}
+\usepackage{mdframed}
+\usepackage{lmodern}
+\usepackage[fixed]{fontawesome5}
+\usepackage{lipsum}
+
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{0pt}{0pt}
+\titlespacing*{\subsection}{0pt}{0pt}{0pt}
+
+\IfDarkModeTF{%
+\definecolor{DP}{HTML}{293133}%
+%
+\definecolor{antiDP}{HTML}{FFFFFF}%
+%
+\definecolor{WPP}{HTML}{00FFFF}%cyan
+\definecolor{WPP}{HTML}{0066CC}%blue
+\definecolor{WPP}{HTML}{C9A12A}%gold
+\definecolor{WPP}{HTML}{EC2B2B}%red
+}{%
+\definecolor{DP}{HTML}{FFFFFF}%
+%
+\definecolor{antiDP}{HTML}{000000}%
+%
+\definecolor{WPP}{HTML}{702632}%lightmode wine
+}
+
+\setlist[itemize]{label=\textcolor{WPP}{$\hookrightarrow$}} %\textbullet \faGreaterThan
+
+\NewDocumentCommand{\wextbf}{m}{%
+	{\subsection*{\vspace{-6pt}\hspace{-7pt}\noindent\colorbox{WPP}{\color{DP}{#1}}}}
+}
+
+\NewDocumentCommand{\textbw}{m}{%
+	{\color{WPP}{#1}}
+}
+
+\NewDocumentCommand{\wemph}{m}{%
+	{\color{WPP}\emph{#1}}
+}
+
+\NewDocumentCommand{\mysection}{m m}{%
+	\setlength\fboxsep{4pt} % spacing around box contents
+	\section*{\colorbox{DP}{\makebox[\dimexpr\textwidth-2\fboxsep\relax]{\color{WPP}#1\hfill#2}}}\vspace{-3pt}
+}
+
+\NewDocumentCommand{\waybox}{m m}{%
+\begin{mdframed}[backgroundcolor=DP,%
+	linecolor=WPP,%
+	linewidth=2pt,%
+	innertopmargin=5pt,%
+	innerbottommargin=5pt,%
+	innerleftmargin=5pt,%
+	innerrightmargin=5pt]\color{antiDP}%
+	\wextbf{#1}\par%
+	#2%
+\end{mdframed}%
+}
+
+\NewDocumentCommand{\wayitem}{m m}{%
+\begin{itemize}[leftmargin=*]\setlength\itemsep{#2}%
+	#1%
+\end{itemize}%
+}
+
+\NewDocumentCommand{\wtem}{m}{%
+\item \textbw{#1} --%
+}
+
+\begin{document}\fontsize{10pt}{10pt}\selectfont\setlength\parindent{0em}
+	\mysection{Joseph Heller}{Libor Halík}
+	\waybox{O životě autora}{
+	\wemph{Joseph Heller} byl americkým spisovatelem žijícím a působícím ve 20. století.
+	Narodil se do rodiny židovských přistěhovalců \textbw{v Brooklynu} v~New~Yorku.
+	Během \textbw{2.~světové~války} lítal s bombardérem v rámci amerického letectva.
+	Po válce studoval na Kolumbijské univerzitě a později učil tvůrčí psaní.
+	Hlava~XXII, vydaná v~roce 1961, mu přinesla světovou slávu, i když zpočátku nebyla komerčně úspěšná.
+	Heller napsal i~další romány, například \wemph{Něco~se~stal}o nebo \wemph{Dobrý~jako~zlato}, ale žádný nedosáhl takového ohlasu jako jeho právě \wemph{Hlava~XXII}.
+	Jeho styl vyniká černým humorem, satirou a kritikou byrokracie.
+	Kromě psaní se věnoval i~scenáristice a~dramatické tvorbě.
+	Hellerova díla často zkoumají \textbw{absurditu lidského chování} a \textbw{společenských systémů}.
+	Zemřel na infarkt v roce 1999.
+	}
+	\mysection{Hlava XXII}{}
+	\waybox{O knize}{
+	Hlava XXII (Catch-22) je satirický román z druhé světové války, vydaný v roce 1961.
+	Sleduje osudy kapitána Johna Yossariana, bombardéra na fiktivním ostrově Pianosa.
+	Kniha kritizuje absurditu války, vojenské byrokracie a lidské chamtivosti.
+	Název „Hlava XXII“ odkazuje na paradoxní pravidlo, které znemožňuje letcům vyhnout se misím.
+	Román je proslulý nelineární strukturou a černým humorem.
+	Yossarianův boj o přežití odhaluje nesmyslnost vojenských pravidel a morální dilemata.
+	Kniha kombinuje komedii s tragédií, což z ní činí jedinečný literární zážitek.
+	Stala se kultovní klasikou a ovlivnila moderní literaturu i popkulturu.
+	Byla adaptována do filmu (1970) a později do seriálu (2019).
+	Hlava XXII je považována za jedno z nejvýznamnějších děl 20. století.
+	}
+\end{document}
