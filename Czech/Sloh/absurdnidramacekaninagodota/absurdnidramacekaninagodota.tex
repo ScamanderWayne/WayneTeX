@@ -1,0 +1,144 @@
+\documentclass{article}
+\usepackage[czech]{babel}
+\usepackage{geometry}
+\geometry{a4paper, margin=2cm}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{nopageno}
+\usepackage{xcolor}
+\usepackage{mdframed}
+\usepackage{lmodern}
+\usepackage[fixed]{fontawesome5}
+\usepackage{lipsum}
+\usepackage{csquotes}
+
+\usepackage[enable]{darkmode}
+
+\usepackage{hologo}
+
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{0pt}{0pt}
+\titlespacing*{\subsection}{0pt}{0pt}{0pt}
+
+\IfDarkModeTF{%
+\definecolor{DP}{HTML}{293133}%
+%
+\definecolor{antiDP}{HTML}{FFFFFF}%
+%
+\definecolor{WPP}{HTML}{00FFFF}%cyan
+\definecolor{WPP}{HTML}{0066CC}%blue
+\definecolor{WPP}{HTML}{C9A12A}%gold
+\definecolor{WPP}{HTML}{EC2B2B}%red
+\definecolor{WPP}{HTML}{39DDD5}%sort of cyan
+}{%
+\definecolor{DP}{HTML}{FFFFFF}%
+%
+\definecolor{antiDP}{HTML}{000000}%
+%
+\definecolor{WPP}{HTML}{702632}%lightmode wine
+}
+
+\setlist[itemize]{label=\textcolor{WPP}{$\hookrightarrow$}}%\textbullet \faGreaterThan
+
+\NewDocumentCommand{\wextbf}{m}{%
+	{\subsection*{\vspace{-6pt}\hspace{-7pt}\noindent\colorbox{WPP}{\color{DP}{#1}}}}%
+}
+
+\NewDocumentCommand{\texthl}{m}{%
+	{\color{WPP}{#1}}%
+}
+
+\NewDocumentCommand{\textbl}{m}{%
+	{\textbf{\color{WPP}{#1}}}%
+}
+
+\NewDocumentCommand{\wemph}{m}{%
+	{\color{WPP}\emph{#1}}%
+}
+
+\NewDocumentCommand{\mysection}{m m}{%
+	\setlength\fboxsep{4pt}% spacing around box contents
+	\section*{\colorbox{DP}{\makebox[\dimexpr\textwidth-2\fboxsep\relax]{\color{WPP}#1\hfill#2}}}\vspace{-3pt}%
+}
+
+\NewDocumentCommand{\waybox}{m m}{%
+\begin{mdframed}[backgroundcolor=DP,%
+	linecolor=WPP,%
+	linewidth=2pt,%
+	innertopmargin=5pt,%
+	innerbottommargin=5pt,%
+	innerleftmargin=5pt,%
+	innerrightmargin=5pt]\color{antiDP}%
+	\wextbf{#1}\par%
+	#2%
+\end{mdframed}%
+}
+
+\NewDocumentCommand{\wayitem}{m m}{%
+\begin{itemize}[leftmargin=*]\setlength\itemsep{#2}%
+	#1%
+\end{itemize}%
+}
+
+\NewDocumentCommand{\wtem}{m}{%
+\item \texthl{#1} --%
+}
+
+\begin{document}\fontsize{10pt}{10pt}\selectfont\setlength\parindent{0em}
+	\mysection{Absurdní drama}{}
+	\waybox{Popis žánru:}{
+	Směr \wemph{Avantgardního divadla}, vyskytující se hlavně v \wemph{padesátých letech dvacátého století}.
+	Realita je \texthl{nesmyslná}.
+	Řeč \texthl{ztrácí} svůj \texthl{význam}.
+	Děj se \texthl{vytrácí}, postavy se \texthl{deevolvují} ze svých charakteristik, \texthl{deformace} a \texthl{devalvace} jazyka, který tím ztrácí svojí funkci.
+	Hry jsou tragikomické, někdy spíš tragické, častý je černý humor a~grotesknost situací.
+	}
+	\mysection{Čekání na Godota}{Samuel Beckett}
+	\waybox{O díle:}{
+	\wemph{Absurdní drama} napsané \wemph{Samuelem Beckettem} ve francouzštíně (\wemph{En attendant Godot}) koncem padesátých let.
+	Autor jí i  přeložil do angličtiny (\wemph{Waiting for Godot}), kde přidal i podtitul \wemph{\enquote{tragikomedie o dvou jednáních}}.\\
+	\vspace{0.3em}\\
+	Scénu tvoří venkovská cesta a strom, u kterého se setkávají dva spřátelení tuláci, \textbl{Estragon} a \textbl{Vladimír}.
+	Tito dva spolu vedou \texthl{absurdní rozhovor}, ze kterého je jisté jen jedno, čekají na jakéhosi pána Godota, který jim změní život.
+	Tento nesmysl zakončuje příchod \texthl{sadistického} pána \textbl{Pozza}, který si na provazu vede svého \texthl{podřízeného} sluhu--otroka \textbl{Luckyho}.
+	První dějství pak ukončuje příchod chlapce, který pánům oznámí, že~se~Godot \texthl{nedostaví}.\\
+	Druhé dějství pak téměř \texthl{opakuje} dějství první.
+	Hlavní rozdíl činí příchod \texthl{slepého} pána \textbl{Pozza}, který je nyní \texthl{závislým} na svém \texthl{hluchém} sluhovi \textbl{Luckym}.
+	I tentokrát přichází chlapec, oznamující pánům, že Godot ani dnes nedorazí.
+	Dva tuláci se chtějí rozejít, že přijdou zase zítra, ale \texthl{nedokážou se pohnout}.\\
+	\vspace{0.3em}\\
+	Hra má samozřejmě několikero \texthl{významových rovin}.
+	Ta nejzákladnější ale vychází z absurdity lidského očekávání, kdy celé životy strávíme čekáním na \wemph{\enquote{něco}} a toto čekání je třeba si zkrátit zabíjením času.
+	Dva tuláci spolu konverzují, vyměňují si repliky jako při ping pongovém zápasu.
+	Účelem tohoto dialogu není sdělení.
+	Není jím ani porozumění.
+	Nýbrž pouhopouhé zabíjení času.
+	}
+	\vspace{-2pt}
+	\waybox{O životě autora:}{
+	Celým jménem \textbl{Samuel Barclay Beckett} žil skoro po celou délku \wemph{dvacátého století}.
+	Narodil se 8 let před začátkem \texthl{Velké války}, v začátku \texthl{Druhé světové války} mu bylo 33 let.
+	Zemřel v 83 letech, 11 let před začátkem nového milénia.
+	Studoval v \texthl{Dublinu}, kde studoval práva, francouzštinu a italštinu.
+	Do psaní se dostal s poezií; 8veršovou sbírkou \textbl{Děvkoskop}.
+	4 roky před začátkem \texthl{Druhé světové války} se léčil na psychiatrické léčebně v \texthl{Londýně} se svými \wemph{depresemi} po úmrtí otce.
+	Do románového světa se dostal se svým dílem \textbl{Murphy}, který líčí vnitřní rozkol mezi touhou po prostitutce a útěku do svého vnitřního temného světa.
+	Během války se~angažoval v protifašistickém odboji -- francouzském hnutí odporu.
+	Roku \texthl{69} mu byla udělena \wemph{Nobelova cena za literaturu}, kterou tedy moc neocenil kvůli zvýšené pozornosti ze strany médií.
+	Některé zdroje uvádějí, že~všechny peníze, spojené s touto prestižní cenou, rozdal charitím (nutno potvrdit).\\
+	\vspace{0.3em}\\
+	Napsal 13 divadelních her, z nich většinu v padesátých a šedesátých letech.
+	Za významnou je považováno hlavně \textbl{Čekání na Godota}.
+	V tomto období napsal i šest ze svých osmi prozaických děl a jednu rozhlasovou hru.
+	Napsal také dvě poezijní díla, jedno na začátku své kariéry, \textbl{Děvkoskop} a druhé ke konci svého života, \textbl{Společnost}.\\
+	\vspace{0.3em}\\
+	Jmenovitě jde zmínit divadelní hra \textbl{Konec hry}; mající jeden akt a 4 postavy, apokalyptické prostředí; absurdní dialog a \wemph{lidská bezmoc} tu je divákovi představena skrz černý humor.
+	Dále i \textbl{Šťastné dny}, kde je postava \textbl{Winnie} zahrabána v zemi a navzdory všemu neztráci optimismus; \wemph{proč?}
+	A nakonec \textbl{Moloy}, román, sledující vnitřní monolog tuláka.
+	Beckettovi byla očividně blízká témata cestovatelů.
+	}
+	\vfill
+	\begin{flushright}
+	\footnotesize Vypracoval \textbl{Libor Halík} v sázecím systému \wemph{\hologo{LuaLaTeX}}.
+	\end{flushright}
+\end{document}
