@@ -1,0 +1,101 @@
+\documentclass{article}
+\usepackage[czech]{babel}
+\usepackage{geometry}
+\geometry{a4paper, margin=2cm}
+\usepackage{enumitem}
+\usepackage{parskip}
+%\usepackage{nopageno}
+\usepackage{xcolor}
+\usepackage{mdframed}
+\usepackage{lmodern}
+\usepackage[fixed]{fontawesome5}
+\usepackage{lipsum}
+\usepackage{csquotes}
+
+\usepackage{hyperref}
+
+\usepackage{subfiles}
+
+\usepackage[enable]{darkmode}
+
+\usepackage{hologo}
+
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{0pt}{0pt}
+\titlespacing*{\subsection}{0pt}{0pt}{0pt}
+
+\IfDarkModeTF{%
+\definecolor{DP}{HTML}{293133}%
+%
+\definecolor{antiDP}{HTML}{FFFFFF}%
+%
+\definecolor{WPP}{HTML}{00FFFF}%cyan
+\definecolor{WPP}{HTML}{0066CC}%blue
+\definecolor{WPP}{HTML}{C9A12A}%gold
+\definecolor{WPP}{HTML}{EC2B2B}%red
+\definecolor{WPP}{HTML}{39DDD5}%sort of cyan
+}{%
+\definecolor{DP}{HTML}{FFFFFF}%
+%
+\definecolor{antiDP}{HTML}{000000}%
+%
+\definecolor{WPP}{HTML}{702632}%lightmode wine
+}
+
+\setlist[itemize]{label=\textcolor{WPP}{$\hookrightarrow$}}%\textbullet \faGreaterThan
+
+\NewDocumentCommand{\texthl}{m}{%
+	{\color{WPP}{#1}}%
+}
+
+\NewDocumentCommand{\textbl}{m}{%
+	{\textbf{\color{WPP}{#1}}}%
+}
+
+\NewDocumentCommand{\wemph}{m}{%
+	{\color{WPP}\emph{#1}}%
+}
+
+\NewDocumentCommand{\wextbf}{m}{%
+	{\subsection*{\vspace{-6pt}\hspace{-7pt}\noindent\colorbox{WPP}{\color{DP}{#1}}}}%
+}
+
+\NewDocumentCommand{\waybox}{m}{\vspace{-2pt}%
+\begin{mdframed}[backgroundcolor=DP,%
+	linecolor=WPP,%
+	linewidth=2pt,%
+	innertopmargin=5pt,%
+	innerbottommargin=5pt,%
+	innerleftmargin=5pt,%
+	innerrightmargin=5pt]%
+	\color{antiDP}%
+	#1%
+\end{mdframed}%
+}
+
+\renewcommand\thesection{\color{WPP}\arabic{section}}
+
+\NewDocumentCommand{\wsection}{m}{%
+\section{\color{WPP}#1}%
+\vspace{2pt}%
+}
+
+\NewDocumentCommand{\wayitem}{m m}{%
+\begin{itemize}[leftmargin=*]\setlength\itemsep{#2}%
+	#1%
+\end{itemize}%
+}
+
+\NewDocumentCommand{\wtem}{m}{%
+\item \texthl{#1} --%
+}
+
+\begin{document}\fontsize{10pt}{10pt}\selectfont\setlength\parindent{0em}
+	\subfile{TOC}
+	\subfile{2pojisteni}
+	\subfile{3management}
+	\subfile{4logistika}
+	\subfile{5korporace}
+	\subfile{6banky}
+	\subfile{7nhospodarstvi}
+\end{document}
