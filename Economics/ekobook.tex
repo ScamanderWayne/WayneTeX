@@ -12,6 +12,7 @@
 \usepackage{lipsum}
 \usepackage{csquotes}
 \usepackage{multicol}
+\usepackage{amsmath}
 
 \usepackage{pgfornament}
 
@@ -78,10 +79,10 @@
 \end{mdframed}%
 }
 
-\renewcommand\thesection{\color{WPP}\arabic{section}}
+\renewcommand\thesection{\Large\color{WPP}\arabic{section}}
 
 \NewDocumentCommand{\wsection}{m}{%
-\section{\color{WPP}#1}%
+\section{\Large\color{WPP}#1}%
 \vspace{2pt}%
 }
 
@@ -130,6 +131,21 @@
 }
 
 %\setlist[itemize]{label=\textcolor{WPP}{$\Longrightarrow$}}%\textbullet \faGreaterThan \hookrightarrow
+
+\usepackage[scale=0.8]{ccicons} % For Creative Commons icons, scaled to 80%
+\usepackage{fancyhdr}
+
+% Configuring fancyhdr
+\pagestyle{fancy}
+\fancyhf{} % Clear default headers and footers
+\fancyfoot[L]{\color{WPP}\thepage . stránka} % Left footer: Page number
+\fancyfoot[R]{Tato práce je licencována pod \href{https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en}{\color{WPP}\ccbyncsaeu\-\ 4.0 International License}.} % Right footer: CC license with icons
+
+% Adjusting header/footer layout
+\renewcommand{\headrulewidth}{0pt} % Thin line under header
+\renewcommand{\footrulewidth}{1em} % Thin line above footer
+\renewcommand{\footrule}{{\color{WPP}\hrule\vspace{1em}}} %\vskip-\footrulewidth
+\setlength{\headheight}{14.5pt} % Ensure sufficient header height to avoid warnings
 
 \begin{document}\fontsize{10pt}{10pt}\selectfont\setlength\parindent{0em}
 	\subfile{TOC}
