@@ -1,0 +1,114 @@
+\documentclass{article}
+\usepackage[czech]{babel}
+\usepackage{geometry}
+\geometry{a4paper, margin=2cm}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{nopageno}
+\usepackage{xcolor}
+\usepackage{mdframed}
+\usepackage{lmodern}
+\usepackage[fixed]{fontawesome5}
+\usepackage{lipsum}
+\usepackage{csquotes}
+
+\usepackage{tgbonum}
+\usepackage{fontspec}
+\setmainfont{Tex Gyre Termes}
+
+\usepackage[enable]{darkmode}
+
+\usepackage{hologo}
+
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{0pt}{0pt}
+\titlespacing*{\subsection}{0pt}{0pt}{0pt}
+
+\IfDarkModeTF{%
+\definecolor{DP}{HTML}{293133}%
+%
+\definecolor{antiDP}{HTML}{FFFFFF}%
+%
+\definecolor{WPP}{HTML}{00FFFF}%cyan
+\definecolor{WPP}{HTML}{0066CC}%blue
+\definecolor{WPP}{HTML}{C9A12A}%gold
+\definecolor{WPP}{HTML}{EC2B2B}%red
+\definecolor{WPP}{HTML}{39DDD5}%sort of cyan
+}{%
+\definecolor{DP}{HTML}{FFFFFF}%
+%
+\definecolor{antiDP}{HTML}{000000}%
+%
+\definecolor{WPP}{HTML}{702632}%lightmode wine
+}
+
+\setlist[itemize]{label=\textcolor{WPP}{$\hookrightarrow$}}%\textbullet \faGreaterThan
+
+\NewDocumentCommand{\wextbf}{m}{%
+	{\subsection*{\vspace{-6pt}\hspace{-7pt}\noindent\colorbox{WPP}{\color{DP}{#1}}}}%
+}
+
+\NewDocumentCommand{\texthl}{m}{%
+	{\color{WPP}{#1}}%
+}
+
+\NewDocumentCommand{\textbl}{m}{%
+	{\textbf{\color{WPP}{#1}}}%
+}
+
+\NewDocumentCommand{\wemph}{m}{%
+	{\color{WPP}\emph{#1}}%
+}
+
+\NewDocumentCommand{\mysection}{m m}{%
+	\setlength\fboxsep{4pt}% spacing around box contents
+	\section*{\colorbox{DP}{\makebox[\dimexpr\textwidth-2\fboxsep\relax]{\color{WPP}#1\hfill#2}}}\vspace{-3pt}\par%
+}
+
+\NewDocumentCommand{\waybox}{m m}{%
+\begin{mdframed}[backgroundcolor=DP,%
+	linecolor=WPP,%
+	linewidth=2pt,%
+	innertopmargin=5pt,%
+	innerbottommargin=5pt,%
+	innerleftmargin=5pt,%
+	innerrightmargin=5pt]\color{antiDP}%
+	\wextbf{#1}\par%
+	#2%
+\end{mdframed}%
+}
+
+\NewDocumentCommand{\wayitem}{m m}{%
+\begin{itemize}[leftmargin=*]\setlength\itemsep{#2}%
+	#1%
+\end{itemize}%
+}
+
+\NewDocumentCommand{\wtem}{m}{%
+\item \texthl{#1} --%
+}
+
+\begin{document}\fontsize{10pt}{0pt}\selectfont%
+\setlength{\parskip}{0pt}%
+\setlength{\parindent}{2em}%
+	\mysection{Pozapomenut v lese}{}
+	\-\hspace{2em}Byl podvečer chladného podzimního dne, kdy se vzduch naplňoval svěží vlhkostí a tichým šuměním přírody.
+	Blížil se večer, a s ním přicházela melancholická atmosféra, která obalovala krajinu do jemného šera.
+	Kolem se rozprostíral jehličnatý les, jehož vysoké koruny borovic a smrků se tyčily k nebi jako strážci času.
+	Jejich větve, hustě porostlé věčně zeleným jehličím, vytvářely spletitou klenbu, která jako by chránila lesní půdu před vnějším světem.
+	Když jste vzhlédli k nebi, spatřili jste tisíce drobných větviček, jež se pyšnily svým jehličím, jež nikdy neopadává, a mezerami mezi nimi prosvítala šedá obloha, těžká a nasycená vlhkostí.\par
+	Obloha, jako by cítila tíhu podzimu, se rozhodla prolít svůj nektar na zemi.
+	Jemné kapky deště se tiše snášely, vytvářejíc neslyšitelnou symfonii, která se rozléhala lesem.
+	Jehličí, jako přirozený štít, zachytávalo většinu těchto kapek, a~tak na lesní půdu dopadalo jen minimum vláhy.
+	Půda, pokrytá vrstvou opadaného jehličí a mechu, voněla zemitou svěžestí, kterou déšť ještě více prohluboval.
+	Kůra majestátních stromů, nyní tmavší a lesklá od vlhkosti, vypouštěla intenzivní vůni mízy, která se mísila s chladným vzduchem a vytvářela omamnou esenci podzimu.\par
+	V dálce se ozývaly jemné zvuky lesa -- šelest větru, který proplétal větvemi, a~občasné zakrákání ptáka, který hledal úkryt před deštěm.
+	Kapky se rozrážely o miliony jehliček, vytvářejíc tichou, ale rytmickou melodii, která jako by doprovázela pomalý tanec přírody.
+	Mlha se pomalu zvedala od země, splývajíc s šedými odstíny oblohy, a dodávala lesu tajemný nádech.
+	Každý strom, každý keř, každý kousek mechu vypadal, jako by byl součástí věčného koloběhu, který se v tomto chladném podvečeru zpomalil, aby vynikla jeho tichá krása.
+	Les~dýchal klidem, a přesto byl plný života, který se ukrýval v drobných detailech -- v~kapkách rosy na jehličí, v~šepotu větru, v aroma vlhké kůry.
+	\vfill
+	\begin{flushright}
+	\footnotesize Vypracoval \textbl{Libor Halík} v sázecím systému \wemph{\hologo{LuaLaTeX}}.
+	\end{flushright}
+\end{document}

@@ -11,6 +11,9 @@
 \usepackage[fixed]{fontawesome5}
 \usepackage{lipsum}
 \usepackage{csquotes}
+\usepackage{multicol}
+
+\usepackage{pgfornament}
 
 \usepackage{hyperref}
 
@@ -42,7 +45,9 @@
 \definecolor{WPP}{HTML}{702632}%lightmode wine
 }
 
-\setlist[itemize]{label=\textcolor{WPP}{$\hookrightarrow$}}%\textbullet \faGreaterThan
+\NewDocumentCommand{\wtext}{m}{%
+{\subsection*{{\color{WPP}$\faGreaterThan$}\color{antiDP}#1}\nobreak}%
+}
 
 \NewDocumentCommand{\texthl}{m}{%
 	{\color{WPP}{#1}}%
@@ -89,6 +94,42 @@
 \NewDocumentCommand{\wtem}{m}{%
 \item \texthl{#1} --%
 }
+
+\newenvironment{indentpara}[1][2em]{
+  \setlength{\leftskip}{#1}%
+  \setlength{\parskip}{0pt}% No stretchable parskip
+  \setlength{\parindent}{0pt}% No indent
+}{\par}
+
+\newenvironment{wnumbered}{%
+\begin{enumerate}[label={\color{WPP}\textbf{\arabic*.}}]%
+}{\end{enumerate}}
+
+\NewDocumentCommand{\qaw}{m m}{%
+\wtext{#1}%
+\begin{indentpara}%
+#2%
+\end{indentpara}%
+}
+
+\NewDocumentCommand{\wbreak}{}{%
+\vspace{2em}
+\begin{center}
+{\color{WPP}\pgfornament[width=\textwidth]{88}}
+\end{center}
+\vspace{2em}
+}
+
+% Set global itemize properties with fixed spacing
+\setlist[itemize]{%
+  label=\textcolor{WPP}{$\Longrightarrow$}, % \textbullet \faGreaterThan \hookrightarrow
+  itemsep=4pt,    % Fixed spacing between items
+  parsep=2pt,     % Fixed spacing within items
+  topsep=4pt,     % Fixed spacing before/after list
+  partopsep=0pt   % No extra paragraph spacing
+}
+
+%\setlist[itemize]{label=\textcolor{WPP}{$\Longrightarrow$}}%\textbullet \faGreaterThan \hookrightarrow
 
 \begin{document}\fontsize{10pt}{10pt}\selectfont\setlength\parindent{0em}
 	\subfile{TOC}
