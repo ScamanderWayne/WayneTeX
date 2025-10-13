@@ -5,24 +5,3 @@
 \contentsline {section}{\numberline {\Large \color {WPP}5}Obchodní korporace}{5}{section.5}%
 \contentsline {section}{\numberline {\Large \color {WPP}6}\Large \color {WPP}Bankovní systém}{6}{section.6}%
 \contentsline {section}{\numberline {\Large \color {WPP}7}Národní hospodářství}{8}{section.7}%
-\contentsline {subsection}{\numberline {\Large \color {WPP}7.1}Co je NH}{8}{subsection.7.1}%
-\contentsline {subsection}{\numberline {\Large \color {WPP}7.2}Vyjmenuj 4 sektory NH}{8}{subsection.7.2}%
-\contentsline {subsection}{\numberline {\Large \color {WPP}7.3}Řekni příklad odvětví}{8}{subsection.7.3}%
-\contentsline {subsection}{\numberline {\Large \color {WPP}7.4}Vysvětli pojmy:}{8}{subsection.7.4}%
-\contentsline {subsubsection}{\numberline {\Large \color {WPP}7.4.1}HDP}{8}{subsubsection.7.4.1}%
-\contentsline {subsubsection}{\numberline {\Large \color {WPP}7.4.2}HNP}{8}{subsubsection.7.4.2}%
-\contentsline {subsubsection}{\numberline {\Large \color {WPP}7.4.3}ČDP}{8}{subsubsection.7.4.3}%
-\contentsline {subsection}{\numberline {\Large \color {WPP}7.5}Šedá ekonomika x černá ekonomika}{8}{subsection.7.5}%
-\contentsline {subsection}{\numberline {\Large \color {WPP}7.6}Hospodářský cyklus}{8}{subsection.7.6}%
-\contentsline {subsection}{\numberline {\Large \color {WPP}7.7}Vyjmenuj vnější a vnitřní příčiny}{8}{subsection.7.7}%
-\contentsline {subsection}{\numberline {\Large \color {WPP}7.8}Co je inflace, deflace, spotřební koš}{8}{subsection.7.8}%
-\contentsline {subsection}{\numberline {\Large \color {WPP}7.9}Druhy inflace}{8}{subsection.7.9}%
-\contentsline {subsection}{\numberline {\Large \color {WPP}7.10}Nezaměstnanost}{8}{subsection.7.10}%
-\contentsline {subsubsection}{\numberline {\Large \color {WPP}7.10.1}dobrovolná}{8}{subsubsection.7.10.1}%
-\contentsline {subsubsection}{\numberline {\Large \color {WPP}7.10.2}nedobrovolná}{8}{subsubsection.7.10.2}%
-\contentsline {subsubsection}{\numberline {\Large \color {WPP}7.10.3}frikční}{8}{subsubsection.7.10.3}%
-\contentsline {subsubsection}{\numberline {\Large \color {WPP}7.10.4}strukturální}{8}{subsubsection.7.10.4}%
-\contentsline {subsubsection}{\numberline {\Large \color {WPP}7.10.5}cyklická}{8}{subsubsection.7.10.5}%
-\contentsline {subsubsection}{\numberline {\Large \color {WPP}7.10.6}sezónní}{8}{subsubsection.7.10.6}%
-\contentsline {subsection}{\numberline {\Large \color {WPP}7.11}Mezi ekonomicky aktivní obyvatelstvo nepatří}{8}{subsection.7.11}%
-\contentsline {subsection}{\numberline {\Large \color {WPP}7.12}SALDO OBCHODNÍ BILANCE}{8}{subsection.7.12}%
