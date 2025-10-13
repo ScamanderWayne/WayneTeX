@@ -49,6 +49,10 @@
 \definecolor{WPP}{HTML}{702632}%lightmode wine
 }
 
+\usepackage{tocloft}
+%\renewcommand{\cftsecpagefont}{\color{WPP}}
+\renewcommand{\cftsecleader}{\color{WPP}\cftdotfill{\cftdotsep}}
+
 \NewDocumentCommand{\wtext}{m}{%
 {\subsection*{{\color{WPP}$\faGreaterThan$}\color{antiDP}#1}\nobreak}%
 }
@@ -117,11 +121,11 @@
 }
 
 \NewDocumentCommand{\wbreak}{}{%
-\vspace{2em}
-\begin{center}
-{\color{WPP}\pgfornament[width=\textwidth]{88}}
-\end{center}
-\vspace{2em}
+\vspace{-2em}%
+\begin{center}%
+{\color{WPP}\pgfornament[width=\textwidth]{88}}%
+\end{center}%
+\vspace{0em}%
 }
 
 % Set global itemize properties with fixed spacing

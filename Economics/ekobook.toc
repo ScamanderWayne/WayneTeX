@@ -3,5 +3,5 @@
 \contentsline {section}{\numberline {\Large \color {WPP}3}Management}{3}{section.3}%
 \contentsline {section}{\numberline {\Large \color {WPP}4}Logistika a zásobování}{4}{section.4}%
 \contentsline {section}{\numberline {\Large \color {WPP}5}Obchodní korporace}{5}{section.5}%
-\contentsline {section}{\numberline {\Large \color {WPP}6}\Large \color {WPP}Bankovní systém}{6}{section.6}%
+\contentsline {section}{\numberline {\Large \color {WPP}6}Bankovní systém}{6}{section.6}%
 \contentsline {section}{\numberline {\Large \color {WPP}7}Národní hospodářství}{8}{section.7}%
