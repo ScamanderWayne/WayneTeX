@@ -19,8 +19,6 @@
 
 \usepackage{pgfornament}
 
-\usepackage{hyperref}
-
 \usepackage{subfiles}
 
 \usepackage[enable]{darkmode}
@@ -103,6 +101,10 @@
 \item \texthl{#1} --%
 }
 
+\NewDocumentCommand{\wx}{m}{%
+{$\color{WPP}\textbf{\vartimes}$}%
+}
+
 \newenvironment{indentpara}[1][2em]{
   \setlength{\leftskip}{#1}%
   \setlength{\parskip}{0pt}% No stretchable parskip
@@ -153,6 +155,14 @@
 \renewcommand{\footrulewidth}{0em} % Thin line above footer
 %\renewcommand{\footrule}{{\color{WPP}\hrule\vspace{1em}}} %\vskip-\footrulewidth
 \setlength{\headheight}{14.5pt} % Ensure sufficient header height to avoid warnings
+
+\usepackage[
+    hidelinks,                    % No visible link colors or borders
+    pdftitle={Maturitní otázky Ekonomika},       % PDF metadata: title
+    pdfauthor={Libor Halík},         % PDF metadata: author
+    pdfstartview=FitH,            % Fit page width to window
+    pdfduplex=DuplexFlipShortEdge % Double-sided printing, flip on short edge
+]{hyperref}
 
 \begin{document}\fontsize{10pt}{10pt}\selectfont\setlength\parindent{0em}
 	\subfile{TOC}
