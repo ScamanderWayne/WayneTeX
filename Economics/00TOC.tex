@@ -1,8 +1,11 @@
 \documentclass[ekobook.tex]{subfiles}
 
-\begin{document}
-\definecolor{WPP}{HTML}{C9A12A}%gold
-\renewcommand\contentsname{\colorbox{WPP}{\color{antiDP}Maturitní otázky Ekonomika}}
+\begin{document}\IfDarkModeTF{\definecolor{WPP}{HTML}{DAB852}}{\definecolor{WPP}{HTML}{663800}}
+\hfill\begin{minipage}[t]{0.15\textwidth}
+\raggedleft
+\wloss
+\end{minipage}%
+\renewcommand\contentsname{{\color{WPP}Maturitní otázky{ }}\colorbox{WPP}{\color{DP}Ekonomika}}
 \tableofcontents
 \thispagestyle{empty}
 \newpage
