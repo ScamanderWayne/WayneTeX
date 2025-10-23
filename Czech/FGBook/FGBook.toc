@@ -9,7 +9,7 @@
 \contentsline {part}{\normalfont \fontsize {12pt}{13pt}\selectfont \colorbox {DTOC}{\color {DWS}Světová literatura 20. -- 21. století}\hspace {1em}{\normalfont \fontsize {5.5pt}{6.5pt}\textsc {min. 4 literární díla}}}{}{} 
 \contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {DTOC}\textbf {DAN BROWN{ }}}{\color {DBS} -- \textit {Šifra Mistra Leonarda / Da Vinciho Kód}\textbf {\color {DTOC} { }(TODO)}}}{\color {DTOC}próza - 7.}{}
 \contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {DTOC}\textbf {$\Rightarrow $ GEORGE ORWELL{ }}}{\color {DBS} -- \textit {Devatenáct set osmdesát čtyři}}}{\color {DTOC}próza - 8.}{}
-\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {DTOC}\textbf {J. R. R. TOLKIEN{ }}}{\color {DBS} -- \textit {Hobit, aneb Cesta tam a zase zpátky}\textbf {\color {DTOC} { }(DOING RIGHT NOW BITCHES)}}}{\color {DTOC}próza - 9.}{}
+\contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {DTOC}\textbf {$\Rightarrow $ J. R. R. TOLKIEN{ }}}{\color {DBS} -- \textit {Hobit, aneb Cesta tam a zase zpátky}}}{\color {DTOC}próza - 9.}{}
 \contentsline {part}{\normalfont \fontsize {12pt}{13pt}\selectfont \colorbox {DTOC}{\color {DWS}Česká literatura 20. -- 21. století}\hspace {1em}{\normalfont \fontsize {5.5pt}{6.5pt}\textsc {min. 5 literární díla}}}{}{} 
 \contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {DTOC}\textbf {$\Rightarrow $ FRANZ KAFKA{ }}}{\color {DBS} -- \textit {Proměna}}}{\color {DTOC}próza - 10.}{}
 \contentsline {section}{\normalfont \fontsize {7pt}{8pt}\selectfont {\color {DTOC}\textbf {$\Rightarrow $ VIKTOR DYK{ }}}{\color {DBS} -- \textit {Krysař}}}{\color {DTOC}próza - 11.}{}

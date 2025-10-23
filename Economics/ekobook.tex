@@ -242,6 +242,22 @@
 \endgroup
 }
 
+\usepackage{environ}
+\makeatletter
+\newsavebox{\measure@tikzpicture}
+\NewEnviron{scaletikzpicturetowidth}[1]{%
+  \def\tikz@width{#1}%
+  \def\tikzscale{1}\begin{lrbox}{\measure@tikzpicture}%
+  \BODY
+  \end{lrbox}%
+  \pgfmathparse{#1/\wd\measure@tikzpicture}%
+  \edef\tikzscale{\pgfmathresult}%
+  \BODY
+}
+\makeatother
+\usetikzlibrary{snakes}
+\usepackage{varwidth}
+
 % Set global itemize properties with fixed spacing
 \setlist[itemize]{%
   label=\textcolor{WPP}{$\Longrightarrow$}, % \textbullet \faGreaterThan \hookrightarrow
@@ -285,14 +301,12 @@ Tato práce je licencována pod \href{https://creativecommons.org/licenses/by-nc
   \begin{minipage}[t]{0.75\textwidth}
   	\vspace{-2em}
     \section{#1}
-    \vspace{0.5em}
   \end{minipage}%
   \hfill
   \begin{minipage}[t]{0.15\textwidth}
    \raggedleft
     \wloss
-  \end{minipage}%
-  \vspace{-\baselineskip} % Compensate for section's default spacing
+  \end{minipage}%\vspace{-\baselineskip} % Compensate for section's default spacing
 }
 
 \begin{document}\fontsize{10pt}{10pt}\selectfont\setlength\parindent{0em}

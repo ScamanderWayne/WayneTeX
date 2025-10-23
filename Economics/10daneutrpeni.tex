@@ -50,5 +50,34 @@ co je přenesená daňová povinnost
 \qaw{Spotřební daň -- z čeho se platí}{%
 něco
 }
+
+\begin{scaletikzpicturetowidth}{\textwidth}
+\begin{tikzpicture}[scale=\tikzscale, snake=zigzag, line before snake = 5mm, line after snake = 5mm]
+    % draw horizontal line   
+    \draw (0,0) -- (17,0);
+
+    % draw vertical lines
+    \foreach \x in {0,5,13,17}
+      \draw (\x cm,6pt) -- (\x cm,-6pt);
+      \foreach \x in {1,2,7,9,10}
+      \draw[WPP] (\x cm,3pt) -- (\x cm,-3pt);
+
+    % draw nodes
+    \draw (0,0) node[below=7pt] {} node[above=7pt] {2024};
+    
+    \draw[WPP, thick] (1,0) -- (2,0) node[below=4pt] {\begin{varwidth}{5cm}splatné\\měsíčně\end{varwidth}} node[above=4pt] {};
+    
+    \draw (5,0) node[below=7pt] {} node[above=7pt] {2025};
+    
+    \draw[WPP, thick] (7,0) node[below=4pt] {březen} node[above=4pt] {};
+    \draw[WPP, thick] (9,0) node[below=4pt] {} node[above=4pt] {květen};
+    \draw[WPP, thick] (10,0) node[below=4pt] {červen} node[above=4pt] {};
+    
+    \draw (13,0) node[below=7pt] {} node[above=7pt] {2026};
+    \draw (17,0) node[below=7pt] {} node[above=7pt] {2027};
+
+\end{tikzpicture}
+\end{scaletikzpicturetowidth}
+
 \newpage
 \end{document}
