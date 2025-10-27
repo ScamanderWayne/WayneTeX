@@ -9,20 +9,45 @@ Například v \href{https://www.e-sbirka.cz/}{\texthl{Elektronické Sbírce zák
 \href{https://www.e-sbirka.cz/sb/1993/16}{\texthl{silniční daň}} a
 \href{https://www.e-sbirka.cz/sb/2003/353}{\texthl{spotřební daň}}.
 }
-\qaw{Vysvětli pojmy:}{%
-\textbl{daňová záloha}
--- \\
-\textbl{plátce daně}
--- \\
-\textbl{poplatník}
--- \\
-\textbl{přeplatek na dani}
--- \\
-\textbl{daňové přiznání}
--- \\
-\textbl{správce daně}
--- 
+\vspace{-2em}
+\wpgfbox{%
+Účelem daňové soustavy je zajistit příjmy do státního rozpočtu, které se používají k zajištění chodu státu a jeho potřeb. Jako jsou státní správa a veřejný sektor (nemocnice, školy...).
 }
+\vspace{-1em}
+\qaw{Vysvětli pojmy:}{%
+\setlength{\multicolsep}{0pt}% Remove vertical space before and after
+\setlength{\columnsep}{2em}% Remove space between columns
+\setlength{\leftskip}{0em}%
+\SetMCRule{
+  custom-line={\path[WPP] (TOP) to [ornament=88] (BOT);}, % Use ornament 88
+  width=0.4pt, % Ensure rule is drawn (width > 0pt)
+  extend-top=0pt, % Shrink rule at top by 24pt
+  extend-bot=0pt % Shrink rule at bottom by 8pt
+}
+\hspace*{2em}
+\parbox{\dimexpr\textwidth-2em}{
+\begin{multicols}{2}
+\textbl{daňová záloha}
+-- jedná se o část daně, která se platí ještě před ukončením zdaňovacího období\\
+\textbl{plátce daně}
+-- ten, kdo daň odvádí státu (u nepřímých daň vybírá, u přímých je zároveň poplatníkem)\\
+\textbl{poplatník}
+-- ten, z jehož zdrojů se daň reálně platí (u DPH zákazník, u daně z příjmů zaměstnanec)\\
+\textbl{přeplatek na dani}
+-- když státu odvedeme víc, než reálně máme (například u moc vysokých záloh) a stát nám přeplatek vrací\\
+\textbl{daňové přiznání}
+-- oficiální dokument, kde je plátce povinen uvést všechny skutečnosti potřebných k výpočtu daně, lživé přiznání je trestné\\
+\textbl{správce daně}
+-- finanční úřad, který vyměřuje výši daně\\
+\columnbreak\\
+{\color{antiDP}$\faGreaterThan$}\textbl{předmět daně}
+-- všechny příjmy podléhající zdanění, stejně tak majetek či poskytnuté služby\\
+{\color{antiDP}$\faGreaterThan$}\textbl{osvobození z daně z příjmů fyzických osob}
+-- úlevy stanovené zákonem, které vyjímají plátce z povinnosti daň platit\\
+{\color{antiDP}$\faGreaterThan$}\textbl{zdaňovací období}
+-- období, za které daň odvádíte, obvykle jeden rok nebo jeden měsíc (u DPH je možno nově i~čtvrťletně)
+\end{multicols}
+}}
 \qaw{Daň z příjmu}{%
 \textbl{termín pro podání přiznání}
 -- \\
@@ -105,8 +130,5 @@ něco
 \end{tikzpicture}
 \end{scaletikzpicturetowidth}
 
-\vspace{\fill}
-\wbreak
-Účelem daňové soustavy je zajistit příjmy do státního rozpočtu, které se používají k zajištění chodu státu a jeho potřeb. Jako jsou státní správa a veřejný sektor (nemocnice, školy...).
 \wpage
 \end{document}
