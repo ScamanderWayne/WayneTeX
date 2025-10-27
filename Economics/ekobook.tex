@@ -298,13 +298,15 @@ at (Text.south east) {\pgfornament[width=0.5cm,symmetry=c]{31}};
 \node[text width=#2\textwidth,align=justify](Text){%
 {\color{antiDP}#1}} ;
 \node[shift={(0cm,0cm)},anchor=north west](CNW) at (Text.north west) {}; %37
-\node[shift={(0cm,0cm)},anchor=north](CN) at (Text.north) {};
+\node[shift={(-1cm,0cm)},anchor=north](CN1) at (Text.north) {};
+\node[shift={(1cm,0cm)},anchor=north](CN2) at (Text.north) {};
 \node[shift={(0cm,0cm)},anchor=north east](CNE) at (Text.north east) {};
 \node[shift={(0cm,-0.1cm)},anchor=south west](CSW) at (Text.south west) {};
-\node[shift={(0cm,-0.1cm)},anchor=south](CS) at (Text.south) {};
+\node[shift={(-1cm,-0.1cm)},anchor=south](CS1) at (Text.south) {};
+\node[shift={(1cm,-0.1cm)},anchor=south](CS2) at (Text.south) {};
 \node[shift={(0cm,-0.1cm)},anchor=south east](CSE) at (Text.south east) {};
-\pgfornamenthline{CNW}{CN}{north}{88}\pgfornamenthline{CN}{CNE}{north}{88}
-\pgfornamenthline{CSW}{CS}{south}{88}\pgfornamenthline{CS}{CSE}{south}{88}
+\pgfornamenthline{CNW}{CN2}{north}{88}\pgfornamenthline{CN1}{CNE}{north}{88}
+\pgfornamenthline{CSW}{CS2}{south}{88}\pgfornamenthline{CS1}{CSE}{south}{88}
 %\pgfornamentvline{CNW}{CSW}{west}{88}\pgfornamentvline{CNE}{CSE}{east}{88}
 \end{tikzpicture}
 \end{#3}
