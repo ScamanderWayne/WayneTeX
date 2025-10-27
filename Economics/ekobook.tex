@@ -140,6 +140,8 @@
 \vspace{0em}%
 }
 
+\usetikzlibrary{positioning}
+
 \def\wloss{%
 \begingroup
 \def\i{\pgfusepath{clip}}%
@@ -289,7 +291,9 @@ Tato práce je licencována pod \href{https://creativecommons.org/licenses/by-nc
 \setlength{\headheight}{14.5pt} % Ensure sufficient header height to avoid warnings
 
 \usepackage[
-    hidelinks,                    % No visible link colors or borders
+	linktoc=all,
+	allbordercolors={WPP},
+	pdfborderstyle={/S/U/W 1},
     pdftitle={Maturitní otázky Ekonomika},       % PDF metadata: title
     pdfauthor={Libor Halík},         % PDF metadata: author
     pdfstartview=FitH,            % Fit page width to window
@@ -305,10 +309,54 @@ Tato práce je licencována pod \href{https://creativecommons.org/licenses/by-nc
   \hfill
   \begin{minipage}[t]{0.15\textwidth}
    \raggedleft
-    \wloss
+    \hyperlink{contents}{\wloss}
   \end{minipage}%\vspace{-\baselineskip} % Compensate for section's default spacing
 }
 
+\newcommand\blankpage{% comando pagina vuota
+    \clearpage
+    \begingroup
+      \null
+      \thispagestyle{empty}%
+      %\addtocounter{page}{-1}%
+      \hypersetup{pageanchor=false}%
+      \clearpage
+    \endgroup
+}
+
+\NewDocumentCommand{\ispageodd}{}{
+  \ifodd\value{page}
+    {\newpage\blankpage}
+  \else
+    {}
+  \fi
+}
+
+\NewDocumentCommand{\wpage}{}{%
+	\IfDarkModeTF{%
+	\newpage%
+	}{%
+	\ispageodd%
+	\newpage%
+	}%
+}
+
+\newcommand{\pageornament}[2]{% 
+\begin{tikzpicture}[remember picture, overlay] 
+\color{#2}
+\node[anchor=north west] at (current page.north west){% 
+    \pgfornament[width=2.5cm]{#1}}; 
+\node[anchor=north east] at (current page.north east){%
+    \pgfornament[width=2.5cm,symmetry=v]{#1}}; 
+\node[anchor=south west] at (current page.south west){% 
+    \pgfornament[width=2.5cm,symmetry=h]{#1}}; 
+\node[anchor=south east] at (current page.south east){% 
+    \pgfornament[width=2.5cm,symmetry=c]{#1}}; 
+\end{tikzpicture} }
+
+\usepackage{moresize}
+\usepackage{fontspec}
+\setmainfont{Tex Gyre Termes}
 \begin{document}\fontsize{10pt}{10pt}\selectfont\setlength\parindent{0em}
 	\subfile{00TOC} %finished
 	\subfile{02pojisteni}

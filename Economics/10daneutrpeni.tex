@@ -3,23 +3,39 @@
 \begin{document}
 \lsection{Daňová soustava}
 \qaw{Jaké jsou podmínky placení daní a kde je musíme sledovat}{%
-něco
+\texthl{Výše} částky, \texthl{čas} splatnosti a \texthl{další podmínky} se neustále \texthl{mění}, proto se musí sledovat \texthl{v aktuálním znění zákonů} náležících k~daním.\\
+Například v \href{https://www.e-sbirka.cz/}{\texthl{Elektronické Sbírce zákonů a mezinárodních smluv}}, jmenovitě pak
+\href{https://www.e-sbirka.cz/sb/1992/586/2026-01-01}{\texthl{daň z příjmu}},
+\href{https://www.e-sbirka.cz/sb/1993/16}{\texthl{silniční daň}} a
+\href{https://www.e-sbirka.cz/sb/2003/353}{\texthl{spotřební daň}}.
 }
 \qaw{Vysvětli pojmy:}{%
-daňová záloha
-plátce daně
-poplatník
-přeplatek na dani
-daňové přiznání
-správce daně
+\textbl{daňová záloha}
+-- \\
+\textbl{plátce daně}
+-- \\
+\textbl{poplatník}
+-- \\
+\textbl{přeplatek na dani}
+-- \\
+\textbl{daňové přiznání}
+-- \\
+\textbl{správce daně}
+-- 
 }
 \qaw{Daň z příjmu}{%
-termín pro podání přiznání
-kdo je poplatníkem
-co je osvobozeno od daně z příjmu (bydlení, dopravní prostředek)
-kdy mám povinnost uvést příjem nad pět milionů
-slevy
-úlevy
+\textbl{termín pro podání přiznání}
+-- \\
+\textbl{kdo je poplatníkem}
+-- \\
+\textbl{co je osvobozeno od daně z příjmu {\color{antiDP}(bydlení, dopravní prostředek)}}
+-- \\
+\textbl{kdy mám povinnost uvést příjem nad pět milionů}
+-- \\
+\textbl{slevy}
+-- \\
+\textbl{úlevy}
+-- 
 }
 \qaw{Jaké možnosti podání daňového přiznání má OSVČ}{%
 něco
@@ -28,44 +44,54 @@ něco
 něco
 }
 \qaw{Daň z nemovitosti}{%
-termín podání přiznání
-z čeho se počítá
-co je předmětem daně
-kam plyne tato daň
+\textbl{termín podání přiznání}
+-- \\
+\textbl{z čeho se počítá}
+-- \\
+\textbl{co je předmětem daně}
+-- \\
+\textbl{kam plyne tato daň}
+-- 
 }
 \qaw{Silniční daň}{%
-nad kolik tun se platí
-za který rok
-k čemu se používá
+\textbl{nad kolik tun se platí}
+-- \\
+\textbl{za který rok}
+-- \\
+\textbl{k čemu se používá}
+-- 
 }
 \qaw{Co je dorovnávací daň}{%
 něco
 }
 \qaw{DPH}{%
-sazby DPH
-povinnost registrace k dani
-podmínky pro odpočet DPH (plátci \wx{ } neplátci)
-co je přenesená daňová povinnost
+\textbl{sazby DPH}
+-- \\
+\textbl{povinnost registrace k dani}
+-- \\
+\textbl{podmínky pro odpočet DPH {\color{antiDP}(plátci {\color{WPP}X} neplátci)}}
+-- \\
+\textbl{co je přenesená daňová povinnost}
+-- 
 }
 \qaw{Spotřební daň -- z čeho se platí}{%
 něco
 }
-
 \begin{scaletikzpicturetowidth}{\textwidth}
 \begin{tikzpicture}[scale=\tikzscale, snake=zigzag, line before snake = 5mm, line after snake = 5mm]
     % draw horizontal line   
-    \draw (0,0) -- (17,0);
+    \draw[ultra thick] (0,0) -- (17,0);
 
     % draw vertical lines
     \foreach \x in {0,5,13,17}
-      \draw (\x cm,6pt) -- (\x cm,-6pt);
+      \draw[ultra thick] (\x cm,6pt) -- (\x cm,-6pt);
       \foreach \x in {1,2,7,9,10}
-      \draw[WPP] (\x cm,3pt) -- (\x cm,-3pt);
+      \draw[ultra thick, WPP] (\x cm,3pt) -- (\x cm,-3pt);
 
     % draw nodes
     \draw (0,0) node[below=7pt] {} node[above=7pt] {2024};
     
-    \draw[WPP, thick] (1,0) -- (2,0) node[below=4pt] {\begin{varwidth}{5cm}splatné\\měsíčně\end{varwidth}} node[above=4pt] {};
+    \draw[WPP, ultra thick] (1,0) -- (2,0) node[below=4pt] {\begin{varwidth}{5cm}splatné měsíčně\end{varwidth}} node[above=4pt] {};
     
     \draw (5,0) node[below=7pt] {} node[above=7pt] {2025};
     
@@ -79,5 +105,8 @@ něco
 \end{tikzpicture}
 \end{scaletikzpicturetowidth}
 
-\newpage
+\vspace{\fill}
+\wbreak
+Účelem daňové soustavy je zajistit příjmy do státního rozpočtu, které se používají k zajištění chodu státu a jeho potřeb. Jako jsou státní správa a veřejný sektor (nemocnice, školy...).
+\wpage
 \end{document}
