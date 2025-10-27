@@ -1,19 +1,32 @@
 \documentclass[ekobook.tex]{subfiles}
 
-\begin{document}
-\lsection{Daňová soustava}
+\begin{document}\IfDarkModeTF{\definecolor{WPP}{HTML}{FF8A8A}}{\definecolor{WPP}{HTML}{4D0000}}
+\lsection{Daňová soustava \DORN}
+\vspace{-2em}
+\wpgfbox{%
+Účelem daňové soustavy je \texthl{zajistit příjmy} do státního rozpočtu, které se používají \texthl{k zajištění chodu} státu a jeho \texthl{potřeb}. Jako jsou \texthl{státní správa} a \texthl{veřejný sektor} (nemocnice, školy, ...).
+}
+\vspace{-1em}
 \qaw{Jaké jsou podmínky placení daní a kde je musíme sledovat}{%
 \texthl{Výše} částky, \texthl{čas} splatnosti a \texthl{další podmínky} se neustále \texthl{mění}, proto se musí sledovat \texthl{v aktuálním znění zákonů} náležících k~daním.\\
 Například v \href{https://www.e-sbirka.cz/}{\texthl{Elektronické Sbírce zákonů a mezinárodních smluv}}, jmenovitě pak
-\href{https://www.e-sbirka.cz/sb/1992/586/2026-01-01}{\texthl{daň z příjmu}},
-\href{https://www.e-sbirka.cz/sb/1993/16}{\texthl{silniční daň}} a
-\href{https://www.e-sbirka.cz/sb/2003/353}{\texthl{spotřební daň}}.
+\href{https://www.e-sbirka.cz/sb/1992/586/2026-01-01}{\emph{daň z příjmu}},
+\href{https://www.e-sbirka.cz/sb/1993/16}{\emph{silniční daň}} a
+\href{https://www.e-sbirka.cz/sb/2003/353}{\emph{spotřební daň}}.
 }
-\vspace{-2em}
-\wpgfbox{%
-Účelem daňové soustavy je zajistit příjmy do státního rozpočtu, které se používají k zajištění chodu státu a jeho potřeb. Jako jsou státní správa a veřejný sektor (nemocnice, školy...).
-}
-\vspace{-1em}
+%\vspace{-2em}
+\wpgfboxed{%
+ \subsection*{\faAngleDoubleRight Dělení daní}
+\begin{enumerate}[leftmargin=2em,label={\color{WPP}\textbf{\arabic*.}}]
+\item \textbf{přímé daně} -- poplatník a plátce jsou jednou a tou samou osobou
+\begin{enumerate}[leftmargin=1em,label={\color{WPP}\textbf{\alph*)}}]
+\item \textbf{majetkové} -- \emph{daň z nemovitosti}, \emph{daň silniční}
+\item \textbf{důchodové} -- \emph{daň z příjmů fyzických osob} a také \emph{daň z příjmu právnických osob}
+\end{enumerate}
+\item \textbf{nepřímé daně} -- poplatník není zároveň plátcem; kupříkladu \emph{daň z přidané hodnoty}
+\end{enumerate}
+}{0.9}{center}
+%\vspace{-1em}
 \qaw{Vysvětli pojmy:}{%
 \setlength{\multicolsep}{0pt}% Remove vertical space before and after
 \setlength{\columnsep}{2em}% Remove space between columns
@@ -28,24 +41,24 @@ Například v \href{https://www.e-sbirka.cz/}{\texthl{Elektronické Sbírce zák
 \parbox{\dimexpr\textwidth-2em}{
 \begin{multicols}{2}
 \textbl{daňová záloha}
--- jedná se o část daně, která se platí ještě před ukončením zdaňovacího období\\
+-- jedná se o část daně, která se platí ještě \texthl{před ukončením zdaňovacího období}\\
 \textbl{plátce daně}
--- ten, kdo daň odvádí státu (u nepřímých daň vybírá, u přímých je zároveň poplatníkem)\\
+-- ten, \texthl{kdo daň odvádí státu} (u nepřímých daň vybírá, u přímých je zároveň poplatníkem)\\
 \textbl{poplatník}
--- ten, z jehož zdrojů se daň reálně platí (u DPH zákazník, u daně z příjmů zaměstnanec)\\
+-- ten, \texthl{z jehož zdrojů} se daň \texthl{reálně odvádí} (u DPH zákazník, u daně z příjmů zaměstnanec)\\
 \textbl{přeplatek na dani}
--- když státu odvedeme víc, než reálně máme (například u moc vysokých záloh) a stát nám přeplatek vrací\\
+-- když státu \texthl{odvedeme víc}, než máme povinnost (například u moc vysokých záloh) a stát nám \texthl{přeplatek vratí}\\
 \textbl{daňové přiznání}
--- oficiální dokument, kde je plátce povinen uvést všechny skutečnosti potřebných k výpočtu daně, lživé přiznání je trestné\\
+-- oficiální dokument, kde je plátce \texthl{povinen} uvést \texthl{všechny skutečnosti} potřebných \texthl{k výpočtu daně}, lživé přiznání je \texthl{trestné}\\
 \textbl{správce daně}
--- finanční úřad, který vyměřuje výši daně\\
+-- finanční úřad, který \texthl{vyměřuje výši} daně\\
 \columnbreak\\
 {\color{antiDP}$\faGreaterThan$}\textbl{předmět daně}
--- všechny příjmy podléhající zdanění, stejně tak majetek či poskytnuté služby\\
+-- všechny příjmy \texthl{podléhající zdanění}, stejně tak \texthl{majetek} či poskytnuté \texthl{služby}\\
 {\color{antiDP}$\faGreaterThan$}\textbl{osvobození z daně z příjmů fyzických osob}
--- úlevy stanovené zákonem, které vyjímají plátce z povinnosti daň platit\\
+-- úlevy stanovené zákonem, které \texthl{vyjímají plátce z povinnosti} daň platit\\
 {\color{antiDP}$\faGreaterThan$}\textbl{zdaňovací období}
--- období, za které daň odvádíte, obvykle jeden rok nebo jeden měsíc (u DPH je možno nově i~čtvrťletně)
+-- období, za které daň odvádíte, obvykle \texthl{jeden rok} nebo \texthl{jeden měsíc} (u DPH je možno nově i~\texthl{čtvrťletně})
 \end{multicols}
 }}
 \qaw{Daň z příjmu}{%
@@ -105,27 +118,28 @@ něco
 \begin{scaletikzpicturetowidth}{\textwidth}
 \begin{tikzpicture}[scale=\tikzscale, snake=zigzag, line before snake = 5mm, line after snake = 5mm]
     % draw horizontal line   
-    \draw[ultra thick] (0,0) -- (17,0);
+    \draw[ultra thick] (0,0) -- (13,0);
 
     % draw vertical lines
-    \foreach \x in {0,5,13,17}
+    \foreach \x in {0,3,11,13}
       \draw[ultra thick] (\x cm,6pt) -- (\x cm,-6pt);
-      \foreach \x in {1,2,7,9,10}
+      \foreach \x in {1,2,5,6,8}
       \draw[ultra thick, WPP] (\x cm,3pt) -- (\x cm,-3pt);
 
     % draw nodes
     \draw (0,0) node[below=7pt] {} node[above=7pt] {2024};
     
-    \draw[WPP, ultra thick] (1,0) -- (2,0) node[below=4pt] {\begin{varwidth}{5cm}splatné měsíčně\end{varwidth}} node[above=4pt] {};
+    \draw[WPP, ultra thick] (1,0) -- (2,0) node[below=4pt] {} node[above=4pt] {};
+    \draw (1.5,0) node[below=4pt] {\begin{varwidth}{5cm}splatné měsíčně\end{varwidth}} node[above=4pt] {};
     
-    \draw (5,0) node[below=7pt] {} node[above=7pt] {2025};
+    \draw (3,0) node[below=7pt] {} node[above=7pt] {2025};
     
-    \draw[WPP, thick] (7,0) node[below=4pt] {březen} node[above=4pt] {};
-    \draw[WPP, thick] (9,0) node[below=4pt] {} node[above=4pt] {květen};
-    \draw[WPP, thick] (10,0) node[below=4pt] {červen} node[above=4pt] {};
+    \draw[antiDP, thick] (5,0) node[below=4pt] {\begin{varwidth}{5cm}do {\color{WPP}31.3.} \emph{splatná daň z příjmů}\\ za rok {\color{WPP}2024} pro podnikatele\end{varwidth}} node[above=4pt] {};
+    \draw[WPP, thick] (6,0) node[below=4pt] {} node[above=4pt] {květen};
+    \draw[antiDP, thick] (8.5,0) node[below=4pt] {\begin{varwidth}{4cm}do {\color{WPP}30.6.} \emph{splatná daň z příjmů} pokud ji zpracovává {\color{WPP}daňový poradce}\end{varwidth}} node[above=4pt] {};
     
-    \draw (13,0) node[below=7pt] {} node[above=7pt] {2026};
-    \draw (17,0) node[below=7pt] {} node[above=7pt] {2027};
+    \draw (11,0) node[below=7pt] {} node[above=7pt] {2026};
+    \draw (13,0) node[below=7pt] {} node[above=7pt] {2027};
 
 \end{tikzpicture}
 \end{scaletikzpicturetowidth}

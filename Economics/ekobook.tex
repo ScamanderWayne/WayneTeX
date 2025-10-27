@@ -116,6 +116,14 @@
 {{\color{WPP}$\hookrightarrow$}{ }}%
 }
 
+\NewDocumentCommand{\TODO}{}{%
+{\color{WPP}$\mapsto$ [TODO]}
+}
+
+\NewDocumentCommand{\DORN}{}{%
+{\color{WPP}$\mapsto$ [DOING RN]}
+}
+
 \newenvironment{indentpara}[1][2em]{
   \setlength{\leftskip}{#1}%
   \setlength{\parskip}{0pt}% No stretchable parskip
@@ -281,6 +289,25 @@ at (Text.south east) {\pgfornament[width=0.5cm,symmetry=c]{31}};
 %\pgfornamenthline{CNW}{CN}{north}{88}\pgfornamenthline{CN}{CNE}{north}{88}\pgfornamenthline{CSW}{CS}{south}{88}\pgfornamenthline{CS}{CSE}{south}{88}\pgfornamentvline{CNW}{CSW}{west}{88}\pgfornamentvline{CNE}{CSE}{east}{88}
 \end{tikzpicture}
 \end{center}
+}
+
+\NewDocumentCommand{\wpgfboxed}{m m m}{%
+\begin{#3}
+\begin{tikzpicture}[every node/.style={inner sep=0pt}]
+\color{WPP}
+\node[text width=#2\textwidth,align=justify](Text){%
+{\color{antiDP}#1}} ;
+\node[shift={(0cm,0cm)},anchor=north west](CNW) at (Text.north west) {}; %37
+\node[shift={(0cm,0cm)},anchor=north](CN) at (Text.north) {};
+\node[shift={(0cm,0cm)},anchor=north east](CNE) at (Text.north east) {};
+\node[shift={(0cm,-0.1cm)},anchor=south west](CSW) at (Text.south west) {};
+\node[shift={(0cm,-0.1cm)},anchor=south](CS) at (Text.south) {};
+\node[shift={(0cm,-0.1cm)},anchor=south east](CSE) at (Text.south east) {};
+\pgfornamenthline{CNW}{CN}{north}{88}\pgfornamenthline{CN}{CNE}{north}{88}
+\pgfornamenthline{CSW}{CS}{south}{88}\pgfornamenthline{CS}{CSE}{south}{88}
+%\pgfornamentvline{CNW}{CSW}{west}{88}\pgfornamentvline{CNE}{CSE}{east}{88}
+\end{tikzpicture}
+\end{#3}
 }
 
 % Set global itemize properties with fixed spacing
