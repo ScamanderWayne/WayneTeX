@@ -89,19 +89,22 @@ Pokud daňový základ přesuhuje 36násobek průměrné mzdy (přibližně 1 80
 \newpage
 \qaw{Daň z nemovitosti}{%
 \textbl{termín podání přiznání}
--- \\
+-- přiznání se podává k 31. 1. roku, ve kterém vznika daňová povinnost; splatnost pak je k 31. 5. stejného roku\\
 \textbl{z čeho se počítá}
--- \\
+-- z velikosti pozemku, určenému užití pozemku, ale i počtu obyvatel v obci, či umístění nemovitosti\\
 \textbl{co je předmětem daně}
--- \\
+-- nemovitosti, jakou jsou pozemky (stavební prostory, lesy, louky, vodní plochy), stavby (prostory k bydlení, nebytové prostory, ale i stodoly a další), bytové jednotky tvoří samostatnou kategorii;\\
+předmětem daně jsou jen nemovitosti zapsané v katastru k 1. 1.;\\
+výjimku z daně mají památky a nemovitosti sloužící veřejnému zájmu (jako jsou školy a nemocnice)\\
 \textbl{kam plyne tato daň}
--- 
+-- celá částka daně plyne přímo do rozpočtů měst a obcí, kde se nemovitost nachází
 }
 \qaw{Silniční daň}{%
-\textbl{nad kolik tun se platí}
--- \\
+\textbl{kdy se platí}
+-- musí jí platit vlastníci nebo provozovatelé vozidel, co mají vozidlo zapsané k obchodní činnosti a vozidlo přesahuje hmotnost 12 tun;\\
+vypočítává se dle váhy a počtu náprav
 \textbl{za který rok}
--- \\
+-- podává se do 31. 1. za rok minulý\\
 \textbl{k čemu se používá}
 -- 
 }
@@ -121,31 +124,35 @@ něco
 \qaw{Spotřební daň -- z čeho se platí}{%
 něco
 }
+\wtext{Časová osa splatností daní v roce 2024:}
 \begin{scaletikzpicturetowidth}{\textwidth}
 \begin{tikzpicture}[scale=\tikzscale, snake=zigzag, line before snake = 5mm, line after snake = 5mm]
     % draw horizontal line   
-    \draw[ultra thick] (0,0) -- (13,0);
+    \draw[ultra thick] (0,0) -- (15,0);
 
     % draw vertical lines
-    \foreach \x in {0,3,11,13}
+    \foreach \x in {0,6,12,15}
       \draw[ultra thick] (\x cm,6pt) -- (\x cm,-6pt);
-      \foreach \x in {1,2,5,6,8}
+      \foreach \x in {0.5,4.5,5,2.5,6.5,7.5,8.5,9}
       \draw[ultra thick, WPP] (\x cm,3pt) -- (\x cm,-3pt);
 
     % draw nodes
     \draw (0,0) node[below=7pt] {} node[above=7pt] {2024};
     
-    \draw[WPP, ultra thick] (1,0) -- (2,0) node[below=4pt] {} node[above=4pt] {};
-    \draw (1.5,0) node[below=4pt] {\begin{varwidth}{5cm}splatné měsíčně\end{varwidth}} node[above=4pt] {};
+    \draw (0.5,0) node[below=4pt] {\begin{varwidth}{2cm}\scriptsize k \texthl{31. 1.} povinost podat přiznání k \emph{dani z~nemovitosti}\end{varwidth}} node[above=4pt] {};
+    \draw[WPP, ultra thick] (4.5,0) -- (5,0) node[below=4pt] {} node[above=4pt] {};
+    \draw (4.7,0) node[below=4pt] {} node[above=4pt] {\begin{varwidth}{5cm}\scriptsize splatné měsíčně\end{varwidth}};
+	\draw[antiDP, thick] (3,0) node[below=4pt] {\begin{varwidth}{2.5cm}\scriptsize k \texthl{31. 5.} splatnost \emph{daně z~nemovitosti}\end{varwidth}} node[above=4pt] {};
+  
+    \draw (6,0) node[below=7pt] {} node[above=7pt] {2025};
     
-    \draw (3,0) node[below=7pt] {} node[above=7pt] {2025};
+    \draw[antiDP, thick] (7.24,0) node[below=4pt] {} node[above=4pt] {\begin{varwidth}{2cm}\scriptsize k \texthl{31. 1.} \emph{splatná silniční daň} \end{varwidth}};
+    \draw[antiDP, thick] (6.8,0) node[below=4pt] {\begin{varwidth}{5cm}\scriptsize do {\color{WPP}31. 3.} \emph{splatná daň z příjmů}\end{varwidth}} node[above=4pt] {};
+    \draw[antiDP, thick] (8.5,0) node[below=4pt] {} node[above=4pt] {\scriptsize květen};
+    \draw[antiDP, thick] (10.2,0) node[below=4pt] {\begin{varwidth}{4cm}\scriptsize do {\color{WPP}30. 6.} \emph{splatná daň z příjmů} pokud ji zpracovává {\color{WPP}daňový poradce}\end{varwidth}} node[above=4pt] {};
     
-    \draw[antiDP, thick] (5,0) node[below=4pt] {\begin{varwidth}{5cm}do {\color{WPP}31. 3.} \emph{splatná daň z příjmů}\\ za rok {\color{WPP}2024} pro podnikatele\end{varwidth}} node[above=4pt] {};
-    \draw[WPP, thick] (6,0) node[below=4pt] {} node[above=4pt] {květen};
-    \draw[antiDP, thick] (8.5,0) node[below=4pt] {\begin{varwidth}{4cm}do {\color{WPP}30. 6.} \emph{splatná daň z příjmů} pokud ji zpracovává {\color{WPP}daňový poradce}\end{varwidth}} node[above=4pt] {};
-    
-    \draw (11,0) node[below=7pt] {} node[above=7pt] {2026};
-    \draw (13,0) node[below=7pt] {} node[above=7pt] {2027};
+    \draw (12,0) node[below=7pt] {} node[above=7pt] {2026};
+    \draw (15,0) node[below=7pt] {} node[above=7pt] {2027};
 
 \end{tikzpicture}
 \end{scaletikzpicturetowidth}
