@@ -34,8 +34,8 @@ Například v \href{https://www.e-sbirka.cz/}{\texthl{Elektronické Sbírce zák
 \SetMCRule{
   custom-line={\path[WPP] (TOP) to [ornament=88] (BOT);}, % Use ornament 88
   width=0.4pt, % Ensure rule is drawn (width > 0pt)
-  extend-top=0pt, % Shrink rule at top by 24pt
-  extend-bot=0pt % Shrink rule at bottom by 8pt
+  extend-top=-2pt, % Shrink rule at top by 24pt
+  extend-bot=-8pt % Shrink rule at bottom by 8pt
 }
 \hspace*{2em}
 \parbox{\dimexpr\textwidth-2em}{
@@ -61,98 +61,134 @@ Například v \href{https://www.e-sbirka.cz/}{\texthl{Elektronické Sbírce zák
 -- období, za které daň odvádíte, obvykle \texthl{jeden rok} nebo \texthl{jeden měsíc} (u DPH je možno nově i~\texthl{čtvrťletně})
 \end{multicols}
 }}
+\vspace{2em}
+\wbreak
 \qaw{Daň z příjmu}{%
 \textbl{termín pro podání přiznání}
--- daňové přiznání se podává do 31. 3. dalšího roku, pokud má plátce daňového poradce, tak až do 30. 6.\\
+-- daňové přiznání se podává do \texthl{31. 3.} dalšího roku, pokud má plátce daňového poradce, tak až do \texthl{30. 6.}\\
 \textbl{kdo je poplatníkem}
 -- každý, kdo stráví na území ČR \texthl{více než 183 dní} a má roční příjem \texthl{nad 50 000 Kč}; má pak daňovou povinnost k příjmům \texthl{z České Republiky} ale i \texthl{ze zahraničí}\\
 \textbl{co je osvobozeno od daně z příjmu}
--- předmětem daně nejsou příjmy z dědictví, darů, úvěrů a půjček; osvobozeny od daní jsou příjmy z nemocenského pojištění, sociálních dávek a movitých věcí; prodej nemovitostí je osvobozen, pokuj je vlastníme déle než 2 roky (nebo peníze použijeme na nákup jiného bydlení)\\
+-- předmětem daně nejsou \texthl{příjmy z dědictví}, \texthl{darů}, \texthl{úvěrů} a \texthl{půjček}; osvobozeny od daní jsou \texthl{příjmy z nemocenského pojištění}, \texthl{sociálních dávek} a \texthl{movitých věcí}; prodej nemovitostí je osvobozen, pokuj je vlastníme déle než 2 roky (nebo peníze použijeme na nákup jiného bydlení)\\
 \textbl{kdy mám povinnost uvést příjem nad pět milionů}
--- vždy, i když je vyjmut z daňové povinnosti, tak se musí uvést (prodej domu, výhra v loterii, kterou již zdanil provozovatel)\\
+-- vždy, i když je vyjmut z daňové povinnosti, tak se \texthl{musí uvést} (prodej domu, výhra v loterii, kterou již zdanil provozovatel)\\
 \textbl{slevy}
--- na poplatníka; na manželku (pod hranicí aktuálního příjmu); na děti; ZTP\\
+-- \texthl{na poplatníka}; \texthl{na manželku} (pod hranicí aktuálního příjmu); \texthl{na děti}; \texthl{ZTP}\\
 \textbl{úlevy}
--- úlevy mohou vzniknout: z úroků z hypotečního úroku; z dárcovství krve a plasmy (pokud byla poskytnuta bez odměny); z poskytnutí darů za určitých podmínek
+-- úlevy mohou vzniknout: z úroků \texthl{z hypotečního úroku}; \texthl{z dárcovství krve} a \texthl{plasmy} (pokud byla poskytnuta bez odměny); \texthl{z poskytnutí darů} za určitých podmínek
 }
 \qaw{Jaké možnosti podání daňového přiznání má OSVČ}{%
-OSVČ musí podávat přiznání přes Datovou Schránku, má k tomu tři možnosti.\\
+OSVČ musí podávat přiznání přes \texthl{Datovou Schránku}, má k tomu tři možnosti.\\
 \begin{itemize}[label={\color{WPP}\faSlackHash}]
-\item \textbl{paušální daň} -- pro neplátce DPH, jedná se o kombinaci ZP, SP a daně z příjmů, vhodná pro menší podnikatele
-\item \textbl{výdajový paušál} -- pro základ daně použije část svých příjmů (20 \% -- 80 \% dle sektoru), nemusí tedy dokládat reálné výdaje, což zjednodušuje přiznání
-\item \textbl{sledování příjmů a výdajů} -- OSVČ, který vede daňovou evidenci si spočítá daňový základ jako rozdíl mezi výdaji a příjmy, musí tedy řádně vést administrativu, ale platí jen to, co reálně musí
+\item \textbl{paušální daň} -- pro neplátce DPH, jedná se o \texthl{kombinaci ZP, SP a daně z příjmů}, vhodná pro menší podnikatele
+\item \textbl{výdajový paušál} -- pro základ daně použije \texthl{část svých příjmů} (20 \% -- 80 \% dle sektoru), nemusí tedy dokládat reálné výdaje, což zjednodušuje přiznání
+\item \textbl{sledování příjmů a výdajů} -- OSVČ, který vede daňovou evidenci si spočítá daňový základ jako \texthl{rozdíl mezi výdaji a příjmy}, musí tedy řádně vést administrativu, ale platí jen to, co reálně musí
 \end{itemize}
 }
 \qaw{Za jakých podmínek musím platit 23 \% daň z příjmu}{%
-Pokud daňový základ přesuhuje 36násobek průměrné mzdy (přibližně 1 800 000 Kč), kdy se 23 \% platí jen u příjmů, co hranici přesahuje.
+Pokud daňový základ přesuhuje \texthl{36násobek průměrné mzdy} (přibližně 1 800 000 Kč), kdy se 23 \% platí jen u příjmů, co hranici přesahuje.
 }
 \newpage
 \qaw{Daň z nemovitosti}{%
 \textbl{termín podání přiznání}
--- přiznání se podává k 31. 1. roku, ve kterém vznika daňová povinnost; splatnost pak je k 31. 5. stejného roku\\
+-- přiznání se podává k \texthl{31. 1.} roku, ve kterém vznika daňová povinnost; splatnost pak je k \texthl{31. 5.} stejného roku\\
 \textbl{z čeho se počítá}
 -- z velikosti pozemku, určenému užití pozemku, ale i počtu obyvatel v obci, či umístění nemovitosti\\
 \textbl{co je předmětem daně}
--- nemovitosti, jakou jsou pozemky (stavební prostory, lesy, louky, vodní plochy), stavby (prostory k bydlení, nebytové prostory, ale i stodoly a další), bytové jednotky tvoří samostatnou kategorii;\\
+-- nemovitosti, jakou jsou \texthl{pozemky} (stavební prostory, lesy, louky, vodní plochy), \texthl{stavby} (prostory k bydlení, nebytové prostory, ale i stodoly a další), \texthl{bytové jednotky} tvoří samostatnou kategorii;\\
 předmětem daně jsou jen nemovitosti zapsané v katastru k 1. 1.;\\
-výjimku z daně mají památky a nemovitosti sloužící veřejnému zájmu (jako jsou školy a nemocnice)\\
+výjimku z daně mají \texthl{památky} a nemovitosti sloužící \texthl{veřejnému zájmu} (jako jsou školy a nemocnice)\\
 \textbl{kam plyne tato daň}
--- celá částka daně plyne přímo do rozpočtů měst a obcí, kde se nemovitost nachází
+-- celá částka daně plyne přímo \texthl{do rozpočtů měst a obcí}, kde se nemovitost nachází
 }
 \qaw{Silniční daň}{%
 \textbl{kdy se platí}
--- musí jí platit vlastníci nebo provozovatelé vozidel, co mají vozidlo zapsané k obchodní činnosti a vozidlo přesahuje hmotnost 12 tun;\\
-vypočítává se dle váhy a počtu náprav
+-- musí jí platit vlastníci nebo provozovatelé vozidel, co mají vozidlo zapsané k obchodní činnosti a vozidlo \texthl{přesahuje hmotnost 12 tun};\\
+vypočítává se dle váhy a počtu náprav\\
 \textbl{za který rok}
 -- podává se do 31. 1. za rok minulý\\
 \textbl{k čemu se používá}
--- 
+-- hlavně k výstavbě, údržbě a opravě silniční infrastruktury
 }
 \qaw{Co je dorovnávací daň}{%
-něco
+Daň minimálně 15 \% z příjmů na území ČR velkých firem, co zde jinak daně neplatí,  protože sídlo mají jinde.
+Slouží k zamezení daňových úniků v daňových rajích.
+Jedná se o českou verzi Pillar 2.
+Má hned několik podmínek:\\
+\begin{itemize}[label={\color{WPP}\faSlackHash}]
+\item \textbl{minimálně výnosy} -- firma musí mít minimální roční \texthl{výnosy 750 milionů EUR} v alespoň ve 2 z posledních 4 let
+\item \textbl{sídlo mimo ČR} -- firma musí mít sídlo mimo ČR a tedy zde ani neplatí klasické daně
+\item \textbl{obchoduje na území ČR} -- dceřinná společnost, či jiný druh pobočky, zde musí mít kladné výnosy a z nich se odvádí daň (tedy ne z celkových výnosů)
+\end{itemize}
 }
+\wbreak
+\vspace{1em}
+\setlength{\multicolsep}{0em}% Remove vertical space before and after
+\setlength{\columnsep}{0em}% Remove space between columns
+\begin{multicols}{2}
 \qaw{DPH}{%
-\textbl{sazby DPH}
--- \\
+\textbl{sazby DPH} -- \texthl{0 \%} specifická (knihy)\\
+-- \texthl{12 \%} snížená (palivové dřevo, točené pivo, některé časopisy)\\
+-- \texthl{21 \%} základní (zboží, služby, přeprava)\\
+DPH tvoří \texthl{\textasciitilde 35 \% příjmů státu}.\\
 \textbl{povinnost registrace k dani}
--- \\
+-- povinnost vzniká, když osoba překročí \texthl{obrat 2~000~000~Kč} během \texthl{12 po sobě jdoucích měsíců}.
+Registrovat se pak musí do 15 dní po překročení.
+Jinak je přihlášení k dani \texthl{dobrovolné}\\
+\texthl{\textasciitilde 70 \% podnikatelů} je přihlášeno k DPH.\\
 \textbl{podmínky pro odpočet DPH {\color{antiDP}(plátci {\color{WPP}X} neplátci)}}
--- \\
+-- {plátci} mají \texthl{nárok na odpočet DPH} na \textbf{vstupu}, musí k tomu vést evidenci; {neplátci nárok} na odpočet \texthl{nemají}, DPH je pro ně dalším nákladem\\
 \textbl{co je přenesená daňová povinnost}
--- 
+-- daň \texthl{odvede} sám \texthl{odběratel} namísto dodavatele; oba musí být přihlášeni k DPH
 }
+\columnbreak
 \qaw{Spotřební daň -- z čeho se platí}{%
-něco
+Tato daň se ukládá na komodity, které \texthl{negativně zatěžují} lidské \texthl{zdraví} nebo \texthl{prostředí}.
+Vždy \texthl{pevnou částkou} na jednotku (\texthl{ks},~\texthl{kg},~\texthl{l}).
+Patřím sem daně na:
+\wemph{minerální oleje};
+\wemph{pivo};
+\wemph{víno};
+\wemph{tabák}.
+Tato daň \texthl{zvyšuje} základ výpočtu \texthl{DPH}.
+Výrobci jí odvádějí měsíčně.
 }
+\subsection*{\faAngleDoubleRight Clo}
+\begin{indentpara}
+Clo je také formou daně, která se platí při \texthl{dovozu} nebo \texthl{vývozu} ze země.
+\emph{Neplatí se mezi členskými státy EU.}
+\end{indentpara}
+\end{multicols}
 \wtext{Časová osa splatností daní v roce 2024:}
 \begin{scaletikzpicturetowidth}{\textwidth}
 \begin{tikzpicture}[scale=\tikzscale, snake=zigzag, line before snake = 5mm, line after snake = 5mm]
     % draw horizontal line   
-    \draw[ultra thick] (0,0) -- (15,0);
+    \draw[ultra thick] (0,0) -- (12,0);
 
     % draw vertical lines
-    \foreach \x in {0,6,12,15}
+    \foreach \x in {0,6,12}
       \draw[ultra thick] (\x cm,6pt) -- (\x cm,-6pt);
-      \foreach \x in {0.5,4.5,5,2.5,6.5,7.5,8.5,9}
+      \foreach \x in {0.5,4,5.5,2.5,6.5,7.5,9.5}
       \draw[ultra thick, WPP] (\x cm,3pt) -- (\x cm,-3pt);
 
     % draw nodes
     \draw (0,0) node[below=7pt] {} node[above=7pt] {2024};
     
-    \draw (0.5,0) node[below=4pt] {\begin{varwidth}{2cm}\scriptsize k \texthl{31. 1.} povinost podat přiznání k \emph{dani z~nemovitosti}\end{varwidth}} node[above=4pt] {};
-    \draw[WPP, ultra thick] (4.5,0) -- (5,0) node[below=4pt] {} node[above=4pt] {};
-    \draw (4.7,0) node[below=4pt] {} node[above=4pt] {\begin{varwidth}{5cm}\scriptsize splatné měsíčně\end{varwidth}};
-	\draw[antiDP, thick] (3,0) node[below=4pt] {\begin{varwidth}{2.5cm}\scriptsize k \texthl{31. 5.} splatnost \emph{daně z~nemovitosti}\end{varwidth}} node[above=4pt] {};
+    \draw (1.7,0) node[below=4pt] {\rotatebox{-60}{\begin{varwidth}{7cm}\small k \texthl{31. 1.} povinost podat přiznání k \emph{dani z~nemovitosti}\end{varwidth}}} node[above=4pt] {};
+    \draw[WPP, ultra thick] (4,0) -- (5.5,0) node[below=4pt] {} node[above=4pt] {};
+    \draw (4.7,0) node[below=4pt] {} node[above=4pt] {\rotatebox{0}{\begin{varwidth}{5cm}\small \textbl{splatné měsíčně} \end{varwidth}}};
+    \draw (6.4,0) node[below=4pt] {\rotatebox{-60}{\begin{varwidth}{7cm}\small \emph{DPH} se dá splácetale i \texthl{čtvrťletně}; podává se do \texthl{25. dne} po konci období \end{varwidth}}} node[above=4pt] {};
+    \draw (4.8,0) node[below=4pt] {\rotatebox{-60}{\begin{varwidth}{2cm}\small \emph{spotřební daň} \end{varwidth}}} node[above=4pt] {};
+    \draw (4.2,0) node[below=4pt] {\rotatebox{-60}{\begin{varwidth}{2cm}\small \emph{clo} \end{varwidth}}} node[above=4pt] {};
+	\draw[antiDP, thick] (3.3,0) node[below=4pt] {\rotatebox{-60}{\begin{varwidth}{5cm}\small do \texthl{31. 5.} splatnost \emph{daně z~nemovitosti}\end{varwidth}}} node[above=4pt] {};
   
     \draw (6,0) node[below=7pt] {} node[above=7pt] {2025};
     
-    \draw[antiDP, thick] (7.24,0) node[below=4pt] {} node[above=4pt] {\begin{varwidth}{2cm}\scriptsize k \texthl{31. 1.} \emph{splatná silniční daň} \end{varwidth}};
-    \draw[antiDP, thick] (6.8,0) node[below=4pt] {\begin{varwidth}{5cm}\scriptsize do {\color{WPP}31. 3.} \emph{splatná daň z příjmů}\end{varwidth}} node[above=4pt] {};
-    \draw[antiDP, thick] (8.5,0) node[below=4pt] {} node[above=4pt] {\scriptsize květen};
-    \draw[antiDP, thick] (10.2,0) node[below=4pt] {\begin{varwidth}{4cm}\scriptsize do {\color{WPP}30. 6.} \emph{splatná daň z příjmů} pokud ji zpracovává {\color{WPP}daňový poradce}\end{varwidth}} node[above=4pt] {};
+    \draw[antiDP, thick] (7.2,0) node[below=4pt] {\rotatebox{-60}{\begin{varwidth}{5cm}\small do \texthl{31. 1.} \emph{splatná silniční daň} \end{varwidth}}} node[above=4pt] {};
+    \draw[antiDP, thick] (8.2,0) node[below=4pt] {\rotatebox{-60}{\begin{varwidth}{5cm}\small do {\color{WPP}31. 3.} \emph{splatná daň z příjmů}\end{varwidth}}} node[above=4pt] {};
+    \draw[antiDP, thick] (10.3,0) node[below=4pt] {\rotatebox{-60}{\begin{varwidth}{8cm}\small do {\color{WPP}30. 6.} \emph{splatná daň z příjmů}\\ pokud ji zpracovává {\color{WPP}daňový poradce}\end{varwidth}}} node[above=4pt] {};
     
     \draw (12,0) node[below=7pt] {} node[above=7pt] {2026};
-    \draw (15,0) node[below=7pt] {} node[above=7pt] {2027};
 
 \end{tikzpicture}
 \end{scaletikzpicturetowidth}
