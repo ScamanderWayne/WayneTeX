@@ -1,7 +1,7 @@
 \documentclass[ekobook.tex]{subfiles}
 
 \begin{document}\IfDarkModeTF{\definecolor{WPP}{HTML}{DAB852}}{\definecolor{WPP}{HTML}{663800}}
-\pageornament{31}{WPP}
+\pageornament{31}{WPP}{3cm}
 \vspace*{\fill}
 \begin{center}
 \begin{minipage}[c]{0.70\textwidth}
@@ -28,7 +28,7 @@
     % First node (Node A)
     \node[anchor=north east] (nodeA) at (current page.north east) {};
     % Second node (Node B) positioned -2em x and -2em y from Node A
-    \node[below left=3.5em and 3.5em of nodeA] (nodeB) {\wloss};
+    \node[below left=2.5em and 2em of nodeA] (nodeB) {\wloss};
 \end{tikzpicture}
 \wpage
 \end{document}

@@ -7,4 +7,4 @@
 \contentsline {section}{\numberline {\Large \color {WPP}7}Národní hospodářství}{9}{section.7}%
 \contentsline {section}{\numberline {\Large \color {WPP}8}Kapitálový trh \TODO }{10}{section.8}%
 \contentsline {section}{\numberline {\Large \color {WPP}9}Majetek podniku \TODO }{11}{section.9}%
-\contentsline {section}{\numberline {\Large \color {WPP}10}Daňová soustava \DORN }{12}{section.10}%
+\contentsline {section}{\numberline {\Large \color {WPP}10}Daňová soustava}{12}{section.10}%

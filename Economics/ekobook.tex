@@ -398,17 +398,17 @@ Tato práce je licencována pod \href{https://creativecommons.org/licenses/by-nc
 	}%
 }
 
-\newcommand{\pageornament}[2]{% 
+\newcommand{\pageornament}[3]{% 
 \begin{tikzpicture}[remember picture, overlay] 
 \color{#2}
 \node[anchor=north west] at (current page.north west){% 
-    \pgfornament[width=2.5cm]{#1}}; 
+    \pgfornament[width=#3]{#1}}; 
 \node[anchor=north east] at (current page.north east){%
-    \pgfornament[width=2.5cm,symmetry=v]{#1}}; 
+    \pgfornament[width=#3,symmetry=v]{#1}}; 
 \node[anchor=south west] at (current page.south west){% 
-    \pgfornament[width=2.5cm,symmetry=h]{#1}}; 
+    \pgfornament[width=#3,symmetry=h]{#1}}; 
 \node[anchor=south east] at (current page.south east){% 
-    \pgfornament[width=2.5cm,symmetry=c]{#1}}; 
+    \pgfornament[width=#3,symmetry=c]{#1}}; 
 \end{tikzpicture} }
 
 \usepackage{moresize}
