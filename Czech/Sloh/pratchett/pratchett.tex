@@ -338,7 +338,6 @@ Tato práce je licencována pod \href{https://creativecommons.org/licenses/by-nc
   \end{minipage}%\vspace{-\baselineskip} % Compensate for section's default spacing
 }
 \usepackage{fontspec}
-%\newfontfamily\signaturefont{Zephyr}
 \newfontfamily\signaturefont{MrDafoe}
 
 \setmainfont{Tex Gyre Termes}
@@ -462,19 +461,24 @@ Tato práce je licencována pod \href{https://creativecommons.org/licenses/by-nc
 \textsc{\color{WPP}#1}%
 }
 
+\newfontfamily\citefont{Tex Gyre Chorus}
 \NewDocumentCommand{\wcite}{m}{%
-{\emph{\color{WPP}\enquote{{\color{antiDP}#1}}}}%
+{\emph{\citefont\color{WPP}\enquote{{\color{antiDP}#1}}}}%
 }
 
 \NewDocumentCommand{\wplace}{m}{%
 {\color{WPP}#1}%
 }
 
+\NewDocumentCommand{\wchar}{m}{%
+{\citefont\color{WPP}#1}%
+}
+
 \NewDocumentCommand{\whl}{m}{%
 \emph{#1}%
 }
 
-\begin{document}\fontsize{10pt}{10pt}\selectfont\setlength{\parindent}{2em}\setlength{\parskip}{0em}\IfDarkModeTF{\definecolor{WPP}{HTML}{DAB852}}{\definecolor{WPP}{HTML}{663800}}
+\begin{document}\fontsize{10pt}{10pt}\selectfont\setlength{\parindent}{2em}\setlength{\parskip}{0em}\IfDarkModeTF{\definecolor{WPP}{HTML}{36F7F7}}{\definecolor{WPP}{HTML}{034444}}
 \pageornament{31}{WPP}{3cm}{Libor Halík}
 %\authorized{Libor Halík}
 
@@ -482,22 +486,44 @@ Tato práce je licencována pod \href{https://creativecommons.org/licenses/by-nc
 Celým jménem \wname{sir~Terence~David~John~\enquote{Terry}~Pratchett}.
 Narodil se~ve~\wplace{Spojeném Království} v~\wplace{Buckinghamshire} v~\wplace{Beaconsfieldu} roku~1948 jako \wname{Terence~David~John~Pratchett}.
 V~17 letech nechal školy a~stal se~novinářem pro \wplace{Bucks~Free~Press}.
-V~tomto období vydal i~svojí první povídku \wbook{Kobercové} (\wbook{\enquote{The Carpet People}}); satyrický román z~netradičního světa, po 21~letech ji vydal zrevidovanou s~poznámkou \wcite{Tato kniha měla dva autory a~oba jsou stejnou osobou.}\wline
+V~tomto období vydal i~svojí první povídku \wbook{Kobercové} (\wbook{The Carpet People}); satyrický román z~netradičního světa, po 21~letech ji vydal zrevidovanou s~poznámkou \wcite{Tato kniha měla dva autory a~oba jsou stejnou osobou.}\wline
 Jeho kariéru definoval až~humorný román \wbook{Barva~Kouzel}, který započal jednu z~nejslavnějších fantasy sérií \wbook{Úžasná~Zeměplocha} (čítajíc na 40 románů a~několik desítek dalších knih a~materiálů) a~po~jehož vydání se~stal spisovatelm takzvaně na~plný úvazek.
-Kromě psaní se ale věnoval i \whl{stavění počítačů}, \whl{sbíral meče}, \whl{pěstoval masožravé kytky} a \whl{vlastnil ukulele}. \wcite{Mám ukulele. Nehraji na něj, ale mám jej. To je podstatné.}
-Věnoval se i \whl{hraní počítačových her}, kdy například \wbook{Dooma} celé devatesátky nevypnul a i když zrovna dělal něco jiného, tak mu \wbook{Doom} běžel na~pozadí. \wcite{Po staletí se lidstvo snažilo bojovat se silami zla… modlitbou, půstem, dobrými skutky a~tak. Až~do~\wbook{Doomu} nikoho nenapadla dvouhlavňová brokovnice. Nažer  se olova, démone.}\wline
+Kromě psaní se ale věnoval i \whl{stavění počítačů}, \whl{sbíral meče}, \whl{pěstoval masožravé kytky} a \whl{vlastnil ukulele}. \wcite{Mám ukulele. Nehraji na něj, ale mám jej. To je podstatné.}\wline
+Věnoval se i \whl{hraní počítačových her}, kdy například \wbook{Dooma} celé devatesátky nevypnul a i když zrovna dělal něco jiného, tak mu \wbook{Doom} běžel na~pozadí.
+\wcite{Po staletí se lidstvo snažilo bojovat se silami zla… modlitbou, půstem, dobrými skutky a~tak. Až~do~\wbook{Doomu} nikoho nenapadla dvouhlavňová brokovnice. Nažer  se olova, démone.}\wline
 Začátkem milénia uspořádal sbírku pro pražské \wplace{Divadlo v Dlouhé}, které bylo zasaženo povodněmi.
 K tomuto divadlu měl vztah, protože převedlo do hrané formy hned několik jeho děl a osobně se poznal i s herci, když se~jel na~hry podívat.
 (\wname{Miroslav Táborský} má takto vtipnou historku, když mu pořádali zákulisní oslavu narozenin po~jedné takové hře.)\wline
 Začátkem desátých let mu byla diagnostikována vzácná forma \whl{Alzheimerovy choroby}, po jejíchž zjištění začal více podporovat výzkum demence a otevřeně podporoval eutanázii.
-Dva roky poté byl pasován na rytíře za přínos literatuře, do erbu si zvoli \wcite{Nunc Id Vides, Nunc Ne Vides} (\wcite{Teď to vidíš, Teď ne}), což je zároveň i heslo \wplace{Neviditelné Univerzity} z jeho románů.\wline
+Dva roky poté byl pasován na rytíře za přínos literatuře, do erbu si zvolil \wcite{Nunc Id Vides, Nunc Ne Vides} (\wcite{Teď to vidíš, Teď ne}), což je zároveň i heslo \wplace{Neviditelné Univerzity} z jeho románů.\wline
 Po jeho \whl{smrti} v roce 2015 stále vyšlo hned několik jeho rozepsaných skiců a knih, i přes jeho \whl{výslovné přání}, aby jeho nevydaná práce byla \whl{slisována parním válcem} -- slisována byla, aby mu bylo vyhověno, pak ale byla obnovena.
 }{1}{center}
 
 \vspace*{\fill}
 
 \wboxed{Úžasná Zeměplocha}{
-\lipsum[1-3]
+Série započala v 80. letech dvěma knížkama, \wbook{Barva kouzel} a \wbook{Lehké fantastično}, které tak daly vzniknou i~podsérii \wchar{o~Mrakoplašovi}.
+\wname{Pratchett} zde přistupoval k~Zeměploše jako k~prázdnému vesmíru, který zaplnil parodiemi a~svými nápady na netradičný pojetí.\wline
+Andokratická \wplace{Neviditelná~Univerzita}, kde mágové věnují své životy nepoužívaní magie.
+Ustrašený mág, co~si~na~svůj špičatý klobouk vlastnoručně vyšil \wcite{Mák}, kterého osud (či přesněji řečeno  \wchar{Dáma}, protože \wchar{Osud} s ním nemá nic společného) posílá na dobrodružství po celé Ploše.
+Nechybí ani \wchar{barbar Cohen}, možná budoucnost \whl{barbara Conana}, jakožto takřka nezabitelného hrdiny, který ale musí zestárnout, takže ho můžeme vidět pobíjet bandity, zatímco hledá svojí zubní protézu.
+Či taková \wchar{Eskarína}, která tuto andokratickou akademii naruší, když jí osud do kolébky přidá i mágskou hůl.
+Román \wbook{Čaroprávnost} ale nepředstavil jen mladou dívku stavící se do cesty patriárchální společnosti, ale i \wchar{Bábi Zlopočasnou}, jakožto zástupkyni sesterstva čarodějek, které zase magii nepoužívají, protože vědí, že by v ní byly až moc dobré.\wline
+Od parodií se ale \wbook{Zeměplocha} dostala dál, romány jako \wbook{Pyramidy}, \wbook{Malí bohové} a \wbook{Mort} začaly prohlubovat filozofii samotného světa.
+Objevuje se zde satirické znázornění organizovaných náboženských skupin až fanatismu.
+Více se projevuje humanismus a kritika institucí. \wchar{Mrakoplaš} se zde setkává s korporátním peklem (a sám je považován za démona); \wchar{Mort} porušuje všechny vesmírné zákony, aby zachránil princeznu; \wchar{trojice čarodějek} napomáhá svrhnout zlého panovníka, kdy se objevují narážky jak na klasické dramatiky, tak ale i pohádky; mestský stát \wplace{Ankh-Morpork} dostává právoplatného dědice trůnu, co srazí draka, jen aby panování přenechal \wchar{Vetinarimu}.\wline
+Ve zlaté éře \wbook{Zeměplochy} se \wname{Pratchett} věnoval hlavně příběhům s velice lidskými motivy.
+Do odlehlých krajů, vysoce inspirovanými \wplace{Afrikou} a \wplace{Austrálií} se vydává \wchar{Mrakoplaš}, ale s ním tentokráte i celý sbor akademiků a objeví se i \wchar{Smrť}.\wline
+{\textbf{\color{WPP}\guilsinglright} \textsc{Možná by bylo jednodušší, kdybych požádal o seznam neškodných rostlin a tvorů výše zmíněného světadílu?}
+(...)
+\enquote{{\color{WPP}\enquote{Nějaké ovce}},} přečetl nahlas. \textbf{\color{WPP}\guilsinglleft}}\wline
+Ale \wname{Pratchett} neurážel jenom \wplace{Austrálii}, skrz \wchar{kapitána Elánia} prozkoumával rozdíly mezi společenskými třídami, řešil problémy s rasismem vyzobrazených na trpaslících a trollech;
+objevuje se i \wchar{Tonička Bolavá}, jako jediná zeměplošská série psaná pro mladší publikum, což \wname{Pratchettovi} nikdy moc nešlo.\wline
+Hlavní důraz byl ale stejně kladen na sérii \wname{Hlídky} a na ní navazující sérii s \wchar{Vlahošem von Rosretem}, ve kterých Plocha projde industriální revolucí a díky tomu i snadnější narážky na kapitalismus.
+Po zjištění \whl{Alzheimerovy choroby} se rozhodl Ploše dát řádnou pozitivní budoucnost.
+Utlačované menšininy se zařazují do společnosti.
+Staré postavy umírají (či jiným způsobem odcházejí), aby předaly žezlo mladým.
+Noví bohové nahrazují bohy staré (mezi nimi i~\wchar{Matka Lokomotiva}).
 }{1}{center}
 
 \end{document}
