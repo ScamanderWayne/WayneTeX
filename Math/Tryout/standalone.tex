@@ -1,0 +1,29 @@
+\documentclass[varwidth, border=5mm, preview]{standalone}
+
+% Math support
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\usepackage{fontspec}
+\usepackage{unicode-math}
+\setmainfont{Tex Gyre Termes}
+\setmathfont{Tex Gyre Termes Math}
+
+\begin{document}\fontsize{18pt}{18pt}\selectfont
+první rok:\\
+\[
+\dfrac{
+  \text{pořizovací cena}
+}{
+  \text{koeficient}
+}
+\]\\
+další roky:\\
+\[
+\dfrac{
+  2 \ast \text{zůstatkové ceny}
+}{
+  \text{koeficient} - \text{počet let odpisování}
+}
+\]
+\end{document}

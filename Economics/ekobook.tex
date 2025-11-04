@@ -348,9 +348,10 @@ Tato práce je licencována pod \href{https://creativecommons.org/licenses/by-nc
 \setlength{\headheight}{14.5pt} % Ensure sufficient header height to avoid warnings
 
 \usepackage[
-	linktoc=all,
-	allbordercolors={WPP},
-	pdfborderstyle={/S/U/W 1},
+	%linktoc=all,
+	%allbordercolors={WPP},
+	%pdfborderstyle={/S/U/W 1},
+	hidelinks,
     pdftitle={Maturitní otázky Ekonomika},       % PDF metadata: title
     pdfauthor={Libor Halík},         % PDF metadata: author
     pdfstartview=FitH,            % Fit page width to window
@@ -398,6 +399,28 @@ Tato práce je licencována pod \href{https://creativecommons.org/licenses/by-nc
 	}%
 }
 
+% Redefine \UrlFont to use normal text font
+\renewcommand{\UrlFont}{\normalfont\small}
+\NewDocumentCommand{\wlink}{m m}{%
+	\IfDarkModeTF{%
+		\begingroup%
+		\hypersetup{%
+			allbordercolors={WPP},%
+			pdfborderstyle={/S/U/W 1},%
+			colorlinks=false,%
+			linkbordercolor=WPP%
+			}%
+		\href{%
+			#1%
+			}{%
+			#2%
+			}%
+		\endgroup%
+	}{%
+	#2 (\url{#1})%
+	}%
+}
+
 \newcommand{\pageornament}[3]{% 
 \begin{tikzpicture}[remember picture, overlay] 
 \color{#2}
@@ -410,6 +433,19 @@ Tato práce je licencována pod \href{https://creativecommons.org/licenses/by-nc
 \node[anchor=south east] at (current page.south east){% 
     \pgfornament[width=#3,symmetry=c]{#1}}; 
 \end{tikzpicture} }
+
+\NewDocumentCommand{\setgreen}{}{%
+	\IfDarkModeTF{\definecolor{WPP}{HTML}{5CDB6B}}{\definecolor{WPP}{HTML}{0D3B12}}
+}
+\NewDocumentCommand{\setblue}{}{%
+	\IfDarkModeTF{\definecolor{WPP}{HTML}{39DDD5}}{\definecolor{WPP}{HTML}{0A3D3B}}
+}
+\NewDocumentCommand{\setpurple}{}{%
+	\IfDarkModeTF{\definecolor{WPP}{HTML}{EA9FE1}}{\definecolor{WPP}{HTML}{601557}}
+}
+\NewDocumentCommand{\setred}{}{%
+	\IfDarkModeTF{\definecolor{WPP}{HTML}{FF8A8A}}{\definecolor{WPP}{HTML}{4D0000}}
+}
 
 \usepackage{moresize}
 \usepackage{fontspec}
@@ -425,4 +461,6 @@ Tato práce je licencována pod \href{https://creativecommons.org/licenses/by-nc
 	\subfile{08kapital}
 	\subfile{09majetek}
 	\subfile{10daneutrpeni}
+	\subfile{11hpodniku}
+	\subfile{12cp}
 \end{document}

@@ -1,0 +1,40 @@
+\documentclass[varwidth, border=5mm, preview]{standalone}
+
+% Math support
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\usepackage{fontspec}
+\usepackage{unicode-math}
+\setmainfont{Tex Gyre Termes}
+\setmathfont{Tex Gyre Termes Math}
+
+\begin{document}\fontsize{18pt}{18pt}\selectfont
+Vstupní cena: 753 753\\
+{\fontsize{8pt}{8pt}\selectfont
+první rok:\\
+\[
+\dfrac{
+  \text{pořizovací cena}
+}{
+  \text{koeficient}
+}
+\]\\
+další roky:\\
+\[
+\dfrac{
+  2 \ast \text{zůstatkové ceny}
+}{
+  \text{koeficient} - \text{počet let odpisování}
+}
+\]
+}
+\begin{equation}
+\begin{aligned}
+&\text{roky odpisování} &&\text{vzorec} &&\text{roční odpis} &&\text{oprávky} &&\text{zůstatková cena}\\
+&\text{1. rok:} &&\dfrac{753753}{5} &&150751 &&150751 &&603002\\
+&\text{2. rok:} &&\dfrac{2 \ast 603002}{6 - 1} &&241201 &&391952 &&361801\\
+&\text{3. rok:} &&b^2 &&= bc
+\end{aligned}
+\end{equation}
+\end{document}

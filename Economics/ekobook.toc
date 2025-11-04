@@ -8,3 +8,5 @@
 \contentsline {section}{\numberline {\Large \color {WPP}8}Kapitálový trh \TODO }{10}{section.8}%
 \contentsline {section}{\numberline {\Large \color {WPP}9}Majetek podniku \TODO }{11}{section.9}%
 \contentsline {section}{\numberline {\Large \color {WPP}10}Daňová soustava}{12}{section.10}%
+\contentsline {section}{\numberline {\Large \color {WPP}11}Hospodaření podniku \TODO }{14}{section.11}%
+\contentsline {section}{\numberline {\Large \color {WPP}12}Obchodování s cennými papíry \TODO }{15}{section.12}%
