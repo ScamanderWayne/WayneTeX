@@ -1,0 +1,32 @@
+\documentclass{standalone}
+\usepackage{tkz-euclide}
+
+\begin{document}
+\begin{tikzpicture}
+	%borders
+	\draw (-5,-5) rectangle (5,5);
+	\tkzDefPoint(-5,0){w}
+	%\tkzLabelPoint[right](w){$west$}
+	\tkzDefPoint(0,5){n}
+	%\tkzLabelPoint[below](n){$north$}
+	\tkzDefPoint(5,0){e}
+	%\tkzLabelPoint[left](e){$east$}
+	\tkzDefPoint(0,-5){s}
+	%\tkzLabelPoint[above](s){$south$}
+	%\tkzDrawLines(w,e n,s)
+	\tkzDrawSegments[dotted](w,e n,s)
+	
+	%initial circle
+	\tkzDefPoint(0,0){O}
+	\tkzDefPoint(4.9,0){k}
+	\tkzLabelPoint[left](O){$O$}
+	\tkzLabelPoint[left](k){$k$}
+	\tkzDrawCircle(O,k)
+	
+	\tkzInterLC(O,k)(w,e)
+	\tkzGetFirstPoint{k1}
+	\tkzGetSecondPoint{k2}
+	\tkzLabelPoint[right](k1){$k1$}
+	\tkzLabelPoint[left](k2){$k2$}
+\end{tikzpicture}
+\end{document}

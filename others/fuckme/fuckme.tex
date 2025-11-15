@@ -121,20 +121,24 @@
     pdfduplex=DuplexFlipShortEdge % Double-sided printing, flip on short edge
 ]{hyperref}
 
-\begin{document}\fontsize{10pt}{10pt}\selectfont\setlength\parindent{0em}
-% ADRESA JEDNA
-jméno\\
-adresa\\
-město\\
-mobil\\
-e-mail\\
+\usepackage{fontspec}
+\setmainfont{Tex Gyre Termes}
+\newfontfamily\signaturefont{MrDafoe}
+
+\begin{document}\fontsize{10pt}{10pt}\selectfont\setlength\parindent{0em}\setlength{\parskip}{1em}
+% ADRESA MOJE
+Libor Halík\\
+Nepovim 42\\
+541 02{ }{ }Trutnov\\
++365 73 73 73 230\\
+halik@ssoh.cz\\
 \vspace{2em}
 
-%ADRESA DVA
-společnost\\
-jméno\\
-adresa\\
-město\\
+%ADRESA PRÁCE
+PŘEDVÝBĚR.CZ a. s.\\
+František Boudný\\
+Na Kozačce 1289/7\\
+120 00{ }{ }Praha 2 -- Vinohrady\\
 \vspace{1em}
 
 %KDE
@@ -144,14 +148,18 @@ Janské Lázně 22. října 2025
 \vspace{1em}
 
 %NADPIS
-\subsubsection*{Zájem o místo XXX}
-Vážané něco,\par
-samotný dopis HERE\par
+\subsubsection*{Zájem o místo Specialisty technické dokumentace}
+Vážený pane,
+
+s velkým zájmem jsem narazil na Vaši nabídku pozice Specialista technické dokumentace – Zdravotnické prostředky na portálu Prace.cz. Jsem 20letý absolvent střední ekonomické školy s maturitou a právě teď hledám první skutečnou příležitost, kde bych mohl uplatnit svou pečlivost, technické myšlení a chuť učit se novým věcem. I když zatím nemám žádné pracovní zkušenosti, celý život mě baví rozkládat věci na součástky, chápat, jak fungují, a pak to umět jasně popsat – ať už v návodech, které jsem si psal sám pro sebe, nebo ve školních projektech.
+
+Pracovat na dokumentaci pro zdravotnické prostředky mě láká proto, že vím, jak důležité je, aby všechno sedělo na milimetr a bylo srozumitelné pro lidi, kteří s tím zařízením zachraňují životy. Jsem připravený rychle se učit normy, postupy i software, který používáte, a vím, že moje čerstvá hlava bez zažitých stereotypů může být výhoda. Pokud mi dáte šanci, slibuju, že budu ten, kdo se ptá na detaily, kontroluje každý řádek a doručí práci včas.
+
+Děkuji za zvážení mé přihlášky. Rád přijdu na pohovor a ukážu, že i bez zkušeností mám drive a odhodlání, které u vás najdou uplatnění. Těším se na příležitost se s Vámi setkat.
+
 S pozdravem\par
 \vspace{0.5em}
-{\fontfamily{calligra}\selectfont Libor Halík}\par
-\vspace{0.5em}
-případné přílohy
+{\signaturefont\selectfont\color{cyan} Libor Halík}\par
 \vfill
 \begin{flushright}
 \href{https://www.prace.cz/nabidka/2000803587}{\wloss}
