@@ -1,36 +1,104 @@
 \documentclass[ekobook.tex]{subfiles}
 
 \begin{document}\setpurple
-\lsection{Obchodování s cennými papíry \TODO}
+\lsection{Obchodování s cennými papíry}
+\begin{multicols}{2}
 \qaw{Vyjmenuj charakteristické znaky burzy}{%
-něco
+{\color{antiDP}\faCaretRight}{\color{WPP}Burza je zvláštní forma trhu s následujícími znaky}{\color{antiDP}\faCaretLeft}\\
+\begin{itemize}[label=\textcolor{WPP}{$\hookrightarrow$}]
+\item kupující \texthl{nemusí} toto zboží \texthl{vidět}
+\item zboží má \texthl{zaručenou kvalitu} a \texthl{pravost}
+\item obchody se konají v \texthl{určitou dobu} a na \texthl{určitém místě}, \texthl{pravidelně}
+\item obchody podléhají \texthl{přesným pravidlům} stanovených \texthl{organizátory}, stejně jako \texthl{zákony}
+\item účastníky burzy je jen \texthl{omezený počet lidí} -- \emph{makléři}; \emph{burzovní dohodci}; všichni, co \texthl{mají povolení od organizátorů}
+\end{itemize}
 }
+\columnbreak
 \qaw{Popiš všeobecné druhy burz}{%
-něco
+Obchoduje se zde s \texthl{více druhy zboží}, jako jsou \emph{cenné papíry} (akcie, směnky, ...), \emph{zemědělské plodiny}, \emph{drahé kovy} atd.
 }
 \qaw{Popiš specializované druhy burz}{%
-zbožové, devizové, burzu cenných papírů
+\begin{itemize}[label={\color{WPP}\faSlackHash}]
+\item \textbl{zbožové} (komoditní) -- káva, kakao, obilí, maso, ropa, drahé kovy
+\item \textbl{devizové} -- obchod s devizami založené na pohybu kurzů
+\item \textbl{burzu cenných papírů} -- cenné papíry kapitálového trhu (dlouhodobé), \emph{s CP peněžního trhu se neobchoduje}
+\end{itemize}
 }
+\end{multicols}
 \qaw{Co je to burza}{%
-něco
+Místo, kde se setkává \texthl{Nabídka} s \texthl{Poptávkou}; vytváří \texthl{transparentní prostředí} pro obchod; společnost vstupem na burzu \texthl{získává kapitál} a \texthl{určitou prestiž}.
 }
 \qaw{Druhy burz v ČR}{%
-Jak může fyzická osoba obchodovat na burze
+\begin{itemize}
+\item[ ] \textbl{BCCP Praha, a. s.} -- burza cenných papírů
+\item[ ] \textbl{RM-systém} -- cenné papíry
+\item[ ] \textbl{Energetická burza Praha} -- obchody velkoodběratelů s elektřinou
+\end{itemize}
 }
+\qaw{Jak může fyzická osoba obchodovat na burze}{%
+Fyzická osoba může obchodovat na burze \texthl{přes burzovního makléře}, se kterým \texthl{má uzavřenou smlouvu}; může obchodovat on-line, platí \texthl{poplatek z objemu} obchodu makléři; majitel akcie \texthl{je evidován} v \texthl{centrálním depozitáři cenných papírů}.
+}
+\begin{multicols}{2}
 \qaw{BCPP a.s.}{%
-něco
+Vznikla \texthl{roku 1993} a je akciovou společností.
+Řídí se \texthl{Zákonem o burze cenných papírů} č. 214/92sb.
+Má vnitřní \texthl{Burzovní pravidla} a \texthl{Burzovní řád}:\\
+nejmenší obchodovatelné množství 1 lot;
+lot je standardizované množství akcií (kupříkladu 5, 100, 1000);
+účtuje si poplatek z objemu obchodu.
+Obchoduje se zde každý den.
 }
-\qaw{RM systém}{%
-něco
+\columnbreak
+\qaw{RM-systém}{%
+Je akciovou společností a druhou burzou v České Republice.
+Obchoduje se zde denně, ale pro menší objem obchodů.
 }
+\end{multicols}
+\wbreak
 \qaw{Co je to cenný papír}{%
-něco
+Listina (či elektronický záznam), která \texthl{ztělesňuje majetková práva} (jako je právo na podíl na zisku, splacení dlužné částky, ...).
+Typickými příklady jsou \texthl{akcie}, \texthl{dluhopisy} nebo \texthl{směnky}.
 }
 \qaw{Akcie}{%
-něco
+Představuje \texthl{podíl na majetku} a. s.;
+právo \texthl{na účasti} a \texthl{hlasování} na valné hromadě;
+právo na odkup akcií v případě nabídky;
+\texthl{podíl na likvidačním zůstatku}.
 }
-\qaw{Vysvětli}{%
-kapitálový výnos, dividendový výnos, kurzovní hodnota
+\qaw{Vysvětli:}{%
+\setlength{\multicolsep}{0pt}% Remove vertical space before and after
+\setlength{\columnsep}{2em}% Remove space between columns
+\setlength{\leftskip}{0em}%
+\SetMCRule{
+  custom-line={\path[WPP] (TOP) to [ornament=88] (BOT);}, % Use ornament 88
+  width=0.4pt, % Ensure rule is drawn (width > 0pt)
+  extend-top=0pt, % Shrink rule at top by 24pt
+  extend-bot=0pt % Shrink rule at bottom by 8pt
 }
+\hspace*{2em}
+\parbox{\dimexpr\textwidth-2em}{
+\begin{multicols}{2}
+\textbl{kapitálový výnos}
+-- rozdíl mezi nákupním a prodejním kurzem\\
+\vspace{\fill}\\
+\textbl{dividendový výnos}
+-- podíl na zisku a. s.\\
+\vspace{\fill}\\
+\textbl{kurzovní hodnota}
+-- aktuální cena, za kterou se prodává\\
+\columnbreak\\
+{\color{antiDP}$\faGreaterThan$}\textbl{druhy akcií}
+\begin{itemize}[label=\textcolor{WPP}{$\hookrightarrow$}]
+\item \texthl{na jméno} -- akcie je napsána na konkrétní osobu
+\item \texthl{na majitele} -- akcie je vázaná na toho, komu fyzicky patří papír u listinných, nebo je zapsán jako majitel u zaknihovaných
+\item \texthl{listinné} -- existuje jako tištěný list
+\item \texthl{zaknihované} -- existuje jako elektronický zápis
+\item \texthl{kmenové} -- standardní akcie s plnými hlasovacími právy
+\item \texthl{prioritní} -- přednost při výplatě dividendy, obvykle omezené nebo žádné hlasovací právo
+\end{itemize}
+{\color{antiDP}$\faGreaterThan$}\textbl{emisní ážio}
+-- částka, o kterou je vyšší nominální hodnota
+\end{multicols}
+}}
 \wpage
 \end{document}

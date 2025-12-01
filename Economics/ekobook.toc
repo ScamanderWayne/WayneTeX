@@ -10,5 +10,7 @@
 \contentsline {section}{\numberline {\Large \color {WPP}9}Majetek podniku \TODO }{12}{section.9}%
 \contentsline {section}{\numberline {\Large \color {WPP}10}Daňová soustava}{13}{section.10}%
 \contentsline {section}{\numberline {\Large \color {WPP}11}Hospodaření podniku \TODO }{15}{section.11}%
-\contentsline {section}{\numberline {\Large \color {WPP}12}Obchodování s cennými papíry \TODO }{16}{section.12}%
+\contentsline {section}{\numberline {\Large \color {WPP}12}Obchodování s cennými papíry}{16}{section.12}%
 \contentsline {section}{\numberline {\Large \color {WPP}13}Podnikatel a banka \TODO }{17}{section.13}%
+\contentsline {section}{\numberline {\Large \color {WPP}14}Odměňování a mzda \TODO }{18}{section.14}%
+\contentsline {section}{\numberline {\Large \color {WPP}15}Marketingový mix \TODO }{19}{section.15}%
