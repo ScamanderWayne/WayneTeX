@@ -1,0 +1,26 @@
+\documentclass{article}
+\usepackage{geometry}
+\geometry{a4paper, left=1cm, right=1cm, top=1cm, bottom=1cm, landscape}
+\usepackage{nopageno}
+\usepackage[czech]{babel}
+\usepackage{csquotes}
+\usepackage{moresize}
+\usepackage{fontspec}
+\setmainfont{Tex Gyre Termes}
+\usepackage{xcolor}
+\definecolor{WPP}{HTML}{702632}%lightmode wine
+\NewDocumentCommand{\wbox}{m}{%
+	\colorbox{WPP}{\color{white}#1}%
+}
+\NewDocumentCommand{\textbl}{m}{%
+	{\textbf{\color{WPP}#1}}%
+}
+\begin{document}\fontsize{8pt}{10pt}\selectfont\setlength\parindent{0em}
+\vspace*{\fill}
+\colorbox{WPP}{	\color{white}1. Slovní druhy v češtině:} \textbl{podstatné jméno}; \textbl{přídavné jméno}; \textbl{zájmeno}; \textbl{číslovka}; \textbl{sloveso}; \textbl{příslovce}; \textbl{předložka}; \textbl{spojka}; \textbl{částice}; \textbl{citoslovce} --
+\wbox{2. Podstatná jména dělíme podle významu na:} \textbf{vlastní}; \textbf{obecná}; \textbf{konkrétní}; \textbf{abstraktní}; \textbf{látková}; \textbf{hromadná}; \textbf{pomnožná} (plurália tantum) --
+\wbox{3. Příklady:} \textbf{Pomnožná:} dveře, nůžky, kalhoty; \textbf{Látková:} voda, mléko, písek; \textbf{Hromadná:} listí, dřeví, lid --
+\wbox{4. Stupňování:} \emph{\enquote{Změna přídavných jmen a příslovcí podle intenzity vlastnosti. Stupňujeme: přídavná jména a příslovce odvozená od přídavných jmen.}} 1. stupeň \textbl{(pozitiv)}: hezký, rychle; 2. stupeň \textbl{(komparativ)}: hezčí, rychleji; 3. stupeň \textbl{(superlativ)}: nejhezčí, nejrychleji --
+\wbox{5. Druhy zájmen + 3 příklady:} \textbf{Osobní:} já, ty, on; \textbf{Přivlastňovací:} můj, tvůj, jeho; \textbf{Ukazovací:} ten, tento, tamten; \textbf{Tázací:} kdo, co, který; \textbf{Vztažná:} který, jenž, co; \textbf{Neurčitá:} někdo, něco, nějaký; \textbf{Záporná:} nikdo, nic, žádný --
+\wbox{6. Čtyři druhy číslovek + 3 příklady:} \textbf{Základní:} jeden, dva, deset; \textbf{Řadové:} první, druhý, desátý; \textbf{Druhové:} jedny, dvojí, desaterý; \textbf{Násobné:} jednou, dvakrát, desetkrát
+\end{document}

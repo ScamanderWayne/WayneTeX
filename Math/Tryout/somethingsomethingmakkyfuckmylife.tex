@@ -1,0 +1,48 @@
+\documentclass[12pt,varwidth, border=5mm, preview]{standalone}
+\usepackage{amsmath}
+\usepackage{stix} % for underbrace
+\usepackage{physics}
+\usepackage{nopageno}
+\usepackage[left=1cm,right=1cm,top=1.5cm,bottom=1.5cm]{geometry}
+\usepackage{xcolor}
+
+\NewDocumentCommand{\red}{}{%
+\color{red}
+}
+\NewDocumentCommand{\cyan}{}{%
+\color{cyan}
+}
+
+\begin{document}
+\setlength{\parindent}{0pt}
+
+\begin{equation*}
+\begin{aligned}
+\dfrac{\dfrac{\red x}{\cyan x+y}+\dfrac{\cyan y}{\red x-y}}{\dfrac{x}{x-y}-\dfrac{y}{x+y}}
+&=
+\dfrac{\dfrac{{\red x\cdot (x-y)} + {\cyan y\cdot (x+y)}}{{\cyan(x+y)}\cdot{\red(x-y)}}}{\dfrac{x}{x-y}-\dfrac{y}{x+y}}\\
+\vspace{1em}\\
+\dfrac{\dfrac{x\cdot(x-y) + y\cdot(x+y)}{(x+y)\cdot(x-y)}}{\dfrac{\red x}{\cyan x-y}-\dfrac{\cyan y}{\red x+y}}
+&=
+\dfrac{\dfrac{x\cdot(x-y) + y\cdot(x+y)}{(x+y)\cdot(x-y)}}{\dfrac{{\red x\cdot(x+y)}-{\cyan y\cdot(x-y)}}{{\cyan(x-y)}\cdot{\red(x+y)}}}\\
+\vspace{1em}\\
+\dfrac{\dfrac{{\red x\cdot(x-y)} + {\cyan y\cdot(x+y)}}{(x+y)\cdot(x-y)}}{\dfrac{{\red x\cdot(x+y)}-{\cyan y\cdot(x-y)}}{{(x-y)}\cdot{(x+y)}}}
+&=
+\dfrac{\dfrac{{\red (x^2-xy)} + {\cyan (xy+y^2)}}{(x+y)\cdot(x-y)}}{\dfrac{{\red (x^2+xy)}-{\cyan (xy-y^2)}}{{(x-y)}\cdot{(x+y)}}}\\
+\vspace{1em}\\
+\dfrac{\dfrac{{\red (x^2-xy)} + {\cyan (xy+y^2)}}{(x+y)\cdot(x-y)}}{\dfrac{{\red (x^2+xy)}-{\cyan (xy-y^2)}}{{(x-y)}\cdot{(x+y)}}}
+&=
+\dfrac{\dfrac{{\red x^2} + {\cyan y^2}}{(x+y)\cdot(x-y)}}{\dfrac{{\red x^2}+{\cyan y^2}}{{(x-y)}\cdot{(x+y)}}}\\
+\vspace{1em}\\
+\dfrac{\dfrac{{x^2} + {y^2}}{{\red(x+y)}\cdot{\cyan(x-y)}}}{\dfrac{{x^2}+{y^2}}{{\cyan(x-y)}\cdot{\red(x+y)}}}
+&=
+{\dfrac{{x^2} + {y^2}}{{\red(x+y)}\cdot{\cyan(x-y)}}}\cdot{\dfrac{{\cyan(x-y)}\cdot{\red(x+y)}}{{x^2}+{y^2}}}\\
+\vspace{1em}\\
+\dfrac{\red{x^2} + {y^2}}{1}\cdot{\dfrac{1}{\red{x^2}+{y^2}}}
+&=
+\dfrac{1}{1}\cdot\dfrac{1}{1}\\
+\vspace{1em}\\
+= &1
+\end{aligned}
+\end{equation*}
+\end{document}
