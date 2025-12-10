@@ -1,0 +1,70 @@
+\documentclass[main.tex]{subfiles}
+
+\begin{document}\pagestyle{empty}
+
+%─────────────────────────────
+% 1. STRANA – titulní s celostránkovou fotkou
+%─────────────────────────────
+\clearpage
+\thispagestyle{empty}
+
+% Celostránková fotka na pozadí (nahraď placeholder.jpg skutečným souborem)
+\AddToShipoutPictureBG*{\includegraphics[width=\paperwidth,height=\paperheight]{placeholder}};
+
+\vspace*{0.62\textheight}   % posune text do spodní třetiny (můžeš doladit)
+
+\begin{center}
+    \color{white}\Huge\bfseries\sffamily
+    \docname\par
+    \vspace{2em}
+    \color{white}\LARGE
+    \wayne                  % tvé jméno = autor tohoto českého vydání
+\end{center}
+
+\clearpage
+
+%─────────────────────────────
+% 2. STRANA – tiráž / impressum (pravý dolní roh)
+%─────────────────────────────
+\clearpage
+\thispagestyle{empty}
+
+\vspace*{\fill}    % odtlačí vše dolů
+
+\hfill\begin{minipage}{0.6\textwidth}
+\raggedleft               % zarovná text uvnitř minipage doprava
+\parindent=0pt            % žádné odsazení odstavců (v tiráži to vypadá lépe)
+
+Autor původního textu: \docauth{} (1970) je německý reportér a spisovatel.\\
+Studoval islámská studia, politologii a novinařství na univerzitách v Berlíně a Damašku.\\
+Dlouholetý kmenový autor týdeníku \emph{Die Zeit}.
+
+\bigskip
+Autor fotografií: Max Mustermann (1985) – německý dokumentární fotograf,\\
+držitel World Press Photo 2019 v kategorii Portrét.
+
+\bigskip
+Reportáž původně vyšla v magazínu \emph{Die Zeit} č. 23/2014.\\
+Pro toto české vydání byla mírně krácena a jazykově upravena.
+
+\bigskip
+\nocite{bauer2014}
+\printbibliography[heading=none]
+
+\end{minipage}
+
+\clearpage
+
+%─────────────────────────────
+% 3. STRANA – obsah
+%─────────────────────────────
+\thispagestyle{empty}
+
+% Přejmenujeme obsah na „Obsah“ a dáme stejný font jako kapitoly
+\renewcommand{\contentsname}{Obsah}
+\tableofcontents
+
+\thispagestyle{empty}
+\clearpage
+\thispagestyle{empty}
+\end{document}

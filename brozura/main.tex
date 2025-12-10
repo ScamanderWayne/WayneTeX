@@ -1,11 +1,7 @@
-\documentclass{article}
+\documentclass[a4paper]{article}
 \usepackage[czech]{babel}
 \usepackage{geometry}
-\geometry{a4paper, 
-          left=1cm, right=1cm, top=1cm, 
-          bottom=1cm, 
-          includefoot, 
-          heightrounded}
+\geometry{a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm, includefoot, heightrounded}
 \usepackage{enumitem}
 \usepackage{parskip}
 %\usepackage{nopageno}
@@ -18,6 +14,14 @@
 \usepackage{csquotes}
 \usepackage{multicol}
 \usepackage{wrapfig}
+\usepackage{eso-pic}
+
+\usepackage[backend=biber,
+            style=numeric,          % ← číslované citace [1], [2]…
+            citestyle=numeric,      % ← jak se cituje v textu
+            sorting=none,           % ← DŮLEŽITÉ: pořadí podle prvního použití!
+            hyperref=true]{biblatex}
+\addbibresource{kulhavy.bib}
 
 \usepackage{amsmath}
 \usepackage{mathabx}
@@ -29,7 +33,7 @@
 \usepackage{subfiles}
 
 \usepackage{darkmode}
-\enabledarkmode
+%\enabledarkmode
 
 \usepackage{hologo}
 
@@ -390,6 +394,27 @@ Tato práce je licencována pod \href{https://creativecommons.org/licenses/by-nc
   \fi
 }
 
+\NewDocumentCommand{\isitfour}{}{
+  % We only care about pages 1–20, higher pages will automatically get a blank if needed
+  \ifnum\value{page}=4
+  \else
+    \ifnum\value{page}=8
+    \else
+      \ifnum\value{page}=12
+      \else
+        \ifnum\value{page}=16
+        \else
+          \ifnum\value{page}=20
+          \else
+            % page is NOT 4,8,12,16 or 20 → insert the blank page
+            \blankpage
+          \fi
+        \fi
+      \fi
+    \fi
+  \fi
+}
+
 \NewDocumentCommand{\wpage}{}{%
 	\IfDarkModeTF{%
 	\newpage%
@@ -447,24 +472,36 @@ Tato práce je licencována pod \href{https://creativecommons.org/licenses/by-nc
 	\IfDarkModeTF{\definecolor{WPP}{HTML}{FF8A8A}}{\definecolor{WPP}{HTML}{4D0000}}
 }
 
+\makeatletter
+\newcommand{\padtofour}{%
+  \newpage %<---!
+  \count@=\the\c@page%<---
+  \@tempcnta=\count@
+  \divide\@tempcnta by 4
+  \multiply\@tempcnta by 4
+  \count@=\numexpr\count@-\@tempcnta\relax
+  \ifnum\count@>0
+    \pagestyle{empty}
+    \loop\ifnum\count@<4
+      \null\clearpage
+      \advance\count@\@ne
+    \repeat
+  \fi
+}
+
+\makeatother
+
+% ====== Nastavení názvu, autora a vydavatele ======
+\newcommand{\docname}{placeholder}
+\newcommand{\docauth}{placeholder}
+\newcommand{\wayne}{placeholder}  % sem později dáš své jméno a příjmení
+% =================================================
+
 \usepackage{moresize}
 \usepackage{fontspec}
 \setmainfont{Tex Gyre Termes}
-\begin{document}\fontsize{10pt}{10pt}\selectfont\setlength\parindent{0em}
-	\subfile{00TOC} %finished
-	\subfile{01pojmy}
-	\subfile{02pojisteni}
-	\subfile{03management}
-	\subfile{04logistika}
-	\subfile{05korporace}
-	\subfile{06banky} %finished
-	\subfile{07nhospodarstvi} %finished
-	\subfile{08kapital}
-	\subfile{09majetek}
-	\subfile{10daneutrpeni} %finished
-	\subfile{11hpodniku}
-	\subfile{12cp}
-	\subfile{13pab}
-	\subfile{14odmenymzda}
-	\subfile{15marketmix}
+\begin{document}\setlength{\parskip}{0pt}\setlength{\parindent}{1.5em}
+	\subfile{frontmatter}
+	\subfile{body}
+	\subfile{end}
 \end{document}

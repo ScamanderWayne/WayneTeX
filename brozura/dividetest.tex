@@ -1,0 +1,30 @@
+% ─────────────────────────────────────────────────────────────
+\documentclass[12pt,a4paper]{article}
+\usepackage{lipsum}     % dummy text
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+
+% ──────  Correct way (no everypage package needed)  ──────
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}  % clear all headers/footers
+
+% Put the calculation in the footer (or header – your choice)
+\fancyfoot[C]{%
+  \large
+  Page \thepage \quad
+  $\left\lfloor \frac{\text{page}}{4}\right\rfloor
+   = \the\numexpr\value{page}/4\relax$ \quad
+  remainder = \the\numexpr\value{page}\%4\relax
+}
+
+% Optional: nice line above the footer
+\renewcommand{\footrulewidth}{0.4pt}
+
+\begin{document}
+
+% Generate lots of pages automatically
+\lipsum[1-100]   % this gives you about 18–20 pages depending on your font/margins
+
+\end{document}
+% ─────────────────────────────────────────────────────────────
