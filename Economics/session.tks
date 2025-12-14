@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TexmakerSession quickmode="11">
-    <document bookmark1="0" bookmark2="0" bookmark3="0" file="/home/scamanderwayne/Documents/GitHub/WayneTeX/Economics/03management.tex" hasfocus="false" line="0" master="false"/>
     <document bookmark1="0" bookmark2="0" bookmark3="0" file="/home/scamanderwayne/Documents/GitHub/WayneTeX/Economics/00TOC.tex" hasfocus="false" line="0" master="false"/>
-    <document bookmark1="0" bookmark2="0" bookmark3="0" file="/home/scamanderwayne/Documents/GitHub/WayneTeX/Economics/02pojisteni.tex" hasfocus="false" line="0" master="false"/>
-    <document bookmark1="0" bookmark2="0" bookmark3="0" file="/home/scamanderwayne/Documents/GitHub/WayneTeX/Economics/01pojmy.tex" hasfocus="false" line="8" master="false"/>
-    <document bookmark1="0" bookmark2="0" bookmark3="0" file="/home/scamanderwayne/Documents/GitHub/WayneTeX/Economics/04logistika.tex" hasfocus="false" line="0" master="false"/>
-    <document bookmark1="0" bookmark2="0" bookmark3="0" file="/home/scamanderwayne/Documents/GitHub/WayneTeX/Economics/06banky.tex" hasfocus="false" line="0" master="false"/>
-    <document bookmark1="0" bookmark2="0" bookmark3="0" file="/home/scamanderwayne/Documents/GitHub/WayneTeX/Economics/05korporace.tex" hasfocus="false" line="0" master="false"/>
-    <document bookmark1="0" bookmark2="0" bookmark3="0" file="/home/scamanderwayne/Documents/GitHub/WayneTeX/Economics/07nhospodarstvi.tex" hasfocus="false" line="0" master="false"/>
-    <document bookmark1="0" bookmark2="0" bookmark3="0" file="/home/scamanderwayne/Documents/GitHub/WayneTeX/Economics/09majetek.tex" hasfocus="false" line="0" master="false"/>
-    <document bookmark1="0" bookmark2="0" bookmark3="0" file="/home/scamanderwayne/Documents/GitHub/WayneTeX/Economics/08kapital.tex" hasfocus="false" line="0" master="false"/>
-    <document bookmark1="0" bookmark2="0" bookmark3="0" file="/home/scamanderwayne/Documents/GitHub/WayneTeX/Economics/10daneutrpeni.tex" hasfocus="false" line="0" master="false"/>
-    <document bookmark1="0" bookmark2="0" bookmark3="0" file="/home/scamanderwayne/Documents/GitHub/WayneTeX/Economics/ekobook.tex" hasfocus="true" line="466" master="true"/>
-    <document bookmark1="0" bookmark2="0" bookmark3="0" file="/home/scamanderwayne/Documents/GitHub/WayneTeX/Economics/13pab.tex" hasfocus="false" line="3" master="false"/>
-    <document bookmark1="0" bookmark2="0" bookmark3="0" file="/home/scamanderwayne/Documents/GitHub/WayneTeX/Economics/11hpodniku.tex" hasfocus="false" line="0" master="false"/>
-    <document bookmark1="0" bookmark2="0" bookmark3="0" file="/home/scamanderwayne/Documents/GitHub/WayneTeX/Economics/12cp.tex" hasfocus="false" line="3" master="false"/>
+    <document bookmark1="0" bookmark2="0" bookmark3="0" file="/home/scamanderwayne/Documents/GitHub/WayneTeX/Economics/03management.tex" hasfocus="false" line="2" master="false"/>
+    <document bookmark1="0" bookmark2="0" bookmark3="0" file="/home/scamanderwayne/Documents/GitHub/WayneTeX/Economics/02pojisteni.tex" hasfocus="false" line="2" master="false"/>
+    <document bookmark1="0" bookmark2="0" bookmark3="0" file="/home/scamanderwayne/Documents/GitHub/WayneTeX/Economics/04logistika.tex" hasfocus="false" line="2" master="false"/>
+    <document bookmark1="0" bookmark2="0" bookmark3="0" file="/home/scamanderwayne/Documents/GitHub/WayneTeX/Economics/01pojmy.tex" hasfocus="false" line="2" master="false"/>
+    <document bookmark1="0" bookmark2="0" bookmark3="0" file="/home/scamanderwayne/Documents/GitHub/WayneTeX/Economics/06banky.tex" hasfocus="false" line="2" master="false"/>
+    <document bookmark1="0" bookmark2="0" bookmark3="0" file="/home/scamanderwayne/Documents/GitHub/WayneTeX/Economics/05korporace.tex" hasfocus="false" line="2" master="false"/>
+    <document bookmark1="0" bookmark2="0" bookmark3="0" file="/home/scamanderwayne/Documents/GitHub/WayneTeX/Economics/07nhospodarstvi.tex" hasfocus="false" line="2" master="false"/>
+    <document bookmark1="0" bookmark2="0" bookmark3="0" file="/home/scamanderwayne/Documents/GitHub/WayneTeX/Economics/09majetek.tex" hasfocus="false" line="2" master="false"/>
+    <document bookmark1="0" bookmark2="0" bookmark3="0" file="/home/scamanderwayne/Documents/GitHub/WayneTeX/Economics/08kapital.tex" hasfocus="false" line="2" master="false"/>
+    <document bookmark1="0" bookmark2="0" bookmark3="0" file="/home/scamanderwayne/Documents/GitHub/WayneTeX/Economics/10daneutrpeni.tex" hasfocus="false" line="62" master="false"/>
+    <document bookmark1="0" bookmark2="0" bookmark3="0" file="/home/scamanderwayne/Documents/GitHub/WayneTeX/Economics/13pab.tex" hasfocus="false" line="71" master="false"/>
+    <document bookmark1="0" bookmark2="0" bookmark3="0" file="/home/scamanderwayne/Documents/GitHub/WayneTeX/Economics/12cp.tex" hasfocus="false" line="2" master="false"/>
+    <document bookmark1="0" bookmark2="0" bookmark3="0" file="/home/scamanderwayne/Documents/GitHub/WayneTeX/Economics/ekobook.tex" hasfocus="true" line="333" master="true"/>
+    <document bookmark1="0" bookmark2="0" bookmark3="0" file="/home/scamanderwayne/Documents/GitHub/WayneTeX/Economics/11hpodniku.tex" hasfocus="false" line="2" master="false"/>
+    <document bookmark1="0" bookmark2="0" bookmark3="0" file="/home/scamanderwayne/Documents/GitHub/WayneTeX/Economics/16banksluzby.tex" hasfocus="false" line="2" master="false"/>
+    <document bookmark1="0" bookmark2="0" bookmark3="0" file="/home/scamanderwayne/Documents/GitHub/WayneTeX/Economics/14odmenymzda.tex" hasfocus="false" line="2" master="false"/>
+    <document bookmark1="0" bookmark2="0" bookmark3="0" file="/home/scamanderwayne/Documents/GitHub/WayneTeX/Economics/15marketmix.tex" hasfocus="false" line="2" master="false"/>
 </TexmakerSession>
