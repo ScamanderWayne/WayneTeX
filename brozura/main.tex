@@ -473,19 +473,33 @@ Tato práce je licencována pod \href{https://creativecommons.org/licenses/by-nc
 }
 
 \makeatletter
+
+% ───── absolute page counter (works with frontmatter, subfiles, etc.) ─────
+\usepackage{everypage}
+\newcounter{absolutepage}
+\AddEverypageHook{\refstepcounter{absolutepage}}
+
+% ───── final bullet-proof \padtofour ─────
 \newcommand{\padtofour}{%
-  \newpage %<---!
-  \count@=\the\c@page%<---
-  \@tempcnta=\count@
+  \clearpage % finish whatever page we are on
+  % How many pages have already been shipped out?
+  \immediate\write20{[padtofour] Pages shipped so far: \the\value{absolutepage}}% debug, optional
+  %
+  % Compute (current+1) mod 4  →  how many blanks do we still need?
+  \count@ = \value{absolutepage}
+  \advance\count@ by 1               % the page number the next content would get
+  \@tempcnta = \count@
   \divide\@tempcnta by 4
-  \multiply\@tempcnta by 4
-  \count@=\numexpr\count@-\@tempcnta\relax
+  \multiply\@tempcnta by 4           % largest multiple of 4 ≤ current+1
+  \count@ = \numexpr\@tempcnta + 4 - \count@\relax   % 1,2,3 or 4
+  \ifnum\count@=4 \count@=0 \fi      % we are already on a multiple of 4 → add nothing
+  %
   \ifnum\count@>0
-    \pagestyle{empty}
-    \loop\ifnum\count@<4
+    \pagestyle{empty}%
+    \loop
       \null\clearpage
-      \advance\count@\@ne
-    \repeat
+      \advance\count@ by -1
+    \ifnum\count@>0 \repeat
   \fi
 }
 

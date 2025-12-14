@@ -447,6 +447,32 @@ Tato práce je licencována pod \href{https://creativecommons.org/licenses/by-nc
 	\IfDarkModeTF{\definecolor{WPP}{HTML}{FF8A8A}}{\definecolor{WPP}{HTML}{4D0000}}
 }
 
+% The cycling counter (starts at 1)
+\newcounter{WPPcounter}
+\setcounter{WPPcounter}{1}
+
+% Command to apply the color based on current counter value
+% and then increment with wrap-around (1→2→3→4→1...)
+\newcommand{\setWPP}{%
+  \ifnum\value{WPPcounter}=1
+    \setgreen
+  \fi
+  \ifnum\value{WPPcounter}=2
+    \setblue
+  \fi
+  \ifnum\value{WPPcounter}=3
+    \setred
+  \fi
+  \ifnum\value{WPPcounter}=4
+    \setpurple
+  \fi
+  % Increment and loop back to 1 if reaching 5
+  \stepcounter{WPPcounter}%
+  \ifnum\value{WPPcounter}=5
+    \setcounter{WPPcounter}{1}%
+  \fi
+}
+
 \usepackage{moresize}
 \usepackage{fontspec}
 \setmainfont{Tex Gyre Termes}
@@ -467,4 +493,5 @@ Tato práce je licencována pod \href{https://creativecommons.org/licenses/by-nc
 	\subfile{13pab}
 	\subfile{14odmenymzda}
 	\subfile{15marketmix}
+	\subfile{16banksluzby}
 \end{document}
