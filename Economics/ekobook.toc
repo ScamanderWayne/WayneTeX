@@ -15,3 +15,4 @@
 \contentsline {section}{\numberline {\Large \color {WPP}14}Odměňování a mzda \TODO }{18}{section.14}%
 \contentsline {section}{\numberline {\Large \color {WPP}15}Marketingový mix \TODO }{19}{section.15}%
 \contentsline {section}{\numberline {\Large \color {WPP}16}Bankovní služby \TODO }{20}{section.16}%
+\contentsline {section}{\numberline {\Large \color {WPP}17}Zdroje financování podniku \TODO }{21}{section.17}%

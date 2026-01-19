@@ -1,18 +1,18 @@
 \documentclass{article}
 \usepackage[czech]{babel}
 \usepackage{geometry}
-\geometry{a4paper, 
-          left=1cm, right=1cm, top=1cm, 
-          bottom=1cm, 
-          includefoot, 
-          heightrounded}
+\geometry{
+	a4paper,
+	left=2.5cm,
+	right=2.5cm,
+	top=2cm,
+	bottom=2.5cm
+	}
 \usepackage{enumitem}
 \usepackage{parskip}
 %\usepackage{nopageno}
-\usepackage{graphicx}
 \usepackage{xcolor}
 \usepackage{mdframed}
-\usepackage{lmodern}
 \usepackage[fixed]{fontawesome5}
 \usepackage{lipsum}
 \usepackage{csquotes}
@@ -24,9 +24,6 @@
 \usepackage{stmaryrd}
 
 \usepackage{pgfornament}
-\usepackage{multicolrule}
-
-\usepackage{subfiles}
 
 \usepackage{darkmode}
 \enabledarkmode
@@ -63,7 +60,9 @@
 \renewcommand{\cftsecaftersnumb}{\hspace{1em}}% Space between number and section title
 
 \NewDocumentCommand{\wtext}{m}{%
-{\subsection*{{\color{WPP}$\faGreaterThan$}\color{antiDP}#1}\nobreak}%
+\begin{flushright}
+\subsection*{\color{antiDP}#1\hspace{1em}\color{WPP}\faCaretSquareLeft}\nobreak
+\end{flushright}
 }
 
 \NewDocumentCommand{\texthl}{m}{%
@@ -121,18 +120,10 @@
 {{\color{WPP}$\hookrightarrow$}{ }}%
 }
 
-\NewDocumentCommand{\TODO}{}{%
-{\color{WPP}$\mapsto$ [TODO]}
-}
-
-\NewDocumentCommand{\DORN}{}{%
-{\color{WPP}$\mapsto$ [DOING RN]}
-}
-
-\newenvironment{indentpara}[1][2em]{
+\newenvironment{indentpara}[1][0em]{
   \setlength{\leftskip}{#1}%
   \setlength{\parskip}{0pt}% No stretchable parskip
-  \setlength{\parindent}{0pt}% No indent
+  \setlength{\parindent}{2em}% No indent
 }{\par}
 
 \newenvironment{wnumbered}{%
@@ -140,6 +131,7 @@
 }{\end{enumerate}}
 
 \NewDocumentCommand{\qaw}{m m}{%
+\vspace{1em}
 \wtext{#1}%
 \begin{indentpara}%
 #2%
@@ -147,14 +139,12 @@
 }
 
 \NewDocumentCommand{\wbreak}{}{%
-\vspace{-2em}%
+\vspace{0em}%
 \begin{center}%
 {\color{WPP}\pgfornament[width=\textwidth]{88}}%
 \end{center}%
 \vspace{0em}%
 }
-
-\usetikzlibrary{positioning}
 
 \def\wloss{%
 \begingroup
@@ -272,71 +262,7 @@
 }
 \makeatother
 \usetikzlibrary{snakes}
-\usetikzlibrary{calc}
 \usepackage{varwidth}
-
-\NewDocumentCommand{\wpgfbox}{m}{%
-\begin{center}
-\begin{tikzpicture}[every node/.style={inner sep=0pt}]
-\color{WPP}
-\node[text width=0.95\textwidth,align=justify](Text){%
-{\color{antiDP}#1}} ;
-\node[shift={(-0.5cm,0.5cm)},anchor=north west](CNW)
-at (Text.north west) {\pgfornament[width=0.5cm]{31}}; %37
-\node[shift={(0cm,1cm)},anchor=north](CN) at (Text.north) {};
-\node[shift={(0.5cm,0.5cm)},anchor=north east](CNE)
-at (Text.north east) {\pgfornament[width=0.5cm,symmetry=v]{31}};
-\node[shift={(-0.5cm,-0.5cm)},anchor=south west](CSW)
-at (Text.south west) {\pgfornament[width=0.5cm,symmetry=h]{31}};
-\node[shift={(0cm,-1cm)},anchor=south](CS) at (Text.south) {};
-\node[shift={(0.5cm,-0.5cm)},anchor=south east](CSE)
-at (Text.south east) {\pgfornament[width=0.5cm,symmetry=c]{31}};
-%\pgfornamenthline{CNW}{CN}{north}{88}\pgfornamenthline{CN}{CNE}{north}{88}\pgfornamenthline{CSW}{CS}{south}{88}\pgfornamenthline{CS}{CSE}{south}{88}\pgfornamentvline{CNW}{CSW}{west}{88}\pgfornamentvline{CNE}{CSE}{east}{88}
-\end{tikzpicture}
-\end{center}
-}
-
-\NewDocumentCommand{\wpgfboxed}{m m m}{%
-\begin{#3}
-\begin{tikzpicture}[every node/.style={inner sep=0pt}]
-\color{WPP}
-\node[text width=#2\textwidth,align=justify](Text){%
-{\color{antiDP}#1}} ;
-\node[shift={(0cm,0cm)},anchor=north west](CNW) at (Text.north west) {}; %37
-\node[shift={(-1cm,0cm)},anchor=north](CN1) at (Text.north) {};
-\node[shift={(1cm,0cm)},anchor=north](CN2) at (Text.north) {};
-\node[shift={(0cm,0cm)},anchor=north east](CNE) at (Text.north east) {};
-\node[shift={(0cm,-0.1cm)},anchor=south west](CSW) at (Text.south west) {};
-\node[shift={(-1cm,-0.1cm)},anchor=south](CS1) at (Text.south) {};
-\node[shift={(1cm,-0.1cm)},anchor=south](CS2) at (Text.south) {};
-\node[shift={(0cm,-0.1cm)},anchor=south east](CSE) at (Text.south east) {};
-\pgfornamenthline{CNW}{CN2}{north}{88}\pgfornamenthline{CN1}{CNE}{north}{88}
-\pgfornamenthline{CSW}{CS2}{south}{88}\pgfornamenthline{CS1}{CSE}{south}{88}
-%\pgfornamentvline{CNW}{CSW}{west}{88}\pgfornamentvline{CNE}{CSE}{east}{88}
-\end{tikzpicture}
-\end{#3}
-}
-
-\NewDocumentCommand{\addwpgfboxed}{m m m}{%
-\begin{#3}
-\begin{tikzpicture}[every node/.style={inner sep=0pt}]
-\color{WPP}
-\node[text width=#2\textwidth,align=justify](Text){%
-{\color{antiDP}#1}} ;
-\node[shift={(0cm,0cm)},anchor=north west](CNW) at (Text.north west) {}; %37
-\node[shift={(-1cm,0cm)},anchor=north](CN1) at (Text.north) {};
-\node[shift={(1cm,0cm)},anchor=north](CN2) at (Text.north) {};
-\node[shift={(0cm,0cm)},anchor=north east](CNE) at (Text.north east) {};
-\node[shift={(0cm,-0.1cm)},anchor=south west](CSW) at (Text.south west) {};
-\node[shift={(-1cm,-0.1cm)},anchor=south](CS1) at (Text.south) {};
-\node[shift={(1cm,-0.1cm)},anchor=south](CS2) at (Text.south) {};
-\node[shift={(0cm,-0.1cm)},anchor=south east](CSE) at (Text.south east) {};
-%\pgfornamenthline{CNW}{CN2}{north}{88}\pgfornamenthline{CN1}{CNE}{north}{88}
-\pgfornamenthline{CSW}{CS2}{south}{88}\pgfornamenthline{CS1}{CSE}{south}{88}
-%\pgfornamentvline{CNW}{CSW}{west}{88}\pgfornamentvline{CNE}{CSE}{east}{88}
-\end{tikzpicture}
-\end{#3}
-}
 
 % Set global itemize properties with fixed spacing
 \setlist[itemize]{%
@@ -356,28 +282,48 @@ at (Text.south east) {\pgfornament[width=0.5cm,symmetry=c]{31}};
 \pagestyle{fancy}
 \fancyhf{} % Clear default headers and footers
 %\fancyhead[R]{\wloss}
-\fancyfoot[L]{{\color{WPP}{\pgfornament[scale=0.35,ydelta=-3pt,color=antiDP]{11}}{ }
-\thepage . {\color{antiDP}stránka}}} % Left footer: Page number
-\fancyfoot[R]{%\pgfornament[scale=0.2,ydelta=-3pt,color=antiDP]{14}\pgfornament[scale=0.2,ydelta=-3pt,color=antiDP]{11}\hspace{1.5em}
-Tato práce je licencována pod \href{https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en}{\color{WPP}\ccbyncsaeu\-\ 4.0 International License}.{ }
-\pgfornament[scale=0.35,ydelta=-3pt,color=antiDP]{14}} % Right footer: CC license with icons
+%\fancyfoot[L]{{\color{WPP}{\pgfornament[scale=0.35,ydelta=-3pt,color=antiDP]{11}}{ }\thepage . {\color{antiDP}stránka}}} % Left footer: Page number
+\fancyfoot[L]{\pgfornament[scale=0.7,ydelta=-12pt,color=antiDP]{11}}
+\fancyfoot[C]{\vspace{-3em}Vytvořil \href{https://github.com/ScamanderWayne/}{\color{WPP}Libor Halík}.\par
+Tato práce je licencována pod \href{https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en}{\color{WPP}\ccbyncsaeu\-\ 4.0 International License}.}
+\fancyfoot[R]{\pgfornament[scale=0.7,ydelta=-12pt,color=antiDP]{14}}
 
 % Adjusting header/footer layout
 \renewcommand{\headrulewidth}{0pt} % Thin line under header
 \renewcommand{\footrulewidth}{0em} % Thin line above footer
 %\renewcommand{\footrule}{{\color{WPP}\hrule\vspace{1em}}} %\vskip-\footrulewidth
 \setlength{\headheight}{14.5pt} % Ensure sufficient header height to avoid warnings
+\setlength{\footskip}{0em}
 
 \usepackage[
-	%linktoc=all,
-	%allbordercolors={WPP},
-	%pdfborderstyle={/S/U/W 1},
-	hidelinks,
-    pdftitle={Maturitní otázky Ekonomika},       % PDF metadata: title
+    hidelinks,                    % No visible link colors or borders
+    pdftitle={Pratchett},       % PDF metadata: title
     pdfauthor={Libor Halík},         % PDF metadata: author
     pdfstartview=FitH,            % Fit page width to window
     pdfduplex=DuplexFlipShortEdge % Double-sided printing, flip on short edge
 ]{hyperref}
+
+\usetikzlibrary{calc}
+\NewDocumentCommand{\wpgfboxed}{m m m}{%
+\begin{#3}
+\begin{tikzpicture}[every node/.style={inner sep=0pt}]
+\color{WPP}
+\node[text width=#2\textwidth,align=justify](Text){%
+{\color{antiDP}#1}} ;
+\node[shift={(0cm,0cm)},anchor=north west](CNW) at (Text.north west) {}; %37
+\node[shift={(-1cm,0cm)},anchor=north](CN1) at (Text.north) {};
+\node[shift={(1cm,0cm)},anchor=north](CN2) at (Text.north) {};
+\node[shift={(0cm,0cm)},anchor=north east](CNE) at (Text.north east) {};
+\node[shift={(0cm,-0.2cm)},anchor=south west](CSW) at (Text.south west) {};
+\node[shift={(-1cm,-0.2cm)},anchor=south](CS1) at (Text.south) {};
+\node[shift={(1cm,-0.2cm)},anchor=south](CS2) at (Text.south) {};
+\node[shift={(0cm,-0.2cm)},anchor=south east](CSE) at (Text.south east) {};
+\pgfornamenthline{CNW}{CN2}{north}{88}\pgfornamenthline{CN1}{CNE}{north}{88}
+\pgfornamenthline{CSW}{CS2}{south}{88}\pgfornamenthline{CS1}{CSE}{south}{88}
+%\pgfornamentvline{CNW}{CSW}{west}{88}\pgfornamentvline{CNE}{CSE}{east}{88}
+\end{tikzpicture}
+\end{#3}
+}
 
 \NewDocumentCommand{\lsection}{m}{%
   \noindent
@@ -388,137 +334,155 @@ Tato práce je licencována pod \href{https://creativecommons.org/licenses/by-nc
   \hfill
   \begin{minipage}[t]{0.15\textwidth}
    \raggedleft
-    \hyperlink{contents}{\wloss}
+    \wloss
   \end{minipage}%\vspace{-\baselineskip} % Compensate for section's default spacing
 }
+\usepackage{fontspec}
+\newfontfamily\signaturefont{MrDafoe}
 
-\newcommand\blankpage{% comando pagina vuota
-    \clearpage
-    \begingroup
-      \null
-      \thispagestyle{empty}%
-      %\addtocounter{page}{-1}%
-      \hypersetup{pageanchor=false}%
-      \clearpage
-    \endgroup
+\setmainfont{Tex Gyre Termes}
+\pagestyle{empty}
+
+\NewDocumentCommand{\wboxed}{m m m m}{%
+\begin{#4}
+\begin{tikzpicture}[every node/.style={inner sep=0pt}]
+\color{WPP}
+\node[text width=#3\textwidth,align=justify](Text){%
+{\begin{indentpara}
+\vspace{1.8em}\par
+\color{antiDP}#2
+\end{indentpara}}
+} ;
+\node[shift={(0cm,0cm)},anchor=north west](CNW) at (Text.north west) {}; %37
+\node[shift={(-1cm,0cm)},anchor=north](CN1) at (Text.north) {};
+\node[shift={(1cm,0cm)},anchor=north](CN2) at (Text.north) {};
+\node[shift={(0cm,0cm)},anchor=north east](CNE) at (Text.north east) {};
+\node[anchor=north east] (W) at ($(CNE) + (0pt, -1em)$) {};
+\node [anchor=east, inner sep=0pt] (AuthorText) at ($(W.west) - (0em, 0pt)$) {
+  \raggedleft
+  {\large\bfseries\color{antiDP}#1 \IfDarkModeTF{\color{WPP}\faCaretSquareLeft[regular]}{\color{WPP}\faCaretSquareLeft}}
+};
+\node[shift={(0cm,-0.2cm)},anchor=south west](CSW) at (Text.south west) {};
+\node[shift={(-1cm,-0.2cm)},anchor=south](CS1) at (Text.south) {};
+\node[shift={(1cm,-0.2cm)},anchor=south](CS2) at (Text.south) {};
+\node[shift={(0cm,-0.2cm)},anchor=south east](CSE) at (Text.south east) {};
+\pgfornamenthline{CNW}{CN2}{north}{88}\pgfornamenthline{CN1}{CNE}{north}{88}
+\pgfornamenthline{CSW}{CS2}{south}{88}\pgfornamenthline{CS1}{CSE}{south}{88}
+%\pgfornamentvline{CNW}{CSW}{west}{88}\pgfornamentvline{CNE}{CSE}{east}{88}
+\end{tikzpicture}
+\end{#4}
 }
 
-\NewDocumentCommand{\ispageodd}{}{
-  \ifodd\value{page}
-    {\newpage\blankpage}
-  \else
-    {}
-  \fi
+\NewDocumentCommand{\wauthorized}{m m m m}{%
+\begin{#4}
+\begin{tikzpicture}[every node/.style={inner sep=0pt}]
+\color{WPP}
+\node[text width=#3\textwidth,align=justify](Text){%
+{\begin{indentpara}
+\vspace{1.8em}\par
+\color{antiDP}#2
+\end{indentpara}}
+} ;
+\node[shift={(0cm,0cm)},anchor=north west](CNW) at (Text.north west) {}; %37
+\node[shift={(-1cm,0cm)},anchor=north](CN1) at (Text.north) {};
+\node[shift={(1cm,0cm)},anchor=north](CN2) at (Text.north) {};
+\node[shift={(0cm,0cm)},anchor=north east](CNE) at (Text.north east) {};
+\node[anchor=north east] (W) at ($(CNE) + (0pt, -1em)$) {};
+\node [anchor=east, inner sep=0pt] (AuthorText) at ($(W.west) - (0em, 0pt)$) {
+  \raggedleft
+  {\large\bfseries\color{antiDP}#1 \color{WPP}\faCaretSquareLeft[regular]}
+};
+\node[shift={(0cm,-0.2cm)},anchor=south west](CSW) at (Text.south west) {};
+\node[shift={(-1cm,-0.2cm)},anchor=south](CS1) at (Text.south) {};
+\node[shift={(1cm,-0.2cm)},anchor=south](CS2) at (Text.south) {};
+\node[shift={(0cm,-0.2cm)},anchor=south east](CSE) at (Text.south east) {};
+%\pgfornamenthline{CNW}{CN2}{north}{88}\pgfornamenthline{CN1}{CNE}{north}{88}
+%\pgfornamenthline{CSW}{CS2}{south}{88}\pgfornamenthline{CS1}{CSE}{south}{88}
+%\pgfornamentvline{CNW}{CSW}{west}{88}\pgfornamentvline{CNE}{CSE}{east}{88}
+\end{tikzpicture}
+\end{#4}
 }
 
-\NewDocumentCommand{\wpage}{}{%
-	\IfDarkModeTF{%
-	\newpage%
-	}{%
-	\ispageodd%
-	\newpage%
-	}%
+\newcommand{\framesize}{4cm}
+\NewDocumentCommand{\authorized}{m}{
+\begin{flushright}
+\begin{tikzpicture}[color=WPP, transform shape, every node/.style={inner sep=0pt}]
+\node[minimum size=\framesize](vecbox){};
+\node[anchor=north west] at (vecbox.north west){%
+\pgfornament[width=0.2*\framesize]{63}};
+\node[anchor=north east] at (vecbox.north east){%
+\pgfornament[width=0.2*\framesize,symmetry=v]{63}};
+\node[anchor=south west] at (vecbox.south west){%
+\pgfornament[width=0.2*\framesize,symmetry=h]{63}};
+\node[anchor=south east] at (vecbox.south east){%
+\pgfornament[width=0.2*\framesize,symmetry=c]{63}};
+\node[anchor=north] at (vecbox.north){%
+\pgfornament[width=0.6*\framesize,symmetry=h]{46}};
+\node[anchor=south] at (vecbox.south){%
+\pgfornament[width=0.6*\framesize]{46}};
+\node[anchor=north,rotate=90] at (vecbox.west){%
+\pgfornament[width=0.6*\framesize,symmetry=h]{46}};
+\node[anchor=north,rotate=-90] at (vecbox.east){%
+\pgfornament[width=0.6*\framesize,symmetry=h]{46}};
+\node[inner sep=6pt] (text) at (vecbox.center){\large\bfseries #1};
+\node[anchor=north] at (text.south){%
+\pgfornament[width=0.5*\framesize]{75}};
+\node[anchor=south] at (text.north){%
+\pgfornament[width=0.5*\framesize,symmetry=h]{75}};
+\end{tikzpicture}
+\end{flushright}
 }
 
-% Redefine \UrlFont to use normal text font
-\renewcommand{\UrlFont}{\normalfont\small}
-\NewDocumentCommand{\wlink}{m m}{%
-	\IfDarkModeTF{%
-		\begingroup%
-		\hypersetup{%
-			allbordercolors={WPP},%
-			pdfborderstyle={/S/U/W 1},%
-			colorlinks=false,%
-			linkbordercolor=WPP%
-			}%
-		\href{%
-			#1%
-			}{%
-			#2%
-			}%
-		\endgroup%
-	}{%
-	#2 (\url{#1})%
-	}%
-}
-
-\newcommand{\pageornament}[3]{% 
+\newcommand{\pageornament}[4]{% 
 \begin{tikzpicture}[remember picture, overlay] 
 \color{#2}
 \node[anchor=north west] at (current page.north west){% 
     \pgfornament[width=#3]{#1}}; 
-\node[anchor=north east] at (current page.north east){%
-    \pgfornament[width=#3,symmetry=v]{#1}}; 
+\node[anchor=north east](NE) at (current page.north east){%
+    \pgfornament[width=#3,symmetry=v]{#1}};
+\node[anchor=north east] (W) at ($(NE) + (3.8em, -0.8em)$) {};
+\node [anchor=east, inner sep=0pt] (AuthorText) at ($(W.west) - (0em, 0pt)$) {
+  \raggedleft
+  {\rotatebox{50}{\color{antiDP}\fontsize{10pt}{10pt}\selectfont\signaturefont#4}}
+};
 \node[anchor=south west] at (current page.south west){% 
     \pgfornament[width=#3,symmetry=h]{#1}}; 
 \node[anchor=south east] at (current page.south east){% 
     \pgfornament[width=#3,symmetry=c]{#1}}; 
-\end{tikzpicture} }
+\end{tikzpicture}}
 
-\NewDocumentCommand{\setgreen}{}{%
-	\IfDarkModeTF{\definecolor{WPP}{HTML}{5CDB6B}}{\definecolor{WPP}{HTML}{0D3B12}}
-}
-\NewDocumentCommand{\setblue}{}{%
-	\IfDarkModeTF{\definecolor{WPP}{HTML}{39DDD5}}{\definecolor{WPP}{HTML}{0A3D3B}}
-}
-\NewDocumentCommand{\setpurple}{}{%
-	\IfDarkModeTF{\definecolor{WPP}{HTML}{EA9FE1}}{\definecolor{WPP}{HTML}{601557}}
-}
-\NewDocumentCommand{\setred}{}{%
-	\IfDarkModeTF{\definecolor{WPP}{HTML}{FF8A8A}}{\definecolor{WPP}{HTML}{4D0000}}
-}
-\NewDocumentCommand{\setyellow}{}{%
-	\IfDarkModeTF{\definecolor{WPP}{HTML}{FFD966}}{\definecolor{WPP}{HTML}{996600}}
+\NewDocumentCommand{\wline}{}{\par}
+
+\NewDocumentCommand{\wname}{m}{%
+\textbf{\color{WPP}#1}%
 }
 
-% The cycling counter (starts at 1)
-\newcounter{WPPcounter}
-\setcounter{WPPcounter}{1}
-
-% Command to apply the color based on current counter value
-% and then increment with wrap-around (1→2→3→4→1...)
-\newcommand{\setWPP}{%
-\ifnum\value{WPPcounter}=1
-	\setblue
-\fi
-\ifnum\value{WPPcounter}=2
-	\setgreen
-\fi
-\ifnum\value{WPPcounter}=3
-	\setpurple
-\fi
-\ifnum\value{WPPcounter}=4
-	\setyellow
-\fi
-\ifnum\value{WPPcounter}=5
-	\setred
-\fi
-	\stepcounter{WPPcounter}
-	\ifnum\value{WPPcounter}=6
-	\setcounter{WPPcounter}{1}
-\fi
+\NewDocumentCommand{\wbook}{m}{%
+\textsc{\color{WPP}#1}%
 }
 
-\usepackage{moresize}
-\usepackage{fontspec}
-\setmainfont{Tex Gyre Termes}
-\begin{document}\fontsize{10pt}{10pt}\selectfont\setlength\parindent{0em}
-	\subfile{00TOC} %finished
-	\subfile{01pojmy}
-	\subfile{02pojisteni}
-	\subfile{03management}
-	\subfile{04logistika}
-	\subfile{05korporace}
-	\subfile{06banky} %finished
-	\subfile{07nhospodarstvi} %finished
-	\subfile{08kapital}
-	\subfile{09majetek}
-	\subfile{10daneutrpeni} %finished
-	\subfile{11hpodniku}
-	\subfile{12cp}
-	\subfile{13pab}
-	\subfile{14odmenymzda}
-	\subfile{15marketmix}
-	\subfile{16banksluzby}
-	\subfile{17sos}
+\newfontfamily\citefont{Tex Gyre Chorus}
+\NewDocumentCommand{\wcite}{m}{%
+{\emph{\citefont\color{WPP}\enquote{{\color{antiDP}#1}}}}%
+}
+
+\NewDocumentCommand{\wplace}{m}{%
+{\color{WPP}#1}%
+}
+
+\NewDocumentCommand{\wchar}{m}{%
+{\citefont\color{WPP}#1}%
+}
+
+\NewDocumentCommand{\whl}{m}{%
+\emph{#1}%
+}
+
+\begin{document}\fontsize{10pt}{10pt}\selectfont\setlength{\parindent}{2em}\setlength{\parskip}{0em}\IfDarkModeTF{\definecolor{WPP}{HTML}{36F7F7}}{\definecolor{WPP}{HTML}{034444}}
+\pageornament{31}{WPP}{3cm}{Libor Halík}
+%\authorized{Libor Halík}
+
+\wboxed{Název}{
+\lipsum[1-4]
+}{1}{center}
 \end{document}

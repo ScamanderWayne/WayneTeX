@@ -1,0 +1,82 @@
+\documentclass[ekobook.tex]{subfiles}
+
+\begin{document}\setWPP
+\lsection{Zdroje financování podniku \TODO}
+\qaw{Vyjmenuj a popiš základní zdroje financování podniku}{%
+Podle vztahu k podniku se dělí na vlastní a cizí.
+}
+{
+\setlength{\multicolsep}{1em}% Remove vertical space before and after
+\setlength{\columnsep}{2em}% Remove space between columns
+\setlength{\leftskip}{0em}%
+\SetMCRule{
+  custom-line={\path[DP] (TOP) to [ornament=88] (BOT);}, % Use ornament 88
+  width=0.4pt, % Ensure rule is drawn (width > 0pt)
+  extend-top=-2pt, % Shrink rule at top by 24pt
+  extend-bot=-2pt % Shrink rule at bottom by 8pt
+}
+%\hspace*{2em}
+\parbox{\dimexpr\textwidth-2em}{
+\begin{multicols}{2}
+\begin{itemize}[label={\color{WPP}\faSlackHash}]
+\item \textbl{Vlastní:}
+\begin{itemize}[label=\textcolor{WPP}{$\hookrightarrow$}]
+\item základní kapitál
+\item kapitálové fondy
+\item zisk
+\item odpisy
+\item ostatní
+\end{itemize}
+\columnbreak
+\item \textbl{Cizí:}
+\item[] jsou dluhem firmy, který musí splatit
+\begin{itemize}[label=\textcolor{WPP}{$\hookrightarrow$}]
+\item krátkodobé
+\item střednědobé
+\item dlouhodobé
+\end{itemize}
+\end{itemize}
+\end{multicols}
+}}
+\wbreak
+\qaw{Co je to úvěr}{%
+Dluh
+}
+{
+\setlength{\multicolsep}{1em}% Remove vertical space before and after
+\setlength{\columnsep}{2em}% Remove space between columns
+\setlength{\leftskip}{0em}%
+\SetMCRule{
+  custom-line={\path[DP] (TOP) to [ornament=88] (BOT);}, % Use ornament 88
+  width=0.4pt, % Ensure rule is drawn (width > 0pt)
+  extend-top=-2pt, % Shrink rule at top by 24pt
+  extend-bot=-2pt % Shrink rule at bottom by 8pt
+}
+%\hspace*{2em}
+\parbox{\dimexpr\textwidth-2em}{
+\begin{multicols}{2}
+\begin{itemize}[label={\color{WPP}\faSlackHash}]
+\item \textbl{kontokorentní} -- umožňuje čerpat prostředky z běžného účtu do mínusu; je možný jen po smlouvě s bankou, která zároveň určuje limit čerpání; jedná se o úvěr s nejvyšší úrokovou sazbou
+\item \textbl{směnečný eskontní} -- banka odkoupí směnku před dobou její splatnosti, za částku sníženou o diskont
+\item \textbl{investiční} -- klient si sjedná úvěr na stroje, cenné papíry atd.; banka vyplácí peníze na základě předložených faktur
+\item \textbl{provozní} -- pro financování běžného provozu, jako je nákup materiálů, vyplacení mezd
+\columnbreak
+\item \textbl{spotřebitelský} -- dělí se na \textbf{účelový} (na určitou věc) a \textbf{neúčelový} (s vyšším úrokem bez dokládání účelu)
+\item \textbl{hypoteční} -- je zajištěn nemovitostí, často tou, na kterou si hypotéku bereme, mívá nejnižší úroky a nejdelší dobu splatnosti
+\item \textbl{lombardní} -- je zajištěn movitou věcí (cennými papíry, zbožím...)
+\end{itemize}
+\end{multicols}
+}}
+\vspace*{1em}
+\wbreak
+\qaw{Co je to RPSN}{%
+Roční Procentní Sazba Nákladů – ukazuje celkové roční náklady úvěru v procentech z půjčené částky (zahrnuje úrok + všechny poplatky, např. za sjednání, vedení účtu apod.) → čím nižší RPSN, tím výhodnější úvěr
+}
+\qaw{Jaké jsou způsoby ručení}{%
+Úvěry se dle druhu ručení dělí ty, kde ručíme osobně (buď my sami, či ručitel za nás) a na ty, kde ručíme věcně (movitě či nemovitě).
+}
+\qaw{Co znamená vinkulace u úvěru}{%
+Vinkulace (pojistného plnění) – banka (nebo leasingová společnost) si nechá „zavázat“ pojistku ve svůj prospěch. V praxi to znamená, že v případě pojistné události (např. požár, totální škoda na autě, smrt u životní pojistky) pojišťovna nevyplatí peníze vám, ale přímo bance. Banka z těchto peněz použije částku na splacení zbývajícího dluhu (úvěru/hypotéky/leasingu) a případný zbytek vrátí vám (nebo dědicům)
+}
+\wpage
+\end{document}
