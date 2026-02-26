@@ -1,7 +1,11 @@
-\documentclass[a4paper, 12pt]{article}
+\documentclass{article}
 \usepackage[czech]{babel}
 \usepackage{geometry}
-\geometry{a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm, includefoot, heightrounded}
+\geometry{a4paper, 
+          left=1cm, right=1cm, top=1cm, 
+          bottom=1cm, 
+          includefoot, 
+          heightrounded}
 \usepackage{enumitem}
 \usepackage{parskip}
 %\usepackage{nopageno}
@@ -14,16 +18,6 @@
 \usepackage{csquotes}
 \usepackage{multicol}
 \usepackage{wrapfig}
-\usepackage{eso-pic}
-
-\setcounter{tocdepth}{1}
-
-\usepackage[backend=biber,
-            style=numeric,          % ← číslované citace [1], [2]…
-            citestyle=numeric,      % ← jak se cituje v textu
-            sorting=none,           % ← DŮLEŽITÉ: pořadí podle prvního použití!
-            hyperref=true]{biblatex}
-\addbibresource{kulhavy.bib}
 
 \usepackage{amsmath}
 \usepackage{mathabx}
@@ -35,12 +29,12 @@
 \usepackage{subfiles}
 
 \usepackage{darkmode}
-%\enabledarkmode
+\enabledarkmode
 
 \usepackage{hologo}
 
 \usepackage{titlesec}
-\titlespacing*{\section}{0pt}{3em}{0pt}
+\titlespacing*{\section}{0pt}{0pt}{0pt}
 \titlespacing*{\subsection}{0pt}{0pt}{0pt}
 
 \IfDarkModeTF{%
@@ -101,7 +95,7 @@
 \end{mdframed}%
 }
 
-\renewcommand\thesection{\color{WPP}\arabic{section}}
+\renewcommand\thesection{\Large\color{WPP}\arabic{section}}
 \setlength\cftsecnumwidth{2.5em}
 
 \NewDocumentCommand{\wsection}{m}{%
@@ -323,6 +317,27 @@ at (Text.south east) {\pgfornament[width=0.5cm,symmetry=c]{31}};
 \end{#3}
 }
 
+\NewDocumentCommand{\addwpgfboxed}{m m m}{%
+\begin{#3}
+\begin{tikzpicture}[every node/.style={inner sep=0pt}]
+\color{WPP}
+\node[text width=#2\textwidth,align=justify](Text){%
+{\color{antiDP}#1}} ;
+\node[shift={(0cm,0cm)},anchor=north west](CNW) at (Text.north west) {}; %37
+\node[shift={(-1cm,0cm)},anchor=north](CN1) at (Text.north) {};
+\node[shift={(1cm,0cm)},anchor=north](CN2) at (Text.north) {};
+\node[shift={(0cm,0cm)},anchor=north east](CNE) at (Text.north east) {};
+\node[shift={(0cm,-0.1cm)},anchor=south west](CSW) at (Text.south west) {};
+\node[shift={(-1cm,-0.1cm)},anchor=south](CS1) at (Text.south) {};
+\node[shift={(1cm,-0.1cm)},anchor=south](CS2) at (Text.south) {};
+\node[shift={(0cm,-0.1cm)},anchor=south east](CSE) at (Text.south east) {};
+%\pgfornamenthline{CNW}{CN2}{north}{88}\pgfornamenthline{CN1}{CNE}{north}{88}
+\pgfornamenthline{CSW}{CS2}{south}{88}\pgfornamenthline{CS1}{CSE}{south}{88}
+%\pgfornamentvline{CNW}{CSW}{west}{88}\pgfornamentvline{CNE}{CSE}{east}{88}
+\end{tikzpicture}
+\end{#3}
+}
+
 % Set global itemize properties with fixed spacing
 \setlist[itemize]{%
   label=\textcolor{WPP}{$\Longrightarrow$}, % \textbullet \faGreaterThan \hookrightarrow
@@ -358,7 +373,7 @@ Tato práce je licencována pod \href{https://creativecommons.org/licenses/by-nc
 	%allbordercolors={WPP},
 	%pdfborderstyle={/S/U/W 1},
 	hidelinks,
-    pdftitle={Maturitní otázky Ekonomika},       % PDF metadata: title
+    pdftitle={Main},       % PDF metadata: title
     pdfauthor={Libor Halík},         % PDF metadata: author
     pdfstartview=FitH,            % Fit page width to window
     pdfduplex=DuplexFlipShortEdge % Double-sided printing, flip on short edge
@@ -393,27 +408,6 @@ Tato práce je licencována pod \href{https://creativecommons.org/licenses/by-nc
     {\newpage\blankpage}
   \else
     {}
-  \fi
-}
-
-\NewDocumentCommand{\isitfour}{}{
-  % We only care about pages 1–20, higher pages will automatically get a blank if needed
-  \ifnum\value{page}=4
-  \else
-    \ifnum\value{page}=8
-    \else
-      \ifnum\value{page}=12
-      \else
-        \ifnum\value{page}=16
-        \else
-          \ifnum\value{page}=20
-          \else
-            % page is NOT 4,8,12,16 or 20 → insert the blank page
-            \blankpage
-          \fi
-        \fi
-      \fi
-    \fi
   \fi
 }
 
@@ -473,51 +467,42 @@ Tato práce je licencována pod \href{https://creativecommons.org/licenses/by-nc
 \NewDocumentCommand{\setred}{}{%
 	\IfDarkModeTF{\definecolor{WPP}{HTML}{FF8A8A}}{\definecolor{WPP}{HTML}{4D0000}}
 }
-
-\makeatletter
-
-% ───── absolute page counter (works with frontmatter, subfiles, etc.) ─────
-\usepackage{everypage}
-\newcounter{absolutepage}
-\AddEverypageHook{\refstepcounter{absolutepage}}
-
-% ───── final bullet-proof \padtofour ─────
-\newcommand{\padtofour}{%
-  \clearpage % finish whatever page we are on
-  % How many pages have already been shipped out?
-  \immediate\write20{[padtofour] Pages shipped so far: \the\value{absolutepage}}% debug, optional
-  %
-  % Compute (current+1) mod 4  →  how many blanks do we still need?
-  \count@ = \value{absolutepage}
-  \advance\count@ by 1               % the page number the next content would get
-  \@tempcnta = \count@
-  \divide\@tempcnta by 4
-  \multiply\@tempcnta by 4           % largest multiple of 4 ≤ current+1
-  \count@ = \numexpr\@tempcnta + 4 - \count@\relax   % 1,2,3 or 4
-  \ifnum\count@=4 \count@=0 \fi      % we are already on a multiple of 4 → add nothing
-  %
-  \ifnum\count@>0
-    \pagestyle{empty}%
-    \loop
-      \null\clearpage
-      \advance\count@ by -1
-    \ifnum\count@>0 \repeat
-  \fi
+\NewDocumentCommand{\setyellow}{}{%
+	\IfDarkModeTF{\definecolor{WPP}{HTML}{FFD966}}{\definecolor{WPP}{HTML}{996600}}
 }
 
-\makeatother
+% The cycling counter (starts at 1)
+\newcounter{WPPcounter}
+\setcounter{WPPcounter}{1}
 
-% ====== Nastavení názvu, autora a vydavatele ======
-\newcommand{\docname}{placeholder}
-\newcommand{\docauth}{placeholder}
-\newcommand{\wayne}{placeholder}  % sem později dáš své jméno a příjmení
-% =================================================
+% Command to apply the color based on current counter value
+% and then increment with wrap-around (1→2→3→4→1...)
+\newcommand{\setWPP}{%
+\ifnum\value{WPPcounter}=1
+	\setblue
+\fi
+\ifnum\value{WPPcounter}=2
+	\setgreen
+\fi
+\ifnum\value{WPPcounter}=3
+	\setpurple
+\fi
+\ifnum\value{WPPcounter}=4
+	\setyellow
+\fi
+\ifnum\value{WPPcounter}=5
+	\setred
+\fi
+	\stepcounter{WPPcounter}
+	\ifnum\value{WPPcounter}=6
+	\setcounter{WPPcounter}{1}
+\fi
+}
 
 \usepackage{moresize}
 \usepackage{fontspec}
 \setmainfont{Tex Gyre Termes}
-\begin{document}\setlength{\parskip}{0pt}\setlength{\parindent}{1.5em}
-	\subfile{frontmatter}
-	\subfile{body}
-	\subfile{end}
+\begin{document}\fontsize{10pt}{10pt}\selectfont\setlength\parindent{0em}
+	\subfile{00TOC} %finished
+	\subfile{negativetryout}
 \end{document}

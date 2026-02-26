@@ -1,0 +1,21 @@
+\documentclass{article}
+\usepackage{geometry}
+\geometry{a4paper, left=1cm, right=1cm, top=1cm, bottom=1cm, landscape}
+\usepackage{nopageno}
+\usepackage[czech]{babel}
+\usepackage{csquotes}
+\usepackage{moresize}
+\usepackage{fontspec}
+\setmainfont{Tex Gyre Termes}
+\usepackage{xcolor}
+\definecolor{WPP}{HTML}{702632}%lightmode wine
+\NewDocumentCommand{\wbox}{m}{%
+	\colorbox{WPP}{\color{white}#1}%
+}
+\NewDocumentCommand{\textbl}{m}{%
+	{\textbf{\color{WPP}#1}}%
+}
+\begin{document}\fontsize{8pt}{10pt}\selectfont\setlength\parindent{0em}
+\vspace*{\fill}
+B C -- chvíli, sypaly, zremnělá, stinných -- ANO NE NE NE -- A D -- čistého vína -- trpělivost, čas -- C A D B B -- D A C -- E A C D B -- C B -- Jenže dílny -- NE NE NE NE -- C A D -- NE NE NE ANO -- A A -- navzdory -- tématu, vidění -- A B -- ANO ANO NE ANO -- D A F E -- bizarní -- umělými -- D B
+\end{document}
