@@ -18,11 +18,17 @@
 
 \setcounter{tocdepth}{1}
 
-\usepackage[backend=biber,
-            style=numeric,          % ← číslované citace [1], [2]…
-            citestyle=numeric,      % ← jak se cituje v textu
-            sorting=none,           % ← DŮLEŽITÉ: pořadí podle prvního použití!
-            hyperref=true]{biblatex}
+\usepackage[
+    backend     = biber,
+    style       = iso-numeric,      % ← toto načte přesně iso-numeric.bbx + .cbx + czech-iso.lbx
+    sorting     = none,
+    autolang    = other,
+    giveninits  = false,            % Filip místo F.
+    hyperref    = true,
+    sortlocale  = cs_CZ             % volitelné – české řazení, pokud bys měl více záznamů
+]{biblatex}
+\renewcommand*{\bibfont}{\footnotesize}   % nebo \small / \scriptsize
+
 \addbibresource{kulhavy.bib}
 
 \usepackage{amsmath}
@@ -41,7 +47,7 @@
 
 \usepackage{titlesec}
 \titlespacing*{\section}{0pt}{3em}{0pt}
-\titlespacing*{\subsection}{0pt}{0pt}{0pt}
+\titlespacing*{\subsection}{0pt}{1em}{0pt}
 
 \IfDarkModeTF{%
 \definecolor{DP}{HTML}{293133}%
@@ -518,6 +524,6 @@ Tato práce je licencována pod \href{https://creativecommons.org/licenses/by-nc
 \setmainfont{Tex Gyre Termes}
 \begin{document}\setlength{\parskip}{0pt}\setlength{\parindent}{1.5em}
 	\subfile{frontmatter}
-	\subfile{body}
+	\subfile{body/body}
 	\subfile{end}
 \end{document}
