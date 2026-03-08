@@ -1,44 +1,116 @@
 \documentclass[ekobook.tex]{subfiles}
 
 \begin{document}\setWPP
-\setcounter{section}{1}
+\setlist[itemize]{
+  itemsep=0pt,
+  parsep=0pt,      % space between paragraph lines inside one item
+  topsep=0.5ex,    % space before/after the whole list (usually keep a little)
+  partopsep=0pt
+}
+\setlength{\columnsep}{0pt}
 \lsection{Pojištění \TODO}
 \qaw{Co je pojištění}{%
-něco
+Zvláštní odvětví ekonomiky, jedná se o finanční službu, neznamená růst bezpečí ani naprostou jistotu.
 }
 \qaw{Vyjmenuj činnosti pojišťoven}{%
-něco
+\begin{itemize}[label={\color{WPP}\faSlackHash}]
+\item \textbl{pojišťovací činnost --} uzavírání smluv, vyplácení náhrad, vybírání pojistného, poradenství
+\item \textbl{zajišťovací činnost --} zajišťovna pojišťuje pojišťovny
+\item \textbl{zábranná činnost --} snaží se předcházet pojistným událostem, osvěta, reklama, školení
+\end{itemize}
 }
 \qaw{Jaké jsou právní formy, kdo uděluje licenci}{%
-něco
+Nejčastěji se jedná o akciovou společnost, někdy i o družstevní organizace.
+Licence spravuje ČNB.
 }
 \qaw{Vysvětli:}{%
-pojistník
-pojištěný
-pojistitel
-vinkulace
-obmyšlená osoba
-pojistné plnění
-výluka z pojištění
-spoluúčast
+\textbl{pojistník --}
+fyzická nebo právnická osoba, co uzavřela pojistnou smlouvy (rodič na dítě, osoba na auto)\\
+\textbl{pojištěný --}
+osoba v jejíž prospěch je smlouva uzavřena\\
+\textbl{pojistitel --}
+pojišťovna\\
+\textbl{vinkulace --}
+v případě úmrtí pojištěného se z pojistky zaplatí přednostně úvěr (u životního pojištění)\\
+\textbl{obmyšlená osoba --}
+osoba, která je uvedena pro vyplacení pojistky (u životního pojištění pozůstalí)\\
+\textbl{pojistné plnění --}
+vyplacení pojistného po pojistné události\\
+\textbl{výluka z pojištění --}
+pojišťovna zaplatí pouze to, na co je pojistka uzavřena, může být dohodnut i časový limit\\
+\textbl{spoluúčast --}
+část škody, kterou pojišťovna nehradí a pojištený si ji tedy hradí sám -- spoluúčastní se na nákladech opravy
 }
+\vspace*{1em}
+\wbreak
+\begin{multicols}{2}
 \qaw{Jak se pojištění dělí dle formy}{%
-něco
+\begin{itemize}[label={\color{WPP}\faSlackHash}]
+\item \textsc{\color{WPP} Zákonné pojištění --} je automaticky uzavřeno dle zákona, pro všechny platí stejné podmínky, je povinné (pojištění zodpovědnosti za provoz motorových vozidel, ZP, SP)\\
+\textbl{zdravotní pojištění}\\
+-- platí zaměstnanec, zaměstnavatel, OSVČ a stát\\
+-- plyne zdravotním pojišťovnám\\
+-- hradí se z něj vyšetření a ošetření, částečně léky a pomůcky\\
+\textbl{sociální pojištění}\\
+-- platí zaměstnanec, zaměstnavatel a OSVČ\\
+-- plyne přes ČSSZ do státní poklady\\
+-- hradí se z něj podpora v nezaměstnanosti, sociální dávky, důchody, rodičovská dovolená a nemocenská\\
+\textbl{pojištění odpovědnosti organizace za škodu způsobenou zdravotním úrazem}\\
+-- jedná se o odškodnění pracovních úrazů a nemocí z povolání.
+\item \textsc{\color{WPP} Povinně smluvní pojištění --} týká se oblastí, kde je zvýšené nebezpečí ohrožení ostatních, patří sem povinné ručení
+\item \textsc{\color{WPP} Smluvní pojištění --} na základě smlouvy a je dobrovolné, je ovlivněno všeobecnými a zvláštními podmínkami, jednotlivé pojišťovny mohou mít ještě vlastní specifika
+\end{itemize}
 }
 \qaw{Podle formy tvorby rezerv}{%
-něco
+\begin{itemize}[label={\color{WPP}\faSlackHash}]
+\item \textsc{\color{WPP} Rizikové pojištění --} neví se kdy nebo jestli pojistná událost vznikne (úrazové, majetkové, ...)
+\item \textsc{\color{WPP} Rezervotvorné pojištění --} ví se, kdy vznikne (životní a důchodové)
+\end{itemize}
 }
 \qaw{Podle odvětví}{%
-něco
+\begin{itemize}[label={\color{WPP}\faSlackHash}]
+\item \textsc{\color{WPP} Neživotní -- }na majetek
+\item \textsc{\color{WPP} Životní --} na osobu
+\end{itemize}
 }
 \qaw{Jaké je pojištění podle druhu}{%
-něco
+\begin{itemize}[label={\color{WPP}\faSlackHash}]
+\item \textsc{\color{WPP} Pojištění majetku a odpovědnosti za škody obyvatelstva}\\
+\textbl{pojištění domácnosti}\\
+-- jedná se o jedno z nejvýznamnějších pojištění, které využívají asi 2/3 domácností\\
+-- kryje převážně živelná rizika, tedy požár; povodeň; sesuv půdy; pády stromů ...
+\columnbreak\\
+\textbl{pojištění staveb (budovy)}\\
+-- týká se rodinných domků, nájemních a obytných domů, zemědělských usedlostí ...\\
+\textbl{havarijní pojištění motorových vozidel}\\
+-- předmětem jsou motorová vozidla a kryje riziko živelné pohromy, vandalismu, odcizení a havárie při střetu se zvěří
+\item \textsc{\color{WPP} Pojištění osob}\\
+\textbl{úrazové pojištění}\\
+-- finanční zabezpečené pojištěné osoby v případě, že dojde k dočasnému či trvalému tělesnému poškození nebo smrti\\
+\textbl{životní pojištění}\\
+-- riziko smrti a riziko dožití sjednaného věku\\
+\textbl{důchodové pojištění}\\
+-- doplňuje důchody poskytované jako dávky sociálního pojištění\\
+\textbl{pojištění léčebných výloh v zahraničí}\\
+-- úhrada z lékařského hlediska nezbytných nákladů na ošetření
+\item \textsc{\color{WPP} Pojištění podnikatelských, průmyslových a zemědělských rizik}\\
+\textbl{živelní pojištění}\\
+-- nejrozšířenější pojištění právnických osob, týká se movitých i nemovitých věcí ve vlastnictví podnikatelského subjektu\\
+\textbl{pojištění krádeží vloupáním nebo loupežným přepadením}\\
+-- předmětem jsou movité věci vlastněné podnikatelským subjektem, pojistná částka je odvozena od nové nabo časové hodnoty\\
+\textbl{dopravní pojištění}\\
+-- vztahuje se na přepravované věci\\
+\textbl{úvěrové pojištění}\\
+-- kryje před neschopností splácet (dočasný propad peněžitého majetku) a chrání před důsledky nesplacení úvěru\\
+\textbl{pojištění zemědělských rizik}\\
+-- pojišťuje plodiny a zemědělská zvířata
+\end{itemize}
 }
-\qaw{Co se může pojistit u osob}{%
-něco
-}
+\end{multicols}
+\vspace*{-1em}
+\wbreak
 \qaw{Co je malus \wx{ } Co je bonus}{%
-něco
+Systém bonusů a přirážek používaný u havarijného pojištění. Za období beznehody dostáváte bonusy, odečty od ceny pojištění. Za nehody se tyto bonusy odečítají až do záporu, kdy naopak vzniká riziková přirážka, tedy malus.
 }
 
 \wpage
