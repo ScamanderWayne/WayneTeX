@@ -9,11 +9,11 @@
 \contentsline {section}{\numberline {\Large \color {WPP}8}Kapitálový trh}{12}{section.8}%
 \contentsline {section}{\numberline {\Large \color {WPP}9}Majetek podniku}{13}{section.9}%
 \contentsline {section}{\numberline {\Large \color {WPP}10}Daňová soustava}{14}{section.10}%
-\contentsline {section}{\numberline {\Large \color {WPP}11}Hospodaření podniku \CHECK }{16}{section.11}%
+\contentsline {section}{\numberline {\Large \color {WPP}11}Hospodaření podniku}{16}{section.11}%
 \contentsline {section}{\numberline {\Large \color {WPP}12}Obchodování s cennými papíry}{17}{section.12}%
-\contentsline {section}{\numberline {\Large \color {WPP}13}Podnikatel a banka \TODO }{18}{section.13}%
-\contentsline {section}{\numberline {\Large \color {WPP}14}Odměňování a mzda \TODO }{19}{section.14}%
-\contentsline {section}{\numberline {\Large \color {WPP}15}Marketingový mix \TODO }{20}{section.15}%
+\contentsline {section}{\numberline {\Large \color {WPP}13}Podnikatel a banka}{18}{section.13}%
+\contentsline {section}{\numberline {\Large \color {WPP}14}Odměňování a mzda}{19}{section.14}%
+\contentsline {section}{\numberline {\Large \color {WPP}15}Marketingový mix}{20}{section.15}%
 \contentsline {section}{\numberline {\Large \color {WPP}16}Bankovní služby \TODO }{21}{section.16}%
 \contentsline {section}{\numberline {\Large \color {WPP}17}Zdroje financování podniku \CHECK }{22}{section.17}%
 \contentsline {section}{\numberline {\Large \color {WPP}18}Mezinárodní obchod a měna \TODO }{23}{section.18}%
