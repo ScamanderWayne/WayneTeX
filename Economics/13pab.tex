@@ -1,87 +1,88 @@
 \documentclass[ekobook.tex]{subfiles}
 
 \begin{document}\setWPP
-\lsection{Podnikatel a banka \TODO}
+\setlist[itemize]{
+  itemsep=0pt,
+  parsep=0pt,      % space between paragraph lines inside one item
+  topsep=0.5ex,    % space before/after the whole list (usually keep a little)
+  partopsep=0pt
+}
+\setlength{\columnsep}{1em}
+\lsection{Podnikatel a banka}
+\begin{multicols}{2}
 \qaw{Kdo může podnikat}{%
-Podnikat mohou jak fyzické osoby, jednotlivě, pod svým vlastním jménem, tak právnické osoby, coby skupina osob podnikajících pod společným jménem.
+Podnikat mohou jak \textbl{fyzické osoby}, \wemph{jednotlivě}, pod svým vlastním jménem, tak \textbl{právnické osoby}, coby \wemph{skupina osob} podnikajících pod společným jménem.
 }
 \qaw{Jakými zákony se řídí podnikání FO}{%
-Podnikání fyzických osob se řídí zákonem o živnostenském podnikání a živnostenských úřadech.
+Podnikání fyzických osob se řídí \texthl{zákonem o živnostenském podnikání a živnostenských úřadech}.
 }
 \qaw{Kde musí být zapsány podnikající FO}{%
-Všechny fyzické osoby podnikající na území České Republiky musí být povinně zapsány v živnostenském rejstříku.
+Všechny fyzické osoby podnikající na území České Republiky musí být povinně zapsány \texthl{v živnostenském rejstříku}.
 }
 \qaw{Definice živnosti}{%
-Živnost je soustavná činnost provozovaná pod vlastním jménem na vlastní odpovědnost za účelem dosažení zisků a za podmínek stanovených zákonem.
+Živnost je: \texthl{soustavná činnost}; provozovaná pod \texthl{vlastním jménem}; na \texthl{vlastní odpovědnost}; za \texthl{účelem dosažení zisků}; a za \texthl{podmínek stanovených zákonem}.
 }
-\wpgfboxed{
-\setlength{\multicolsep}{1em}% Remove vertical space before and after
-\setlength{\columnsep}{2em}% Remove space between columns
-\setlength{\leftskip}{0em}%
-\SetMCRule{
-  custom-line={\path[WPP] (TOP) to [ornament=88] (BOT);}, % Use ornament 88
-  width=0.4pt, % Ensure rule is drawn (width > 0pt)
-  extend-top=-2pt, % Shrink rule at top by 24pt
-  extend-bot=-2pt % Shrink rule at bottom by 8pt
-}
-%\hspace*{2em}
-\parbox{\dimexpr\textwidth-2em}{
-\begin{multicols}{2}
 \qaw{Všeobecné podmínky pro získání ŽL}{%
-Dovršení plnoletosti\\
-Svéprávnost\\
-Bezúhonnost v oboru podnikání\\
-Nesmí mít dluh vůči státu
+\textbl{Dovršení plnoletosti} (dovršení 18 let)\\
+\textbl{Svéprávnost} (na základě lékařské zprávy může odebrat soud)\\
+\textbl{Bezúhonnost v oboru podnikání} (prokazuje se výpisem z~rejstříku trestů)\\
+\textbl{Nesmí mít dluhy vůči státu}
 }
-\columnbreak
 \qaw{Zvláštní podmínky pro získání ŽL}{%
-Odborná způsobilost
+\textbl{Odborná způsobilost} (výuční list; maturita; vysoká škola)
 }
-\end{multicols}
-}}{1}{center}
-\addwpgfboxed{
-\setlength{\multicolsep}{1em}% Remove vertical space before and after
-\setlength{\columnsep}{2em}% Remove space between columns
-\setlength{\leftskip}{0em}%
-\SetMCRule{
-  custom-line={\path[WPP] (TOP) to [ornament=88] (BOT);}, % Use ornament 88
-  width=0.4pt, % Ensure rule is drawn (width > 0pt)
-  extend-top=-2pt, % Shrink rule at top by 24pt
-  extend-bot=-2pt % Shrink rule at bottom by 8pt
-}
-%\hspace*{2em}
-\parbox{\dimexpr\textwidth-2em}{
-\begin{multicols}{2}
 \qaw{Uveď příklady ohlašovacích živností a kdy mohu začít podnikat}{%
-\lipsum[1]
+Podnikatel může začít podnikat v \textbl{den nahlášení} na \textbl{Živnostenský úřad}.\\
+\begin{itemize}[label={\color{WPP}\faSlackHash}]
+\item \textbl{řemeslné} -- (truhlář, tesař, kadeřnice) další podmínkou je zde \texthl{vyučení v oboru}, či \texthl{6letá praxe}
+\item \textbl{vázané} -- (provoz autoškoly, revize elektrospotřebičů) dokládá se \texthl{odborná způsob} (obvykle určitým \wemph{certifikátem}) a~praxe v~oboru
+\item \textbl{volné} -- (velkoobchod, maloobchod) stačí pouze všeobecné podmínky
+\end{itemize}
 }
-\columnbreak
 \qaw{Uveď příklad koncesované živnosti a kdy mohu začít podnikat}{%
-\lipsum[1]
+Podnikatel může začít podnikat až v den, kdy mu přijde \textbl{koncesní listina}.
+Takzvaná \wemph{koncese} je povolení od státu k výkonu živnosti po dokázání způsobilosti v oboru.
+Patří sem například: \wemph{ostraha majetku osob}; \wemph{provádění pyrotechnického průzkumu}; \wemph{provozování střelnic}
+}
+\qaw{Zánik živnostenského podnikání}{%
+Živnostenské podnikání může zaniknout z několika důvodů.
+Nejčastějšími způsoby jsou \texthl{na žádost podnikatele o ukončení činnosti} a \texthl{uplynutí lhůty na kterou bylo zřízené}.
+Dále končí \texthl{smrtí podnikatele} nebo na \texthl{rozhodnutí soudu}.
 }
 \end{multicols}
-}}{1}{center}
-\qaw{Zánik živnostenského podnikání}{%
-něco
-}
 \wbreak
 \qaw{Co musí předložit podnikatel při založení bankovního účtu}{%
-něco
+Pro zřízení \texthl{podnikatelského účtu} musí podnikatel předložit svůj \wemph{občanský průkaz} a \wemph{živnostenský list}.
 }
 \qaw{Jaké druhy příkazů k úhradě používá podnikatel}{%
-něco
+\begin{itemize}[label={\color{WPP}\faSlackHash}]
+\item \textbl{jednorázový příkaz} -- využívaný k placení momántálně vzniklých faktur; vždy se liší doba a částka provedení
+\item \textbl{hromadný příkaz} -- více plateb provedených v jeden moment
+\item \textbl{trvalý příkaz k úhradě} -- využívaný k opakovaným platbám; zálohy na daně, nájem, spoření
+\item \textbl{příkaz k inkasu} -- dám povolení poskytovateli služeb, aby si mohl strhávat platby dle míry, jak jsem jejich služby využíval daný měsíc (je nastaven limit pro maximální možnou platbu)
+\end{itemize}
 }
 \qaw{Vysvětli rozdíl mezi kreditní a debetní kartou}{%
-něco
+K vlastnímu \wemph{bankovnímu účtu} dostaneme \textbl{debetní kartu}, která nám usnadňuje manipulaci s našimi zdroji a dává nám možnost platit přímo skrz platební terminály.\\
+K \wemph{úvěrovému účtu} dostaneme \textbl{kreditní kartu}, která splňuje podobné funkce, ale povoluje nám čerpat do záporných čísel, čímž nám vzniká úvěr vůči bance, který musíme splatit (bezúročně, jestli jej splatíme v rámci smluveného období).
 }
 \qaw{Vysvětli tyto pojmy:}{%
-bankovní tajemství,
-dispoziční právo,
-pojištění vkladů ve výši,
-cash back
+\textbl{bankovní tajemství}
+-- banka nesmí sdělovat informace o účtu, včetně výše uložené částky či provedených transakcí\\
+\textbl{dispoziční právo}
+-- svěřené oprávnění nakládat s bankovním účtem (v manželství manželce, ve firmě účetní); oprávnění můžeme omezit jen do určitých částek a na určité operace\\
+\textbl{pojištění vkladů ve výši}
+-- naše vklady jsou pojištěné do výše 100 000 €\\
+\textbl{cash back{\color{antiDP}$_{[1]}$}}
+-- obchodníci s logem Cashback nabízejí výběr peněz z bankovního účtu skrz pokladnu; obchodník vám odečte peníze z karty a dá vám hotovost na ruku\\
+\textbl{cash back{\color{antiDP}$_{[2]}$ (více známá služba se stejným názvem, zmiňuji jenom jako bonus)}}
+-- vrácení peněz při nákupu z vybraných e--shopů, (například služba Tipli), výše vrácených peněz se pohybuje mezi 2 \% až 10 \%, e-shopům se vyplatí do tohoto systému vstoupit, protože to pro ně funguje jako reklama
 }
 \qaw{Jak se dělí termínované vklady podle času}{%
-něco
+Finanční vklady do banky, které \texthl{nemůžeme vybrat před dobou splatnosti} (případně musíme \wemph{zaplatit sankce} za dřívější vybrání); banka k vkladu přičíta \texthl{pevně stanovený úrok}.\\
+\textbl{krátkodobé} -- do jednoho roku\\
+\textbl{střednědobé} -- mezi rokem až pěti\\
+\textbl{dlouhodobé} -- nad pět let
 }
 \wpage
 \end{document}
