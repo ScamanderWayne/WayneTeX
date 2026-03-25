@@ -1,36 +1,80 @@
 \documentclass[ekobook.tex]{subfiles}
 
 \begin{document}\setWPP
-\lsection{Bankovní služby \TODO}
+\setlist[itemize]{
+  itemsep=0pt,
+  parsep=0pt,      % space between paragraph lines inside one item
+  topsep=0.5ex,    % space before/after the whole list (usually keep a little)
+  partopsep=0pt
+}
+\lsection{Bankovní služby}
 \qaw{Systém bankovních institucí}{%
-něco
+\textbl{Dvoustupňový bankovní systém} tvořen \texthl{ČNB} na I. stupni a \texthl{ostatními bankami} na podřízeném II. stupni.
 }
 \qaw{Založení a zrušení bankovního účtu}{%
-něco
+Založit bankovní účet jde i přes internet a je k němu \texthl{zapotřebí občanský průkaz}.\\
+Zrušení bankovního účtu funguje podobně, \texthl{občanský průkaz stačí}, zbytečně ztěžovat proces zrušení je nezákonné.
 }
 \qaw{Dispoziční právo a bankovní tajemství}{%
-něco
+\textbl{Dispoziční právo} --
+Daná osoba (manžel/ka v manželství, účetní, ...) dostane \textbl{právo disponovat s bankovním účtem}.
+Často \texthl{limitováno jen na určité úkony} a/nebo \texthl{do určité částky}.\\
+\vspace{1pt}\\
+\textbl{Bankovní tajemství} --
+banka \texthl{nesmí zveřejňovat citlivé údaje}.
+Týká se \texthl{výše uložených částek}, \texthl{provedených transakcí}.
+Výjimku tvoří \texthl{soudem vyžádané informace} při trestném řízení, finanční úřad, insolvenční správci.\\
+A banka \textbl{musí hlásit podezřelé transakce}.
 }
 \qaw{Bankomaty -- výhody, nevýhody, rizika, limit pro platby v hotovosti}{%
-něco
+Ne každý fyzický (kamenný) obchod podporuje platby kartou.
+Hotovost po ruce se vyplatí.
+Je \texthl{stanoven limit pro výši výběru} hotovosti.\\
+Hotovost se \texthl{dá} ale\texthl{ ztratit} či \texthl{ukrást}, platební kartu by šlo \texthl{zablokovat} a zažádat o novou.\\
+\vspace{1pt}\\
+Platby v hotovosti \textbl{nesmí přesáhnout 270 000 Kč}.
 }
 \qaw{Bezhotovostní platební styk -- SIPO, druhy příkazů k úhradě}{%
-něco
+SIPO je služba zprostředkovaná \textbl{Českou poštou}, kam si lidé mohou dát všechny své měsíční platby a \texthl{najednou je zaplatit u pošty} (hromadně zaplatit plyn, elektřinu, vodu, poplatek za ČT, spoření a hypotéku, kupříkladu).
+\textbl{Nevýhodné} a dnes se už nepoužívá (je lehčí si nastavit \texthl{trvalé příkazy k úhradě} v rámci \texthl{bankovní aplikace}).\\
+\begin{itemize}[label={\color{WPP}\faSlackHash}]
+\item \textbl{jednorázový příkaz} -- využívaný k pokrytí jednotlivých plateb
+\item \textbl{hromadný příkaz} -- více plateb provedených v jeden moment
+\item \textbl{trvalý příkaz k úhradě} -- využívaný k opakovaným platbám; zálohy na daně, nájem, spoření
+\item \textbl{příkaz k inkasu} -- dám povolení poskytovateli služeb, aby si mohl strhávat platby dle míry, jak jsem jejich služby využíval daný měsíc (je nastaven limit pro maximální možnou platbu)
+\end{itemize}
 }
 \qaw{Debetní X kreditní karta}{%
-něco
+K vlastnímu \wemph{bankovnímu účtu} dostaneme \textbl{debetní kartu}, která nám usnadňuje manipulaci s našimi zdroji a dává nám možnost platit přímo skrz platební terminály.\\
+K \wemph{úvěrovému účtu} dostaneme \textbl{kreditní kartu}, která splňuje podobné funkce, ale povoluje nám čerpat do záporných čísel, čímž nám vzniká úvěr vůči bance, který musíme splatit (bezúročně, jestli jej splatíme v rámci smluveného období).
 }
 \qaw{Popiš princip kreditní karty -- bezúročné období, je to výhodné}{%
-něco
+\textbl{Kreditní karta} je k \wemph{úvěrovému účtu}, kdykoliv \texthl{platíme do minusu} (víc, než máme na svém účtu uloženo), tak nám \texthl{vznikne dluh}, který \texthl{musíme splatit}.
+Smluvně máme sjednané \textbl{bezúročné období} (dle banky obvykle \texthl{30} nebo \texthl{45 dní}), pokud splatíme dluh v tomto limitu, \texthl{nenaskočí nám úroky}.\\
+\vspace{1pt}\\
+Existují situace, kdy je \wemph{úvěrový účet} výhodný, ale jako \emph{u většiny dluhů, jestli jste v situaci, kdy jej potřebujete, neměl byste jej chtít}. 
 }
 \qaw{Virtuální měny}{%
-něco
+Někdy také nazývané \textbl{Cryptoměny}.
+Jde o měnu \texthl{čistě hypotetickou} (narozdíl od naší, která stále fyzicky existuje a má pouze hypotetickou hodnotu).
+Patří sem například \textsc{\color{WPP}Bitcoin}.
+Váže se na ně spousta podvodů (včetně praní peněz a krytí nelegálních plateb).
+Pár obchodů povoluje s nimi platit (ale nedoporučuje se to, viz případ \texthl{z roku 2010}, kdy muž z Floridy \texthl{zaplatil přibližně 800 Kč} za donášku pizzy svými \texthl{10 000 \faBitcoin}).
 }
 \qaw{Spořící účty -- dělení termínovaných vkladů podle délky splatnosti}{%
-něco
+U \textbl{spořícího účtu}máme peníze kdykoli k dispozici, \texthl{úrok se} ale \texthl{neustále mění} dle aktuálních sazeb.
+\vspace{1pt}\\
+\textbl{Termínované vklady} jsou finanční vklady do banky, které \texthl{nemůžeme vybrat před dobou splatnosti} (případně musíme \wemph{zaplatit sankce} za dřívější vybrání);
+banka k vkladu přičíta \texthl{pevně stanovený úrok}.\\
+\textbl{krátkodobé} -- do jednoho roku\\
+\textbl{střednědobé} -- mezi rokem až pěti\\
+\textbl{dlouhodobé} -- nad pět let
 }
 \qaw{Jak se chránit před zneužitím podvodníků v bankovních sférách}{%
-něco
+Nikomu \texthl{nesdělovat PIN} (a nemít jej napsaný na papírku u karty).
+Nepřihlašovat se bez ochrany na \texthl{veřejnou wi--fi}.
+Používat \texthl{silné přihlašovací heslo}.
+Využít služby \texthl{zablokování platební karty} hned po zjištění ztráty.
 }
 \wpage
 \end{document}

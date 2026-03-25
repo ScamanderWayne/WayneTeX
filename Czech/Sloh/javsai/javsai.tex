@@ -1,0 +1,541 @@
+\documentclass{article}
+\usepackage[czech]{babel}
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	left=2.5cm,
+	right=2.5cm,
+	top=2cm,
+	bottom=2.5cm
+	}
+\usepackage{enumitem}
+\usepackage{parskip}
+%\usepackage{nopageno}
+\usepackage{xcolor}
+\usepackage{mdframed}
+\usepackage[fixed]{fontawesome5}
+\usepackage{lipsum}
+\usepackage{csquotes}
+\usepackage{multicol}
+\usepackage{wrapfig}
+
+\usepackage{amsmath}
+\usepackage{mathabx}
+\usepackage{stmaryrd}
+
+\usepackage{pgfornament}
+
+\usepackage{darkmode}
+\enabledarkmode
+
+\usepackage{hologo}
+
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{0pt}{0pt}
+\titlespacing*{\subsection}{0pt}{0pt}{0pt}
+
+\IfDarkModeTF{%
+\definecolor{DP}{HTML}{293133}%
+%
+\definecolor{antiDP}{HTML}{FFFFFF}%
+%
+\definecolor{WPP}{HTML}{00FFFF}%cyan
+\definecolor{WPP}{HTML}{0066CC}%blue
+\definecolor{WPP}{HTML}{C9A12A}%gold
+\definecolor{WPP}{HTML}{EC2B2B}%red
+\definecolor{WPP}{HTML}{39DDD5}%sort of cyan
+}{%
+\definecolor{DP}{HTML}{FFFFFF}%
+%
+\definecolor{antiDP}{HTML}{000000}%
+%
+\definecolor{WPP}{HTML}{702632}%lightmode wine
+}
+
+\usepackage{tocloft}
+%\renewcommand{\cftsecpagefont}{\color{WPP}}
+\renewcommand{\cftsecleader}{\color{WPP}\cftdotfill{\cftdotsep}}
+\renewcommand{\cftsecpresnum}{\hfill}% Right-align
+\renewcommand{\cftsecaftersnum}[1]{}% Remove \hfil after number
+\renewcommand{\cftsecaftersnumb}{\hspace{1em}}% Space between number and section title
+
+\NewDocumentCommand{\wtext}{m}{%
+\begin{flushright}
+\subsection*{\color{antiDP}#1\hspace{1em}\color{WPP}\faCaretSquareLeft}\nobreak
+\end{flushright}
+}
+
+\NewDocumentCommand{\texthl}{m}{%
+	{\color{WPP}{#1}}%
+}
+
+\NewDocumentCommand{\textbl}{m}{%
+	{\textbf{\color{WPP}{#1}}}%
+}
+
+\NewDocumentCommand{\wemph}{m}{%
+	{\color{WPP}\emph{#1}}%
+}
+
+\NewDocumentCommand{\wextbf}{m}{%
+	{\subsection*{\vspace{-6pt}\hspace{-7pt}\noindent\colorbox{WPP}{\color{DP}{#1}}}}%
+}
+
+\NewDocumentCommand{\waybox}{m}{\vspace{-2pt}%
+\begin{mdframed}[backgroundcolor=DP,%
+	linecolor=WPP,%
+	linewidth=2pt,%
+	innertopmargin=5pt,%
+	innerbottommargin=5pt,%
+	innerleftmargin=5pt,%
+	innerrightmargin=5pt]%
+	\color{antiDP}%
+	#1%
+\end{mdframed}%
+}
+
+\renewcommand\thesection{\Large\color{WPP}\arabic{section}}
+\setlength\cftsecnumwidth{2.5em}
+
+\NewDocumentCommand{\wsection}{m}{%
+\section{\Large\color{WPP}#1}%
+\vspace{2pt}%
+}
+
+\NewDocumentCommand{\wsubsection}{m}{%
+\subsection*{\color{WPP}#1}%
+\vspace{2pt}%
+}
+
+\NewDocumentCommand{\wayitem}{m m}{%
+\begin{itemize}[leftmargin=*]\setlength\itemsep{#2}%
+	#1%
+\end{itemize}%
+}
+
+\NewDocumentCommand{\wtem}{m}{%
+\item \texthl{#1} --%
+}
+
+\NewDocumentCommand{\wx}{}{%
+{$\color{WPP}\textbf{\vartimes}$}%
+}
+
+\NewDocumentCommand{\whlarrow}{}{%
+{{\color{WPP}$\hookrightarrow$}{ }}%
+}
+
+\newenvironment{indentpara}[1][0em]{
+  \setlength{\leftskip}{#1}%
+  \setlength{\parskip}{0pt}% No stretchable parskip
+  \setlength{\parindent}{2em}% No indent
+}{\par}
+
+\newenvironment{wnumbered}{%
+\begin{enumerate}[label={\color{WPP}\textbf{\arabic*.}}]%
+}{\end{enumerate}}
+
+\NewDocumentCommand{\qaw}{m m}{%
+\vspace{1em}
+\wtext{#1}%
+\begin{indentpara}%
+#2%
+\end{indentpara}%
+}
+
+\NewDocumentCommand{\wbreak}{}{%
+\vspace{0em}%
+\begin{center}%
+{\color{WPP}\pgfornament[width=\textwidth]{88}}%
+\end{center}%
+\vspace{0em}%
+}
+
+\def\wloss{%
+\begingroup
+\def\i{\pgfusepath{clip}}%
+\def\k{\pgfusepath{stroke}}%
+\let\o\pgfpathclose
+\let\s\pgfusepathqfillstroke
+\def\p ##1##2{\pgfqpoint{##1bp}{##2bp}}%
+\def\m ##1 ##2 {\pgfpathmoveto{\p{##1}{##2}}}%
+\def\r ##1 ##2 ##3 ##4 {\pgfpathrectangle{\p{##1}{##2}}{%
+\p{##3}{##4}}}%
+\def\l ##1 ##2 {\pgfpathlineto{\p{##1}{##2}}}%
+\def\c ##1 ##2 ##3 ##4 ##5 ##6 {%
+\pgfpathcurveto{\p{##1}{##2}}{\p{##3}{##4}}{\p{##5}{##6}}}%
+\begin{tikzpicture}
+\pgftransformscale{.08}
+\m 133.06666667 201.73333333
+\l 132.66666667 138
+\l 93.06666667 137.6
+\l 53.33333333 137.33333333
+\l 53.33333333 166.66666667
+\l 53.33333333 196
+\l 48.66666667 196
+\l 44 196
+\l 44 166.66666667
+\l 44 137.33333333
+\l 22 137.33333333
+\l 0 137.33333333
+\l 0 133.33333333
+\l 0 129.33333333
+\l 22 129.33333333
+\l 44 129.33333333
+\l 44 97.33333333
+\l 44 65.33333333
+\l 48.66666667 65.33333333
+\l 53.33333333 65.33333333
+\l 53.33333333 97.33333333
+\l 53.33333333 129.33333333
+\l 67.33333333 129.33333333
+\l 81.33333333 129.33333333
+\l 81.33333333 97.33333333
+\l 81.33333333 65.33333333
+\l 86 65.33333333
+\l 90.66666667 65.33333333
+\l 90.66666667 97.33333333
+\l 90.66666667 129.33333333
+\l 112 129.33333333
+\l 133.33333333 129.33333333
+\l 133.33333333 64.66666667
+\l 133.33333333 -0
+\l 137.33333333 -0
+\l 141.33333333 -0
+\l 141.33333333 64.66666667
+\l 141.33333333 129.33333333
+\l 166.66666667 129.33333333
+\l 192 129.33333333
+\l 192 107.33333333
+\l 192 85.33333333
+\l 177.86666667 85.33333333
+\l 163.86666667 85.33333333
+\l 164.26666667 80.93333333
+\l 164.66666667 76.66666667
+\l 215.06666667 76.26666667
+\l 265.33333333 76
+\l 265.33333333 80.66666667
+\l 265.33333333 85.33333333
+\l 232.66666667 85.33333333
+\l 200 85.33333333
+\l 200 107.33333333
+\l 200 129.33333333
+\l 232.66666667 129.33333333
+\l 265.33333333 129.33333333
+\l 265.33333333 133.33333333
+\l 265.33333333 137.33333333
+\l 250.66666667 137.33333333
+\l 236 137.33333333
+\l 236 152.66666667
+\l 236 168
+\l 231.33333333 168
+\l 226.66666667 168
+\l 226.66666667 152.66666667
+\l 226.66666667 137.33333333
+\l 213.33333333 137.33333333
+\l 200 137.33333333
+\l 200 166.66666667
+\l 200 196
+\l 196 196
+\l 192 196
+\l 191.73333333 167.06666667
+\l 191.33333333 138
+\l 166.66666667 138
+\l 142 138
+\l 141.6 201.73333333
+\l 141.33333333 265.33333333
+\l 137.33333333 265.33333333
+\l 133.33333333 265.33333333
+\pgfsetfillcolor{WPP}
+\pgfusepath{fill}
+\k
+\end{tikzpicture}
+\endgroup
+}
+
+\usepackage{environ}
+\makeatletter
+\newsavebox{\measure@tikzpicture}
+\NewEnviron{scaletikzpicturetowidth}[1]{%
+  \def\tikz@width{#1}%
+  \def\tikzscale{1}\begin{lrbox}{\measure@tikzpicture}%
+  \BODY
+  \end{lrbox}%
+  \pgfmathparse{#1/\wd\measure@tikzpicture}%
+  \edef\tikzscale{\pgfmathresult}%
+  \BODY
+}
+\makeatother
+\usetikzlibrary{snakes}
+\usepackage{varwidth}
+
+% Set global itemize properties with fixed spacing
+\setlist[itemize]{%
+  label=\textcolor{WPP}{$\rightarrow$}, % \textbullet \faGreaterThan \hookrightarrow
+  itemsep=4pt,    % Fixed spacing between items
+  parsep=0pt,     % Fixed spacing within items
+  topsep=0pt,     % Fixed spacing before/after list
+  partopsep=0pt   % No extra paragraph spacing
+}
+
+%\setlist[itemize]{label=\textcolor{WPP}{$\hookrightarrow$}}%\textbullet \faGreaterThan \Longrightarrow
+
+\usepackage[scale=0.8]{ccicons} % For Creative Commons icons, scaled to 80%
+\usepackage{fancyhdr}
+
+% Configuring fancyhdr
+\pagestyle{fancy}
+\fancyhf{} % Clear default headers and footers
+%\fancyhead[R]{\wloss}
+%\fancyfoot[L]{{\color{WPP}{\pgfornament[scale=0.35,ydelta=-3pt,color=antiDP]{11}}{ }\thepage . {\color{antiDP}stránka}}} % Left footer: Page number
+\fancyfoot[L]{\pgfornament[scale=0.7,ydelta=-12pt,color=antiDP]{11}}
+\fancyfoot[C]{\vspace{-3em}Vytvořil \href{https://github.com/ScamanderWayne/}{\color{WPP}Libor Halík}.\par
+Tato práce je licencována pod \href{https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en}{\color{WPP}\ccbyncsaeu\-\ 4.0 International License}.}
+\fancyfoot[R]{\pgfornament[scale=0.7,ydelta=-12pt,color=antiDP]{14}}
+
+% Adjusting header/footer layout
+\renewcommand{\headrulewidth}{0pt} % Thin line under header
+\renewcommand{\footrulewidth}{0em} % Thin line above footer
+%\renewcommand{\footrule}{{\color{WPP}\hrule\vspace{1em}}} %\vskip-\footrulewidth
+\setlength{\headheight}{14.5pt} % Ensure sufficient header height to avoid warnings
+\setlength{\footskip}{0em}
+
+\usepackage[
+    hidelinks,                    % No visible link colors or borders
+    pdftitle={Já vs. AI},       % PDF metadata: title
+    pdfauthor={Libor Halík},         % PDF metadata: author
+    pdfstartview=FitH,            % Fit page width to window
+    pdfduplex=DuplexFlipShortEdge % Double-sided printing, flip on short edge
+]{hyperref}
+
+\usetikzlibrary{calc}
+\NewDocumentCommand{\wpgfboxed}{m m m}{%
+\begin{#3}
+\begin{tikzpicture}[every node/.style={inner sep=0pt}]
+\color{WPP}
+\node[text width=#2\textwidth,align=justify](Text){%
+{\color{antiDP}#1}} ;
+\node[shift={(0cm,0cm)},anchor=north west](CNW) at (Text.north west) {}; %37
+\node[shift={(-1cm,0cm)},anchor=north](CN1) at (Text.north) {};
+\node[shift={(1cm,0cm)},anchor=north](CN2) at (Text.north) {};
+\node[shift={(0cm,0cm)},anchor=north east](CNE) at (Text.north east) {};
+\node[shift={(0cm,-0.2cm)},anchor=south west](CSW) at (Text.south west) {};
+\node[shift={(-1cm,-0.2cm)},anchor=south](CS1) at (Text.south) {};
+\node[shift={(1cm,-0.2cm)},anchor=south](CS2) at (Text.south) {};
+\node[shift={(0cm,-0.2cm)},anchor=south east](CSE) at (Text.south east) {};
+\pgfornamenthline{CNW}{CN2}{north}{88}\pgfornamenthline{CN1}{CNE}{north}{88}
+\pgfornamenthline{CSW}{CS2}{south}{88}\pgfornamenthline{CS1}{CSE}{south}{88}
+%\pgfornamentvline{CNW}{CSW}{west}{88}\pgfornamentvline{CNE}{CSE}{east}{88}
+\end{tikzpicture}
+\end{#3}
+}
+
+\NewDocumentCommand{\lsection}{m}{%
+  \noindent
+  \begin{minipage}[t]{0.75\textwidth}
+  	\vspace{-2em}
+    \section{#1}
+  \end{minipage}%
+  \hfill
+  \begin{minipage}[t]{0.15\textwidth}
+   \raggedleft
+    \wloss
+  \end{minipage}%\vspace{-\baselineskip} % Compensate for section's default spacing
+}
+\usepackage{fontspec}
+\newfontfamily\signaturefont{MrDafoe}
+
+\setmainfont{Tex Gyre Termes}
+\pagestyle{empty}
+
+\NewDocumentCommand{\wboxed}{m m m m}{%
+\begin{#4}
+\begin{tikzpicture}[every node/.style={inner sep=0pt}]
+\color{WPP}
+\node[text width=#3\textwidth,align=justify](Text){%
+{\begin{indentpara}
+\vspace{1.8em}\par
+\color{antiDP}#2
+\end{indentpara}}
+} ;
+\node[shift={(0cm,0cm)},anchor=north west](CNW) at (Text.north west) {}; %37
+\node[shift={(-1cm,0cm)},anchor=north](CN1) at (Text.north) {};
+\node[shift={(1cm,0cm)},anchor=north](CN2) at (Text.north) {};
+\node[shift={(0cm,0cm)},anchor=north east](CNE) at (Text.north east) {};
+\node[anchor=north east] (W) at ($(CNE) + (0pt, -1em)$) {};
+\node [anchor=east, inner sep=0pt] (AuthorText) at ($(W.west) - (0em, 0pt)$) {
+  \raggedleft
+  {\large\bfseries\color{antiDP}#1 \IfDarkModeTF{\color{WPP}\faCaretSquareLeft[regular]}{\color{WPP}\faCaretSquareLeft}}
+};
+\node[shift={(0cm,-0.2cm)},anchor=south west](CSW) at (Text.south west) {};
+\node[shift={(-1cm,-0.2cm)},anchor=south](CS1) at (Text.south) {};
+\node[shift={(1cm,-0.2cm)},anchor=south](CS2) at (Text.south) {};
+\node[shift={(0cm,-0.2cm)},anchor=south east](CSE) at (Text.south east) {};
+\pgfornamenthline{CNW}{CN2}{north}{88}\pgfornamenthline{CN1}{CNE}{north}{88}
+\pgfornamenthline{CSW}{CS2}{south}{88}\pgfornamenthline{CS1}{CSE}{south}{88}
+%\pgfornamentvline{CNW}{CSW}{west}{88}\pgfornamentvline{CNE}{CSE}{east}{88}
+\end{tikzpicture}
+\end{#4}
+}
+
+\NewDocumentCommand{\wauthorized}{m m m m}{%
+\begin{#4}
+\begin{tikzpicture}[every node/.style={inner sep=0pt}]
+\color{WPP}
+\node[text width=#3\textwidth,align=justify](Text){%
+{\begin{indentpara}
+\vspace{1.8em}\par
+\color{antiDP}#2
+\end{indentpara}}
+} ;
+\node[shift={(0cm,0cm)},anchor=north west](CNW) at (Text.north west) {}; %37
+\node[shift={(-1cm,0cm)},anchor=north](CN1) at (Text.north) {};
+\node[shift={(1cm,0cm)},anchor=north](CN2) at (Text.north) {};
+\node[shift={(0cm,0cm)},anchor=north east](CNE) at (Text.north east) {};
+\node[anchor=north east] (W) at ($(CNE) + (0pt, -1em)$) {};
+\node [anchor=east, inner sep=0pt] (AuthorText) at ($(W.west) - (0em, 0pt)$) {
+  \raggedleft
+  {\large\bfseries\color{antiDP}#1 \color{WPP}\faCaretSquareLeft[regular]}
+};
+\node[shift={(0cm,-0.2cm)},anchor=south west](CSW) at (Text.south west) {};
+\node[shift={(-1cm,-0.2cm)},anchor=south](CS1) at (Text.south) {};
+\node[shift={(1cm,-0.2cm)},anchor=south](CS2) at (Text.south) {};
+\node[shift={(0cm,-0.2cm)},anchor=south east](CSE) at (Text.south east) {};
+%\pgfornamenthline{CNW}{CN2}{north}{88}\pgfornamenthline{CN1}{CNE}{north}{88}
+%\pgfornamenthline{CSW}{CS2}{south}{88}\pgfornamenthline{CS1}{CSE}{south}{88}
+%\pgfornamentvline{CNW}{CSW}{west}{88}\pgfornamentvline{CNE}{CSE}{east}{88}
+\end{tikzpicture}
+\end{#4}
+}
+
+\newcommand{\framesize}{4cm}
+\NewDocumentCommand{\authorized}{m}{
+\begin{flushright}
+\begin{tikzpicture}[color=WPP, transform shape, every node/.style={inner sep=0pt}]
+\node[minimum size=\framesize](vecbox){};
+\node[anchor=north west] at (vecbox.north west){%
+\pgfornament[width=0.2*\framesize]{63}};
+\node[anchor=north east] at (vecbox.north east){%
+\pgfornament[width=0.2*\framesize,symmetry=v]{63}};
+\node[anchor=south west] at (vecbox.south west){%
+\pgfornament[width=0.2*\framesize,symmetry=h]{63}};
+\node[anchor=south east] at (vecbox.south east){%
+\pgfornament[width=0.2*\framesize,symmetry=c]{63}};
+\node[anchor=north] at (vecbox.north){%
+\pgfornament[width=0.6*\framesize,symmetry=h]{46}};
+\node[anchor=south] at (vecbox.south){%
+\pgfornament[width=0.6*\framesize]{46}};
+\node[anchor=north,rotate=90] at (vecbox.west){%
+\pgfornament[width=0.6*\framesize,symmetry=h]{46}};
+\node[anchor=north,rotate=-90] at (vecbox.east){%
+\pgfornament[width=0.6*\framesize,symmetry=h]{46}};
+\node[inner sep=6pt] (text) at (vecbox.center){\large\bfseries #1};
+\node[anchor=north] at (text.south){%
+\pgfornament[width=0.5*\framesize]{75}};
+\node[anchor=south] at (text.north){%
+\pgfornament[width=0.5*\framesize,symmetry=h]{75}};
+\end{tikzpicture}
+\end{flushright}
+}
+
+\newcommand{\pageornament}[4]{% 
+\begin{tikzpicture}[remember picture, overlay] 
+\color{#2}
+\node[anchor=north west] at (current page.north west){% 
+    \pgfornament[width=#3]{#1}}; 
+\node[anchor=north east](NE) at (current page.north east){%
+    \pgfornament[width=#3,symmetry=v]{#1}};
+\node[anchor=north east] (W) at ($(NE) + (3.8em, -0.8em)$) {};
+\node [anchor=east, inner sep=0pt] (AuthorText) at ($(W.west) - (0em, 0pt)$) {
+  \raggedleft
+  {\rotatebox{50}{\color{antiDP}\fontsize{10pt}{10pt}\selectfont\signaturefont#4}}
+};
+\node[anchor=south west] at (current page.south west){% 
+    \pgfornament[width=#3,symmetry=h]{#1}}; 
+\node[anchor=south east] at (current page.south east){% 
+    \pgfornament[width=#3,symmetry=c]{#1}}; 
+\end{tikzpicture}}
+
+\NewDocumentCommand{\wline}{}{\par}
+
+\NewDocumentCommand{\wname}{m}{%
+\textbf{\color{WPP}#1}%
+}
+
+\NewDocumentCommand{\wbook}{m}{%
+\textsc{\color{WPP}#1}%
+}
+
+\newfontfamily\citefont{Tex Gyre Chorus}
+\NewDocumentCommand{\wcite}{m}{%
+{\emph{\citefont\color{WPP}\enquote{{\color{antiDP}#1}}}}%
+}
+
+\NewDocumentCommand{\wplace}{m}{%
+{\color{WPP}#1}%
+}
+
+\NewDocumentCommand{\wchar}{m}{%
+{\citefont\color{WPP}#1}%
+}
+
+\NewDocumentCommand{\whl}{m}{%
+\emph{#1}%
+}
+
+\begin{document}\fontsize{10pt}{10pt}\selectfont\setlength{\parindent}{2em}\setlength{\parskip}{0em}\IfDarkModeTF{\definecolor{WPP}{HTML}{36F7F7}}{\definecolor{WPP}{HTML}{034444}}
+\pageornament{31}{WPP}{3cm}{Libor Halík}% \authorized{Libor Halík}
+\noindent
+\begin{minipage}[t]{0.45\textwidth}
+\vspace{0pt}   % helps with top alignment in some cases
+\wboxed{AI}{%
+\noindent
+Typografický systém \textbl{LaTeX}\wline
+LaTeX je \texthl{typografický systém} určený k sazbě \wemph{odborných i běžných textů}.
+Je založen na programu \textbl{TeX}, který vytvořil americký informatik \wemph{Donald Knuth}.
+Samotný \textbl{LaTeX} pak vznikl jako nadstavba, jež usnadňuje práci s formátováním dokumentů.
+Jeho hlavním úkolem není pouze psaní textu, ale především vytváření dokumentů s \wemph{přesnou a esteticky kvalitní sazbou}.\wline
+Princip \textbl{LaTeXu} se liší od běžných textových editorů.
+Uživatel \texthl{neformátuje text přímo} pomocí tlačítek a nabídek, ale zapisuje \wemph{zvláštní příkazy}, které určují strukturu dokumentu.
+Například se označují nadpisy, odstavce, tabulky, obrázky nebo \wemph{matematické vzorce}.
+Program pak podle těchto pokynů vytvoří výsledný dokument.
+Důležitá je tedy zejména \textbl{logická stavba textu}, nikoli ruční úprava každého detailu.\wline
+Velkou předností \textbl{LaTeXu} je \wemph{vysoká typografická úroveň}.
+Systém automaticky řeší zalamování řádků, číslování kapitol, tvorbu obsahu, seznamů literatury i poznámek pod čarou.
+Mimořádně vhodný je pro sazbu \wemph{matematických, fyzikálních nebo technických textů}, protože umožňuje přehledně zapisovat i \texthl{velmi složité vzorce}.
+Uplatnění nachází také při psaní seminárních prací, knih, prezentací či vědeckých článků.\wline
+Další výhodou je \textbl{jednotnost vzhledu}.
+Pokud autor použije předem zvolený styl, celý dokument působí přehledně a profesionálně.
+\textbl{LaTeX} je navíc \wemph{zdarma} a funguje na různých operačních systémech.
+Nevýhodou může být \texthl{náročnější začátek}, protože práce s příkazy vyžaduje trpělivost a základní orientaci v systému.\wline
+\textbl{LaTeX} tedy představuje účinný nástroj pro každého, kdo potřebuje vytvářet \wemph{kvalitně vysázené texty}.
+Jeho význam spočívá především v \textbl{přesnosti, přehlednosti} a schopnosti zpracovat i obsahově náročné dokumenty.
+}{1}{center}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.45\textwidth}
+\vspace{0pt}
+\wboxed{Já}{%
+\noindent
+LaTeX -- pro kvalitní sazbu textů\wline
+LaTeX je typografický systém sloužící k sazbě odborných i běžných textů.
+Vznikl jako nadstavba programu TeX, který vytvořil americký informatik Donald Knuth.
+Hlavním účelem LaTeXu není pouhé psaní textu, ale vytváření dokumentů s přesnou, esteticky kvalitní sazbou – a to je právě důvod, proč se s ním vyplatí seznámit.\wline
+Princip práce v LaTeXu se zásadně liší od běžných textových editorů, jako je například Microsoft Word.
+Uživatel text neformátuje klikáním na tlačítka a výběrem z nabídek, ale zapisuje speciální příkazy, které určují strukturu dokumentu.
+Označují se nadpisy, odstavce, tabulky, obrázky nebo matematické vzorce a program podle těchto pokynů sám vytvoří výsledný dokument.
+Podstatná je tedy logická stavba textu, nikoliv ruční úprava každého jednotlivého detailu.
+Na první pohled to může působit složitě, ale jakmile člověk pochopí základní logiku příkazů, práce s LaTeXem začne dávat smysl a výsledky stojí za tu počáteční námahu.\wline
+Velkou předností tohoto systému je vysoká typografická úroveň výstupů. LaTeX automaticky řeší zalamování řádků, číslování kapitol, tvorbu obsahu, seznamů literatury i poznámek pod čarou.
+Mimořádně vhodný je pro sazbu matematických, fyzikálních nebo technických textů, protože umožňuje přehledně zapsat i velmi složité vzorce.
+Uplatnění ale nachází i při psaní seminárních prací, knih, prezentací či vědeckých článků.\wline
+Další nespornou výhodou je jednotnost vzhledu.
+Pokud autor použije předem zvolený styl, celý dokument působí přehledně a profesionálně, aniž by bylo nutné cokoli ručně dolaďovat.
+LaTeX je navíc dostupný zdarma a funguje na různých operačních systémech.
+Za nevýhodu lze považovat náročnější začátek – práce s příkazy vyžaduje trpělivost a alespoň základní orientaci v systému.
+Kdo se ale přes tuto počáteční bariéru dostane, pravděpodobně už nebude chtít sázet složitější dokumenty v ničem jiném.\wline
+LaTeX tedy představuje účinný nástroj pro každého, kdo potřebuje vytvářet kvalitně vysázené texty.
+Jeho význam spočívá v přesnosti, přehlednosti a schopnosti spolehlivě zpracovat i obsahově náročné dokumenty.
+}{1}{center}
+\end{minipage}\wline
+\end{document}
