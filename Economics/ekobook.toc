@@ -18,4 +18,4 @@
 \contentsline {section}{\numberline {\Large \color {WPP}17}Zdroje financování podniku}{22}{section.17}%
 \contentsline {section}{\numberline {\Large \color {WPP}18}Mezinárodní obchod a měna}{23}{section.18}%
 \contentsline {section}{\numberline {\Large \color {WPP}19}Strategie prodeje a cenová politika}{24}{section.19}%
-\contentsline {section}{\numberline {\Large \color {WPP}20}Vznik a zánik pracovního poměru \TODO }{25}{section.20}%
+\contentsline {section}{\numberline {\Large \color {WPP}20}Vznik a zánik pracovního poměru}{25}{section.20}%
