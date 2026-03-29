@@ -1,9 +1,9 @@
 \babel@toc {czech}{}\relax 
-\contentsline {section}{\numberline {\Large \color {WPP}1}Ekonomické pojmy v praxi \TODO }{3}{section.1}%
-\contentsline {section}{\numberline {\Large \color {WPP}2}Pojištění \CHECK }{4}{section.2}%
-\contentsline {section}{\numberline {\Large \color {WPP}3}Management \CHECK }{5}{section.3}%
-\contentsline {section}{\numberline {\Large \color {WPP}4}Logistika a zásobování \TODO }{6}{section.4}%
-\contentsline {section}{\numberline {\Large \color {WPP}5}Obchodní korporace \TODO }{8}{section.5}%
+\contentsline {section}{\numberline {\Large \color {WPP}1}Ekonomické pojmy v praxi}{3}{section.1}%
+\contentsline {section}{\numberline {\Large \color {WPP}2}Pojištění}{5}{section.2}%
+\contentsline {section}{\numberline {\Large \color {WPP}3}Management}{6}{section.3}%
+\contentsline {section}{\numberline {\Large \color {WPP}4}Logistika a zásobování}{7}{section.4}%
+\contentsline {section}{\numberline {\Large \color {WPP}5}Obchodní korporace}{8}{section.5}%
 \contentsline {section}{\numberline {\Large \color {WPP}6}Bankovní systém}{9}{section.6}%
 \contentsline {section}{\numberline {\Large \color {WPP}7}Národní hospodářství}{11}{section.7}%
 \contentsline {section}{\numberline {\Large \color {WPP}8}Kapitálový trh}{12}{section.8}%
