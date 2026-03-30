@@ -1,21 +1,21 @@
 \babel@toc {czech}{}\relax 
-\contentsline {section}{\numberline {\Large \color {WPP}1}Ekonomické pojmy v praxi}{3}{section.1}%
-\contentsline {section}{\numberline {\Large \color {WPP}2}Pojištění}{5}{section.2}%
-\contentsline {section}{\numberline {\Large \color {WPP}3}Management}{6}{section.3}%
-\contentsline {section}{\numberline {\Large \color {WPP}4}Logistika a zásobování}{7}{section.4}%
-\contentsline {section}{\numberline {\Large \color {WPP}5}Obchodní korporace}{8}{section.5}%
-\contentsline {section}{\numberline {\Large \color {WPP}6}Bankovní systém}{9}{section.6}%
-\contentsline {section}{\numberline {\Large \color {WPP}7}Národní hospodářství}{11}{section.7}%
-\contentsline {section}{\numberline {\Large \color {WPP}8}Kapitálový trh}{12}{section.8}%
-\contentsline {section}{\numberline {\Large \color {WPP}9}Majetek podniku}{13}{section.9}%
-\contentsline {section}{\numberline {\Large \color {WPP}10}Daňová soustava}{14}{section.10}%
-\contentsline {section}{\numberline {\Large \color {WPP}11}Hospodaření podniku}{16}{section.11}%
-\contentsline {section}{\numberline {\Large \color {WPP}12}Obchodování s cennými papíry}{17}{section.12}%
-\contentsline {section}{\numberline {\Large \color {WPP}13}Podnikatel a banka}{18}{section.13}%
-\contentsline {section}{\numberline {\Large \color {WPP}14}Odměňování a mzda}{19}{section.14}%
-\contentsline {section}{\numberline {\Large \color {WPP}15}Marketingový mix}{20}{section.15}%
-\contentsline {section}{\numberline {\Large \color {WPP}16}Bankovní služby}{21}{section.16}%
-\contentsline {section}{\numberline {\Large \color {WPP}17}Zdroje financování podniku}{22}{section.17}%
-\contentsline {section}{\numberline {\Large \color {WPP}18}Mezinárodní obchod a měna}{23}{section.18}%
-\contentsline {section}{\numberline {\Large \color {WPP}19}Strategie prodeje a cenová politika}{24}{section.19}%
-\contentsline {section}{\numberline {\Large \color {WPP}20}Vznik a zánik pracovního poměru}{25}{section.20}%
+\contentsline {section}{\numberline {\Large \color {WPP}1}Ekonomické pojmy v praxi}{4}{section.1}%
+\contentsline {section}{\numberline {\Large \color {WPP}2}Pojištění}{6}{section.2}%
+\contentsline {section}{\numberline {\Large \color {WPP}3}Management}{7}{section.3}%
+\contentsline {section}{\numberline {\Large \color {WPP}4}Logistika a zásobování}{8}{section.4}%
+\contentsline {section}{\numberline {\Large \color {WPP}5}Obchodní korporace}{9}{section.5}%
+\contentsline {section}{\numberline {\Large \color {WPP}6}Bankovní systém}{10}{section.6}%
+\contentsline {section}{\numberline {\Large \color {WPP}7}Národní hospodářství}{12}{section.7}%
+\contentsline {section}{\numberline {\Large \color {WPP}8}Kapitálový trh}{13}{section.8}%
+\contentsline {section}{\numberline {\Large \color {WPP}9}Majetek podniku}{14}{section.9}%
+\contentsline {section}{\numberline {\Large \color {WPP}10}Daňová soustava}{15}{section.10}%
+\contentsline {section}{\numberline {\Large \color {WPP}11}Hospodaření podniku}{17}{section.11}%
+\contentsline {section}{\numberline {\Large \color {WPP}12}Obchodování s cennými papíry}{18}{section.12}%
+\contentsline {section}{\numberline {\Large \color {WPP}13}Podnikatel a banka}{19}{section.13}%
+\contentsline {section}{\numberline {\Large \color {WPP}14}Odměňování a mzda}{20}{section.14}%
+\contentsline {section}{\numberline {\Large \color {WPP}15}Marketingový mix}{21}{section.15}%
+\contentsline {section}{\numberline {\Large \color {WPP}16}Bankovní služby}{22}{section.16}%
+\contentsline {section}{\numberline {\Large \color {WPP}17}Zdroje financování podniku}{23}{section.17}%
+\contentsline {section}{\numberline {\Large \color {WPP}18}Mezinárodní obchod a měna}{24}{section.18}%
+\contentsline {section}{\numberline {\Large \color {WPP}19}Strategie prodeje a cenová politika}{25}{section.19}%
+\contentsline {section}{\numberline {\Large \color {WPP}20}Vznik a zánik pracovního poměru}{26}{section.20}%
