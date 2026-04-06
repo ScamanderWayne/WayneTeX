@@ -1,0 +1,13 @@
+\babel@toc {czech}{}\relax 
+\contentsline {part}{\color {WP}{Světová a česká literatura do konce 18. století}}{4}{Doc-Start}%
+\contentsline {section}{\textbf {\color {WP}\faIcon {theater-masks} Hamlet} -- \textsc {William Shakespeare}}{5}{section*.1}%
+\contentsline {section}{\textbf {\color {WP}\faIcon {theater-masks} Romeo a Julie} -- \textsc {William Shakespeare}}{7}{section*.2}%
+\contentsline {part}{\color {WY}{Světová a česká literatura 19. století}}{9}{section*.2}%
+\contentsline {section}{\textbf {\color {WY}\faIcon {feather-alt} Havran} -- \textsc {Edgar Allan Poe}}{10}{section*.3}%
+\contentsline {section}{\textbf {\color {WY}\faIcon {feather-alt} Máj} -- \textsc {Karel Hynek Mácha}}{11}{section*.4}%
+\contentsline {section}{\textbf {\color {WY}\faIcon {feather-alt} Kytice} -- \textsc {Karel Jaromír Erben}}{13}{section*.5}%
+\contentsline {section}{\textbf {\color {WY}\faIcon {theater-masks} dílo} -- \textsc {autor}}{15}{section*.6}%
+\contentsline {part}{\color {WR}{Česká literatura}}{17}{section*.6}%
+\contentsline {section}{\textbf {\color {WR}\faIcon {theater-masks} dílo} -- \textsc {autor}}{18}{section*.7}%
+\contentsline {part}{\color {WB}{Česká literatura}}{20}{section*.7}%
+\contentsline {section}{\textbf {\color {WB}\faIcon {theater-masks} dílo} -- \textsc {autor}}{21}{section*.8}%

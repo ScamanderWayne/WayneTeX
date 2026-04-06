@@ -1,16 +1,16 @@
-\documentclass[ekobook.tex]{subfiles}
+\documentclass[literature.tex]{subfiles}
 
 \begin{document}\IfDarkModeTF{\definecolor{WPP}{HTML}{DAB852}}{\definecolor{WPP}{HTML}{663800}}
 \pageornament{31}{WPP}{3cm}
 \vspace*{\fill}
 \begin{center}
 \begin{minipage}[c]{0.70\textwidth}
-{\HUGE\color{WPP}\textbf{Main \colorbox{WPP}{\color{DP}Part}}}\\
+{\HUGE\color{WPP}\textbf{Maturitní otázky \colorbox{WPP}{\color{DP}Literatura}}}\\
 \vspace{0em}%
 {\color{WPP}\pgfornament[width=\textwidth]{88}}%
 \vspace{0em}\par
 \begin{center}
-{\large Seznam dvaceti knih.}\par
+{\large Seznam dvaceti knih z maturitní četby.}\par
 {\large Vypracoval \href{https://github.com/ScamanderWayne}{\color{WPP}Libor Halík}}.
 \end{center}
 \end{minipage}
@@ -18,9 +18,30 @@
 \vspace*{\fill}
 \vspace*{\fill}
 \thispagestyle{empty}
+\newpage
+\vspace*{\fill}    % odtlačí vše dolů
+
+\hfill\begin{minipage}{0.6\textwidth}
+\raggedleft               % zarovná text uvnitř minipage doprava
+\parindent=0pt            % žádné odsazení odstavců (v tiráži to vypadá lépe)
+Zdravím, tady \textbl{Libor}, někdy také \textbl{Scamander}.
+Jsem autorem tohoto zpracování přípravy na maturitní zkoušku.
+Zpracovával jsem to v rámci \texthl{školního roku 2025/26}.
+
+\bigskip
+Pokud si všimnete jakékoli hrubky.
+Ať už gramatické, či faktické, neváhejte se ozvat na mail \texthl{libor.halik.sw@gmail.com},
+či můžete vytvořit ticket na \href{https://github.com/ScamanderWayne/WayneTeX/issues/new/choose}{\color{WPP}WayneTeX GitHub repository}.
+
+\bigskip
+Jestli jste technický nadšenec jako já, můžete celý projekt forknout.
+Doporučuji kompilovat přes Lua\LaTeX .
+\end{minipage}
+\thispagestyle{empty}
 \wpage
 %\hfill\begin{minipage}[t]{0.15\textwidth}\raggedleft\wloss\end{minipage}%
-\renewcommand\contentsname{{\color{WPP}Main{ }}\colorbox{WPP}{\color{DP}part}}
+%\renewcommand\contentsname{{\color{WPP}Maturitní otázky{ }}\colorbox{WPP}{\color{DP}Literatura}}
+\renewcommand\contentsname{}
 \hypertarget{contents}{}
 \tableofcontents
 \thispagestyle{empty}
