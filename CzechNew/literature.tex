@@ -18,7 +18,7 @@
 \titlespacing*{\subsection}{0pt}{0pt}{0pt}
 
 \titleformat{\subsubsection}{\normalsize\bfseries}{\thesubsubsection}{1em}{}
-\titlespacing*{\subsubsection}{0pt}{1em}{0pt}
+\titlespacing*{\subsubsection}{0pt}{0.3em}{0pt}
 
 \usepackage{wrapfig}
 \usepackage{lipsum}
@@ -432,7 +432,7 @@ Tato práce je licencována pod \href{https://creativecommons.org/licenses/by-nc
 \end{leftcolumn}
 \begin{rightcolumn}
 % ukázka z textu
-\setlength{\parindent}{3pt}
+\setlength{\parindent}{0em}
 \ifstrempty{#7}{}{#7\par}
 \end{rightcolumn}
 \end{paracol}
@@ -449,9 +449,9 @@ Tato práce je licencována pod \href{https://creativecommons.org/licenses/by-nc
 % Děj
 \ifstrempty{#2}{}{\subwsection{Děj:}\begin{indentpara}#2\end{indentpara}}
 % Kompozice, prostor a čas:
-\ifstrempty{#3}{}{\vspace*{1em}\subwsection{Kompozice, prostor a čas:}\begin{indentpara}#3\end{indentpara}}
+\ifstrempty{#3}{}{\vspace*{0.3em}\subwsection{Kompozice, prostor a čas:}\begin{indentpara}#3\end{indentpara}}
 % Význam sdělení
-\ifstrempty{#4}{}{\vspace*{1em}\subwsection{Význam sdělení:}\begin{indentpara}#4\end{indentpara}}
+\ifstrempty{#4}{}{\vspace*{0.3em}\subwsection{Význam sdělení:}\begin{indentpara}#4\end{indentpara}}
 }
 
 \newcommand{\historie}[7]{%
@@ -468,7 +468,7 @@ Tato práce je licencována pod \href{https://creativecommons.org/licenses/by-nc
 % Kontext literárního vývoje
 \ifstrempty{#5}{}{\subwsection{Kontext literárního vývoje:}\begin{indentpara}#5\end{indentpara}}
 % Autor {\ssmall -- život autora:}
-\ifstrempty{#6}{}{\subwsection{Život autora:}}{\begin{indentpara}#6\end{indentpara}}
+\ifstrempty{#6}{}{\subwsection{Život autora:}\begin{indentpara}#6\end{indentpara}}
 % Další autorova tvorba:
 \ifstrempty{#7}{}{\subwsection{Další autorova tvorba:}\begin{indentpara}#7\end{indentpara}}
 }
@@ -509,6 +509,8 @@ Tato práce je licencována pod \href{https://creativecommons.org/licenses/by-nc
 \end{indentpara}
 }
 
+\newcommand{\wsl}{\textbl{/}}
+
 \usepackage{moresize}
 \usepackage{fontspec}
 \setmainfont{Tex Gyre Termes}
@@ -524,9 +526,24 @@ Tato práce je licencována pod \href{https://creativecommons.org/licenses/by-nc
 \subfile{02.01} %Havran
 \subfile{02.02} %Máj
 \subfile{02.03} %Kytice
-\subfile{00tryout}
-\subfile{part1}
-\subfile{00tryout}
-\subfile{part1}
-\subfile{00tryout}
+\subfile{02.04} %Zločin a trest
+\subfile{02.05} %Obraz Doriana Graye
+\subfile{02.06} %Revizor
+%Světová literatura 20. -- 21. století
+\subfile{03}
+\subfile{03.01} %Šifra Mistra Leonarda
+\subfile{03.02} %Velký Gatsby
+\subfile{03.03} %1984
+\subfile{03.04} %Harry Potter
+\subfile{03.05} %Hobit
+\subfile{03.06} %Čekání na Godota
+%Česká literatura 20. -- 21. století
+\subfile{04}
+\subfile{04.01} %Proměna
+\subfile{04.02} %Spalovač mrtvo
+\subfile{04.03} %Báječná léta pod psa
+\subfile{04.04} %Smrť krásných srnců
+\subfile{04.05} %Krysař
+\subfile{04.06} %Bílá Nemoc
+%\subfile{00tryout} basic document with empty layout for coyping into
 \end{document}
