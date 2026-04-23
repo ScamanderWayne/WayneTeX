@@ -1,0 +1,53 @@
+\documentclass{article}
+\usepackage{geometry}
+\geometry{a4paper, 
+          left=1cm, right=1cm, top=1cm, 
+          bottom=1cm, 
+          includefoot, 
+          heightrounded}
+
+% Math support
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\usepackage{fontspec}
+\usepackage{unicode-math}
+\setmainfont{Tex Gyre Termes}
+\setmathfont{Tex Gyre Termes Math}
+
+\begin{document}\fontsize{12pt}{12pt}\selectfont\noindent
+Takže, funkce má jednu hlavní vlastnost, pro každou hodnotu X máš nějakou hodnotu Y. $y = x$ je nejjednodušší funkcí, který vypadá jako přímka.\\
+Kvadratická funkce má zakřivení kvůli kvadratickému členu $y = x^2 + x$ a výslednému grafu se říká parabola.\\
+Kvadratickou funkci si můžeme rozdělit na tři členy: $ax^2; bx; c$ a takovou funkci zapisujeme jako $y = ax^2 + bx + c$.\\
+\vspace*{1pt}\\
+U funkcí se tě budou ptát, jestli roste (je omezená zdola) nebo jestli klesá (je omezená shora), to ovlivňuje argument $ax^2$.\\
+Když je $a$ kládné, $a > 0$, tak je funkce omezená zdola. Když je $a$ záporné, $a < 0$, tak je funkce omezená shora.\\
+\vspace*{1pt}\\
+Můžou se tě zeptat na obor hodnot takové funkce (tedy od jakého Y do jakého Y funkce existuje).
+Pro ty rostoucí (omezené zdola) je obor hodnot vyjádřen takto: $H_f = \langle c - \frac{b^2}{4a} ; \infty )$\\
+Pro klesající (omezené shora) je to pak: $H_f = \langle - \infty ; c - \frac{b^2}{4a})$\\
+\vspace*{1pt}\\
+Dále chtějí znát souřadnice vrcholu této funkce (nejnižší nebo nejvyšší bod, jestli je rostoucí nebo klesající), vrchol se počítá jako:\\
+$V[\dfrac{-b}{2a} ; c - \dfrac{b^2}{4a}]$.\\
+\vspace*{1pt}\\
+\vspace*{1pt}\\
+Jak koukám tak chtějí znát i průsečíky s osamy X a Y. To je poměrně jednoduché.\\
+\vspace*{1pt}\\
+Průsečík s osou Y je, když se $x = 0$, tedy si do své rovnice, $y = ax^2 + bx + c$ dosadíš nulu za X a zbyde ti $y = c$ (protože "a" krát nula je nula a !b! krát nula je nula, proto zbyde jenom "c")\\
+Průsečík $y_0[0 ; c]$.\\
+\vspace*{1pt}\\
+Průsečíky s osou X jsou zrádnější, ty nastávají, když se Y rovná nule, tedy $0 = ax^2 + bx + c$, to je klasická kvadratická ROVNICE. Ta má svůj vzoreřek na výpočet.\\
+$x_{1;2}=\dfrac{-b\pm \sqrt{b^2-4ac}}{2a}$\\
+Vypadá děsivě, ale neboj se. to $\pm$ znamená dva výsledky, tedy se to dá rozložit na:\\
+$x_{1}=\dfrac{-b + \sqrt{b^2-4ac}}{2a}$\\
+a\\
+$x_{2}=\dfrac{-b - \sqrt{b^2-4ac}}{2a}$\\
+\vspace*{1pt}\\
+A teď bych si dovolil ti to předvést na normálně zadané funkci.\\
+$y = -2x^2 - 4x + 16$\\
+Hned vidíme, že je klesající a omezená shora, obor hodnot je $H_f = \langle - \infty ; 16 - \frac{(-4)^2}{4 \cdot (-2)})$, tedy $H_f = \langle - \infty ; 18$.\\
+Vrchol je $V[\dfrac{-(-4)}{2 \cdot (-2)} ; 16 - \dfrac{(-4)^2}{4 \cdot (-2)}]$ tedy $V[-1 ; 18]$.\\
+Průsečík s osou Y je $y_0[0 ; 16]$\\
+Průsečíky s osou X, tady potřebuje kvadratickou rovnici, tedy $x_{1;2}=\dfrac{-(-4)\pm \sqrt{(-4)^2-4 \cdot (-2) \ cdot 16}}{2 \cdot (-2)}$, tedy $x_1 = -4; x_2 = 2$.\\
+Průsečíky jsou tedy $x_1[-4 ; 0]$ a $x_2[2 ; 0]$
+\end{document}
