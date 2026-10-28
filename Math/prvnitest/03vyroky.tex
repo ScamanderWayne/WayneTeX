@@ -1,0 +1,59 @@
+\documentclass[main.tex]{subfiles}
+
+\begin{document}\setWPP
+\lsection{Výroky}
+\begin{multicols}{2}
+\qaw{Základní výrokové operace a negace}{
+\textbl{1. Konjunkce ($p \land q$)} -- \uv{p a q}\\
+Pravdivá, platí-li oba výroky současně.\\
+\textbl{Negace:} $\neg(p \land q) \iff \neg p \lor \neg q$ (De Morganův zákon).\\
+\vspace{0.5em}\\
+\textbl{2. Disjunkce ($p \lor q$)} -- \uv{p nebo q}\\
+Pravdivá, platí-li alespoň jeden výrok.\\
+\textbl{Negace:} $\neg(p \lor q) \iff \neg p \land \neg q$.\\
+\vspace{0.5em}\\
+\textbl{3. Implikace ($p \implies q$)} -- \uv{jestliže $p$, pak $q$}\\
+Nepravdivá jedině tehdy, když z pravdivého $p$ plyne nepravdivé $q$.\\
+\textbl{Negace:} $\neg(p \implies q) \iff p \land \neg q$ (zůstane platit $p$, ale $q$ neplatí).\\
+\textbl{Obměna:} $\neg q \implies \neg p$ (hodnoty se prohodí a znegují).\\
+\vspace{0.5em}\\
+\textbl{4. Ekvivalence ($p \iff q$)} -- \uv{$p$ právě tehdy, když $q$}\\
+Pravdivá, mají-li oba výroky stejnou pravdivostní hodnotu.\\
+\textbl{Negace:} $\neg(p \iff q) \iff (p \land \neg q) \lor (q \land \neg p)$.\\
+\vspace{0.5em}\\
+\textbl{Negace kvantifikátorů:}
+\begin{itemize}[leftmargin=1.5em]
+    \item $\neg(\forall x \colon V(x)) \iff \exists x \colon \neg V(x)$
+    \item $\neg(\exists x \colon V(x)) \iff \forall x \colon \neg V(x)$
+\end{itemize}
+}
+\columnbreak
+\qaw{Příklady a aplikace}{
+\textbl{Příklad 1: Konjunkce a disjunkce}\\
+Mějme výroky: $p$: \uv{Číslo je sudé}, $q$: \uv{Číslo je větší než 5}.
+\begin{itemize}[leftmargin=1.5em]
+    \item $p \land q$: Číslo je sudé \textbl{a zároveň} větší než 5 (např. 6).
+    \item $p \lor q$: Číslo je sudé \textbl{nebo} větší než 5 (např. 4 nebo 7).
+\end{itemize}
+\vspace{1em}
+\textbl{Příklad 2: Implikace a její obměna}\\
+\textit{Původní výrok (postačující podmínka):}
+$$\forall x \in I \colon f(x) > 0 \implies f \text{ je na } I \text{ rostoucí}$$
+\textit{Obměněný výrok ($\neg q \implies \neg p$):}
+$$f \text{ není na } I \text{ rostoucí} \implies \exists x \in I \colon f(x) \leq 0$$
+\vspace{1em}
+\textbl{Příklad 3: Negace implikace}\\
+\textit{Výrok:} \uv{Jestliže prší, pak je venku mokro.} ($p \implies q$)
+\begin{itemize}[leftmargin=1.5em]
+    \item \textit{Negace ($p \land \neg q$):} \uv{Prší \textbl{a} venku \textbl{není} mokro.}
+\end{itemize}
+\vspace{1em}
+\textbl{Příklad 4: Kvantifikátory}\\
+\textit{Výrok:} \uv{Každé reálné číslo je kladné} ($\forall x \in \mathbb{R} \colon x > 0$).
+\begin{itemize}[leftmargin=1.5em]
+    \item \textit{Negace:} \uv{Existuje reálné číslo, které není kladné} ($\exists x \in \mathbb{R} \colon x \leq 0$).
+\end{itemize}
+}
+\end{multicols}
+\wpage
+\end{document}

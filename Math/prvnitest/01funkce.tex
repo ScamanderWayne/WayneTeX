@@ -1,0 +1,80 @@
+\documentclass[main.tex]{subfiles}
+
+\begin{document}\setWPP
+\lsection{Funkce}
+\begin{multicols}{2}
+
+\qaw{Vlastnosti a definiční obor funkce}{
+Předpis funkce:
+$$f(x) = \frac{\cos x}{1 - x^2}$$
+Definiční obor:
+$$D_f = (-\infty, -1) \cup (-1, 1) \cup (1, \infty)$$
+Parita funkce:
+$$f(-x) = \frac{\cos(-x)}{1 - (-x)^2} = \frac{\cos x}{1 - x^2} = f(x)$$
+Funkce je \texthl{sudá}.
+}
+\columnbreak
+\qaw{Hledání inverzní funkce}{
+Předpis funkce:
+$$f\colon y = \sqrt{e^{-(1+x)}-1}$$
+Inverzní funkce:
+$$
+\begin{array}{l @{\qquad} r @{} c @{} l}
+    f^{-1}\colon & y^2 &=& e^{-(1+x)}-1 \\
+    f^{-1}\colon & y^2+1 &=& e^{-(1+x)} \\
+    f^{-1}\colon & \ln(y^2+1) &=& -1-x \\
+    f^{-1}\colon & -1-\ln(y^2+1) &=& x \\
+    f^{-1}\colon & y &=& -1-\ln(x^2+1)
+\end{array}
+$$
+Definiční obory:
+$$D_f = (-\infty, -1\rangle$$
+$$D_{f^{-1}} = \langle0, \infty)$$
+}
+\end{multicols}
+\qaw{Vysvětli pojmy:}{%
+\setlength{\multicolsep}{0pt}% Remove vertical space before and after
+\setlength{\columnsep}{2em}% Remove space between columns
+\setlength{\leftskip}{0em}%
+\SetMCRule{
+  custom-line={\path[WPP] (TOP) to [ornament=88] (BOT);}, % Use ornament 88
+  width=0.4pt, % Ensure rule is drawn (width > 0pt)
+  extend-top=-2pt, % Shrink rule at top by 24pt
+  extend-bot=-8pt % Shrink rule at bottom by 8pt
+}
+\hspace*{2em}
+\parbox{\dimexpr\textwidth-2em}{
+\begin{multicols}{2}
+\textbl{daňová záloha}
+-- jedná se o část daně, která se platí ještě \texthl{před ukončením zdaňovacího období}\\
+\textbl{plátce daně}
+-- ten, \texthl{kdo daň odvádí státu} (u nepřímých daň vybírá, u přímých je zároveň poplatníkem)\\
+\textbl{poplatník}
+-- ten, \texthl{z jehož zdrojů} se daň \texthl{reálně odvádí} (u DPH zákazník, u daně z příjmů zaměstnanec)\\
+\textbl{přeplatek na dani}
+-- když státu \texthl{odvedeme víc}, než máme povinnost (například u moc vysokých záloh) a stát nám \texthl{přeplatek vratí}\\
+\textbl{daňové přiznání}
+-- oficiální dokument, kde je plátce \texthl{povinen} uvést \texthl{všechny skutečnosti} potřebných \texthl{k výpočtu daně}, lživé přiznání je \texthl{trestné}\\
+\textbl{správce daně}
+-- finanční úřad, který \texthl{vyměřuje výši} daně\\
+\columnbreak\\
+{\color{antiDP}$\faGreaterThan$}\textbl{předmět daně}
+-- všechny příjmy \texthl{podléhající zdanění}, stejně tak \texthl{majetek} či poskytnuté \texthl{služby}\\
+{\color{antiDP}$\faGreaterThan$}\textbl{osvobození z daně z příjmů fyzických osob}
+-- úlevy stanovené zákonem, které \texthl{vyjímají plátce z povinnosti} daň platit\\
+{\color{antiDP}$\faGreaterThan$}\textbl{zdaňovací období}
+-- období, za které daň odvádíte, obvykle \texthl{jeden rok} nebo \texthl{jeden měsíc} (u DPH je možno nově i~\texthl{čtvrťletně})
+\end{multicols}
+}}
+\vspace{2em}
+\wbreak
+\qaw{Jaké možnosti podání daňového přiznání má OSVČ}{%
+OSVČ musí podávat přiznání přes \texthl{Datovou Schránku}, má k tomu tři možnosti.\\
+\begin{itemize}[label={\color{WPP}\faSlackHash}]
+\item \textbl{paušální daň} -- pro neplátce DPH, jedná se o \texthl{kombinaci ZP, SP a daně z příjmů}, vhodná pro menší podnikatele
+\item \textbl{výdajový paušál} -- pro základ daně použije \texthl{část svých příjmů} (20 \% -- 80 \% dle sektoru), nemusí tedy dokládat reálné výdaje, což zjednodušuje přiznání
+\item \textbl{sledování příjmů a výdajů} -- OSVČ, který vede daňovou evidenci si spočítá daňový základ jako \texthl{rozdíl mezi výdaji a příjmy}, musí tedy řádně vést administrativu, ale platí jen to, co reálně musí
+\end{itemize}
+}
+\wpage
+\end{document}

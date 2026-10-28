@@ -1,0 +1,244 @@
+\documentclass[main.tex]{subfiles}
+
+\begin{document}\setWPP
+\lsection{Limity}
+\begin{multicols}{2}
+\qaw{l'Hospitalovo pravidlo}{
+Slouží k výpočtu limit neurčitých výrazů typu $\left[\frac{0}{0}\right]$ nebo $\left[\frac{\infty}{\infty}\right]$.
+Nechť $f(x)$ a $g(x)$ mají v okolí bodu $a$ derivace a existuje limita podílu jejich derivací:
+$$\lim_{x \to a} \frac{f(x)}{g(x)} \stackrel{l'H}{=} \lim_{x \to a} \frac{f'(x)}{g'(x)}$$
+\textbl{Důležité upozornění:} Derivujeme čitatele i jmenovatele zvlášť (nejedná se o derivaci podílu $\left(\frac{f}{g}\right)'$).
+}
+\columnbreak
+\qaw{Důležité tabulkové limity}{
+Základní vztahy pro výpočty bez l'Hospitalova pravidla ($t \to 0$):
+\begin{align*}
+    \lim_{t \to 0} \frac{\sin t}{t} &= 1, \qquad \lim_{t \to 0} \frac{e^t - 1}{t} = 1 \\
+    \lim_{t \to 0} \frac{\ln(1 + t)}{t} &= 1, \qquad \lim_{t \to \infty} \left(1 + \frac{1}{t}\right)^t = e
+\end{align*}
+Tyto limity se často aplikují spolu se substitucí $t = g(x)$.
+}
+\end{multicols}
+\wbreak
+\begin{multicols}{2}
+\qaw{Hornerovo schéma -- postup}{
+Hornerovo schéma slouží k dělení polynomu $P(x) = a_n x^n + \dots + a_1 x + a_0$ kořenovým činitelem $(x - c)$.
+\textbl{Kroky výpočtu:}
+\begin{enumerate}[label={\color{WPP}\textbf{\arabic*.}}]
+    \item Do prvního řádku zapíšeme koeficienty $a_n, a_{n-1}, \dots, a_0$.
+    \item Do prvního sloupce druhého řádku dáme číslo $c$ (předpokládaný kořen).
+    \item První koeficient $a_n$ opíšeme dolů.
+    \item Další čísla počítáme podle pravidla: \\
+    $\text{nová hodnota} = c \cdot (\text{předchozí výsledek}) + \text{koeficient nad ním}$.
+    \item Poslední číslo je zbytek po dělení (je-li $c$ kořen, zbytek $= 0$).
+\end{enumerate}
+}
+\columnbreak
+\qaw{Názorný příklad Hornerova schématu}{
+Dělíme $x^3 - 5x^2 + 3x + 9$ číslem $c = 3$:
+$$\begin{array}{c|c c c c}
+    & 1 & -5 & 3 & 9 \\
+\hline
+x = 3 & 1 & -2 & -3 & \mathbf{0}
+\end{array}$$
+\textbl{Postup:}
+\begin{itemize}
+    \item Opíšeme $1$.
+    \item $3 \cdot 1 + (-5) = -2$.
+    \item $3 \cdot (-2) + 3 = -3$.
+    \item $3 \cdot (-3) + 9 = \mathbf{0}$ (zbytek je $0$).
+\end{itemize}
+Výsledek reprezentuje polynom $x^2 - 2x - 3$.
+}
+\end{multicols}
+\wbreak
+\begin{multicols}{2}
+\qaw{Metoda 1: l'Hospitalovo pravidlo}{
+Máme zadánu limitu:
+$$\lim_{x \to 1} \frac{e^x - e}{x - 1}$$
+Po dosazení $x=1$ dostáváme typ $\left[\frac{0}{0}\right]$. Použijeme l'Hospitalovo pravidlo (derivujeme čitatele i jmenovatele):
+\begin{align*}
+    \lim_{x \to 1} \frac{e^x - e}{x - 1} &\stackrel{l'H}{=} \lim_{x \to 1} \frac{(e^x - e)'}{(x - 1)'} \\
+    &= \lim_{x \to 1} \frac{e^x - 0}{1 - 0} \\
+    &= \lim_{x \to 1} e^x = e^1 = e
+\end{align*}
+}
+\columnbreak
+\qaw{Metoda 2: Úprava na základní limitu}{
+Vytkneme z čitatele konstantu $e$:
+$$\lim_{x \to 1} \frac{e(e^{x-1} - 1)}{x - 1} = e \cdot \lim_{x \to 1} \frac{e^{x-1} - 1}{x - 1}$$
+Substituce: $t = x - 1$. Pro $x \to 1$ jde $t \to 0$:
+$$e \cdot \lim_{t \to 0} \frac{e^t - 1}{t}$$
+Využijeme známou tabulkovou limitu $\lim_{t \to 0} \frac{e^t - 1}{t} = 1$:
+$$e \cdot 1 = e$$
+}
+\end{multicols}
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    xmin=-0.5, xmax=2.5,
+    ymin=0, ymax=6,
+    axis lines=middle,
+    axis line style={color=antiDP, thick},
+    tick style={color=antiDP},
+    tick label style={color=antiDP, font=\tiny},
+    xlabel={\color{antiDP}$x$}, ylabel={\color{antiDP}$y$},
+    width=0.42\textwidth, 
+    height=5cm,
+    unit vector ratio=1.5 1, % Adjusts the ratio between x and y unit lengths
+    samples=100
+]
+    \addplot[domain=-0.5:0.99, color=WPP, thick]{(exp(x)-exp(1))/(x-1)};
+    \addplot[domain=1.01:2.5, color=WPP, thick]{(exp(x)-exp(1))/(x-1)};
+    \addplot[only marks, mark=o, mark size=2pt, color=WPP, thick] coordinates {(1, 2.718)};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+\newpage
+\begin{multicols}{2}
+\qaw{Metoda 1: l'Hospitalovo pravidlo}{
+Máme zadánu limitu:
+$$\lim_{x \to 1} \frac{1 - \sqrt{x}}{\ln x}$$
+Po dosazení $x=1$ dostáváme neurčitý výraz typu $\left[\frac{0}{0}\right]$. Použijeme l'Hospitalovo pravidlo (derivujeme čitatele i jmenovatele):
+\begin{align*}
+    \lim_{x \to 1} \frac{1 - \sqrt{x}}{\ln x} &\stackrel{l'H}{=} \lim_{x \to 1} \frac{\left(1 - x^{\frac{1}{2}}\right)'}{(\ln x)'} \\
+    &= \lim_{x \to 1} \frac{-\frac{1}{2\sqrt{x}}}{\frac{1}{x}} \\
+    &= \lim_{x \to 1} \left( -\frac{x}{2\sqrt{x}} \right) \\
+    &= -\frac{1}{2\cdot 1} = -\frac{1}{2}
+\end{align*}
+}
+\columnbreak
+\qaw{Metoda 2: Substituce a tabulková limita}{
+Upravíme výraz v čitateli i jmenovateli:
+$$\lim_{x \to 1} \frac{1 - \sqrt{x}}{\ln x} = \lim_{x \to 1} \frac{1 - \sqrt{x}}{\ln(1 + (x - 1))}$$
+Substituce: $t = x - 1 \implies x = 1 + t$. Pro $x \to 1$ jde $t \to 0$:
+$$\lim_{t \to 0} \frac{1 - \sqrt{1+t}}{\ln(1 + t)}$$
+Rozšíříme čitatele i jmenovatele výrazem $(1 + \sqrt{1+t})$:
+\begin{align*}
+    &= \lim_{t \to 0} \frac{1 - (1+t)}{\ln(1 + t) \cdot (1 + \sqrt{1+t})} \\
+    &= \lim_{t \to 0} \left( \frac{-t}{\ln(1 + t)} \cdot \frac{1}{1 + \sqrt{1+t}} \right)
+\end{align*}
+Využijeme známou limitu $\lim_{t \to 0} \frac{\ln(1+t)}{t} = 1$:
+$$-1 \cdot \frac{1}{1 + \sqrt{1}} = -\frac{1}{2}$$
+}
+\end{multicols}
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    xmin=0, xmax=5,
+    ymin=-1.8, ymax=0.5,
+    axis lines=middle,
+    axis line style={color=antiDP, thick},
+    tick style={color=antiDP},
+    tick label style={color=antiDP, font=\tiny},
+    xlabel={\color{antiDP}$x$}, ylabel={\color{antiDP}$y$},
+    width=0.42\textwidth, height=4.5cm,
+    unit vector ratio=1 1,
+    samples=150
+]
+    \addplot[domain=0.05:0.99, color=WPP, thick]{(1-sqrt(x))/ln(x)};
+    \addplot[domain=1.01:5, color=WPP, thick]{(1-sqrt(x))/ln(x)};
+    \addplot[only marks, mark=o, mark size=2pt, color=WPP, thick] coordinates {(1, -0.5)};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+\begin{multicols}{2}
+\qaw{Detailní postup (vytknutí $x$)}{
+Počítáme limitu v záporném nekonečnu:
+$$\lim_{x \to -\infty} \frac{\sqrt{2x^2 - 1}}{x - 2}$$
+Z čitatele pod odmocninou vytkneme $x^2$:
+$$\lim_{x \to -\infty} \frac{\sqrt{x^2 \left(2 - \frac{1}{x^2}\right)}}{x - 2}$$
+\textbl{Pozor na znaménko:} Protože $x < 0$, platí $\sqrt{x^2} = |x| = -x$:
+$$\lim_{x \to -\infty} \frac{-x \cdot \sqrt{2 - \frac{1}{x^2}}}{x \left(1 - \frac{2}{x}\right)}$$
+Po vykrácení $x$ v čitateli a jmenovateli:
+$$\lim_{x \to -\infty} \frac{-\sqrt{2 - \frac{1}{x^2}}}{1 - \frac{2}{x}}$$
+Jelikož $\frac{1}{x^2} \to 0$ a $\frac{2}{x} \to 0$ pro $x \to -\infty$:
+$$\frac{-\sqrt{2 - 0}}{1 - 0} = \texthl{-\sqrt{2}}$$
+}
+\columnbreak
+\qaw{Stručné shrnutí a chyták}{
+\textbl{Častá chyba:}
+Pokud by ses překlikl a použil $\sqrt{x^2} = x$ (což platí jen pro $x > 0$), vyšlo by ti nesprávně $+\sqrt{2}$.
+\textbl{Porovnání limit pro $\pm\infty$:}
+\begin{align*}
+    \lim_{x \to +\infty} \frac{\sqrt{2x^2 - 1}}{x - 2} &= \texthl{+\sqrt{2}} \\
+    \lim_{x \to -\infty} \frac{\sqrt{2x^2 - 1}}{x - 2} &= \texthl{-\sqrt{2}}
+\end{align*}
+\textbl{Pravidlo pro asymptoty:}
+Graf funkce $f(x) = \frac{\sqrt{2x^2 - 1}}{x - 2}$ má tedy dvě různé horizontální asymptoty v závislosti na směru do nekonečna.
+}
+\end{multicols}
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    xmin=-8, xmax=8,
+    ymin=-3, ymax=3,
+    axis lines=middle,
+    axis line style={color=antiDP, thick},
+    tick style={color=antiDP},
+    tick label style={color=antiDP, font=\tiny},
+    xlabel={\color{antiDP}$x$}, ylabel={\color{antiDP}$y$},
+    width=0.42\textwidth, height=5cm,
+    unit vector ratio=2 1,
+    samples=200
+]
+    % Záporná větev (x <= -1/sqrt(2))
+    \addplot[domain=-8:-0.71, color=WPP, thick]{sqrt(2*x^2 - 1)/(x - 2)};
+    
+    % Kladné větve (x >= 1/sqrt(2), vyhýbáme se vertikální asymptotě v x=2)
+    \addplot[domain=0.71:1.9, color=WPP, thick]{sqrt(2*x^2 - 1)/(x - 2)};
+    \addplot[domain=2.1:8, color=WPP, thick]{sqrt(2*x^2 - 1)/(x - 2)};
+
+    % Horizontální asymptoty y = -sqrt(2) a y = +sqrt(2)
+    \addplot[domain=-8:8, color=antiDP, dashed]{-1.414};
+    \addplot[domain=-8:8, color=antiDP, dashed]{1.414};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+\newpage
+\begin{multicols}{2}
+\qaw{Rozklad polynomů (Hornerovo schéma)}{
+Počítáme limitu:
+$$\lim_{x \to 3} \frac{x^3 - 5x^2 + 3x + 9}{x^2 - 6x + 9}$$
+Po dosazení $x=3$ dostáváme typ $\left[\frac{0}{0}\right]$. Rozložíme čitatele pomocí Hornerova schématu pro kořen $x=3$:
+$$\begin{array}{c|c c c c}
+    & 1 & -5 & 3 & 9 \\
+\hline
+x = 3 & 1 & -2 & -3 & 0
+\end{array}$$
+Čitatel: $(x - 3)(x^2 - 2x - 3) = (x - 3)^2 (x + 1)$
+Jmenovatel: $x^2 - 6x + 9 = (x - 3)^2$
+}
+\columnbreak
+\qaw{Výpočet limity}{
+Dosadíme rozložené tvary do limity a zkrátíme kořenový činitel $(x - 3)^2$:
+\begin{align*}
+    \lim_{x \to 3} \frac{x^3 - 5x^2 + 3x + 9}{x^2 - 6x + 9} &= \lim_{x \to 3} \frac{(x - 3)^2 (x + 1)}{(x - 3)^2} \\
+    &= \lim_{x \to 3} (x + 1) \\
+    &= 3 + 1 = \texthl{4}
+\end{align*}
+\textbl{Výsledek:} Limita je rovna \texthl{4}.
+}
+\end{multicols}
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    xmin=-2, xmax=5,
+    ymin=-1, ymax=6,
+    axis lines=middle,
+    axis line style={color=antiDP, thick},
+    tick style={color=antiDP},
+    tick label style={color=antiDP, font=\tiny},
+    xlabel={\color{antiDP}$x$}, ylabel={\color{antiDP}$y$},
+    width=0.42\textwidth, height=4.5cm,
+    unit vector ratio=1 1,
+    samples=100
+]
+    \addplot[domain=-2:2.95, color=WPP, thick]{(x^3 - 5*x^2 + 3*x + 9)/(x^2 - 6*x + 9)};
+    \addplot[domain=3.05:5, color=WPP, thick]{(x^3 - 5*x^2 + 3*x + 9)/(x^2 - 6*x + 9)};
+    \addplot[only marks, mark=o, mark size=2pt, color=WPP, thick] coordinates {(3, 4)};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+\wpage
+\end{document}
